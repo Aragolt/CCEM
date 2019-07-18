@@ -1,0 +1,109 @@
+{
+  "AraMod:Jellybeans": {
+    "NAME": "Jellybeans",
+    "FLAVOR": "Yum.",
+    "DESCRIPTIONS": ["At the start of each turn, randomly gain #b1 temporary #yStrength, #yDexterity, or #yFocus."]
+  },
+  "AraMod:NuclearReactor": {
+    "NAME": "Nuclear Reactor",
+    "FLAVOR": "Produces awe-inspiring sights! Enables you to actually SEE the paths of electrons and alpha particles traveling at speeds of more than 10,000 miles per SECOND! ~ The  Gilbert U-238 Atomic Energy Lab",
+    "DESCRIPTIONS": ["Gain [E] [E] at the start of each turn. On turn #b12, die."]
+  },
+  "AraMod:PocketApothecary": {
+    "NAME": "Pocket Apothecary",
+    "FLAVOR": "It's like a drinking game, but with more explosions.",
+    "DESCRIPTIONS": ["At the start of combat, use all potions. At the end of combat, fill all potion slots with random potions."]
+  },
+  "AraMod:RabbytsFoot": {
+    "NAME": "Rabbyt's Foot",
+    "FLAVOR": "Lucky you.",
+    "DESCRIPTIONS": ["At the start of combat, gain 1 #yaramod:Fast."]
+  },
+  "AraMod:FuseBox": {
+    "NAME": "Fuse Box",
+    "FLAVOR": "Careful not to get shocked.",
+    "DESCRIPTIONS": ["All #yStrikes also apply #b3 #yaramod:Electrified."]
+  },
+  "AraMod:MidasKnob": {
+    "NAME": "Midas Knob",
+    "FLAVOR": "A doorknob, but shiny.",
+    "DESCRIPTIONS": ["When you play a #ySkill, gain #b1 #yGold."]
+  },
+
+  "AraMod:MidasCore": {
+  "NAME": "Midas Core",
+  "FLAVOR": "A sphere of solid gold.",
+  "DESCRIPTIONS": ["When you #yChannel an orb, gain #b7 #yGold."]
+},
+  "AraMod:BeltOfGluttony": {
+    "NAME": "Belt of Gluttony",
+    "FLAVOR": "Devours everything but your waistline.",
+    "DESCRIPTIONS": ["Upon pickup, lose #r30% max HP. Whenever a non-minion enemy dies, gain #b1 max HP."]
+  },
+  "AraMod:LostWallet": {
+    "NAME": "Lost Wallet",
+    "FLAVOR": "Finders Keepers.",
+    "DESCRIPTIONS": ["Upon pickup, gain #b200 #yGold."]
+  },
+  "AraMod:BlanksHoodie": {
+    "NAME": "Blank's Hoodie",
+    "FLAVOR": "Its owner is asleep.",
+    "DESCRIPTIONS": ["When a card is played, deal #b2 damage to all enemies."]
+  },
+  "AraMod:BrokenPillar": {
+    "NAME": "Broken Pillar",
+    "FLAVOR": "Later.",
+    "DESCRIPTIONS": ["Later."]
+  },
+  "AraMod:Lemon": {
+    "NAME": "Lemon",
+    "FLAVOR": "When life gives you citrus fruit...",
+    "DESCRIPTIONS": ["Upon pickup, gain #b5 max HP. At the start of combat, upgrade a random card in your hand."]
+  },
+  "AraMod:SmashedLemon": {
+    "NAME": "Smashed Lemon",
+    "FLAVOR": "The wall seems happy.",
+    "DESCRIPTIONS": ["Upon pickup, gain #b10 max HP. At the start of each turn, upgrade a random card in your hand."]
+  },
+  "AraMod:ChunkOfWall": {
+    "NAME": "Chunk of Wall",
+    "FLAVOR": "Very heavy, but worth the effort.",
+    "DESCRIPTIONS": ["At the end of each turn, gain block equal to your #yDexterity."]
+  },
+  "AraMod:ButchersCleaver": {
+    "NAME": "Butcher's Cleaver",
+    "FLAVOR": "Heavy in your hands.",
+    "DESCRIPTIONS": ["On the first turn of combat, gain #yTemporary HP equal to the damage you deal."]
+  },
+  "AraMod:ReadiedClaws": {
+  "NAME": "Readied Claws",
+  "FLAVOR": "Ready and waiting.",
+  "DESCRIPTIONS": ["Each time you plan an attack, gain #b2 temporary #yThorns."]
+},
+  "AraMod:AmuletOfProtection": {
+    "NAME": "Amulet of Protection",
+    "FLAVOR": "Carved in the shape of a Scaryb.",
+    "DESCRIPTIONS": ["At the start of combat, gain #b2 #yMalleable."]
+  },
+  "AraMod:ShatteredShield": {
+    "NAME": "Shattered Shield",
+    "FLAVOR": "In millions of pieces.",
+    "DESCRIPTIONS": ["At the start of each turn, gain #b1 #yPlated #yArmor."]
+  },
+  "AraMod:DefectiveTurbocharger": {
+    "NAME": "Defective Turbocharger",
+    "FLAVOR": "Now, let's start out easy...wOAH!!! TOO FAST!!! TOO FAST!!!",
+    "DESCRIPTIONS": ["Start each combat with #r-30 #yStrength and #b5 #yRitual."]
+  },
+  "AraMod:StatueOfPride": {
+    "NAME": "Statue of Pride",
+    "FLAVOR": "Like my collection?",
+    "DESCRIPTIONS": ["At the end of combat, heal #g1 HP for each relic you have, excluding this one"]
+  },
+  "AraMod:IronRibcage": {
+    "NAME": "Iron Ribcage",
+    "FLAVOR": "You hide behind your armor; I AM my armor!",
+    "DESCRIPTIONS": ["While your hp is at or below 50%, you have #b",
+    " additional #yDexterity."]
+  }
+}

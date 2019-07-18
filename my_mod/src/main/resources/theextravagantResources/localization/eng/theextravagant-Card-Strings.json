@@ -1,0 +1,84 @@
+{
+  "theextravagant:DefaultCommonAttack": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage. NL [#0000ff]This[] [#ff0000]Is[] [#ffff00]How[] [#88888]color[] [#ff00ff]works.[]"
+  },
+  "theextravagant:DefaultCommonSkill": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block. NL theextravagant:Multiword_Keyword."
+  },
+  "theextravagant:DefaultCommonPower": {
+    "NAME": "Hold Place",
+    "DESCRIPTION": "Gain !M! theextravagant:Keyword.",
+    "UPGRADE_DESCRIPTION": "Gain !M! theextravagant:Keywords."
+  },
+  "theextravagant:DefaultUncommonAttack": {
+    "NAME": "Big slap",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "theextravagant:DefaultUncommonSkill": {
+    "NAME": "A Better Defend",
+    "DESCRIPTION": "Gain !B! Plated Armor. Affected by Dexterity."
+  },
+  "theextravagant:DefaultUncommonPower": {
+    "NAME": "Weirdness",
+    "DESCRIPTION": "Gain X theextravagant:Keywords.",
+    "UPGRADE_DESCRIPTION": "Gain X +1 theextravagant:Keywords."
+  },
+  "theextravagant:DefaultRareAttack": {
+    "NAME": "TOUCH",
+    "DESCRIPTION": "Deal !D! Damage."
+  },
+  "theextravagant:DefaultRareSkill": {
+    "NAME": "For Each Loop x2",
+    "DESCRIPTION": "Apply !M! vulnerable to all enemies, 2 times.",
+    "UPGRADE_DESCRIPTION": "Apply !M! vulnerable to all enemies, 3 times."
+  },
+  "theextravagant:DefaultRarePower": {
+    "NAME": "In-Progress Form",
+    "DESCRIPTION": "At the start of your turn, play a TOUCH."
+  },
+  "theextravagant:DefaultAttackWithVariable": {
+    "NAME": "Special Strike",
+    "DESCRIPTION": "Deal !D! Damage [E] times. NL (Deal !theextravagant:ENERGY_DAMAGE! damage total.)"
+  },
+  "theextravagant:DefaultSecondMagicNumberSkill": {
+    "NAME": "Cool 2 Number Card",
+    "DESCRIPTION": "Apply !M! vulnerable and !theextravagant:SecondMagic! poison to an enemy."
+  },
+  "theextravagant:OrbSkill": {
+    "NAME": "Get Orb",
+    "DESCRIPTION": "Channel 1 Default Orb."
+  },
+  "theextravagant:SlyStrike": {
+    "NAME": "Sly Strike",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength. NL Lose !M! Strength at the end of your turn."
+  },
+  "theextravagant:Clairvoyance": {
+    "NAME": "Clairvoyance",
+    "DESCRIPTION": "Draw !M! card. NL Discard any number of cards from your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard any number of cards from your draw pile."
+  },
+
+  "theextravagant:Triumph": {
+    "NAME": "Triumph",
+    "DESCRIPTION": "Whenever you play 3 attacks in a row this turn, gain !M! Artifact. NL Exhaust."
+  },
+
+  "theextravagant:Fence": {
+    "NAME": "Fence",
+    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !theextravagant:REDUCED_BLOCK! Block."
+  },
+
+  "theextravagant:Twostep": {
+    "NAME": "Twostep",
+    "DESCRIPTION": "Draw !M! cards.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
+  },
+
+  "theextravagant:Reconsider": {
+    "NAME": "Reconsider",
+    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's cost.",
+    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's cost."
+  }
+}

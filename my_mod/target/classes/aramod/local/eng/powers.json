@@ -1,0 +1,26 @@
+{
+  "AraMod:LoseFocusPower": {
+    "NAME": "Lose Focus",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b", " #yFocus."]
+  },
+  "AraMod:ElectrifiedPower": {
+    "NAME": "Electrified",
+    "DESCRIPTIONS": ["After attacking, takes #b", " damage. Reduces by #b1 at end of turn."]
+  },
+  "AraMod:FastPower": {
+    "NAME": "Fast",
+    "DESCRIPTIONS": ["Gain #b","% more block. Increases by #b10% after a card is played. Resets at start of turn."]
+  },
+  "AraMod:CleaverPower": {
+    "NAME": "Cleaver",
+    "DESCRIPTIONS": ["Gain temporary HP equal to the damage you deal."]
+  },
+  "AraMod:LoseThornsPower": {
+    "NAME": "Lose Thorns",
+    "DESCRIPTIONS": ["At the end of your turn, lose #b", " #yThorns."]
+  },
+  "AraMod:BetterRitualPower": {
+    "NAME": "Ritual",
+    "DESCRIPTIONS": ["At the end of your turn, gain #b"," #yStrength."]
+  }
+}

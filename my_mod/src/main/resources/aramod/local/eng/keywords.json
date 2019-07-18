@@ -1,0 +1,12 @@
+{
+  "ELECTRIFY": {
+    "PROPER_NAME": "Electrified",
+    "NAMES": ["electrified"],
+    "DESCRIPTION": "After attacking, takes damage equal to the number of stacks. Loses #b1 stack at end of turn."
+  },
+  "FAST": {
+    "PROPER_NAME": "Fast",
+    "NAMES": ["fast"],
+    "DESCRIPTION": "Gain #b10% more block per stack. Gain #b1 stack whenever a card is played. Resets at start of turn."
+  }
+}

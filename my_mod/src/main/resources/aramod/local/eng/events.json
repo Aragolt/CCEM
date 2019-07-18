@@ -1,0 +1,18 @@
+{
+  "AraMod:Just_A_Wall":{
+    "NAME":  "Just A Wall",
+    "DESCRIPTIONS": [
+      "As you walk through the strange visage of the Spire, you come across a large, flat, surfaced wall, seemingly out of place here.",
+      "You manage to pry off a chunk of the wall. You are satisfied.",
+      "You manage to pry off a chunk of the wall but drop it on your own foot. Even so, you are satisfied.",
+      "You throw the lemon at the wall. As you thought, it was necessary.",
+      "You decide to leave the wall alone."
+    ],
+    "OPTIONS": [
+      "Chip a Piece Off - Receive a Special Relic, #r50% #rChance #rto #rtake #r20 #rDamage.",
+      "Requires Lemon",
+      "This wall needs something. Lose Lemon; Receive a Special Relic",
+      "Leave."
+    ]
+  }
+}

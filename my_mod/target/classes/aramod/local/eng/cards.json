@@ -1,0 +1,12 @@
+{
+  "AraMod:OrbVolley": {
+    "NAME": "Orb Volley",
+    "DESCRIPTION": "Channel 3 Lightning. Evoke ALL orbs.",
+    "UPGRADE_DESCRIPTION": "Channel 3 Lightning. Evoke ALL orbs. Channel ALL orbs evoked."
+  },
+  "AraMod:PocketKnife": {
+    "NAME": "Pocket Knife",
+    "DESCRIPTION": "Add 1 Shiv to your hand. Gain Fast. Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add !M! Shivs to your hand. Gain Fast. Exhaust."
+  }
+}

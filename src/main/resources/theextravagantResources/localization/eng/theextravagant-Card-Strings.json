@@ -72,8 +72,7 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
+    "DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
   },
 
   "theextravagant:Reconsider": {

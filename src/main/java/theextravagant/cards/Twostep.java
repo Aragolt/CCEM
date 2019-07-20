@@ -26,9 +26,8 @@ public class Twostep extends AbstractEVCard {
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final int COST = 0;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
     private static final int SECONDCOST = 1;
 
 
@@ -43,17 +42,14 @@ public class Twostep extends AbstractEVCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        if(upgraded)
-        {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
-        }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, this.magicNumber), this.magicNumber));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

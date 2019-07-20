@@ -72,13 +72,18 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
+    "DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
   },
 
   "theextravagant:Reconsider": {
     "NAME": "Reconsider",
     "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's cost.",
     "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's cost."
+  },
+
+  "theextravagant:SkillfullDodge":
+  {
+    "NAME": "Skillfull Dodge",
+    "DESCRIPTION": "Gain !B! Block !M! times."
   }
 }

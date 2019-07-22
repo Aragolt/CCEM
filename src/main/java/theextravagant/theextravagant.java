@@ -321,7 +321,6 @@ public class theextravagant implements
         BaseMod.addCard(new DefaultCommonSkill());
         BaseMod.addCard(new DefaultCommonPower());
         BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
         BaseMod.addCard(new DefaultRareAttack());
         BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
@@ -332,6 +331,7 @@ public class theextravagant implements
         BaseMod.addCard(new Twostep());
         BaseMod.addCard(new Reconsider());
         BaseMod.addCard(new SkillfullDodge());
+        BaseMod.addCard(new Ambush());
 
         logger.info("Making sure the cards are unlocked.");
 
@@ -340,7 +340,6 @@ public class theextravagant implements
         UnlockTracker.unlockCard(DefaultCommonSkill.ID);
         UnlockTracker.unlockCard(DefaultCommonPower.ID);
         UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
         UnlockTracker.unlockCard(DefaultRareAttack.ID);
         UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
@@ -351,6 +350,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Twostep.ID);
         UnlockTracker.unlockCard(Reconsider.ID);
         UnlockTracker.unlockCard(SkillfullDodge.ID);
+        UnlockTracker.unlockCard(Ambush.ID);
         logger.info("Done adding cards!");
     }
 

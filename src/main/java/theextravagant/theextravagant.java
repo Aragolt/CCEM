@@ -16,6 +16,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
@@ -57,8 +58,8 @@ public class theextravagant implements
         PostEnergyRechargeSubscriber,
         OnStartBattleSubscriber,
         PostBattleSubscriber,
-        PostDeathSubscriber
-{
+        PostDeathSubscriber,
+        OnCardUseSubscriber {
 
     public static final Logger logger = LogManager.getLogger(theextravagant.class.getName());
     private static String modID;
@@ -225,7 +226,7 @@ public class theextravagant implements
         SecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/512/card_default_other_orb.png");
         LargeSecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/1024/card_other_orb.png");
         UIAtlas.addRegion("OtherEnergyCard", SecondEnergyOrbCard, 0, 0, SecondEnergyOrbCard.getWidth(), SecondEnergyOrbCard.getHeight());
-        UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0,0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
+        UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0, 0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
         logger.info("Loading badge image and mod options");
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
         ModPanel settingsPanel = new ModPanel();
@@ -332,6 +333,8 @@ public class theextravagant implements
         BaseMod.addCard(new Reconsider());
         BaseMod.addCard(new SkillfullDodge());
         BaseMod.addCard(new Ambush());
+        BaseMod.addCard(new GustOfWind());
+        BaseMod.addCard(new SnakeOil());
 
         logger.info("Making sure the cards are unlocked.");
 
@@ -351,6 +354,8 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Reconsider.ID);
         UnlockTracker.unlockCard(SkillfullDodge.ID);
         UnlockTracker.unlockCard(Ambush.ID);
+        UnlockTracker.unlockCard(GustOfWind.ID);
+        UnlockTracker.unlockCard(SnakeOil.ID);
         logger.info("Done adding cards!");
     }
 
@@ -418,6 +423,7 @@ public class theextravagant implements
     @Override
     public void receivePostEnergyRecharge() {
         SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
+        Cutthroat.Hasplayedcardthisturn = false;
     }
 
     @Override
@@ -434,5 +440,10 @@ public class theextravagant implements
     @Override
     public void receivePostDeath() {
         SecondEnergyOrb.ishidden = true;
+    }
+
+    @Override
+    public void receiveCardUsed(AbstractCard abstractCard) {
+        Cutthroat.Hasplayedcardthisturn = true;
     }
 }

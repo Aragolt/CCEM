@@ -85,5 +85,20 @@
   {
     "NAME": "Skillfull Dodge",
     "DESCRIPTION": "Gain !B! Block !M! times."
+  },
+  "theextravagant:Ambush": {
+    "NAME": "Ambush",
+    "DESCRIPTION": "If the last card you play during your turn is a skill, the next card you play deals double damage. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "If the last card you play during your turn is a skill, the next card you play deals double damage."
+  },
+  "theextravagant:GustOfWind":
+  {
+    "NAME": "Gust of Wind",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
+  },
+  "theextravagant:SnakeOil":
+  {
+    "NAME": "Snake Oil",
+    "DESCRIPTION": "The next card you play applies !M! Poison and 1 Vulnerable whenever it deals unblocked attack damage."
   }
 }

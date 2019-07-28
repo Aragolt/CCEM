@@ -26,5 +26,13 @@
       "card you play deals double damage.",
       " cards you play deal double damage."
     ]
-        }
+  },
+  "theextravagant:SnakeOilPower": {
+    "NAME": "Snake Oil",
+    "DESCRIPTIONS": [
+      "The next card you play applies ",
+      " Poison and ",
+      " Vulnerable whenever it deals unblocked attack damage."
+    ]
+  }
 }

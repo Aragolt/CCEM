@@ -316,14 +316,7 @@ public class theextravagant implements
 
         logger.info("Adding cards");
 
-
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonAttack());
         BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new SlyStrike());
         BaseMod.addCard(new Clairvoyance());
@@ -341,12 +334,7 @@ public class theextravagant implements
         logger.info("Making sure the cards are unlocked.");
 
 
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
         UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(SlyStrike.ID);
         UnlockTracker.unlockCard(Clairvoyance.ID);

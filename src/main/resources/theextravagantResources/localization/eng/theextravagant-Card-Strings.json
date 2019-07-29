@@ -102,5 +102,10 @@
   "theextravagant:Cutthroat": {
     "NAME": "Cutthroat",
     "DESCRIPTION": "Deal !D! damage. NL Deals triple damage if you played no cards this turn. NL Exhaust."
+  },
+  "theextravagant:SwiftSwitch": {
+    "NAME": "Swift Switch",
+    "DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 until played."
   }
 }

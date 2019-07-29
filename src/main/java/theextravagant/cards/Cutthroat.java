@@ -28,7 +28,6 @@ public class Cutthroat extends CustomCard {
     private static final int DAMAGE = 6;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
-    public static int triplebaseDamage = 18;
     public static int basebaseDamage = 6;
     public static boolean Hasplayedcardthisturn = false;
 
@@ -49,7 +48,7 @@ public class Cutthroat extends CustomCard {
     @Override
     public void applyPowers() {
         if (!Hasplayedcardthisturn) {
-            baseDamage = triplebaseDamage;
+            baseDamage = basebaseDamage * 3;
         } else {
             baseDamage = basebaseDamage;
         }
@@ -61,8 +60,7 @@ public class Cutthroat extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(1);
-            basebaseDamage += 1;
-            triplebaseDamage += 3;
+            basebaseDamage = 7;
             initializeDescription();
         }
     }

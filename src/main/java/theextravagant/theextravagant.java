@@ -16,6 +16,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.dungeons.TheCity;
@@ -57,8 +58,8 @@ public class theextravagant implements
         PostEnergyRechargeSubscriber,
         OnStartBattleSubscriber,
         PostBattleSubscriber,
-        PostDeathSubscriber
-{
+        PostDeathSubscriber,
+        OnCardUseSubscriber {
 
     public static final Logger logger = LogManager.getLogger(theextravagant.class.getName());
     private static String modID;
@@ -225,7 +226,7 @@ public class theextravagant implements
         SecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/512/card_default_other_orb.png");
         LargeSecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/1024/card_other_orb.png");
         UIAtlas.addRegion("OtherEnergyCard", SecondEnergyOrbCard, 0, 0, SecondEnergyOrbCard.getWidth(), SecondEnergyOrbCard.getHeight());
-        UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0,0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
+        UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0, 0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
         logger.info("Loading badge image and mod options");
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
         ModPanel settingsPanel = new ModPanel();
@@ -315,45 +316,38 @@ public class theextravagant implements
 
         logger.info("Adding cards");
 
-
-        BaseMod.addCard(new OrbSkill());
-        BaseMod.addCard(new DefaultSecondMagicNumberSkill());
-        BaseMod.addCard(new DefaultCommonAttack());
-        BaseMod.addCard(new DefaultAttackWithVariable());
-        BaseMod.addCard(new DefaultCommonSkill());
-        BaseMod.addCard(new DefaultCommonPower());
-        BaseMod.addCard(new DefaultUncommonSkill());
-        BaseMod.addCard(new DefaultUncommonAttack());
-        BaseMod.addCard(new DefaultUncommonPower());
         BaseMod.addCard(new DefaultRareAttack());
-        BaseMod.addCard(new DefaultRareSkill());
         BaseMod.addCard(new DefaultRarePower());
         BaseMod.addCard(new SlyStrike());
         BaseMod.addCard(new Clairvoyance());
         BaseMod.addCard(new Triumph());
         BaseMod.addCard(new Fence());
         BaseMod.addCard(new Twostep());
+        BaseMod.addCard(new Reconsider());
+        BaseMod.addCard(new SkillfullDodge());
+        BaseMod.addCard(new Ambush());
+        BaseMod.addCard(new GustOfWind());
+        BaseMod.addCard(new SnakeOil());
+        BaseMod.addCard(new Cutthroat());
+        BaseMod.addCard(new SwiftSwitch());
 
         logger.info("Making sure the cards are unlocked.");
 
 
-        UnlockTracker.unlockCard(OrbSkill.ID);
-        UnlockTracker.unlockCard(DefaultSecondMagicNumberSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultAttackWithVariable.ID);
-        UnlockTracker.unlockCard(DefaultCommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultCommonPower.ID);
-        UnlockTracker.unlockCard(DefaultUncommonSkill.ID);
-        UnlockTracker.unlockCard(DefaultUncommonAttack.ID);
-        UnlockTracker.unlockCard(DefaultUncommonPower.ID);
         UnlockTracker.unlockCard(DefaultRareAttack.ID);
-        UnlockTracker.unlockCard(DefaultRareSkill.ID);
         UnlockTracker.unlockCard(DefaultRarePower.ID);
         UnlockTracker.unlockCard(SlyStrike.ID);
         UnlockTracker.unlockCard(Clairvoyance.ID);
         UnlockTracker.unlockCard(Triumph.ID);
         UnlockTracker.unlockCard(Fence.ID);
         UnlockTracker.unlockCard(Twostep.ID);
+        UnlockTracker.unlockCard(Reconsider.ID);
+        UnlockTracker.unlockCard(SkillfullDodge.ID);
+        UnlockTracker.unlockCard(Ambush.ID);
+        UnlockTracker.unlockCard(GustOfWind.ID);
+        UnlockTracker.unlockCard(SnakeOil.ID);
+        UnlockTracker.unlockCard(Cutthroat.ID);
+        UnlockTracker.unlockCard(SwiftSwitch.ID);
         logger.info("Done adding cards!");
     }
 
@@ -421,6 +415,7 @@ public class theextravagant implements
     @Override
     public void receivePostEnergyRecharge() {
         SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
+        Cutthroat.Hasplayedcardthisturn = false;
     }
 
     @Override
@@ -437,5 +432,10 @@ public class theextravagant implements
     @Override
     public void receivePostDeath() {
         SecondEnergyOrb.ishidden = true;
+    }
+
+    @Override
+    public void receiveCardUsed(AbstractCard abstractCard) {
+        Cutthroat.Hasplayedcardthisturn = true;
     }
 }

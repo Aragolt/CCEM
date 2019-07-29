@@ -1,35 +1,84 @@
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\SmashedLemon.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\ElectrifiedPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\FuseBox.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\ChunkOfWall.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\BetterRitualPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\BrokenPillar.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\utils\TextureLoader.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\cards\OrbVolley.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\cards\PocketKnife.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\ReadiedClaws.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\ShatteredShield.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\patches\EndTurnBlockPatch.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\LostWallet.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\BeltOfGluttony.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\cards\Stuck.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\BlanksHoodie.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\NuclearReactor.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\CleaverPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\AmuletOfProtection.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\DefectiveTurbocharger.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\LoseFocusPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\StatueOfPride.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\actions\DamageRandomEnemyFasterAction.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\Lemon.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\LoseThornsPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\AraMod.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\MidasCore.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\PocketApothecary.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\powers\FastPower.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\events\JustAWallEvent.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\Jellybeans.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\MidasKnob.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\RabbytsFoot.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\TestRelic.java
-D:\Users\Aragolt\Desktop\My Mod\my_mod\src\main\java\aramod\relics\ButchersCleaver.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\IronRibcage.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\events\IdentityCrisisEvent.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\patches\EndTurnBlockPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\DefaultClickableRelic.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\LoseFocusPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Triumph.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\OrbVolley.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BeltOfGluttony.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractPlayerPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\AmuletOfProtection.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\IDCheckDontTouchPls.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\AraMod.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ButchersCleaver.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Reconsider.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\CleaverPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\FuseBox.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\DefaultSecondMagicNumber.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Fence.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\actions\DamageRandomEnemyFasterAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\Jellybeans.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\TickOrbPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\ui\SecondEnergyOrb.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultRareAttack.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultUncommonAttack.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\MidasCore.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\DiscardAnyFromDrawpileAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TriumphPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\BetterRitualPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\DiscardForStrengthAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\DefectiveTurbocharger.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultUncommonSkill.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\theextravagant.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\characters\TheExtravagant.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ShatteredShield.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultSecondMagicNumberSkill.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\MidasKnob.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\TestRelic.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultRareSkill.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultCommonSkill.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDynamicCard.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic2.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BrokenPillar.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\UncommonPowerAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SkillfullDodge.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\ElectrifiedPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\PocketKnife.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\OrbSkill.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\TextureLoader.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDefaultCard.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\orbs\DefaultOrb.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\utils\TextureLoader.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\ReducedBlockVariable.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\LoseThornsPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BlanksHoodie.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultCommonAttack.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\RabbytsFoot.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Clairvoyance.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ReadiedClaws.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\potions\PlaceholderPotion.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SlyStrike.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RarePower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\Lemon.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultAttackWithVariable.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\NuclearReactor.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\StatueOfPride.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\DefaultCustomVariable.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Twostep.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ChunkOfWall.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultUncommonPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\CommonPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\events\JustAWallEvent.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultCommonPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DefaultRarePower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\LostWallet.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractCardPatches.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\FastPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractEVCard.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\PocketApothecary.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\CardTemplate.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\SmashedLemon.java

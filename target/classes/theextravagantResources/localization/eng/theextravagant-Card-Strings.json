@@ -72,13 +72,40 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "Draw !M! cards.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
+    "DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
   },
 
   "theextravagant:Reconsider": {
     "NAME": "Reconsider",
     "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's cost.",
     "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's cost."
+  },
+
+  "theextravagant:SkillfullDodge":
+  {
+    "NAME": "Skillfull Dodge",
+    "DESCRIPTION": "Gain !B! Block !M! times."
+  },
+  "theextravagant:Ambush": {
+    "NAME": "Ambush",
+    "DESCRIPTION": "If the last card you play during your turn is a skill, the next card you play deals double damage. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "If the last card you play during your turn is a skill, the next card you play deals double damage."
+  },
+  "theextravagant:GustOfWind": {
+    "NAME": "Gust of Wind",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
+  },
+  "theextravagant:SnakeOil": {
+    "NAME": "Snake Oil",
+    "DESCRIPTION": "The next card you play applies !M! Poison and 1 Vulnerable whenever it deals unblocked attack damage. NL Exhaust."
+  },
+  "theextravagant:Cutthroat": {
+    "NAME": "Cutthroat",
+    "DESCRIPTION": "Deal !D! damage. NL Deals triple damage if you played no cards this turn. NL Exhaust."
+  },
+  "theextravagant:SwiftSwitch": {
+    "NAME": "Swift Switch",
+    "DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 until played."
   }
 }

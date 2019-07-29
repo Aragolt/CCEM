@@ -10,5 +10,29 @@
         "theextravagant:TriumphPower": {
                 "NAME": "Triumph",
                 "DESCRIPTIONS": ["If you play ", " more attacks in a row, gain " , " Artifact.", " attack, gain "]
-        }
+        },
+  "theextravagant:AmbushPower": {
+    "NAME": "Ambush",
+    "DESCRIPTIONS": [
+      "The next ",
+      "card you play deals double damage.",
+      " cards you play deal double damage."
+    ]
+  },
+  "theextravagant:PrepareAmbushPower": {
+    "NAME": "Prepare Ambush",
+    "DESCRIPTIONS": [
+      "If the last card you play this turn is a skill, the next ",
+      "card you play deals double damage.",
+      " cards you play deal double damage."
+    ]
+  },
+  "theextravagant:SnakeOilPower": {
+    "NAME": "Snake Oil",
+    "DESCRIPTIONS": [
+      "The next card you play applies ",
+      " Poison and ",
+      " Vulnerable whenever it deals unblocked attack damage."
+    ]
+  }
 }

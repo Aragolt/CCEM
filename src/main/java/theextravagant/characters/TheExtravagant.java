@@ -175,7 +175,7 @@ public class TheExtravagant extends CustomPlayer {
     
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new SlyStrike();
     }
     
     @Override

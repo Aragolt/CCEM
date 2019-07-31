@@ -10,16 +10,14 @@ aramod\powers\FastPower.class
 theextravagant\characters\TheExtravagant.class
 theextravagant\potions\PlaceholderPotion.class
 aramod\relics\LostWallet.class
+theextravagant\actions\ButtonUpAction.class
 aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
-theextravagant\cards\DefaultUncommonSkill.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 theextravagant\cards\Clairvoyance.class
 aramod\relics\BrokenPillar.class
 theextravagant\cards\SwiftSwitch.class
-theextravagant\cards\DefaultRareSkill.class
 aramod\relics\PocketApothecary.class
-theextravagant\cards\DefaultCommonPower.class
 aramod\relics\SmashedLemon.class
 theextravagant\cards\SlyStrike.class
 theextravagant\cards\CardTemplate.class
@@ -44,7 +42,6 @@ aramod\relics\BlanksHoodie.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
-theextravagant\cards\DefaultAttackWithVariable.class
 aramod\relics\ChunkOfWall.class
 theextravagant\powers\CommonPower.class
 aramod\relics\Jellybeans.class
@@ -58,8 +55,7 @@ theextravagant\cards\DefaultRarePower.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class
 theextravagant\cards\Cutthroat.class
-theextravagant\cards\DefaultCommonSkill.class
-theextravagant\cards\DefaultUncommonAttack.class
+theextravagant\cards\ButtonUp.class
 theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\actions\BetterHeadbuttAction.class
 aramod\utils\TextureLoader.class
@@ -78,7 +74,6 @@ theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch$Locator.cla
 theextravagant\powers\SnakeOilPower.class
 theextravagant\cards\GustOfWind.class
 aramod\powers\LoseThornsPower.class
-theextravagant\cards\OrbSkill.class
 theextravagant\cards\Triumph.class
 aramod\AraMod$1.class
 theextravagant\cards\Twostep.class
@@ -97,6 +92,5 @@ aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
-theextravagant\cards\DefaultCommonAttack.class
 aramod\powers\BetterRitualPower.class
 theextravagant\cards\AbstractDefaultCard.class

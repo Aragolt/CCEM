@@ -107,5 +107,9 @@
     "NAME": "Swift Switch",
     "DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile.",
     "UPGRADE_DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 until played."
+  },
+  "theextravagant:ButtonUp": {
+    "NAME": "Button up",
+    "DESCRIPTION": "Unplayable. NL While this card is in your draw pile, gain !B! Block at the start of your turn."
   }
 }

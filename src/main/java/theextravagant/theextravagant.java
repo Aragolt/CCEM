@@ -330,6 +330,7 @@ public class theextravagant implements
         BaseMod.addCard(new SnakeOil());
         BaseMod.addCard(new Cutthroat());
         BaseMod.addCard(new SwiftSwitch());
+        BaseMod.addCard(new ButtonUp());
 
         logger.info("Making sure the cards are unlocked.");
 
@@ -348,6 +349,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(SnakeOil.ID);
         UnlockTracker.unlockCard(Cutthroat.ID);
         UnlockTracker.unlockCard(SwiftSwitch.ID);
+        UnlockTracker.unlockCard(ButtonUp.ID);
         logger.info("Done adding cards!");
     }
 

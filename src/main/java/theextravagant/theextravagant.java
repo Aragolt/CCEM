@@ -331,6 +331,7 @@ public class theextravagant implements
         BaseMod.addCard(new Cutthroat());
         BaseMod.addCard(new SwiftSwitch());
         BaseMod.addCard(new ButtonUp());
+        BaseMod.addCard(new Pluck());
 
         logger.info("Making sure the cards are unlocked.");
 
@@ -350,6 +351,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Cutthroat.ID);
         UnlockTracker.unlockCard(SwiftSwitch.ID);
         UnlockTracker.unlockCard(ButtonUp.ID);
+        UnlockTracker.unlockCard(Pluck.ID);
         logger.info("Done adding cards!");
     }
 

@@ -60,6 +60,7 @@ theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\actions\BetterHeadbuttAction.class
 aramod\utils\TextureLoader.class
 theextravagant\actions\DiscardForStrengthAction.class
+theextravagant\cards\Pluck.class
 aramod\relics\DefectiveTurbocharger.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
 theextravagant\actions\UncommonPowerAction.class

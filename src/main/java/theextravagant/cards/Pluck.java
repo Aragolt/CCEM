@@ -39,7 +39,10 @@ public class Pluck extends AbstractEVCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         for(int i = 0; i < magicNumber; i++)
         {
-            p.drawPile.getNCardFromTop(i).setCostForTurn(0);
+            if( p.drawPile.getNCardFromTop(i).cost > 0)
+            {
+                p.drawPile.getNCardFromTop(i).setCostForTurn(0);
+            }
             p.drawPile.getNCardFromTop(i).exhaust = true;
             AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, 1));
         }

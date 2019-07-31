@@ -111,5 +111,10 @@
   "theextravagant:ButtonUp": {
     "NAME": "Button up",
     "DESCRIPTION": "Unplayable. NL While this card is in your draw pile, gain !B! Block at the start of your turn."
+  },
+  "theextravagant:Pluck":
+  {
+    "NAME": "Pluck",
+    "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and exhaust when played."
   }
 }

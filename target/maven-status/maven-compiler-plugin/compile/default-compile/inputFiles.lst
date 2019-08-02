@@ -2,12 +2,14 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\IronRibcag
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\events\IdentityCrisisEvent.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Ambush.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\patches\EndTurnBlockPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DAMNATION.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\DefaultClickableRelic.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\LoseFocusPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ButtonUp.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Triumph.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\OrbVolley.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BeltOfGluttony.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Pluck.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractPlayerPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\AmuletOfProtection.java
@@ -17,6 +19,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ButchersCl
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Reconsider.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\CleaverPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\FuseBox.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\DamnationPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\DefaultSecondMagicNumber.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Fence.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\actions\DamageRandomEnemyFasterAction.java
@@ -50,6 +53,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BrokenPill
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\UncommonPowerAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SkillfullDodge.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\ElectrifiedPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SpontaneousStrike.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\PocketKnife.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\TextureLoader.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDefaultCard.java

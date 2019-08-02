@@ -59,6 +59,7 @@ theextravagant\cards\ButtonUp.class
 theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\actions\BetterHeadbuttAction.class
 aramod\utils\TextureLoader.class
+theextravagant\powers\DamnationPower.class
 theextravagant\actions\DiscardForStrengthAction.class
 theextravagant\cards\Pluck.class
 aramod\relics\DefectiveTurbocharger.class
@@ -78,11 +79,13 @@ aramod\powers\LoseThornsPower.class
 theextravagant\cards\Triumph.class
 aramod\AraMod$1.class
 theextravagant\cards\Twostep.class
+theextravagant\cards\SpontaneousStrike.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch$RenderSecondCostPatch.class
 theextravagant\cards\DefaultRareAttack.class
 aramod\relics\IronRibcage.class
 theextravagant\theextravagant.class
 aramod\relics\TestRelic.class
+theextravagant\cards\DAMNATION.class
 theextravagant\patches\SecondEnergyOrbPatches\TickOrbPatch.class
 theextravagant\variables\ReducedBlockVariable.class
 theextravagant\relics\DefaultClickableRelic.class

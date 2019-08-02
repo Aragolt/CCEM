@@ -34,5 +34,14 @@
       " Poison and ",
       " Vulnerable whenever it deals unblocked attack damage."
     ]
+  },
+  "theextravagant:DamnationPower": {
+    "NAME": "Damnation",
+    "DESCRIPTIONS": [
+      "If you play ",
+      " more 2-cost card, deal ",
+      " more 2-cost cards, deal ",
+      " damage to all enemies."
+    ]
   }
 }

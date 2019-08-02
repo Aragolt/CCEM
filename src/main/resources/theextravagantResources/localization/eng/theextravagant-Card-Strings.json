@@ -116,5 +116,15 @@
   {
     "NAME": "Pluck",
     "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and exhaust when played."
+  },
+  "theextravagant:SpontaneousStrike":
+  {
+    "NAME": "Spontaneous Strike",
+    "DESCRIPTION": "Deal !D! damage. When drawn, this card costs 3 this turn."
+  },
+  "theextravagant:DAMNATION":
+  {
+    "NAME": "Damnation",
+    "DESCRIPTION": "Whenever you play three cards that cost 2 in a row deal !M! damage to all enemies."
   }
 }

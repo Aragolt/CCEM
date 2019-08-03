@@ -22,7 +22,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import theextravagant.cards.DefaultCommonAttack;
+import theextravagant.cards.SlyStrike;
 import theextravagant.theextravagant;
 import theovergrown.theovergrown;
 
@@ -174,7 +174,7 @@ public class TheOvergrown extends CustomPlayer {
 
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new DefaultCommonAttack();
+        return new SlyStrike();
     }
 
     @Override

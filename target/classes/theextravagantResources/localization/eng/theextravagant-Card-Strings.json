@@ -126,5 +126,15 @@
   {
     "NAME": "Damnation",
     "DESCRIPTION": "Whenever you play three cards that cost 2 in a row deal !M! damage to all enemies."
+  },
+  "theextravagant:RiskyStrike":
+  {
+    "NAME": "Risky Strike",
+    "DESCRIPTION": "Deal !D! damage. Add !M! Wounds on top of your draw pile."
+  },
+  "theextravagant:ReSeek":
+  {
+    "NAME": "Re-Seek",
+    "DESCRIPTION": "Put !M! cards from your discard pile into your hand."
   }
 }

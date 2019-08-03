@@ -30,11 +30,11 @@ theextravagant\cards\SnakeOil.class
 aramod\relics\Lemon.class
 aramod\powers\LoseFocusPower.class
 aramod\powers\ElectrifiedPower.class
-theextravagant\cards\DefaultSecondMagicNumberSkill.class
 theextravagant\variables\DefaultCustomVariable.class
 aramod\AraMod.class
 theextravagant\relics\PlaceholderRelic2.class
 aramod\patches\EndTurnBlockPatch.class
+theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 aramod\relics\MidasCore.class
 theextravagant\events\IdentityCrisisEvent.class
@@ -43,7 +43,6 @@ theextravagant\variables\DefaultSecondMagicNumber.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
 aramod\relics\ChunkOfWall.class
-theextravagant\powers\CommonPower.class
 aramod\relics\Jellybeans.class
 theextravagant\cards\Reconsider.class
 aramod\powers\CleaverPower.class
@@ -51,7 +50,6 @@ theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches$RenderSecondCost
 theextravagant\cards\Fence.class
 theextravagant\powers\PrepareAmbushPower.class
 theextravagant\orbs\DefaultOrb.class
-theextravagant\cards\DefaultRarePower.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class
 theextravagant\cards\Cutthroat.class
@@ -64,13 +62,12 @@ theextravagant\actions\DiscardForStrengthAction.class
 theextravagant\cards\Pluck.class
 aramod\relics\DefectiveTurbocharger.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
-theextravagant\actions\UncommonPowerAction.class
 theextravagant\powers\AmbushPower.class
 theextravagant\cards\SkillfullDodge.class
-theextravagant\powers\RarePower.class
 theextravagant\cards\AbstractDynamicCard.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\cards\Ambush.class
+theextravagant\cards\RiskyStrike.class
 aramod\cards\OrbVolley.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch$Locator.class
 theextravagant\powers\SnakeOilPower.class
@@ -96,5 +93,6 @@ aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
+theextravagant\cards\ReSeek.class
 aramod\powers\BetterRitualPower.class
 theextravagant\cards\AbstractDefaultCard.class

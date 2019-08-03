@@ -17,7 +17,7 @@ import static theextravagant.theextravagant.makeID;
 
 public class SnakeOilPower extends TwoAmountPower {
 
-    public static final String POWER_ID = makeID("RarePower");
+    public static final String POWER_ID = makeID("SnakeOilPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

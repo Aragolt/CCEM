@@ -135,6 +135,16 @@
   "theextravagant:ReSeek":
   {
     "NAME": "Re-Seek",
-    "DESCRIPTION": "Put !M! cards from your discard pile into your hand."
+    "DESCRIPTION": "Fetch !M! cards from your discard pile."
+  },
+  "theextravagant:Aggression":
+  {
+    "NAME": "Aggression",
+    "DESCRIPTION": "Deal !D! damage. Double this cards damage this turn."
+  },
+  "theextravagant:PuffUp":
+  {
+    "NAME": "PuffUp",
+    "DESCRIPTION": "Gain !M! temporary Hp. NL Gain !M! Strength, lose !M! Strength at the end of your turn."
   }
 }

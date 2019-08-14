@@ -20,7 +20,6 @@ theextravagant\cards\SwiftSwitch.class
 aramod\relics\PocketApothecary.class
 aramod\relics\SmashedLemon.class
 theextravagant\cards\SlyStrike.class
-theextravagant\cards\CardTemplate.class
 theextravagant\relics\PlaceholderRelic.class
 aramod\relics\RabbytsFoot.class
 aramod\relics\ShatteredShield.class
@@ -38,10 +37,12 @@ theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 aramod\relics\MidasCore.class
 theextravagant\events\IdentityCrisisEvent.class
+theextravagant\cards\PuffUp.class
 aramod\relics\BlanksHoodie.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
+theextravagant\cards\Agression.class
 aramod\relics\ChunkOfWall.class
 aramod\relics\Jellybeans.class
 theextravagant\cards\Reconsider.class

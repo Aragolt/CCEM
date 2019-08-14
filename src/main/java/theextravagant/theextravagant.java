@@ -336,6 +336,7 @@ public class theextravagant implements
         BaseMod.addCard(new ReSeek());
         BaseMod.addCard(new Agression());
         BaseMod.addCard(new PuffUp());
+        BaseMod.addCard(new Sixteen_Tons());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -359,6 +360,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(ReSeek.ID);
         UnlockTracker.unlockCard(Agression.ID);
         UnlockTracker.unlockCard(PuffUp.ID);
+        UnlockTracker.unlockCard(Sixteen_Tons.ID);
         logger.info("Done adding cards!");
     }
 

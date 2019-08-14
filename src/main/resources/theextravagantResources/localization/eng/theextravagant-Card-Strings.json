@@ -146,5 +146,10 @@
   {
     "NAME": "PuffUp",
     "DESCRIPTION": "Gain !M! temporary Hp. NL Gain !M! Strength, lose !M! Strength at the end of your turn."
+  },
+  "theextravagant:Sixteen_Tons":
+  {
+    "NAME": "16 Tons",
+    "DESCRIPTION": "When this card is discarded, exhaust it and deal !D! damage to a random enemy."
   }
 }

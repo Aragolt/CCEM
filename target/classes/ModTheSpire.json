@@ -1,9 +1,9 @@
 {
   "modid": "aramod",
   "name": "AraMod",
-  "author_list": ["Aragolt"],
+  "author_list": ["Aragolt", "Lobbienjonsji"],
   "description": "A first attempt at modding the spire, with the help of Twitch chat",
-  "credits": "Thanks to Blank the Evil, lobbien, BD for modding help. Art Credits: lobbien",
+  "credits": "Thanks to Blank the Evil, lobbien, BD for modding help. Smonko for Extravagant Beta Art. Art Credits: lobbien",
   "dependencies": ["basemod","stslib"],
   "version": "1.0.0",
   "sts_version": "01-23-2019",

@@ -1,16 +1,8 @@
 {
-"theextravagant:CommonPower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["You applied #b", " keyword.", " keywords."]
-},
-"theextravagant:RarePower": {
-        "NAME": "Placeholder Power",
-        "DESCRIPTIONS": ["At the start of your turn, TOUCH #b", " enemy." , " enemies."]
-},
-        "theextravagant:TriumphPower": {
-                "NAME": "Triumph",
-                "DESCRIPTIONS": ["If you play ", " more attacks in a row, gain " , " Artifact.", " attack, gain "]
-        },
+  "theextravagant:TriumphPower": {
+    "NAME": "Triumph",
+    "DESCRIPTIONS": ["If you play ", " more attacks in a row, gain " , " Artifact.", " attack, gain "]
+  },
   "theextravagant:AmbushPower": {
     "NAME": "Ambush",
     "DESCRIPTIONS": [
@@ -42,6 +34,29 @@
       " more 2-cost card, deal ",
       " more 2-cost cards, deal ",
       " damage to all enemies."
+    ]
+  },
+  "theextravagant:TrickeryPower": {
+    "NAME": "Trickery",
+    "DESCRIPTIONS": [
+      "At the start of your turn discard ",
+      " card and fetch that many cards from your draw pile.",
+      " cards and fetch that many cards from your draw pile."
+    ]
+  },
+  "theextravagant:RetreatPower": {
+    "NAME": "Retreat",
+    "DESCRIPTIONS": [
+      "At the End of this turn, put all cards from your hand into your draw pile and gain ",
+      " Block for each."
+    ]
+  },
+  "theextravagant:MagicPower": {
+    "NAME": "Magic",
+    "DESCRIPTIONS": [
+      "Whenever a card exhausts gain ",
+      " Temporary HP and heal ",
+      " HP."
     ]
   }
 }

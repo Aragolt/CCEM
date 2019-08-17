@@ -16,5 +16,13 @@
       "multikeyword"
     ],
     "DESCRIPTION": "Make sure the first element in the NAMES is the same as your PROPER_NAME. The rest is to match keywords like the single word keyword."
+  },
+  {
+    "PROPER_NAME": "Hexxed",
+    "NAMES": [
+      "Hexxed",
+      "hexxed",
+    ],
+    "DESCRIPTION": "Whenever you play a non-attack card, shuffle a Dazed into your draw pile."
   }
 ]

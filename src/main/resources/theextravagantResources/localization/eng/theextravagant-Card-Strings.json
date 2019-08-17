@@ -151,5 +151,31 @@
   {
     "NAME": "16 Tons",
     "DESCRIPTION": "When this card is discarded, exhaust it and deal !D! damage to a random enemy."
+  },
+  "theextravagant:ToolsOfTrickery":
+  {
+    "NAME": "Tools of Trickery",
+    "DESCRIPTION": "At the start of each turn, discard a random card and Fetch a card from your draw pile."
+  },
+  "theextravagant:TwilightTone":
+  {
+    "NAME": "Twilight Tone",
+    "DESCRIPTION": "While this card is in your discard pile, deal triple damage but you can only play attacks. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Retain. NL While this card is in your discard pile, deal triple damage, but you can only play attacks."
+  },
+  "theextravagant:Retreat":
+  {
+    "NAME": "Retreat",
+    "DESCRIPTION": "At the end of this turn put all cards in your hand into your draw pile and gain !B! Block for each."
+  },
+  "theextravagant:WhiffOfMagic":
+  {
+    "NAME": "Whiff of Magic",
+    "DESCRIPTION": "Become theextravagant:Hexxed. NL Until next turn, whenever a card exhausts, heal !M! HP and gain !M! Temporary HP."
+  },
+  "theextravagant:Flashback":
+  {
+    "NAME": "Flashback",
+    "DESCRIPTION": "Put the next !M! cards you play on top of your draw pile."
   }
 }

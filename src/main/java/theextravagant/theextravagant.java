@@ -11,7 +11,6 @@ import com.badlogic.gdx.files.FileHandle;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.utils.compression.lzma.Base;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
@@ -343,6 +342,8 @@ public class theextravagant implements
         BaseMod.addCard(new Retreat());
         BaseMod.addCard(new WhiffOfMagic());
         BaseMod.addCard(new Flashback());
+        BaseMod.addCard(new ZeroHero());
+        BaseMod.addCard(new DigUpJunk());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -372,6 +373,8 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Retreat.ID);
         UnlockTracker.unlockCard(WhiffOfMagic.ID);
         UnlockTracker.unlockCard(Flashback.ID);
+        UnlockTracker.unlockCard(ZeroHero.ID);
+        UnlockTracker.unlockCard(DigUpJunk.ID);
         logger.info("Done adding cards!");
     }
 

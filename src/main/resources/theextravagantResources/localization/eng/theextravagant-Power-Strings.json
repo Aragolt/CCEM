@@ -66,5 +66,11 @@
       "The next ",
       " cards you play are added on top of the draw pile."
     ]
+  },
+  "theextravagant:ZeroHeroPower": {
+    "NAME": "Zero Hero",
+    "DESCRIPTIONS": [
+      "If the next card you play costs 0, play it 3 times."
+    ]
   }
 }

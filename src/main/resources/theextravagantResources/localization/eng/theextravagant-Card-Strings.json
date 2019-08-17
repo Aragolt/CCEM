@@ -177,5 +177,13 @@
   {
     "NAME": "Flashback",
     "DESCRIPTION": "Put the next !M! cards you play on top of your draw pile."
+  },
+  "theextravagant:DigUpJunk": {
+    "NAME": "Dig up Junk",
+    "DESCRIPTION": "Put !M! random 0 cost cards from your draw pile into your hand."
+  },
+  "theextravagant:ZeroHero": {
+    "NAME": "Zero Hero",
+    "DESCRIPTION": "Gain !B! Block. If the next card you play costs zero, play it 3 times."
   }
 }

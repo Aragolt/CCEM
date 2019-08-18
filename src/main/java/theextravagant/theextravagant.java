@@ -84,6 +84,8 @@ public class theextravagant implements
 
     private static final String ENERGY_ORB_EV_BLUE = "theextravagantResources/images/512/card_default_gray_orb.png";
     private static final String CARD_ENERGY_ORB = "theextravagantResources/images/512/card_small_orb.png";
+    private static final String CARD_SECOND_ENERGY_ORB = "theextravagantResources/images/512/card_small_second_orb.png";
+
 
     private static final String ATTACK_EV_BLUE_PORTRAIT = "theextravagantResources/images/1024/bg_attack_default_gray.png";
     private static final String SKILL_EV_BLUE_PORTRAIT = "theextravagantResources/images/1024/bg_skill_default_gray.png";
@@ -102,6 +104,7 @@ public class theextravagant implements
     public static final String THE_DEFAULT_SKELETON_JSON = "theextravagantResources/images/char/defaultCharacter/skeleton.json";
     public static Texture SecondEnergyOrbCard;
     public static Texture LargeSecondEnergyOrbCard;
+    public static Texture SmallSecondEnergyOrb;
     public static final TextureAtlas UIAtlas = new TextureAtlas();
     public static SecondEnergyOrb SecondEnergyOrb;
 
@@ -225,8 +228,10 @@ public class theextravagant implements
     public void receivePostInitialize() {
         SecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/512/card_default_other_orb.png");
         LargeSecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/1024/card_other_orb.png");
+        SmallSecondEnergyOrb = TextureLoader.getTexture(CARD_SECOND_ENERGY_ORB);
         UIAtlas.addRegion("OtherEnergyCard", SecondEnergyOrbCard, 0, 0, SecondEnergyOrbCard.getWidth(), SecondEnergyOrbCard.getHeight());
         UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0, 0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
+        UIAtlas.addRegion("SmallSecondEnergyOrb", SmallSecondEnergyOrb, 0, 0, SmallSecondEnergyOrb.getWidth(), SmallSecondEnergyOrb.getHeight());
         logger.info("Loading badge image and mod options");
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
         ModPanel settingsPanel = new ModPanel();

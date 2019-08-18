@@ -13,9 +13,9 @@ import theextravagant.theextravagant;
 public class Flashback extends AbstractEVCard {
 
 
-    public static final String ID = theextravagant.makeID("FlashbackPower");
+    public static final String ID = theextravagant.makeID("Flashback");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = theextravagant.makeCardPath("FlashbackPower.png");
+    public static final String IMG = theextravagant.makeCardPath("Flashback.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.COMMON;

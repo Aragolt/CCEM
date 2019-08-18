@@ -184,6 +184,6 @@
   },
   "theextravagant:ZeroHero": {
     "NAME": "Zero Hero",
-    "DESCRIPTION": "Gain !B! Block. If the next card you play costs zero, play it 3 times."
+    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 0 [E] [SE] , play it 3 times."
   }
 }

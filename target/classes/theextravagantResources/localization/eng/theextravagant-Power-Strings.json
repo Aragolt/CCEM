@@ -58,5 +58,19 @@
       " Temporary HP and heal ",
       " HP."
     ]
+  },
+  "theextravagant:FlashbackPower": {
+    "NAME": "Flashback",
+    "DESCRIPTIONS": [
+      "Then next card you play is added on top of the draw pile.",
+      "The next ",
+      " cards you play are added on top of the draw pile."
+    ]
+  },
+  "theextravagant:ZeroHeroPower": {
+    "NAME": "Zero Hero",
+    "DESCRIPTIONS": [
+      "If the next card you play costs 0, play it 3 times."
+    ]
   }
 }

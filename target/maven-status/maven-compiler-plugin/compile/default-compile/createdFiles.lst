@@ -1,6 +1,8 @@
 aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch.class
+theextravagant\actions\DrawpileToHandByCostAction.class
 aramod\relics\ReadiedClaws.class
+theextravagant\cards\DigUpJunk.class
 aramod\cards\PocketKnife.class
 aramod\relics\ButchersCleaver.class
 theextravagant\theextravagant$1.class
@@ -11,6 +13,7 @@ theextravagant\characters\TheExtravagant.class
 theextravagant\potions\PlaceholderPotion.class
 aramod\relics\LostWallet.class
 theextravagant\actions\ButtonUpAction.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView.class
 theextravagant\powers\TrickeryPower.class
 aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
@@ -18,6 +21,7 @@ theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 theextravagant\cards\Clairvoyance.class
 aramod\relics\BrokenPillar.class
 theextravagant\cards\WhiffOfMagic.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph$Locator.class
 theextravagant\cards\SwiftSwitch.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
 aramod\relics\PocketApothecary.class
@@ -26,8 +30,10 @@ theextravagant\cards\SlyStrike.class
 theextravagant\relics\PlaceholderRelic.class
 aramod\relics\RabbytsFoot.class
 aramod\relics\ShatteredShield.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph.class
 aramod\relics\StatueOfPride.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize$Locator.class
 theextravagant\powers\MagicPower.class
 theextravagant\cards\SnakeOil.class
 aramod\relics\Lemon.class
@@ -36,6 +42,7 @@ aramod\powers\ElectrifiedPower.class
 theextravagant\variables\DefaultCustomVariable.class
 aramod\AraMod.class
 theextravagant\relics\PlaceholderRelic2.class
+theextravagant\powers\ZeroHeroPower.class
 aramod\patches\EndTurnBlockPatch.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
@@ -44,10 +51,13 @@ theextravagant\events\IdentityCrisisEvent.class
 theextravagant\cards\PuffUp.class
 aramod\relics\BlanksHoodie.class
 theextravagant\variables\DefaultSecondMagicNumber.class
+theextravagant\cards\ZeroHero.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize.class
 theextravagant\cards\Agression.class
 aramod\relics\ChunkOfWall.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
 aramod\relics\Jellybeans.class
 theextravagant\cards\Reconsider.class
 aramod\powers\CleaverPower.class
@@ -57,6 +67,7 @@ theextravagant\powers\PrepareAmbushPower.class
 theextravagant\orbs\DefaultOrb.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class
+theextravagant\actions\PlayCardAction.class
 theextravagant\cards\Cutthroat.class
 theextravagant\cards\TwilightTone.class
 theextravagant\cards\ButtonUp.class
@@ -96,7 +107,9 @@ aramod\relics\IronRibcage.class
 theextravagant\theextravagant.class
 aramod\relics\TestRelic.class
 theextravagant\cards\DAMNATION.class
+theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView$Locator.class
 theextravagant\patches\SecondEnergyOrbPatches\TickOrbPatch.class
+theextravagant\powers\FlashbackPower.class
 theextravagant\variables\ReducedBlockVariable.class
 theextravagant\relics\DefaultClickableRelic.class
 theextravagant\characters\TheExtravagant$Enums.class
@@ -107,6 +120,7 @@ aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
+theextravagant\cards\Flashback.class
 theextravagant\cards\ReSeek.class
 aramod\powers\BetterRitualPower.class
 theextravagant\cards\AbstractDefaultCard.class

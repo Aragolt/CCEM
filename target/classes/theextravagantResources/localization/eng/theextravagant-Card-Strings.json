@@ -180,10 +180,37 @@
   },
   "theextravagant:DigUpJunk": {
     "NAME": "Dig up Junk",
-    "DESCRIPTION": "Put !M! random 0 cost cards from your draw pile into your hand."
+    "DESCRIPTION": "Put !M! random 0 [E] cost cards from your draw pile into your hand."
   },
   "theextravagant:ZeroHero": {
     "NAME": "Zero Hero",
-    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 0 [E] [SE] , play it 3 times."
+    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 0 [E] \b, play it 3 times."
+  },
+  "theextravagant:Glamour": {
+    "NAME": "Glamour",
+    "DESCRIPTION": "Gain [SE] [SE] \b. NL Becomes unplayable until the end of the turn.",
+    "UPGRADE_DESCRIPTION": "Gain [SE] [SE] [SE] \b. NL Becomes unplayable until the end of the turn.",
+    "EXTENDED_DESCRIPTION": [
+      "Unplayable. NL "
+    ]
+  },
+  "theextravagant:Meditation": {
+    "NAME": "Meditation",
+    "DESCRIPTION": "Retain all 2 [E] cost cards at the end of this turn. NL They cost 0 [E] next turn."
+  },
+
+  "theextravagant:FocusStab": {
+    "NAME": "Focus Stab",
+    "DESCRIPTION": "Deal !D! damage. Deals double damage if this costs 0."
+  },
+  "theextravagant:Invocation":
+  {
+    "NAME": "Invocation",
+    "DESCRIPTION": "Retain. NL Fetch one card from your draw pile. NL Exhaust."
+  },
+  "theextravagant:GlyphOfSight":
+  {
+    "NAME": "Glyph of Sight",
+    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand."
   }
 }

@@ -21,8 +21,16 @@
     "PROPER_NAME": "Hexxed",
     "NAMES": [
       "Hexxed",
-      "hexxed",
+      "hexxed"
     ],
     "DESCRIPTION": "Whenever you play a non-attack card, shuffle a Dazed into your draw pile."
+  },
+  {
+    "PROPER_NAME": "Invocation",
+    "NAMES": [
+      "Invocation",
+      "invocation"
+    ],
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and fetches one card from your draw pile."
   }
 ]

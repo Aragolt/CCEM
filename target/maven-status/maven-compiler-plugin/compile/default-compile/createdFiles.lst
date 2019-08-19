@@ -2,6 +2,7 @@ aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 aramod\relics\ReadiedClaws.class
+theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\DigUpJunk.class
 aramod\cards\PocketKnife.class
 aramod\relics\ButchersCleaver.class
@@ -35,9 +36,12 @@ aramod\relics\StatueOfPride.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize$Locator.class
 theextravagant\powers\MagicPower.class
+theextravagant\cards\GlyphOfSight.class
+theextravagant\cards\Invocation.class
 theextravagant\cards\SnakeOil.class
 aramod\relics\Lemon.class
 aramod\powers\LoseFocusPower.class
+theextravagant\cards\FocusStab.class
 aramod\powers\ElectrifiedPower.class
 theextravagant\variables\DefaultCustomVariable.class
 aramod\AraMod.class
@@ -55,9 +59,11 @@ theextravagant\cards\ZeroHero.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize.class
+theextravagant\actions\PlayCardTwiceAction.class
 theextravagant\cards\Agression.class
 aramod\relics\ChunkOfWall.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
+theextravagant\cards\Glamour.class
 aramod\relics\Jellybeans.class
 theextravagant\cards\Reconsider.class
 aramod\powers\CleaverPower.class
@@ -75,6 +81,7 @@ theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\actions\BetterHeadbuttAction.class
 theextravagant\actions\PutInDrawpileForBlockAction.class
 aramod\utils\TextureLoader.class
+theextravagant\cards\Meditation.class
 theextravagant\powers\DamnationPower.class
 theextravagant\actions\DiscardForStrengthAction.class
 theextravagant\cards\Pluck.class
@@ -104,6 +111,7 @@ theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch$RenderSecondCostPatch.class
 theextravagant\cards\DefaultRareAttack.class
 aramod\relics\IronRibcage.class
+theextravagant\powers\GlyphOfSightPower.class
 theextravagant\theextravagant.class
 aramod\relics\TestRelic.class
 theextravagant\cards\DAMNATION.class

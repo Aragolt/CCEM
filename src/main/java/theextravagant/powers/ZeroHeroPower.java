@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.actions.PlayCardAction;
+import theextravagant.actions.PlayCardTwiceAction;
 
 import static theextravagant.theextravagant.makeID;
 
@@ -38,9 +38,7 @@ public class ZeroHeroPower extends AbstractPower {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (!card.purgeOnUse && card.costForTurn == 0 && this.amount > 0) {
-            for (int i = 0; i < 2; i++) {
-                AbstractDungeon.actionManager.addToBottom(new PlayCardAction(card, action));
-            }
+            AbstractDungeon.actionManager.addToBottom(new PlayCardTwiceAction(card, action));
         }
         --this.amount;
         if (this.amount == 0) {

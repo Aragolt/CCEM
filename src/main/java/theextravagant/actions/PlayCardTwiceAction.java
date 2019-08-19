@@ -8,16 +8,18 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-public class PlayCardAction extends AbstractGameAction {
+public class PlayCardTwiceAction extends AbstractGameAction {
     private AbstractCard card;
     private UseCardAction action;
+    private boolean hasbeenplayedalready;
 
-    public PlayCardAction(AbstractCard c, UseCardAction action) {
+    public PlayCardTwiceAction(AbstractCard c, UseCardAction action) {
         this.setValues(null, source, this.amount);
-        this.actionType = ActionType.BLOCK;
+        this.actionType = AbstractGameAction.ActionType.BLOCK;
         this.duration = Settings.ACTION_DUR_FASTER;
         this.card = c;
         this.action = action;
+
     }
 
     @Override
@@ -43,6 +45,7 @@ public class PlayCardAction extends AbstractGameAction {
 
         tmp.purgeOnUse = true;
         AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
+        AbstractDungeon.actionManager.addToBottom(new PlayCardAction(tmp, new UseCardAction(tmp, m)));
         isDone = true;
     }
 }

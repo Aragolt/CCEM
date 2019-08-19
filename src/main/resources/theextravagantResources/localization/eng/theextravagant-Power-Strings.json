@@ -72,5 +72,19 @@
     "DESCRIPTIONS": [
       "If the next card you play costs 0, play it 3 times."
     ]
+  },
+  "theextravagant:RetainTwoCostsPower": {
+    "NAME": "Retain Two Costs",
+    "DESCRIPTIONS": [
+      "Retain all 2 cost cards this turn. NL They cost 0 next turn."
+    ]
+  },
+  "theextravagant:GlyphOfSightPower": {
+    "NAME": "Glyph of sight",
+    "DESCRIPTIONS": [
+      "At the start of each turn, lose extravagance and add ",
+      " Invocation to your hand.",
+      " Invocations to your hand."
+    ]
   }
 }

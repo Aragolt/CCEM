@@ -45,9 +45,8 @@ public class FlashbackPower extends AbstractPower {
                 this.flash();
                 action.reboundCard = true;
             }
-
-            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Rebound", 1));
         }
+        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, "Rebound", 1));
     }
 
     public void atEndOfTurn(boolean isPlayer) {

@@ -10,7 +10,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.TipHelper;
-import com.megacrit.cardcrawl.helpers.input.InputHelper;
 import com.megacrit.cardcrawl.localization.TutorialStrings;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import theextravagant.util.TextureLoader;
@@ -53,9 +52,13 @@ public class SecondEnergyOrb{
 
     public void updatePositions()
     {
-        this.hb.update();
-        if ((this.hb.hovered) && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) && (!AbstractDungeon.isScreenUp)) {
+        hb.update();
+        if ((hb.hovered) && (AbstractDungeon.getCurrRoom().phase == AbstractRoom.RoomPhase.COMBAT) && (!AbstractDungeon.isScreenUp)) {
             TipHelper.renderGenericTip(128, 148, LABEL[0], MSG[0]);
         }
+    }
+
+    public void addEnergy(int amount) {
+        currentEnergy += amount;
     }
 }

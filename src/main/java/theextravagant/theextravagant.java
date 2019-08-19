@@ -349,6 +349,11 @@ public class theextravagant implements
         BaseMod.addCard(new Flashback());
         BaseMod.addCard(new ZeroHero());
         BaseMod.addCard(new DigUpJunk());
+        BaseMod.addCard(new Glamour());
+        BaseMod.addCard(new Meditation());
+        BaseMod.addCard(new GlyphOfSight());
+        BaseMod.addCard(new Invocation());
+        BaseMod.addCard(new FocusStab());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -380,6 +385,11 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Flashback.ID);
         UnlockTracker.unlockCard(ZeroHero.ID);
         UnlockTracker.unlockCard(DigUpJunk.ID);
+        UnlockTracker.unlockCard(Glamour.ID);
+        UnlockTracker.unlockCard(Meditation.ID);
+        UnlockTracker.unlockCard(GlyphOfSight.ID);
+        UnlockTracker.unlockCard(Invocation.ID);
+        UnlockTracker.unlockCard(FocusStab.ID);
         logger.info("Done adding cards!");
     }
 

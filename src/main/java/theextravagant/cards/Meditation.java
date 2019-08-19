@@ -1,22 +1,20 @@
 package theextravagant.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.ZeroHeroPower;
+import theextravagant.powers.RetainTwoCostsPower;
 import theextravagant.theextravagant;
 
-public class ZeroHero extends CustomCard {
+public class Meditation extends AbstractEVCard {
 
 
-    public static final String ID = theextravagant.makeID("ZeroHero");
-    public static final String IMG = theextravagant.makeCardPath("ZeroHero.png");
+    public static final String ID = theextravagant.makeID("Meditation");
+    public static final String IMG = theextravagant.makeCardPath("Meditation.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -24,13 +22,13 @@ public class ZeroHero extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 4;
+    private static final int BLOCK = 0;
 
-    public ZeroHero() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+    public Meditation() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -39,15 +37,15 @@ public class ZeroHero extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ZeroHeroPower(p, 1)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new RetainTwoCostsPower()));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(2);
+            Secondcost = 1;
+            Secondcostforturn = Secondcost;
             initializeDescription();
         }
     }

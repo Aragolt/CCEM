@@ -80,11 +80,43 @@
     ]
   },
   "theextravagant:GlyphOfSightPower": {
-    "NAME": "Glyph of sight",
+    "NAME": "Glyph of Sight",
     "DESCRIPTIONS": [
       "At the start of each turn, lose extravagance and add ",
       " Invocation to your hand.",
       " Invocations to your hand."
+    ]
+  },
+  "theextravagant:GlyphOfChoicePower": {
+    "NAME": "Glyph of Choice",
+    "DESCRIPTIONS": [
+      "At the start of each turn, lose extravagance and add ",
+      " Accumulation to your hand.",
+      " Accumulations to your hand."
+    ]
+  },
+  "theextravagant:GlyphOfPowerPower": {
+    "NAME": "Glyph of Power",
+    "DESCRIPTIONS": [
+      "At the start of each turn, lose extravagance and add ",
+      " Acceleration to your hand.",
+      " Accelerations to your hand."
+    ]
+  },
+  "theextravagant:GlyphOfTimePower": {
+    "NAME": "Glyph of Time",
+    "DESCRIPTIONS": [
+      "At the start of each turn, lose extravagance and add ",
+      " Presevervation to your hand.",
+      " Presevervation to your hand."
+    ]
+  },
+  "theextravagant:OneTurnRetainPower": {
+    "NAME": "Retain",
+    "DESCRIPTIONS": [
+      "At the end of this turn retain ",
+      " card.",
+      " cards."
     ]
   }
 }

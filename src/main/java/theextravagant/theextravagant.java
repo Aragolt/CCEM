@@ -354,6 +354,15 @@ public class theextravagant implements
         BaseMod.addCard(new GlyphOfSight());
         BaseMod.addCard(new Invocation());
         BaseMod.addCard(new FocusStab());
+        BaseMod.addCard(new GlyphOfChoice());
+        BaseMod.addCard(new Accumulation());
+        BaseMod.addCard(new GlyphOfPower());
+        BaseMod.addCard(new Acceleration());
+        BaseMod.addCard(new GlyphOfTime());
+        BaseMod.addCard(new Preservation());
+        BaseMod.addCard(new Persistence());
+        BaseMod.addCard(new Strafe());
+        BaseMod.addCard(new IronPlumes());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -390,6 +399,15 @@ public class theextravagant implements
         UnlockTracker.unlockCard(GlyphOfSight.ID);
         UnlockTracker.unlockCard(Invocation.ID);
         UnlockTracker.unlockCard(FocusStab.ID);
+        UnlockTracker.unlockCard(GlyphOfChoice.ID);
+        UnlockTracker.unlockCard(Accumulation.ID);
+        UnlockTracker.unlockCard(GlyphOfPower.ID);
+        UnlockTracker.unlockCard(Acceleration.ID);
+        UnlockTracker.unlockCard(GlyphOfTime.ID);
+        UnlockTracker.unlockCard(Preservation.ID);
+        UnlockTracker.unlockCard(Persistence.ID);
+        UnlockTracker.unlockCard(Strafe.ID);
+        UnlockTracker.unlockCard(IronPlumes.ID);
         logger.info("Done adding cards!");
     }
 

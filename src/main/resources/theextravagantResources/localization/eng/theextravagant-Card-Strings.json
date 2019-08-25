@@ -77,8 +77,8 @@
 
   "theextravagant:Reconsider": {
     "NAME": "Reconsider",
-    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's cost.",
-    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's cost."
+    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's [E] cost.",
+    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's [E] cost."
   },
 
   "theextravagant:SkillfullDodge":
@@ -106,7 +106,7 @@
   "theextravagant:SwiftSwitch": {
     "NAME": "Swift Switch",
     "DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 until played."
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. Put 1 card from your discard pile on top of your draw pile. It costs 0 [E] until played."
   },
   "theextravagant:ButtonUp": {
     "NAME": "Button up",
@@ -125,7 +125,7 @@
   "theextravagant:DAMNATION":
   {
     "NAME": "Damnation",
-    "DESCRIPTION": "Whenever you play three cards that cost 2 in a row deal !M! damage to all enemies."
+    "DESCRIPTION": "Whenever you play three cards that cost 2 [E] in a row deal !M! damage to all enemies."
   },
   "theextravagant:RiskyStrike":
   {
@@ -204,10 +204,53 @@
   },
   "theextravagant:Invocation": {
     "NAME": "Invocation",
-    "DESCRIPTION": "Retain. NL Fetch one card from your draw pile. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Fetch !M! card from your draw pile. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Fetch !M! cards from your draw pile. NL Exhaust."
   },
   "theextravagant:GlyphOfSight": {
     "NAME": "Glyph of Sight",
-    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand."
+    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand.."
+  },
+  "theextravagant:Accumulation": {
+    "NAME": "Accumulation",
+    "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
+  },
+  "theextravagant:GlyphOfChoice": {
+    "NAME": "Glyph of Choice",
+    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand."
+  },
+  "theextravagant:Acceleration": {
+    "NAME": "Acceleration",
+    "DESCRIPTION": "Retain. NL Gain [E]. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Exhaust."
+  },
+  "theextravagant:GlyphOfPower": {
+    "NAME": "Glyph of Power",
+    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand."
+  },
+  "theextravagant:Preservation": {
+    "NAME": "Preservation",
+    "DESCRIPTION": "Retain. NL Retain !M! card this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Retain. NL Retain !M! cards this turn. NL Exhaust."
+  },
+  "theextravagant:GlyphOfTime": {
+    "NAME": "Glyph of Time",
+    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Preservation into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Preservation into your hand."
+  },
+  "theextravagant:Persistence": {
+    "NAME": "Persistence",
+    "DESCRIPTION": "Deal !D! damage. NL Add a Persistence into your hand. NL Exhaust."
+  },
+  "theextravagant:Strafe": {
+    "NAME": "Strafe",
+    "DESCRIPTION": "Gain !B! block for each skill in your hand that costs 0 [E]."
+  },
+  "theextravagant:IronPlumes": {
+    "NAME": "Iron Plumes",
+    "DESCRIPTION": "Gain !M! Temporary HP. NL Whenever this card is drawn, increase the amount by 3 this combat. NL Exhaust."
   }
 }

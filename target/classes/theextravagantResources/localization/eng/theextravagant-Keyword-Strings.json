@@ -21,8 +21,40 @@
     "PROPER_NAME": "Hexxed",
     "NAMES": [
       "Hexxed",
-      "hexxed",
+      "hexxed"
     ],
     "DESCRIPTION": "Whenever you play a non-attack card, shuffle a Dazed into your draw pile."
+  },
+  {
+    "PROPER_NAME": "Invocation",
+    "NAMES": [
+      "Invocation",
+      "invocation"
+    ],
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and fetches one card from your draw pile."
+  },
+  {
+    "PROPER_NAME": "Accumulation",
+    "NAMES": [
+      "Accumulation",
+      "accumulation"
+    ],
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and draws 2 cards."
+  },
+  {
+    "PROPER_NAME": "Acceleration",
+    "NAMES": [
+      "Acceleration",
+      "acceleration"
+    ],
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and gives [E]."
+  },
+  {
+    "PROPER_NAME": "Preservation",
+    "NAMES": [
+      "Preservation",
+      "preservation"
+    ],
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, and retains 1 card until the next turn."
   }
 ]

@@ -3,7 +3,7 @@ package theextravagant.cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -14,11 +14,11 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Persistence extends CustomCard {
+public class Courage extends CustomCard {
 
 
-    public static final String ID = theextravagant.makeID("Persistence");
-    public static final String IMG = theextravagant.makeCardPath("Persistence.png");
+    public static final String ID = theextravagant.makeID("Courage");
+    public static final String IMG = theextravagant.makeCardPath("Courage.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -27,38 +27,35 @@ public class Persistence extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 14;
     private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 0;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final int BLOCK = 14;
 
-
-    public Persistence() {
+    public Courage() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, block));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractCard c = this.makeCopy();
-        if (upgraded) {
-            c.upgrade();
-        }
-        AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(c));
+    }
 
+    @Override
+    public boolean canPlay(AbstractCard card) {
+        return card == this;
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeBlock(4);
             upgradeDamage(4);
-            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

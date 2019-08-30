@@ -1,4 +1,5 @@
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch.class
+theextravagant\cards\Brilliance.class
 aramod\relics\ReadiedClaws.class
 theextravagant\cards\DigUpJunk.class
 aramod\cards\PocketKnife.class
@@ -6,15 +7,18 @@ aramod\relics\ButchersCleaver.class
 theextravagant\cards\IronPlumes.class
 theextravagant\theextravagant$1.class
 aramod\relics\NuclearReactor.class
+theextravagant\cards\ShowOff.class
 aramod\powers\FastPower.class
 theextravagant\characters\TheExtravagant.class
 theextravagant\actions\ButtonUpAction.class
 aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
+theextravagant\actions\PluckAction.class
 theextravagant\cards\GlyphOfChoice.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 aramod\relics\BrokenPillar.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph$Locator.class
+theextravagant\powers\FoilPower.class
 theextravagant\cards\SlyStrike.class
 theextravagant\relics\PlaceholderRelic.class
 aramod\relics\StatueOfPride.class
@@ -47,11 +51,13 @@ aramod\relics\DefectiveTurbocharger.class
 theextravagant\powers\AmbushPower.class
 theextravagant\powers\TwilightPower.class
 theextravagant\cards\AbstractDynamicCard.class
+theextravagant\cards\SharpTalons.class
 theextravagant\cards\RiskyStrike.class
 theextravagant\powers\RetreatPower.class
 theextravagant\cards\ToolsOfTrickery.class
 theextravagant\powers\SnakeOilPower.class
 theextravagant\powers\GlyphOfTimePower.class
+theextravagant\cards\Foil.class
 theextravagant\cards\Triumph.class
 aramod\AraMod$1.class
 theextravagant\cards\Twostep.class
@@ -65,6 +71,7 @@ theextravagant\powers\GlyphOfSightPower.class
 aramod\relics\TestRelic.class
 theextravagant\cards\DAMNATION.class
 theextravagant\variables\ReducedBlockVariable.class
+theextravagant\cards\Courage.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$SecondEnergyRenderPatch.class
 theextravagant\cards\Retreat.class
 aramod\relics\IronRibcage$1.class
@@ -74,6 +81,7 @@ aramod\relics\MidasKnob.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
 theextravagant\cards\ReSeek.class
 theextravagant\powers\OneTurnRetainPower.class
+theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\actions\DrawpileToHandByCostAction.class
@@ -124,6 +132,7 @@ aramod\utils\TextureLoader.class
 theextravagant\cards\Meditation.class
 theextravagant\cards\Pluck.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
+theextravagant\cards\GarbageCannon.class
 theextravagant\cards\SkillfullDodge.class
 theextravagant\cards\Preservation.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class

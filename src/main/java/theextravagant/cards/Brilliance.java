@@ -1,39 +1,37 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DexterityPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Persistence extends CustomCard {
+public class Brilliance extends CustomCard {
 
 
-    public static final String ID = theextravagant.makeID("Persistence");
-    public static final String IMG = theextravagant.makeCardPath("Persistence.png");
+    public static final String ID = theextravagant.makeID("Brilliance");
+    public static final String IMG = theextravagant.makeCardPath("Brilliance.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.COMMON;
-    private static final CardTarget TARGET = CardTarget.ENEMY;
-    private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 2;
-    private static final int DAMAGE = 10;
-    private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 0;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardType TYPE = CardType.SKILL;
+    private static final int COST = 0;
+    private static final int DAMAGE = 0;
+    private static final int MAGICNUMBER = 1;
+    private static final int BLOCK = 0;
 
 
-    public Persistence() {
+    public Brilliance() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
@@ -44,21 +42,18 @@ public class Persistence extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractCard c = this.makeCopy();
-        if (upgraded) {
-            c.upgrade();
+        if (!p.drawPile.getTopCard().canUse(p, m)) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 1)));
+            AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, magicNumber));
         }
-        AbstractDungeon.actionManager.addToTop(new MakeTempCardInHandAction(c));
-
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(4);
             rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

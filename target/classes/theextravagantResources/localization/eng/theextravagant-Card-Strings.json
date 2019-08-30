@@ -115,7 +115,7 @@
   "theextravagant:Pluck":
   {
     "NAME": "Pluck",
-    "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and exhaust when played."
+    "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and Exhaust when played."
   },
   "theextravagant:SpontaneousStrike":
   {
@@ -145,7 +145,7 @@
   "theextravagant:PuffUp":
   {
     "NAME": "PuffUp",
-    "DESCRIPTION": "Gain !M! temporary Hp. NL Gain !M! Strength, lose !M! Strength at the end of your turn."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL Gain !M! Strength, lose !M! Strength at the end of your turn."
   },
   "theextravagant:Sixteen_Tons":
   {
@@ -171,7 +171,7 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Become theextravagant:Hexxed. NL Until next turn, whenever a card exhausts, heal !M! HP and gain !M! Temporary HP."
+    "DESCRIPTION": "Become theextravagant:Hexxed. NL Until next turn, whenever a card exhausts, heal !M! HP and gain !M! Temporary_HP."
   },
   "theextravagant:Flashback":
   {
@@ -216,8 +216,7 @@
     "NAME": "Accumulation",
     "DESCRIPTION": "Retain. NL Draw !M! cards. NL Exhaust."
   },
-  "theextravagant:GlyphOfChoice":
-  {
+  "theextravagant:GlyphOfChoice": {
     "NAME": "Glyph of Choice",
     "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Accumulation into your hand."
@@ -227,8 +226,7 @@
     "DESCRIPTION": "Retain. NL Gain [E]. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Exhaust."
   },
-  "theextravagant:GlyphOfPower":
-  {
+  "theextravagant:GlyphOfPower": {
     "NAME": "Glyph of Power",
     "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand."
@@ -238,25 +236,43 @@
     "DESCRIPTION": "Retain. NL Retain !M! card this turn. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. NL Retain !M! cards this turn. NL Exhaust."
   },
-  "theextravagant:GlyphOfTime":
-  {
+  "theextravagant:GlyphOfTime": {
     "NAME": "Glyph of Time",
     "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Preservation into your hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Preservation into your hand."
   },
-  "theextravagant:Persistence":
-  {
+  "theextravagant:Persistence": {
     "NAME": "Persistence",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Persistence into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Add a Persistence into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a Persistence+ into your hand. NL Exhaust."
   },
-  "theextravagant:Strafe":
-  {
+  "theextravagant:Strafe": {
     "NAME": "Strafe",
     "DESCRIPTION": "Gain !B! block for each skill in your hand that costs 0 [E]."
   },
-  "theextravagant:IronPlumes":
-  {
+  "theextravagant:IronPlumes": {
     "NAME": "Iron Plumes",
-    "DESCRIPTION": "Gain !M! Temporary HP. NL Whenever this card is drawn, increase the amount by 3. NL Exhaust."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL Whenever this card is drawn, increase the amount by 3 this combat. NL Exhaust."
+  },
+  "theextravagant:Courage": {
+    "NAME": "Courage",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL While this is in your hand, all other cards in your hand are Unplayable."
+  },
+  "theextravagant:SharpTalons": {
+    "NAME": "Sharp Talons",
+    "DESCRIPTION": "Deal !D! damage. NL If the target is Vulnerable, apply !M! Weak. NL Exhaust."
+  },
+  "theextravagant:Brilliance": {
+    "NAME": "Brilliance",
+    "DESCRIPTION": "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw !M! card. NL Exhaust.",
+    "UPGRADE_DESCRIPTION":  "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw !M! cards. NL Exhaust."
+  },
+  "theextravagant:GarbageCannon": {
+    "NAME": "Garbage Cannon",
+    "DESCRIPTION": "Draw !M! cards. NL Exhaust each Status card drawn. NL Deal !D! damage for each card Exhausted."
+  },
+  "theextravagant:Foil": {
+    "NAME": "Foil",
+    "DESCRIPTION": "Lose 2 Strength. NL Whenever you play a card this turn, gain !M! Temporary_HP. NL Exhaust."
   }
 }

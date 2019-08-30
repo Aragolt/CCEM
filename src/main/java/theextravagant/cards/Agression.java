@@ -26,10 +26,10 @@ public class Agression extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final int COST = 0;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 4;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
-    private int basebasedamage = 5;
+    private int basebasedamage = 4;
 
     public Agression() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -56,7 +56,8 @@ public class Agression extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            basebasedamage = 6;
+            basebasedamage = 5;
+            upgradeDamage(1);
             initializeDescription();
         }
     }

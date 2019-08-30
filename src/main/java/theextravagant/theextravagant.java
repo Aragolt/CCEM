@@ -363,6 +363,11 @@ public class theextravagant implements
         BaseMod.addCard(new Persistence());
         BaseMod.addCard(new Strafe());
         BaseMod.addCard(new IronPlumes());
+        BaseMod.addCard(new Courage());
+        BaseMod.addCard(new SharpTalons());
+        BaseMod.addCard(new Brilliance());
+        BaseMod.addCard(new GarbageCannon());
+        BaseMod.addCard(new Foil());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -408,6 +413,11 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Persistence.ID);
         UnlockTracker.unlockCard(Strafe.ID);
         UnlockTracker.unlockCard(IronPlumes.ID);
+        UnlockTracker.unlockCard(Courage.ID);
+        UnlockTracker.unlockCard(SharpTalons.ID);
+        UnlockTracker.unlockCard(Brilliance.ID);
+        UnlockTracker.unlockCard(GarbageCannon.ID);
+        UnlockTracker.unlockCard(Foil.ID);
         logger.info("Done adding cards!");
     }
 

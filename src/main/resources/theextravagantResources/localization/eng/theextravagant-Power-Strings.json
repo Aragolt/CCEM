@@ -118,5 +118,12 @@
       " card.",
       " cards."
     ]
+  },
+  "theextravagant:FoilPower": {
+    "NAME": "Foil",
+    "DESCRIPTIONS": [
+      "Whenever you play a card this turn, gain ",
+      " Temporary HP."
+    ]
   }
 }

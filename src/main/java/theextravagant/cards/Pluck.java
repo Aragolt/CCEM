@@ -2,6 +2,7 @@ package theextravagant.cards;
 
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.actions.common.ShuffleAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -47,13 +48,15 @@ public class Pluck extends AbstractEVCard {
             if (AbstractDungeon.player.discardPile.size() > 0) {
                 AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
                 AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
+                AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25f));
             }
             AbstractDungeon.actionManager.addToBottom(new PluckAction(magicNumber - i, p));
         } else {
-            AbstractDungeon.actionManager.addToTop(new PluckAction(p.drawPile.size(), p));
+            AbstractDungeon.actionManager.addToBottom(new PluckAction(p.drawPile.size(), p));
             if (AbstractDungeon.player.discardPile.size() > 0) {
                 AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
                 AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
+                AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25f));
             }
             AbstractDungeon.actionManager.addToBottom(new PluckAction(p.discardPile.size(), p));
         }

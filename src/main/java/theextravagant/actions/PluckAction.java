@@ -20,10 +20,14 @@ public class PluckAction extends AbstractGameAction {
     @Override
     public void update() {
         for (int i = 0; i < number; i++) {
-            if (p.drawPile.getNCardFromTop(i).cost > 0) {
-                p.drawPile.getNCardFromTop(i).costForTurn = 0;
+            if (i < p.drawPile.size()) {
+                p.drawPile.getNCardFromTop(i).freeToPlayOnce = true;
+                p.drawPile.getNCardFromTop(i).exhaust = true;
+            } else {
+                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, number));
+                isDone = true;
+                return;
             }
-            p.drawPile.getNCardFromTop(i).exhaust = true;
         }
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(AbstractDungeon.player, number));
         isDone = true;

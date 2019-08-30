@@ -115,7 +115,7 @@
   "theextravagant:Pluck":
   {
     "NAME": "Pluck",
-    "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and Exhaust when played."
+    "DESCRIPTION": "Draw !M! cards. They cost 0 [E] and Exhaust when played."
   },
   "theextravagant:SpontaneousStrike":
   {

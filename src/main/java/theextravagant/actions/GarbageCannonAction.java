@@ -35,5 +35,6 @@ public class GarbageCannonAction extends AbstractGameAction {
                 AbstractDungeon.actionManager.addToBottom(new ExhaustSpecificCardAction(p.drawPile.getNCardFromTop(i), p.hand));
             }
         }
+        isDone = true;
     }
 }

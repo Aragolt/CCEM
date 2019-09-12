@@ -37,12 +37,10 @@ public class TwilightPower extends AbstractPower implements InvisiblePower {
     @Override
     public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
         int multiplier = 1;
-        if(type == DamageInfo.DamageType.NORMAL) {
-            for (AbstractCard a : AbstractDungeon.player.discardPile.group) {
-                if (a instanceof TwilightTone)
-                {
-                    multiplier *= 3;
-                }
+        for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
+            if (type == DamageInfo.DamageType.NORMAL && c instanceof TwilightTone) {
+                multiplier = 2;
+                break;
             }
         }
         return  damage * multiplier;

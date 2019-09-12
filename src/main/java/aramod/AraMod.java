@@ -5,7 +5,6 @@ import aramod.cards.PocketKnife;
 import aramod.events.JustAWallEvent;
 import aramod.relics.*;
 import basemod.BaseMod;
-import basemod.devcommands.relic.Relic;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -36,7 +35,7 @@ public class AraMod implements EditRelicsSubscriber, EditStringsSubscriber, Edit
 
     public static void initialize(){
         logger.info("VERSION: " + VERSION);
-        new AraMod();
+        //new AraMod();
     }
 
     @Override
@@ -89,7 +88,7 @@ public class AraMod implements EditRelicsSubscriber, EditStringsSubscriber, Edit
         String json = Gdx.files.internal("aramod/local/eng/keywords.json").readString(String.valueOf(StandardCharsets.UTF_8));
         Type typeToken = new TypeToken<Map<String, Keyword>>() {}.getType();
 
-        Map<String, Keyword> keywords = (Map)gson.fromJson(json, typeToken);
+        Map<String, Keyword> keywords = gson.fromJson(json, typeToken);
 
         keywords.forEach((k,v)->{
             // Keyword word = (Keyword)v;

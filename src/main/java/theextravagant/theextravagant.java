@@ -16,6 +16,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -32,9 +33,12 @@ import theextravagant.cards.*;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.events.IdentityCrisisEvent;
 import theextravagant.potions.PlaceholderPotion;
+import theextravagant.powers.RustyBucklerRetainTriggerAction;
+import theextravagant.powers.TwilightPower;
 import theextravagant.relics.DefaultClickableRelic;
 import theextravagant.relics.PlaceholderRelic;
 import theextravagant.relics.PlaceholderRelic2;
+import theextravagant.relics.TranslucentFeather;
 import theextravagant.ui.SecondEnergyOrb;
 import theextravagant.util.IDCheckDontTouchPls;
 import theextravagant.util.TextureLoader;
@@ -59,10 +63,15 @@ public class theextravagant implements
         OnStartBattleSubscriber,
         PostBattleSubscriber,
         PostDeathSubscriber,
-        OnCardUseSubscriber {
+        OnCardUseSubscriber,
+        PostExhaustSubscriber {
 
     public static final Logger logger = LogManager.getLogger(theextravagant.class.getName());
     private static String modID;
+
+    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209, 53, 18);
+    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255, 230, 230);
+    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100, 25, 10);
 
     public static Properties theDefaultDefaultSettings = new Properties();
     public static final String ENABLE_PLACEHOLDER_SETTINGS = "enablePlaceholder";
@@ -73,10 +82,9 @@ public class theextravagant implements
     private static final String DESCRIPTION = "Im not your ordinary byrd. I am a peacock.";
 
     public static final Color EVBLUE = Color.BLUE;
-
-    public static final Color PLACEHOLDER_POTION_LIQUID = CardHelper.getColor(209.0f, 53.0f, 18.0f);
-    public static final Color PLACEHOLDER_POTION_HYBRID = CardHelper.getColor(255.0f, 230.0f, 230.0f);
-    public static final Color PLACEHOLDER_POTION_SPOTS = CardHelper.getColor(100.0f, 25.0f, 10.0f);
+    public static int CardsExhaustedLastTurn;
+    public static int CardsExhaustedThisTurn;
+    public static boolean PowerPlayedThisTurn;
 
     private static final String ATTACK_EV_BLUE = "theextravagantResources/images/512/bg_attack_default_gray.png";
     private static final String SKILL_EV_BLUE = "theextravagantResources/images/512/bg_skill_default_gray.png";
@@ -300,12 +308,13 @@ public class theextravagant implements
         BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheExtravagant.Enums.EV_BLUE);
 
-
+        BaseMod.addRelic(new TranslucentFeather(), RelicType.SHARED);
         BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
 
 
         logger.info("Done adding relics!");
     }
+
 
     @Override
     public void receiveEditCards() {
@@ -368,6 +377,19 @@ public class theextravagant implements
         BaseMod.addCard(new Brilliance());
         BaseMod.addCard(new GarbageCannon());
         BaseMod.addCard(new Foil());
+        BaseMod.addCard(new Radiance());
+        BaseMod.addCard(new RisingPhoenix());
+        BaseMod.addCard(new CuttingEdge());
+        BaseMod.addCard(new Aftermath());
+        BaseMod.addCard(new RustyBuckler());
+        BaseMod.addCard(new Precaution());
+        BaseMod.addCard(new Outrun());
+        BaseMod.addCard(new Redemption());
+        BaseMod.addCard(new Overrun());
+        BaseMod.addCard(new ManifestIllusion());
+        BaseMod.addCard(new Thrill());
+        BaseMod.addCard(new RapidPulse());
+        BaseMod.addCard(new Overpower());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -418,6 +440,19 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Brilliance.ID);
         UnlockTracker.unlockCard(GarbageCannon.ID);
         UnlockTracker.unlockCard(Foil.ID);
+        UnlockTracker.unlockCard(Radiance.ID);
+        UnlockTracker.unlockCard(RisingPhoenix.ID);
+        UnlockTracker.unlockCard(CuttingEdge.ID);
+        UnlockTracker.unlockCard(Aftermath.ID);
+        UnlockTracker.unlockCard(RustyBuckler.ID);
+        UnlockTracker.unlockCard(Precaution.ID);
+        UnlockTracker.unlockCard(Outrun.ID);
+        UnlockTracker.unlockCard(Redemption.ID);
+        UnlockTracker.unlockCard(Overrun.ID);
+        UnlockTracker.unlockCard(ManifestIllusion.ID);
+        UnlockTracker.unlockCard(Thrill.ID);
+        UnlockTracker.unlockCard(RapidPulse.ID);
+        UnlockTracker.unlockCard(Overpower.ID);
         logger.info("Done adding cards!");
     }
 
@@ -486,12 +521,20 @@ public class theextravagant implements
     public void receivePostEnergyRecharge() {
         SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
         Cutthroat.Hasplayedcardthisturn = false;
+        CardsExhaustedLastTurn = CardsExhaustedThisTurn;
+        CardsExhaustedThisTurn = 0;
+        PowerPlayedThisTurn = false;
     }
 
     @Override
     public void receiveOnBattleStart(AbstractRoom abstractRoom) {
         SecondEnergyOrb.ishidden = !(AbstractDungeon.player instanceof TheExtravagant || AbstractDungeon.player.hasRelic(PrismaticShard.ID));
         SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
+        CardsExhaustedThisTurn = 0;
+        CardsExhaustedLastTurn = 0;
+        PowerPlayedThisTurn = false;
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TwilightPower()));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RustyBucklerRetainTriggerAction()));
     }
 
     @Override
@@ -507,5 +550,14 @@ public class theextravagant implements
     @Override
     public void receiveCardUsed(AbstractCard abstractCard) {
         Cutthroat.Hasplayedcardthisturn = true;
+        if (abstractCard.type == AbstractCard.CardType.POWER) {
+            PowerPlayedThisTurn = true;
+        }
+    }
+
+
+    @Override
+    public void receivePostExhaust(AbstractCard abstractCard) {
+        CardsExhaustedThisTurn++;
     }
 }

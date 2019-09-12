@@ -1,16 +1,16 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theextravagant.characters.TheExtravagant;
-import theextravagant.theextravagant;
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.characters.TheExtravagant;
+import theextravagant.theextravagant;
 
 public class SpontaneousStrike extends CustomCard {
 
@@ -25,7 +25,7 @@ public class SpontaneousStrike extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final int COST = 0;
-    private static final int DAMAGE = 15;
+    private static final int DAMAGE = 12;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
 

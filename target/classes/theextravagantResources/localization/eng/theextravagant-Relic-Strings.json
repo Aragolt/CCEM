@@ -30,5 +30,13 @@
       ".",
       "Select a card to bottle for "
     ]
+  },
+
+  "theextravagant:TranslucentFeather": {
+    "NAME": "Translucent Feather",
+    "FLAVOR": "Like it's just an illusion.",
+    "DESCRIPTIONS": [
+      "At the start of each combat fetch 1 card from your draw pile."
+    ]
   }
 }

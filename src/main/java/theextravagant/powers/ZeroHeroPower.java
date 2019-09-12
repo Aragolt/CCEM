@@ -37,7 +37,7 @@ public class ZeroHeroPower extends AbstractPower {
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        if (!card.purgeOnUse && card.costForTurn == 0 && this.amount > 0) {
+        if (!card.purgeOnUse && (card.costForTurn == 0 || card.freeToPlayOnce == true) && this.amount > 0) {
             AbstractDungeon.actionManager.addToBottom(new PlayCardTwiceAction(card, action));
         }
         --this.amount;

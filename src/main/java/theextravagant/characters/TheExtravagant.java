@@ -21,16 +21,17 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import theextravagant.cards.Clairvoyance;
+import theextravagant.cards.Fence;
+import theextravagant.cards.SlyStrike;
+import theextravagant.cards.Triumph;
+import theextravagant.relics.TranslucentFeather;
 import theextravagant.theextravagant;
-import theextravagant.cards.*;
-import theextravagant.relics.DefaultClickableRelic;
-import theextravagant.relics.PlaceholderRelic;
-import theextravagant.relics.PlaceholderRelic2;
 
 import java.util.ArrayList;
 
-import static theextravagant.theextravagant.*;
 import static theextravagant.characters.TheExtravagant.Enums.EV_BLUE;
+import static theextravagant.theextravagant.*;
 
 public class TheExtravagant extends CustomPlayer {
     public static final Logger logger = LogManager.getLogger(theextravagant.class.getName());
@@ -49,8 +50,8 @@ public class TheExtravagant extends CustomPlayer {
     public static final int STARTING_HP = 75;
     public static final int MAX_HP = 75;
     public static final int STARTING_GOLD = 99;
-    public static final int CARD_DRAW = 9;
-    public static final int ORB_SLOTS = 3;
+    public static final int CARD_DRAW = 5;
+    public static final int ORB_SLOTS = 0;
     
     private static final String ID = makeID("EVCharacter");
     private static final CharacterStrings characterStrings = CardCrawlGame.languagePack.getCharacterString(ID);
@@ -124,15 +125,8 @@ public class TheExtravagant extends CustomPlayer {
     
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        
-        retVal.add(PlaceholderRelic.ID);
-        retVal.add(PlaceholderRelic2.ID);
-        retVal.add(DefaultClickableRelic.ID);
-        
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic.ID);
-        UnlockTracker.markRelicAsSeen(PlaceholderRelic2.ID);
-        UnlockTracker.markRelicAsSeen(DefaultClickableRelic.ID);
-        
+        retVal.add(TranslucentFeather.ID);
+        UnlockTracker.markRelicAsSeen(TranslucentFeather.ID);
         return retVal;
     }
     

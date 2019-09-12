@@ -1,18 +1,17 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.cards.interfaces.StartupCard;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.TwilightPower;
 import theextravagant.theextravagant;
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class TwilightTone extends CustomCard implements StartupCard {
 
@@ -26,7 +25,7 @@ public class TwilightTone extends CustomCard implements StartupCard {
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
-    private static final int COST = 0;
+    private static final int COST = 3;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;

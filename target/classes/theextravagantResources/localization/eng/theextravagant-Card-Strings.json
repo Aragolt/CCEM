@@ -62,7 +62,7 @@
 
   "theextravagant:Triumph": {
     "NAME": "Triumph",
-    "DESCRIPTION": "Whenever you play 3 attacks in a row this turn, gain !M! Artifact. NL Exhaust."
+    "DESCRIPTION": "Whenever you play 3 attacks in a row this turn, gain !M! Strength. NL Exhaust."
   },
 
   "theextravagant:Fence": {
@@ -115,7 +115,7 @@
   "theextravagant:Pluck":
   {
     "NAME": "Pluck",
-    "DESCRIPTION": "Draw !M! cards. They cost 0 this turn and Exhaust when played."
+    "DESCRIPTION": "Draw !M! cards. They cost 0 [E] and Exhaust when played."
   },
   "theextravagant:SpontaneousStrike":
   {
@@ -125,7 +125,7 @@
   "theextravagant:DAMNATION":
   {
     "NAME": "Damnation",
-    "DESCRIPTION": "Whenever you play three cards that cost 2 [E] in a row deal !M! damage to all enemies."
+    "DESCRIPTION": "Whenever you play 3 cards that cost 2 [E] in a row deal !M! damage to all enemies."
   },
   "theextravagant:RiskyStrike":
   {
@@ -160,8 +160,8 @@
   "theextravagant:TwilightTone":
   {
     "NAME": "Twilight Tone",
-    "DESCRIPTION": "While this card is in your discard pile, deal triple damage but you can only play attacks. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Retain. NL While this card is in your discard pile, deal triple damage, but you can only play attacks."
+    "DESCRIPTION": "While this card is in your discard pile, deal double attack damage but you can only play attacks. NL Ethereal.",
+    "UPGRADE_DESCRIPTION": "Retain. NL While this card is in your discard pile, deal double damage, but you can only play attacks."
   },
   "theextravagant:Retreat":
   {
@@ -195,7 +195,7 @@
     ]
   },
   "theextravagant:Meditation": {
-    "NAME": "Meditation",
+    "NAME": "Channel",
     "DESCRIPTION": "Retain all 2 [E] cost cards at the end of this turn. NL They cost 0 [E] next turn."
   },
   "theextravagant:FocusStab": {
@@ -248,7 +248,7 @@
   },
   "theextravagant:Strafe": {
     "NAME": "Strafe",
-    "DESCRIPTION": "Gain !B! block for each skill in your hand that costs 0 [E]."
+    "DESCRIPTION": "Gain !B! Block for each skill in your hand that costs 0 [E]."
   },
   "theextravagant:IronPlumes": {
     "NAME": "Iron Plumes",
@@ -263,9 +263,9 @@
     "DESCRIPTION": "Deal !D! damage. NL If the target is Vulnerable, apply !M! Weak. NL Exhaust."
   },
   "theextravagant:Brilliance": {
-    "NAME": "Brilliance",
+    "NAME": "Shine",
     "DESCRIPTION": "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw !M! card. NL Exhaust.",
-    "UPGRADE_DESCRIPTION":  "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw !M! cards. NL Exhaust."
+    "UPGRADE_DESCRIPTION": "If the top card of your draw pile is Unplayable, gain 1 Dexterity and draw !M! cards. NL Exhaust."
   },
   "theextravagant:GarbageCannon": {
     "NAME": "Garbage Cannon",
@@ -274,5 +274,58 @@
   "theextravagant:Foil": {
     "NAME": "Foil",
     "DESCRIPTION": "Lose 2 Strength. NL Whenever you play a card this turn, gain !M! Temporary_HP. NL Exhaust."
+  },
+  "theextravagant:Radiance": {
+    "NAME": "Radiance",
+    "DESCRIPTION": "Whenever you play a power, a random enemy loses !M! Strength and add !M! Dazed on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL Whenever you play a power, a random enemy loses !M! Strength and add !M! Dazed on top of your draw pile."
+  },
+  "theextravagant:RisingPhoenix": {
+    "NAME": "Rising Phoenix",
+    "DESCRIPTION": "Costs 1 [E] less for every card Exhausted last turn. NL Deal !D! damage !M! times to all enemies."
+  },
+  "theextravagant:CuttingEdge": {
+    "NAME": "Cutting Edge",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust the top card of your draw pile."
+  },
+  "theextravagant:Aftermath": {
+    "NAME": "Aftermath",
+    "DESCRIPTION": "Unplayable. NL If this is the only card left in your hand at the end of your turn, deal !D! damage to all enemies."
+  },
+  "theextravagant:RustyBuckler": {
+    "NAME": "Rusty Buckler",
+    "DESCRIPTION": "Unplayable. NL At the end of this turn, gain !M! Thorns and !B! Block. NL If you played a card that costs 2 or more this turn, Retain this card."
+  },
+  "theextravagant:Precaution": {
+    "NAME": "Precaution",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Put !M! cards from your discard pile on top of your draw pile."
+  },
+  "theextravagant:Outrun": {
+    "NAME": "Outrun",
+    "DESCRIPTION": "Discard all Skills. NL Gain 1 Dexterity for each skill discarded. NL At the end of this turn lose !M! Dexterity."
+  },
+  "theextravagant:Redemption": {
+    "NAME": "Redemption",
+    "DESCRIPTION": "Deal !D! damage to all enemies for each Unplayable card in your draw pile. Put all Unplayable cards from your draw pile into your discard pile."
+  },
+  "theextravagant:Overrun": {
+    "NAME": "Overrun",
+    "DESCRIPTION": "Whenever you gain Block this turn, deal !M! damage to all enemies."
+  },
+  "theextravagant:ManifestIllusion": {
+    "NAME": "Manifest Illusion",
+    "DESCRIPTION": "Add !M! copies of a card in your hand into your hand. They cost 0 [E] until played. Shuffle !M! Dazed into your draw pile."
+  },
+  "theextravagant:Thrill": {
+    "NAME": "Thrill",
+    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL Duplicate ALL attacks in your hand."
+  },
+  "theextravagant:RapidPulse": {
+    "NAME": "Rapid Pulse",
+    "DESCRIPTION": "At the start of your turn gain !M! Strength. NL At the end of your turn Exhaust the top card of your draw pile."
+  },
+  "theextravagant:Overpower": {
+    "NAME": "Overpower",
+    "DESCRIPTION": "Can only be played if you played a power this turn. Double the damage of ALL attacks in your hand for this combat. NL Exhaust."
   }
 }

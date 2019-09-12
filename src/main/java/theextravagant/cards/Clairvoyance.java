@@ -1,14 +1,14 @@
 package theextravagant.cards;
 
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.actions.DiscardAnyFromDrawpileAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class Clairvoyance extends AbstractEVCard {
 
@@ -39,7 +39,7 @@ public class Clairvoyance extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
+        AbstractDungeon.actionManager.addToTop(new DrawCardAction(p, this.magicNumber));
         AbstractDungeon.actionManager.addToBottom(new DiscardAnyFromDrawpileAction());
     }
 

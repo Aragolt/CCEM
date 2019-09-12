@@ -125,5 +125,23 @@
       "Whenever you play a card this turn, gain ",
       " Temporary HP."
     ]
+  },
+  "theextravagant:RadiancePower": {
+    "NAME": "RadiancePower",
+    "DESCRIPTIONS": [
+      "Whenever you play a power, add ",
+      " Dazed on top of your draw pile and a random enemy loses ",
+      " Dazeds on top of your draw pile and a random enemy loses ",
+      " Strength."
+    ]
+  },
+  "theextravagant:RapidPulse": {
+    "NAME": "RapidPulse",
+    "DESCRIPTIONS": [
+      "At the start of your turn gain ",
+      " Strength and exhaust the top ",
+      "card on your draw pile.",
+      " cards on your draw pile."
+    ]
   }
 }

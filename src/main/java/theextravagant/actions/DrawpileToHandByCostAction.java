@@ -34,7 +34,7 @@ public class DrawpileToHandByCostAction extends AbstractGameAction {
             AbstractCard card;
             while(var2.hasNext()) {
                 card = (AbstractCard)var2.next();
-                if (card.costForTurn == this.costToCheck) {
+                if ((card.costForTurn == this.costToCheck) || (costToCheck == 0 && (card.costForTurn == 0 || card.freeToPlayOnce == true))) {
                     tmp.addToRandomSpot(card);
                 }
             }

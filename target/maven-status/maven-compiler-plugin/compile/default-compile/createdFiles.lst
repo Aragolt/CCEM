@@ -22,6 +22,7 @@ theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph$Locator.c
 theextravagant\powers\FoilPower.class
 theextravagant\cards\SlyStrike.class
 theextravagant\relics\PlaceholderRelic.class
+theextravagant\powers\ImpulsePower.class
 aramod\relics\StatueOfPride.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
@@ -107,6 +108,7 @@ theextravagant\cards\RisingPhoenix.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
 aramod\relics\PocketApothecary.class
 theextravagant\cards\ManifestIllusion.class
+theextravagant\cards\Impulse.class
 aramod\relics\SmashedLemon.class
 theextravagant\actions\BetterCopyAction.class
 aramod\relics\RabbytsFoot.class

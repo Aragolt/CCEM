@@ -126,7 +126,6 @@
       " Temporary HP."
     ]
   },
-
   "theextravagant:RadiancePower": {
     "NAME": "RadiancePower",
     "DESCRIPTIONS": [
@@ -136,7 +135,6 @@
       " Strength."
     ]
   },
-
   "theextravagant:RapidPulse": {
     "NAME": "RapidPulse",
     "DESCRIPTIONS": [

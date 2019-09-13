@@ -23,6 +23,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\Ze
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TriumphPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ManifestIllusion.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Accumulation.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ImpulsePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ToolsOfTrickery.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ShatteredShield.java
@@ -99,6 +100,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Def
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RetreatPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\WhiffOfMagic.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\MidasCore.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Impulse.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\DiscardAnyFromDrawpileAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\BetterCopyAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\BetterRitualPower.java
@@ -129,6 +131,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\PocketKnife
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ShowOff.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GlyphOfTime.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\AmbushPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RustyBucklerRetainTriggerAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GlyphOfChoice.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Outrun.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\utils\TextureLoader.java

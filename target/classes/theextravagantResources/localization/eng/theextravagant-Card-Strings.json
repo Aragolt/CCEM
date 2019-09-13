@@ -327,5 +327,10 @@
   "theextravagant:Overpower": {
     "NAME": "Overpower",
     "DESCRIPTION": "Can only be played if you played a power this turn. Double the damage of ALL attacks in your hand for this combat. NL Exhaust."
+  },
+  "theextravagant:Impulse": {
+    "NAME": "Impulse",
+    "DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] next turn.",
+    "UPGRADE_DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] [E] next turn."
   }
 }

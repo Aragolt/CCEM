@@ -1,15 +1,14 @@
 package theextravagant.cards;
 
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theextravagant.actions.DiscardForStrengthAction;
-import theextravagant.characters.TheExtravagant;
-import theextravagant.theextravagant;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.DiscardForStrengthAction;
+import theextravagant.characters.TheExtravagant;
+import theextravagant.theextravagant;
 
 public class Reconsider extends CustomCard {
 
@@ -35,6 +34,7 @@ public class Reconsider extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override

@@ -135,13 +135,19 @@
       " Strength."
     ]
   },
-  "theextravagant:RapidPulse": {
+  "theextravagant:RapidPulsePower": {
     "NAME": "RapidPulse",
     "DESCRIPTIONS": [
       "At the start of your turn gain ",
       " Strength and exhaust the top ",
       "card on your draw pile.",
       " cards on your draw pile."
+    ]
+  },
+  "theextravagant:JumpCutPower": {
+    "NAME": "Jump Cut",
+    "DESCRIPTIONS": [
+      "Whenever you gain a buff this turn, trigger the effects it would have at the start of your turn."
     ]
   }
 }

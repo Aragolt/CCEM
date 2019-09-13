@@ -391,6 +391,7 @@ public class theextravagant implements
         BaseMod.addCard(new RapidPulse());
         BaseMod.addCard(new Overpower());
         BaseMod.addCard(new Impulse());
+        BaseMod.addCard(new JumpCut());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -455,6 +456,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(RapidPulse.ID);
         UnlockTracker.unlockCard(Overpower.ID);
         UnlockTracker.unlockCard(Impulse.ID);
+        UnlockTracker.unlockCard(JumpCut.ID);
         logger.info("Done adding cards!");
     }
 
@@ -535,6 +537,7 @@ public class theextravagant implements
         CardsExhaustedThisTurn = 0;
         CardsExhaustedLastTurn = 0;
         PowerPlayedThisTurn = false;
+        Cutthroat.Hasplayedcardthisturn = false;
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TwilightPower()));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RustyBucklerRetainTriggerAction()));
     }

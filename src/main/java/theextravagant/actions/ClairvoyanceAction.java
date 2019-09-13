@@ -14,6 +14,7 @@ import java.util.Iterator;
 public class ClairvoyanceAction extends AbstractGameAction {
     public static final String[] TEXT;
     private static final UIStrings uiStrings;
+    private float startingDuration;
 
     static {
         uiStrings = CardCrawlGame.languagePack.getUIString("ReprogramAction");
@@ -21,33 +22,36 @@ public class ClairvoyanceAction extends AbstractGameAction {
     }
 
     public ClairvoyanceAction() {
-        this.duration = Settings.ACTION_DUR_FAST;
-        this.actionType = AbstractGameAction.ActionType.WAIT;
+        this.actionType = ActionType.CARD_MANIPULATION;
+        this.startingDuration = Settings.ACTION_DUR_FAST;
         this.source = AbstractDungeon.player;
+        this.duration = this.startingDuration;
     }
 
     @Override
     public void update() {
-        if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
-            this.isDone = true;
-            return;
-        }
-
-        if (AbstractDungeon.player.drawPile.isEmpty()) {
-            AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
-            AbstractDungeon.actionManager.addToBottom(new ClairvoyanceAction());
-            this.isDone = true;
-            return;
-        }
-
-        if (!AbstractDungeon.player.drawPile.isEmpty()) {
-            CardGroup tmpGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-
-            for (int i = 0; i < AbstractDungeon.player.drawPile.size(); ++i) {
-                tmpGroup.addToTop(AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
+        if (this.duration == this.startingDuration) {
+            if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
+                this.isDone = true;
+                return;
             }
-            tmpGroup.shuffle();
-            AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, TEXT[0]);
+
+            if (AbstractDungeon.player.drawPile.isEmpty()) {
+                AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
+                AbstractDungeon.actionManager.addToBottom(new ClairvoyanceAction());
+                this.isDone = true;
+                return;
+            }
+
+            if (!AbstractDungeon.player.drawPile.isEmpty()) {
+                CardGroup tmpGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
+
+                for (int i = 0; i < AbstractDungeon.player.drawPile.size(); ++i) {
+                    tmpGroup.addToTop(AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
+                }
+                tmpGroup.shuffle();
+                AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, TEXT[0]);
+            }
         } else if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             Iterator var3 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
 
@@ -58,6 +62,7 @@ public class ClairvoyanceAction extends AbstractGameAction {
 
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
+
         this.tickDuration();
     }
 }

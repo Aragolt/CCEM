@@ -335,6 +335,6 @@
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
-    "DESCRIPTION": "Deal !D! damage. For the next !M! buffs you gain, trigger the effects it would have at the start of your turn."
+    "DESCRIPTION": "Deal !D! damage. For the next !M! buffs you gain, trigger the effects they would have at the start of your turn."
   }
 }

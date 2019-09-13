@@ -7,6 +7,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\De
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Triumph.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BeltOfGluttony.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Invocation.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\JumpCutPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Aftermath.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\FoilPower.java
@@ -48,6 +49,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\orbs\Defa
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Redemption.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\ReducedBlockVariable.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\LoseThornsPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\ClairvoyanceAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\GlyphOfSightPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Glamour.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\RabbytsFoot.java
@@ -127,6 +129,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\Fl
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\PheonixEffectAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\ElectrifiedPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SpontaneousStrike.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\JumpCut.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\PocketKnife.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ShowOff.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GlyphOfTime.java

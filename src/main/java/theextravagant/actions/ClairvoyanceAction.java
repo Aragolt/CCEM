@@ -35,7 +35,7 @@ public class ClairvoyanceAction extends AbstractGameAction {
 
         if (AbstractDungeon.player.drawPile.isEmpty()) {
             AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
-            AbstractDungeon.actionManager.addToTop(new ClairvoyanceAction());
+            AbstractDungeon.actionManager.addToBottom(new ClairvoyanceAction());
             this.isDone = true;
             return;
         }
@@ -43,7 +43,7 @@ public class ClairvoyanceAction extends AbstractGameAction {
         if (!AbstractDungeon.player.drawPile.isEmpty()) {
             CardGroup tmpGroup = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
 
-            for (int i = 0; i < Math.min(this.amount, AbstractDungeon.player.drawPile.size()); ++i) {
+            for (int i = 0; i < AbstractDungeon.player.drawPile.size(); ++i) {
                 tmpGroup.addToTop(AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
             }
             tmpGroup.shuffle();
@@ -58,6 +58,6 @@ public class ClairvoyanceAction extends AbstractGameAction {
 
             AbstractDungeon.gridSelectScreen.selectedCards.clear();
         }
-        this.isDone = true;
+        this.tickDuration();
     }
 }

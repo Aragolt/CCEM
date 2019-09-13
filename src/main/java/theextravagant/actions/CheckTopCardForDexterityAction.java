@@ -33,7 +33,7 @@ public class CheckTopCardForDexterityAction extends AbstractGameAction {
 
             if (AbstractDungeon.player.drawPile.isEmpty()) {
                 AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToTop(new CheckTopCardForDexterityAction(p, m, draw));
+                AbstractDungeon.actionManager.addToBottom(new CheckTopCardForDexterityAction(p, m, draw));
                 this.isDone = true;
                 return;
             }

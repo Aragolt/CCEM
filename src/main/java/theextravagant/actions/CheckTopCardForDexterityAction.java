@@ -26,7 +26,6 @@ public class CheckTopCardForDexterityAction extends AbstractGameAction {
     }
 
     public void update() {
-        if (this.duration == Settings.ACTION_DUR_FAST) {
             if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
                 this.isDone = true;
                 return;
@@ -46,7 +45,5 @@ public class CheckTopCardForDexterityAction extends AbstractGameAction {
                 }
             }
             this.isDone = true;
-        }
-
     }
 }

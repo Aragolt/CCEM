@@ -21,10 +21,7 @@ import com.megacrit.cardcrawl.screens.CharSelectInfo;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import theextravagant.cards.Clairvoyance;
-import theextravagant.cards.Fence;
-import theextravagant.cards.SlyStrike;
-import theextravagant.cards.Triumph;
+import theextravagant.cards.*;
 import theextravagant.relics.TranslucentFeather;
 import theextravagant.theextravagant;
 
@@ -111,13 +108,14 @@ public class TheExtravagant extends CustomPlayer {
         
         logger.info("Begin loading starter Deck Strings");
 
-        for(int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
             retVal.add(SlyStrike.ID);
         }
         for(int i = 0; i < 4; i++) {
             retVal.add(Fence.ID);
         }
+        retVal.add(JumpCut.ID);
         retVal.add(Clairvoyance.ID);
         retVal.add(Triumph.ID);
         return retVal;

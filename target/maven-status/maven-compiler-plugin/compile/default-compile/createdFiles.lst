@@ -57,6 +57,7 @@ theextravagant\powers\DamnationPower.class
 theextravagant\actions\DiscardForStrengthAction.class
 aramod\relics\DefectiveTurbocharger.class
 theextravagant\powers\AmbushPower.class
+theextravagant\cards\JumpCut.class
 theextravagant\powers\TwilightPower.class
 theextravagant\cards\AbstractDynamicCard.class
 theextravagant\cards\SharpTalons.class
@@ -131,6 +132,7 @@ theextravagant\cards\ZeroHero.class
 theextravagant\cards\Overrun.class
 aramod\events\JustAWallEvent.class
 aramod\relics\FuseBox.class
+theextravagant\powers\JumpCutPower.class
 theextravagant\cards\Overpower.class
 theextravagant\cards\Agression.class
 aramod\relics\ChunkOfWall.class
@@ -152,6 +154,7 @@ aramod\utils\TextureLoader.class
 theextravagant\cards\Meditation.class
 theextravagant\cards\Pluck.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
+theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
 theextravagant\cards\GarbageCannon.class
 theextravagant\cards\SkillfullDodge.class

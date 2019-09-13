@@ -62,7 +62,7 @@
 
   "theextravagant:Triumph": {
     "NAME": "Triumph",
-    "DESCRIPTION": "Whenever you play 3 attacks in a row this turn, gain !M! Strength. NL Exhaust."
+    "DESCRIPTION": "Whenever you play 2 attacks in a row this turn, gain !M! Strength. NL Exhaust."
   },
 
   "theextravagant:Fence": {
@@ -77,8 +77,8 @@
 
   "theextravagant:Reconsider": {
     "NAME": "Reconsider",
-    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's [E] cost.",
-    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's [E] cost."
+    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's [E] cost. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's [E] cost. NL Exhaust."
   },
 
   "theextravagant:SkillfullDodge":
@@ -150,7 +150,7 @@
   "theextravagant:Sixteen_Tons":
   {
     "NAME": "16 Tons",
-    "DESCRIPTION": "When this card is discarded, exhaust it and deal !D! damage to a random enemy."
+    "DESCRIPTION": "Ethereal. NL When this card is discarded from your hand, exhaust it and deal !D! damage to a random enemy."
   },
   "theextravagant:ToolsOfTrickery":
   {
@@ -332,5 +332,9 @@
     "NAME": "Impulse",
     "DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] next turn.",
     "UPGRADE_DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] [E] next turn."
+  },
+  "theextravagant:JumpCut": {
+    "NAME": "Jump Cut",
+    "DESCRIPTION": "Deal !D! damage. Whenever you gain a buff this turn, trigger the effects it would have at the start of your turn."
   }
 }

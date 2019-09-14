@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Accumulation;
+import theextravagant.cards.Acceleration;
 import theextravagant.theextravagant;
 import theextravagant.util.TextureLoader;
 
@@ -19,8 +19,8 @@ public class GlyphOfPowerPower extends AbstractPower {
     public static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    private static final Texture tex84 = TextureLoader.getTexture("theDefaultResources/images/powers/placeholder_power84.png");
-    private static final Texture tex32 = TextureLoader.getTexture("theDefaultResources/images/powers/placeholder_power32.png");
+    private static final Texture tex84 = TextureLoader.getTexture("theextravagantResources/images/powers/power_power84.png");
+    private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/power_power32.png");
 
     public GlyphOfPowerPower(int amount) {
         name = NAME;
@@ -40,7 +40,7 @@ public class GlyphOfPowerPower extends AbstractPower {
             if (theextravagant.SecondEnergyOrb.currentEnergy > 0) {
                 SecondEnergyOrb.currentEnergy -= 1;
             }
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Accumulation(), amount));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Acceleration(), amount));
         }
     }
 

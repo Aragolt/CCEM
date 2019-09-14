@@ -87,7 +87,7 @@ public class IdentityCrisisEvent extends AbstractImageEvent {
                         screenNum = 1;
                         break;
                     case 3:
-                        imageEventText.loadImage("theDefaultResources/images/events/IdentityCrisisEvent2.png");
+                        imageEventText.loadImage("theextravagantResources/images/events/IdentityCrisisEvent2.png");
                         this.imageEventText.updateBodyText(DESCRIPTIONS[4]);
                         this.imageEventText.updateDialogOption(0, OPTIONS[5]);
                         this.imageEventText.clearRemainingOptions();

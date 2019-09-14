@@ -45,7 +45,7 @@ public class FocusStab extends CustomCard {
 
     @Override
     public void applyPowers() {
-        if (costForTurn == 0) {
+        if (costForTurn == 0 || freeToPlayOnce == true) {
             baseDamage = basebaseDamage * 2;
         } else {
             baseDamage = basebaseDamage;

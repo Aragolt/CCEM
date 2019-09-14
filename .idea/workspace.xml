@@ -7,41 +7,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2473dc1d-c040-4e4d-9f2f-45b73546ab6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/FocusStab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/FocusStab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/events/IdentityCrisisEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/events/IdentityCrisisEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FlashbackPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FlashbackPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfChoicePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfChoicePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfSightPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfSightPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/JumpCutPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/JumpCutPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/PrepareAmbushPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/PrepareAmbushPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RustyBucklerRetainTriggerAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RustyBucklerRetainTriggerAction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TwilightPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TwilightPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/util/TextureLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/util/TextureLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/IDCheckStringsDONT-EDIT-AT-ALL.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/IDCheckStringsDONT-EDIT-AT-ALL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/AraMod.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/IDCheckStringsDONT-EDIT-AT-ALL.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/IDCheckStringsDONT-EDIT-AT-ALL.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/events/IdentityCrisisEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/events/IdentityCrisisEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/powers/TriumphPower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/powers/TriumphPower.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/cards/Attack_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/cards/Power_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/cards/Skill_p.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/cards/beautifu -bouquet color by Studio 7042.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/powers/placeholder_power.psd" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -54,97 +25,91 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfChoicePower.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="111" selection-start-line="22" selection-start-column="111" selection-end-line="22" selection-end-column="111" />
+            <state relative-caret-position="119">
+              <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="731">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
+            <state relative-caret-position="272">
+              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="41" column="89" selection-start-line="41" selection-start-column="89" selection-end-line="41" selection-end-column="89" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="23" column="110" selection-start-line="23" selection-start-column="110" selection-end-line="23" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfSightPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="22" column="110" selection-start-line="22" selection-start-column="110" selection-end-line="22" selection-end-column="110" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="884">
-              <caret line="69" selection-start-line="69" selection-end-line="69" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/JumpCutPower.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="13" lean-forward="true" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RetainTwoCostsPower.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="25" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="47" column="135" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="135" />
+            <state relative-caret-position="306">
+              <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TwilightPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="106" selection-start-line="19" selection-start-column="106" selection-end-line="19" selection-end-column="106" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="340">
+              <caret line="32" column="74" selection-start-line="31" selection-start-column="7" selection-end-line="32" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RustyBucklerRetainTriggerAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/SnakeOilPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -239,10 +204,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Brilliance.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/ManifestDelusion.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overrun.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidHeartBeat.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overpower.java" />
@@ -256,7 +218,6 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/ManifestIllusion.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Thrill.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/ExhaustTopCardAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/DrawpileToHandByCostAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RustyBuckler.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/RustyBucklerRetainTriggerAction.java" />
@@ -276,10 +237,8 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java" />
         <option value="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Card-Strings.json" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/FocusStab.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/FlashbackPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" />
@@ -290,6 +249,12 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/JumpCutPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/PrepareAmbushPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" />
       </list>
     </option>
   </component>
@@ -309,10 +274,9 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="756" />
-    <option name="y" value="-10" />
-    <option name="width" value="1662" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
     <option name="height" value="1545" />
   </component>
   <component name="ProjectView">
@@ -492,7 +456,7 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="cardcrawl" type="462c0819:PsiDirectoryNode" />
               <item name="cards" type="462c0819:PsiDirectoryNode" />
-              <item name="red" type="462c0819:PsiDirectoryNode" />
+              <item name="blue" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
@@ -545,7 +509,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568470414276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568474290163" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -769,26 +733,32 @@
       <option name="project" value="LOCAL" />
       <updated>1568456635849</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="First set of Power images">
+      <created>1568470483694</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1568470483694</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="2576" height="1554" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="0" width="1294" height="1545" extended-state="0" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.12070312" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24178404" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.040140845" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.30915493" />
-      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.23380281" />
+      <window_info anchor="bottom" id="Run" order="5" visible="true" weight="0.23529412" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -796,7 +766,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.12617187" />
+      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.25273865" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -805,7 +775,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="R" />
     <MESSAGE value="Fixed a dumb error" />
     <MESSAGE value="Removed some unneeded default mod base cards. Added new cards Pluck &amp; Button up." />
     <MESSAGE value="Fixed some stuff with Pluck" />
@@ -830,89 +799,13 @@
     <MESSAGE value="I FIXED IT I FIXED IT MUAHAHAHAHAHA!!!!" />
     <MESSAGE value="New card step back" />
     <MESSAGE value="Focus stab fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Focus stab fix" />
+    <MESSAGE value="First set of Power images" />
+    <option name="LAST_COMMIT_MESSAGE" value="First set of Power images" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/blue/ConserveBattery.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="35" column="111" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/ManifestIllusion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="53" column="1" lean-forward="true" selection-start-line="53" selection-start-column="1" selection-end-line="53" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Meditation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Outrun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Persistence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="38" selection-start-line="32" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Cutthroat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Sixteen_Tons.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Reconsider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Impulse.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="48" column="49" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Power-Strings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1270">
-          <caret line="152" column="1" lean-forward="true" selection-start-line="152" selection-start-column="1" selection-end-line="152" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/OverrunPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="54" column="43" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/SlyStrike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1057,13 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="884">
@@ -1085,13 +971,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/util/TextureLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1103,20 +982,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="48" column="100" selection-start-line="48" selection-start-column="100" selection-end-line="48" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="22" column="104" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="104" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" column="90" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="90" />
         </state>
       </provider>
     </entry>
@@ -1192,14 +1057,119 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/blue/Equilibrium.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="90" lean-forward="true" selection-start-line="38" selection-start-column="90" selection-end-line="38" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/EquilibriumPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="26" column="20" selection-start-line="26" selection-end-line="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="47" column="135" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="135" />
+        <state relative-caret-position="136">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/OverrunPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="22" column="124" lean-forward="true" selection-start-line="22" selection-start-column="66" selection-end-line="22" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/PrepareAmbushPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="37" column="50" selection-start-line="37" selection-start-column="50" selection-end-line="37" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="21" column="56" lean-forward="true" selection-start-line="21" selection-start-column="56" selection-end-line="21" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RustyBucklerRetainTriggerAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/SnakeOilPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/RetainTwoCostsPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="45" column="69" lean-forward="true" selection-start-line="45" selection-start-column="69" selection-end-line="45" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="25" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TwilightPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="32" column="74" selection-start-line="31" selection-start-column="7" selection-end-line="32" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="74" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="74" />
         </state>
       </provider>
     </entry>

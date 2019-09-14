@@ -340,5 +340,9 @@
   "theextravagant:StepBack": {
     "NAME": "Step Back",
     "DESCRIPTION": "Gain !B! Block. Put !M! card from your hand on top of your draw pile."
+  },
+  "theextravagant:DualMirrorCut": {
+    "NAME": "Dual Mirror Cut",
+    "DESCRIPTION": "Discard a card. If you discard an attack, deal its damage to a random enemy !M! times."
   }
 }

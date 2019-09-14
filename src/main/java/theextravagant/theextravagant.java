@@ -392,6 +392,7 @@ public class theextravagant implements
         BaseMod.addCard(new Overpower());
         BaseMod.addCard(new Impulse());
         BaseMod.addCard(new JumpCut());
+        BaseMod.addCard(new StepBack());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -457,6 +458,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Overpower.ID);
         UnlockTracker.unlockCard(Impulse.ID);
         UnlockTracker.unlockCard(JumpCut.ID);
+        UnlockTracker.unlockCard(StepBack.ID);
         logger.info("Done adding cards!");
     }
 

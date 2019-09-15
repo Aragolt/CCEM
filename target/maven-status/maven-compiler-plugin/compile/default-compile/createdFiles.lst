@@ -118,6 +118,7 @@ theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize$Locator.class
 theextravagant\powers\MagicPower.class
+theextravagant\cards\DualMirrorCut.class
 theextravagant\cards\Invocation.class
 aramod\relics\Lemon.class
 aramod\powers\LoseFocusPower.class
@@ -128,6 +129,7 @@ theextravagant\cards\PuffUp.class
 theextravagant\powers\RadiancePower.class
 aramod\relics\BlanksHoodie.class
 theextravagant\cards\Persistence.class
+theextravagant\actions\DualMirrorCutAction.class
 theextravagant\cards\ZeroHero.class
 theextravagant\cards\Overrun.class
 aramod\events\JustAWallEvent.class

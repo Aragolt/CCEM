@@ -45,5 +45,7 @@ public class RetreatPower extends AbstractPower{
     @Override
     public void atEndOfTurn(boolean isPlayer) {
         AbstractDungeon.actionManager.addToTop(new PutInDrawpileForBlockAction(amount));
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this));
+
     }
 }

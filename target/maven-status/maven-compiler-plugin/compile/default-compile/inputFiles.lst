@@ -13,6 +13,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\Pl
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Aftermath.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\FoilPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\AraMod.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DualMirrorCut.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\OverrunPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\CleaverPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\FuseBox.java
@@ -43,6 +44,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BrokenPill
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SkillfullDodge.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\MagicPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\PlayCardAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\DualMirrorCutAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\TextureLoader.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDefaultCard.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\BetterHeadbuttAction.java

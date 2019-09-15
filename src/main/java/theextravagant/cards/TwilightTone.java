@@ -25,7 +25,7 @@ public class TwilightTone extends CustomCard implements StartupCard {
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;

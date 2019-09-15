@@ -347,6 +347,6 @@
   },
   "theextravagant:Vintage": {
     "NAME": "Vintage",
-    "DESCRIPTION": "At the start of your turn, shuffle up to !M! cards into your draw pile and gain [SE] for each."
+    "DESCRIPTION": "At the start of your turn, shuffle up to !M! cards from your hand into your draw pile and gain [SE] for each."
   }
 }

@@ -36,6 +36,7 @@ aramod\patches\EndTurnBlockPatch.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 aramod\relics\MidasCore.class
+theextravagant\actions\VintageAction.class
 theextravagant\events\IdentityCrisisEvent.class
 theextravagant\cards\Precaution.class
 theextravagant\variables\DefaultSecondMagicNumber.class
@@ -149,6 +150,7 @@ theextravagant\powers\TriumphPower.class
 theextravagant\actions\PlayCardAction.class
 theextravagant\cards\Cutthroat.class
 theextravagant\cards\TwilightTone.class
+theextravagant\powers\VintagePower.class
 theextravagant\cards\ButtonUp.class
 theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\cards\StepBack.class
@@ -166,6 +168,7 @@ theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\cards\Ambush.class
 theextravagant\cards\GlyphOfPower.class
 theextravagant\powers\GlyphOfChoicePower.class
+theextravagant\cards\Vintage.class
 aramod\cards\OrbVolley.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch$Locator.class
 theextravagant\cards\Sixteen_Tons.class

@@ -335,7 +335,7 @@
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
-    "DESCRIPTION": "Deal !D! damage. For the next !M! buffs you gain, trigger the effects they would have at the start of your turn."
+    "DESCRIPTION": "Deal !D! damage. For the next !M! buffs you gain, trigger its effects that happen at the start of your turn."
   },
   "theextravagant:StepBack": {
     "NAME": "Step Back",
@@ -344,5 +344,9 @@
   "theextravagant:DualMirrorCut": {
     "NAME": "Dual Mirror Cut",
     "DESCRIPTION": "Discard a card. If you discard an attack, deal its damage to a random enemy !M! times."
+  },
+  "theextravagant:Vintage": {
+    "NAME": "Vintage",
+    "DESCRIPTION": "At the start of your turn, shuffle up to !M! cards from your hand into your draw pile and gain [SE] for each."
   }
 }

@@ -54,9 +54,9 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                     this.p.hand.moveToDiscardPile(d);
                     if (!this.endTurn) {
                          d.triggerOnManualDiscard();
-                        if(d.type == AbstractCard.CardType.ATTACK && d.cost > 0)
+                        if (d.type == AbstractCard.CardType.ATTACK && d.costForTurn > 0 && !d.freeToPlayOnce)
                         {
-                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, d.cost), d.cost));
+                            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, d.costForTurn), d.costForTurn));
                         }
                     }
 
@@ -90,9 +90,9 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                 c = this.p.hand.getRandomCard(AbstractDungeon.cardRandomRng);
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if(c.type == AbstractCard.CardType.ATTACK && c.cost > 0)
+                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce)
                 {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.cost), c.cost));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.costForTurn), c.costForTurn));
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
             }
@@ -105,9 +105,9 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                 c = (AbstractCard) var4.next();
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if(c.type == AbstractCard.CardType.ATTACK && c.cost > 0)
+                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce)
                 {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.cost), c.cost));
+                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.costForTurn), c.costForTurn));
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
             }

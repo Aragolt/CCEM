@@ -149,5 +149,13 @@
     "DESCRIPTIONS": [
       "Whenever you gain a buff this turn, trigger the effects it would have at the start of your turn."
     ]
+  },
+  "theextravagant:VintagePower": {
+    "NAME": "Vintage",
+    "DESCRIPTIONS": [
+      "At the start of your turn shuffle up to ",
+      " card into your draw pile and gain 1 Extravagance for each.",
+      " cards into your draw pile and gain 1 Extravagance for each."
+    ]
   }
 }

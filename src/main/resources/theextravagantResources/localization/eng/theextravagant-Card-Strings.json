@@ -344,5 +344,9 @@
   "theextravagant:DualMirrorCut": {
     "NAME": "Dual Mirror Cut",
     "DESCRIPTION": "Discard a card. If you discard an attack, deal its damage to a random enemy !M! times."
+  },
+  "theextravagant:Vintage": {
+    "NAME": "Vintage",
+    "DESCRIPTION": "At the start of your turn, shuffle up to !M! cards into your draw pile and gain [SE] for each."
   }
 }

@@ -27,9 +27,9 @@ public class Courage extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
-    private static final int DAMAGE = 14;
+    private static final int DAMAGE = 12;
     private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 14;
+    private static final int BLOCK = 12;
 
     public Courage() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -54,8 +54,8 @@ public class Courage extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(4);
-            upgradeDamage(4);
+            upgradeBlock(3);
+            upgradeDamage(3);
             initializeDescription();
         }
     }

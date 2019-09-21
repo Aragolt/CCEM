@@ -35,9 +35,7 @@ import theextravagant.events.IdentityCrisisEvent;
 import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
-import theextravagant.relics.DefaultClickableRelic;
-import theextravagant.relics.PlaceholderRelic;
-import theextravagant.relics.PlaceholderRelic2;
+import theextravagant.relics.TranscendedFeather;
 import theextravagant.relics.TranslucentFeather;
 import theextravagant.ui.SecondEnergyOrb;
 import theextravagant.util.IDCheckDontTouchPls;
@@ -303,15 +301,8 @@ public class theextravagant implements
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
-
-
-        BaseMod.addRelicToCustomPool(new PlaceholderRelic(), TheExtravagant.Enums.EV_BLUE);
-        BaseMod.addRelicToCustomPool(new DefaultClickableRelic(), TheExtravagant.Enums.EV_BLUE);
-
         BaseMod.addRelic(new TranslucentFeather(), RelicType.SHARED);
-        BaseMod.addRelic(new PlaceholderRelic2(), RelicType.SHARED);
-
-
+        BaseMod.addRelicToCustomPool(new TranscendedFeather(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 

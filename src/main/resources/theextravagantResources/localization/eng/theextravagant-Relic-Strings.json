@@ -37,5 +37,12 @@
     "DESCRIPTIONS": [
       "At the start of each combat fetch 1 card from your draw pile."
     ]
+  },
+  "theextravagant:TranscendedFeather": {
+    "NAME": "Transcended Feather",
+    "FLAVOR": "Certainly not an illusion.",
+    "DESCRIPTIONS": [
+      "At the start of each combat add 2 #yInvocations to your hand."
+    ]
   }
 }

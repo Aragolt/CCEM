@@ -1,14 +1,14 @@
 package theextravagant.cards;
 
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theextravagant.characters.TheExtravagant;
-import theextravagant.theextravagant;
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.characters.TheExtravagant;
+import theextravagant.theextravagant;
 
 public class SkillfullDodge extends CustomCard {
 
@@ -24,7 +24,7 @@ public class SkillfullDodge extends CustomCard {
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 2;
 
     public SkillfullDodge() {
@@ -47,8 +47,7 @@ public class SkillfullDodge extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(3);
-            upgradeBlock(-1);
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

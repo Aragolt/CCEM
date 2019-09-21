@@ -13,8 +13,8 @@ public class TranscendedFeather extends CustomRelic {
 
     public static final String ID = makeID("TranscendedFeather");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("placeholder_relic.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("placeholder_relic.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("TranscendedFeather.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("TranslucentFeather.png"));
 
     public TranscendedFeather() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.MAGICAL);
@@ -35,9 +35,8 @@ public class TranscendedFeather extends CustomRelic {
     }
 
     @Override
-    public void onEquip() {
+    public void obtain() {
         this.instantObtain(AbstractDungeon.player, AbstractDungeon.player.relics.indexOf(AbstractDungeon.player.getRelic(TranslucentFeather.ID)), false);
-
     }
 
     @Override

@@ -4,7 +4,6 @@ import basemod.BaseMod;
 import basemod.ModLabeledToggleButton;
 import basemod.ModPanel;
 import basemod.abstracts.CustomSavableRaw;
-import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -35,6 +34,7 @@ import theextravagant.events.IdentityCrisisEvent;
 import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
+import theextravagant.relics.RedPhonoblaster;
 import theextravagant.relics.TranscendedFeather;
 import theextravagant.relics.TranslucentFeather;
 import theextravagant.ui.SecondEnergyOrb;
@@ -301,8 +301,9 @@ public class theextravagant implements
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
-        BaseMod.addRelic(new TranslucentFeather(), RelicType.SHARED);
+        BaseMod.addRelicToCustomPool(new TranslucentFeather(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new TranscendedFeather(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new RedPhonoblaster(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 

@@ -29,7 +29,8 @@
     "PROPER_NAME": "Invocation",
     "NAMES": [
       "Invocation",
-      "invocation"
+      "invocation",
+      "invocations"
     ],
     "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and fetches one card from your draw pile."
   },

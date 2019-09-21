@@ -27,6 +27,7 @@ aramod\relics\StatueOfPride.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
+theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch.class
 theextravagant\cards\Aftermath.class
 theextravagant\cards\SnakeOil.class
 aramod\powers\ElectrifiedPower.class
@@ -97,6 +98,7 @@ theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\actions\DrawpileToHandByCostAction.class
+theextravagant\relics\TranscendedFeather.class
 theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
@@ -165,6 +167,7 @@ theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
 theextravagant\cards\GarbageCannon.class
 theextravagant\cards\SkillfullDodge.class
+theextravagant\relics\RedPhonoblaster.class
 theextravagant\cards\Preservation.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\cards\Ambush.class
@@ -177,6 +180,7 @@ theextravagant\cards\Sixteen_Tons.class
 theextravagant\cards\GustOfWind.class
 aramod\powers\LoseThornsPower.class
 theextravagant\cards\RapidPulse.class
+theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
 theextravagant\actions\CheckTopCardForDexterityAction.class
 theextravagant\theextravagant.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView$Locator.class

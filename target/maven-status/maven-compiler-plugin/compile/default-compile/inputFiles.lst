@@ -24,11 +24,13 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\ui\Second
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\FocusStab.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ZeroHeroPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TriumphPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\VintageAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ManifestIllusion.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Accumulation.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ImpulsePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ToolsOfTrickery.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\FetchAndIncreaseBlockAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ShatteredShield.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Acceleration.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Cutthroat.java
@@ -85,9 +87,11 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\LoseFocusP
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ButtonUp.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\OrbVolley.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Pluck.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Swirl.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractPlayerPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\AmuletOfProtection.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\IDCheckDontTouchPls.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\VintagePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Strafe.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ButchersCleaver.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\DrawpileToHandByCostAction.java
@@ -144,6 +148,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\utils\TextureLoad
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\RiskyStrike.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\GlyphOfTimePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BlanksHoodie.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Vintage.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Clairvoyance.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ReadiedClaws.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SlyStrike.java

@@ -395,6 +395,7 @@ public class theextravagant implements
         BaseMod.addCard(new StepBack());
         BaseMod.addCard(new DualMirrorCut());
         BaseMod.addCard(new Vintage());
+        BaseMod.addCard(new Swirl());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -463,6 +464,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(StepBack.ID);
         UnlockTracker.unlockCard(DualMirrorCut.ID);
         UnlockTracker.unlockCard(Vintage.ID);
+        UnlockTracker.unlockCard(Swirl.ID);
         logger.info("Done adding cards!");
     }
 

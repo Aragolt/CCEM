@@ -98,6 +98,7 @@ theextravagant\cards\AbstractDefaultCard.class
 aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 theextravagant\powers\RetainTwoCostsPower.class
+theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 theextravagant\potions\PlaceholderPotion.class
 aramod\relics\LostWallet.class
@@ -134,6 +135,7 @@ theextravagant\actions\DualMirrorCutAction.class
 theextravagant\cards\ZeroHero.class
 theextravagant\cards\Overrun.class
 aramod\events\JustAWallEvent.class
+theextravagant\actions\FetchAndIncreaseBlockAction.class
 aramod\relics\FuseBox.class
 theextravagant\powers\JumpCutPower.class
 theextravagant\cards\Overpower.class

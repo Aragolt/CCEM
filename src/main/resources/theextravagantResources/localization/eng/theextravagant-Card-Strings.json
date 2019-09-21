@@ -171,7 +171,7 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Become theextravagant:Hexxed. NL Until next turn, whenever a card exhausts, heal !M! HP and gain !M! Temporary_HP."
+    "DESCRIPTION": "Become theextravagant:Hexxed. NL Until next turn, whenever a card Exhausts, heal !M! HP and gain !M! Temporary_HP."
   },
   "theextravagant:Flashback":
   {
@@ -188,8 +188,8 @@
   },
   "theextravagant:Glamour": {
     "NAME": "Glamour",
-    "DESCRIPTION": "Gain [SE] [SE] \b. NL Becomes unplayable until the end of the turn.",
-    "UPGRADE_DESCRIPTION": "Gain [SE] [SE] [SE] \b. NL Becomes unplayable until the end of the turn.",
+    "DESCRIPTION": "Gain [SE] [SE] \b. NL Becomes Unplayable until the end of the turn.",
+    "UPGRADE_DESCRIPTION": "Gain [SE] [SE] [SE] \b. NL Becomes Unplayable until the end of the turn.",
     "EXTENDED_DESCRIPTION": [
       "Unplayable. NL "
     ]
@@ -343,10 +343,14 @@
   },
   "theextravagant:DualMirrorCut": {
     "NAME": "Dual Mirror Cut",
-    "DESCRIPTION": "Discard a card. If you discard an attack, deal its damage to a random enemy !M! times."
+    "DESCRIPTION": "Discard a card. If you discard an attack, deal its damage to a random enemy !M! times. NL Exhaust."
   },
   "theextravagant:Vintage": {
     "NAME": "Vintage",
     "DESCRIPTION": "At the start of your turn, shuffle up to !M! cards from your hand into your draw pile and gain [SE] for each."
+  },
+  "theextravagant:Swirl": {
+    "NAME": "Swirl",
+    "DESCRIPTION": "Fetch a card from your draw pile and increase its Block by !M! this combat. NL Exhaust."
   }
 }

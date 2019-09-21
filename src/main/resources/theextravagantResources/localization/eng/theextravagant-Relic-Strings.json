@@ -51,5 +51,12 @@
     "DESCRIPTIONS": [
       "Whenever you gain Strength, gain 1 additional Strength and lose 1 Strength at the end of your turn."
     ]
+  },
+  "theextravagant:Sorbet": {
+    "NAME": "Sorbet",
+    "FLAVOR": "Like Ice cream, but made out of fancy people.",
+    "DESCRIPTIONS": [
+      "Extravagance is now conserved between turns."
+    ]
   }
 }

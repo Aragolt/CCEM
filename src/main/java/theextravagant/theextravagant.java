@@ -35,6 +35,7 @@ import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
 import theextravagant.relics.RedPhonoblaster;
+import theextravagant.relics.Sorbet;
 import theextravagant.relics.TranscendedFeather;
 import theextravagant.relics.TranslucentFeather;
 import theextravagant.ui.SecondEnergyOrb;
@@ -304,6 +305,7 @@ public class theextravagant implements
         BaseMod.addRelicToCustomPool(new TranslucentFeather(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new TranscendedFeather(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new RedPhonoblaster(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new Sorbet(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 
@@ -523,7 +525,11 @@ public class theextravagant implements
 
     @Override
     public void receivePostEnergyRecharge() {
-        SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
+        if (AbstractDungeon.player.hasRelic(Sorbet.ID)) {
+            SecondEnergyOrb.currentEnergy += SecondEnergyOrb.maxEnergy;
+        } else {
+            SecondEnergyOrb.currentEnergy = SecondEnergyOrb.maxEnergy;
+        }
         Cutthroat.Hasplayedcardthisturn = false;
         CardsExhaustedLastTurn = CardsExhaustedThisTurn;
         CardsExhaustedThisTurn = 0;

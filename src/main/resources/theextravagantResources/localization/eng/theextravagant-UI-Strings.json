@@ -1,7 +1,12 @@
 {
   "AbstractEVCard": {
     "TEXT": [
-      "I am not extravagant enough!"
+      "I can't play this card!"
+    ]
+  },
+  "Antiquity": {
+    "TEXT": [
+      "Choose any number of cards to play twice."
     ]
   }
 }

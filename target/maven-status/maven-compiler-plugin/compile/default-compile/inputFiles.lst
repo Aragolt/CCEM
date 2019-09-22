@@ -18,6 +18,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\Ov
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\CleaverPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\FuseBox.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ReSeek.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Antiquity.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\TranslucentFeather.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SwiftSwitch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\ui\SecondEnergyOrb.java
@@ -40,6 +41,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\TestRelic.
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Flashback.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\PrepareAmbushPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDynamicCard.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\AntiquityAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Thrill.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic2.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BrokenPillar.java
@@ -50,6 +52,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\D
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\TextureLoader.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDefaultCard.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\BetterHeadbuttAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\AntiquityPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\orbs\DefaultOrb.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Redemption.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\ReducedBlockVariable.java
@@ -66,6 +69,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\Tr
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\StatueOfPride.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\OneTurnRetainPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\Sorbet.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Twostep.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GlyphOfSight.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ChunkOfWall.java
@@ -75,6 +79,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Puf
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\TwilightTone.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\ExhaustTopCardAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Overrun.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PocketDynamo.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractCardPatches.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\FastPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Radiance.java
@@ -126,6 +131,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Sna
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\GlyphPatches\CustomGlyphPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Preservation.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\MidasKnob.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\GlyphOfPowerPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\CheckTopCardForDexterityAction.java
@@ -148,6 +154,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Out
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\utils\TextureLoader.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\RiskyStrike.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\GlyphOfTimePower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\DrawReductionOncePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BlanksHoodie.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Vintage.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Clairvoyance.java
@@ -170,6 +177,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\events\JustAWallE
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Brilliance.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\ReverseSeekAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\CuttingEdge.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\RedPhonoblaster.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\LostWallet.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractEVCard.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\PocketApothecary.java

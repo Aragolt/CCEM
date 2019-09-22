@@ -34,10 +34,7 @@ import theextravagant.events.IdentityCrisisEvent;
 import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
-import theextravagant.relics.RedPhonoblaster;
-import theextravagant.relics.Sorbet;
-import theextravagant.relics.TranscendedFeather;
-import theextravagant.relics.TranslucentFeather;
+import theextravagant.relics.*;
 import theextravagant.ui.SecondEnergyOrb;
 import theextravagant.util.IDCheckDontTouchPls;
 import theextravagant.util.TextureLoader;
@@ -306,6 +303,7 @@ public class theextravagant implements
         BaseMod.addRelicToCustomPool(new TranscendedFeather(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new RedPhonoblaster(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new Sorbet(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new PocketDynamo(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 
@@ -390,6 +388,7 @@ public class theextravagant implements
         BaseMod.addCard(new DualMirrorCut());
         BaseMod.addCard(new Vintage());
         BaseMod.addCard(new Swirl());
+        BaseMod.addCard(new Antiquity());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -459,6 +458,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(DualMirrorCut.ID);
         UnlockTracker.unlockCard(Vintage.ID);
         UnlockTracker.unlockCard(Swirl.ID);
+        UnlockTracker.unlockCard(Antiquity.ID);
         logger.info("Done adding cards!");
     }
 

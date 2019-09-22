@@ -76,9 +76,11 @@ aramod\AraMod$1.class
 theextravagant\cards\Twostep.class
 theextravagant\cards\SpontaneousStrike.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatch.class
+theextravagant\powers\AntiquityPower.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch$RenderSecondCostPatch.class
 theextravagant\cards\DefaultRareAttack.class
+theextravagant\relics\Sorbet.class
 aramod\relics\IronRibcage.class
 theextravagant\powers\GlyphOfSightPower.class
 aramod\relics\TestRelic.class
@@ -104,6 +106,7 @@ theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 theextravagant\potions\PlaceholderPotion.class
 aramod\relics\LostWallet.class
+theextravagant\actions\AntiquityAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView.class
 theextravagant\powers\TrickeryPower.class
 theextravagant\cards\Clairvoyance.class
@@ -133,6 +136,7 @@ theextravagant\cards\PuffUp.class
 theextravagant\powers\RadiancePower.class
 aramod\relics\BlanksHoodie.class
 theextravagant\cards\Persistence.class
+theextravagant\relics\PocketDynamo.class
 theextravagant\actions\DualMirrorCutAction.class
 theextravagant\cards\ZeroHero.class
 theextravagant\cards\Overrun.class
@@ -161,6 +165,7 @@ theextravagant\cards\StepBack.class
 theextravagant\powers\RustyBucklerRetainTriggerAction.class
 aramod\utils\TextureLoader.class
 theextravagant\cards\Meditation.class
+theextravagant\cards\Antiquity.class
 theextravagant\cards\Pluck.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
 theextravagant\actions\ClairvoyanceAction.class
@@ -181,6 +186,7 @@ theextravagant\cards\GustOfWind.class
 aramod\powers\LoseThornsPower.class
 theextravagant\cards\RapidPulse.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
+theextravagant\powers\DrawReductionOncePower.class
 theextravagant\actions\CheckTopCardForDexterityAction.class
 theextravagant\theextravagant.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView$Locator.class

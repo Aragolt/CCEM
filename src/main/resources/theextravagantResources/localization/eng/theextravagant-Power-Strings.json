@@ -157,5 +157,19 @@
       " card into your draw pile and gain 1 Extravagance for each.",
       " cards into your draw pile and gain 1 Extravagance for each."
     ]
+  },
+  "theextravagant:DrawReductionOncePower": {
+    "NAME": "Draw Reduction",
+    "DESCRIPTIONS": [
+      "Draw 1 less card next turn.",
+      "Draw .",
+      " less cards next turn."
+    ]
+  },
+  "theextravagant:AntiquityPower": {
+    "NAME": "Antiquity",
+    "DESCRIPTIONS": [
+      "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
+    ]
   }
 }

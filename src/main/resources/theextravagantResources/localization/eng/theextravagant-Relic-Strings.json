@@ -35,28 +35,35 @@
     "NAME": "Translucent Feather",
     "FLAVOR": "Like it's just an illusion.",
     "DESCRIPTIONS": [
-      "At the start of each combat fetch 1 card from your draw pile."
+      "At the start of each combat #yFetch #b1 card from your draw pile."
     ]
   },
   "theextravagant:TranscendedFeather": {
     "NAME": "Transcended Feather",
     "FLAVOR": "Certainly not an illusion.",
     "DESCRIPTIONS": [
-      "Replaces Translucent Feather. At the start of each combat add 2 #yInvocations to your hand."
+      "Replaces Translucent Feather. At the start of each combat add #b2 #ytheextravagant:Invocations to your hand."
     ]
   },
   "theextravagant:RedPhonoblaster": {
     "NAME": "Red Phonoblaster",
     "FLAVOR": "Badabidibabam, Dadadidudam.",
     "DESCRIPTIONS": [
-      "Whenever you gain Strength, gain 1 additional Strength and lose 1 Strength at the end of your turn."
+      "Whenever you gain #yStrength, gain #b1 additional #yStrength and lose #b1 Strength at the end of your turn."
     ]
   },
   "theextravagant:Sorbet": {
     "NAME": "Sorbet",
-    "FLAVOR": "Like Ice cream, but made out of fancy people.",
+    "FLAVOR": "Like Ice cream, but made for fancy people.",
     "DESCRIPTIONS": [
       "Extravagance is now conserved between turns."
+    ]
+  },
+  "theextravagant:PocketDynamo": {
+    "NAME": "Pocket Dynamo",
+    "FLAVOR": "If you spin it enough, a small light flickers.",
+    "DESCRIPTIONS": [
+      "If your hand is empty at the end of your turn, add #b1 #ytheextravagant:Accumulation to your hand."
     ]
   }
 }

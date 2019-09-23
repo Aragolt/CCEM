@@ -352,5 +352,9 @@
   "theextravagant:Swirl": {
     "NAME": "Swirl",
     "DESCRIPTION": "Fetch a card from your draw pile and increase its Block by !M! this combat. NL Exhaust."
+  },
+  "theextravagant:Antiquity": {
+    "NAME": "Antiquity",
+    "DESCRIPTION": "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
   }
 }

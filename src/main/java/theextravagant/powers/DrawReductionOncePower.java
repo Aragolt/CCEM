@@ -8,13 +8,13 @@ import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class DrawReductionOncePower extends AbstractPower {
-    public static final String POWER_ID = "Draw Reduction";
+    public static final String POWER_ID = "DrawReductionOncePower";
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
     private static final PowerStrings powerStrings;
 
     static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("DrawReductionOnce");
+        powerStrings = CardCrawlGame.languagePack.getPowerStrings("DrawReductionOncePower");
         NAME = powerStrings.NAME;
         DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     }
@@ -23,28 +23,27 @@ public class DrawReductionOncePower extends AbstractPower {
 
     public DrawReductionOncePower(AbstractCreature owner, int amount) {
         this.name = NAME;
-        this.ID = "DrawReductionOnce";
+        this.ID = "DrawReductionOncePower";
         this.owner = owner;
         this.amount = amount;
         this.updateDescription();
         this.loadRegion("lessdraw");
         this.type = PowerType.DEBUFF;
         this.isTurnBased = true;
+        this.priority = 1;
     }
 
     @Override
-    public void stackPower(int stackAmount) {
-        super.stackPower(stackAmount);
-        AbstractDungeon.player.gameHandSize -= stackAmount;
+    public void atStartOfTurn() {
+        AbstractDungeon.player.gameHandSize -= amount;
     }
 
-    public void atEndOfRound() {
-        if (this.justApplied) {
-            this.justApplied = false;
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
-        }
+    @Override
+    public void atStartOfTurnPostDraw() {
+        AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
     }
+
+
 
     public void onRemove() {
         AbstractDungeon.player.gameHandSize += amount;

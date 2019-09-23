@@ -54,7 +54,7 @@ public class TriumphPower extends TwoAmountPower {
     }
     @Override
     public void updateDescription() {
-        if(amount2 < 1)
+        if (amount2 <= 1)
         {
             description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
         }

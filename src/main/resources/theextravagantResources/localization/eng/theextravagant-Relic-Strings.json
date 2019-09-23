@@ -65,5 +65,12 @@
     "DESCRIPTIONS": [
       "If your hand is empty at the end of your turn, add #b1 #ytheextravagant:Accumulation to your hand."
     ]
+  },
+  "theextravagant:MoltenLipstick": {
+    "NAME": "Molten Lipstick",
+    "FLAVOR": "Kissing not recommended.",
+    "DESCRIPTIONS": [
+      "Whenever you play a card that  costs #b0 [E], deal #b10 damage to a random enemy and add an upgraded #yBurn on top of your draw pile."
+    ]
   }
 }

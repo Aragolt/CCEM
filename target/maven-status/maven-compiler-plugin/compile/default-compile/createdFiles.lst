@@ -40,6 +40,7 @@ aramod\relics\MidasCore.class
 theextravagant\actions\VintageAction.class
 theextravagant\events\IdentityCrisisEvent.class
 theextravagant\cards\Precaution.class
+theextravagant\relics\MoltenLipstick.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 theextravagant\powers\RapidPulsePower.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize.class

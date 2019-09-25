@@ -390,6 +390,9 @@ public class theextravagant implements
         BaseMod.addCard(new Vintage());
         BaseMod.addCard(new Swirl());
         BaseMod.addCard(new Antiquity());
+        BaseMod.addCard(new Spark());
+        BaseMod.addCard(new Twitch());
+        BaseMod.addCard(new Drift());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -460,6 +463,9 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Vintage.ID);
         UnlockTracker.unlockCard(Swirl.ID);
         UnlockTracker.unlockCard(Antiquity.ID);
+        UnlockTracker.unlockCard(Spark.ID);
+        UnlockTracker.unlockCard(Twitch.ID);
+        UnlockTracker.unlockCard(Drift.ID);
         logger.info("Done adding cards!");
     }
 

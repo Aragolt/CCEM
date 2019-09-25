@@ -45,7 +45,7 @@ public class Redemption extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c : p.drawPile.group) {
-            if (!c.canUse(p, m)) {
+            if (c.costForTurn == -2 && !c.freeToPlayOnce) {
                 group.addToTop(c);
             }
         }

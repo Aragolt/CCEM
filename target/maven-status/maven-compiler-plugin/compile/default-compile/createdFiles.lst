@@ -32,6 +32,7 @@ theextravagant\cards\Aftermath.class
 theextravagant\cards\SnakeOil.class
 aramod\powers\ElectrifiedPower.class
 aramod\AraMod.class
+theextravagant\cards\Drift.class
 theextravagant\powers\ZeroHeroPower.class
 aramod\patches\EndTurnBlockPatch.class
 theextravagant\actions\ReverseSeekAction.class
@@ -90,6 +91,7 @@ theextravagant\variables\ReducedBlockVariable.class
 theextravagant\cards\Courage.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$SecondEnergyRenderPatch.class
 theextravagant\cards\Retreat.class
+theextravagant\cards\Spark.class
 aramod\relics\IronRibcage$1.class
 theextravagant\cards\Accumulation.class
 aramod\relics\BeltOfGluttony.class
@@ -163,6 +165,7 @@ theextravagant\powers\VintagePower.class
 theextravagant\cards\ButtonUp.class
 theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\cards\StepBack.class
+theextravagant\cards\Twitch.class
 theextravagant\powers\RustyBucklerRetainTriggerAction.class
 aramod\utils\TextureLoader.class
 theextravagant\cards\Meditation.class

@@ -39,7 +39,7 @@ public class CheckTopCardForDexterityAction extends AbstractGameAction {
             }
 
             if (!AbstractDungeon.player.drawPile.isEmpty()) {
-                if (!p.drawPile.getTopCard().canUse(p, m)) {
+                if (p.drawPile.getTopCard().costForTurn == -2 && p.drawPile.getTopCard().freeToPlayOnce == false) {
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 1)));
                     AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, draw));
                 }

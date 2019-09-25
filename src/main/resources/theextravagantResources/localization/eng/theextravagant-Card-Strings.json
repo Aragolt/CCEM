@@ -356,5 +356,19 @@
   "theextravagant:Antiquity": {
     "NAME": "Antiquity",
     "DESCRIPTION": "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
+  },
+  "theextravagant:Spark": {
+    "NAME": "Spark",
+    "DESCRIPTION": "Ethereal. NL Unplayable. NL When drawn increase the damage and Block of all cards in your hand by !M! this combat.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Unplayable. NL When drawn or discarded from your hand, increase the damage and Block of all cards in your hand by !M! this combat."
+  },
+  "theextravagant:Twitch": {
+    "NAME": "Twitch",
+    "DESCRIPTION": "Unplayable. NL When drawn, NL gain [E] [E] and discard a random card from  your hand.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, NL gain [E] [E] and discard a card from  your hand."
+  },
+  "theextravagant:Drift": {
+    "NAME": "Drift",
+    "DESCRIPTION": "Deal !D! damage 2 times. Draw !M! cards, discard !M! cards."
   }
 }

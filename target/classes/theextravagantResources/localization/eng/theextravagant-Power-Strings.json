@@ -1,7 +1,12 @@
 {
   "theextravagant:TriumphPower": {
     "NAME": "Triumph",
-    "DESCRIPTIONS": ["If you play ", " attacks in a row, gain " , " Strength.", " attack, gain "]
+    "DESCRIPTIONS": [
+      "If you play ",
+      " attacks in a row, gain ",
+      " Strength.",
+      " attack, gain "
+    ]
   },
   "theextravagant:AmbushPower": {
     "NAME": "Ambush",

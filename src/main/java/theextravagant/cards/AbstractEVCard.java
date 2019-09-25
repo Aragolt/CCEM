@@ -3,7 +3,6 @@ package theextravagant.cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.theextravagant;
@@ -23,7 +22,7 @@ public abstract class AbstractEVCard extends CustomCard {
 
     @Override
     public boolean hasEnoughEnergy() {
-        if(theextravagant.SecondEnergyOrb.currentEnergy < this.Secondcostforturn)
+        if (theextravagant.SecondEnergyOrb.currentEnergy < this.Secondcostforturn && !this.ignoreEnergyOnUse)
         {
             this.cantUseMessage = EVCardText[0];
             return false;

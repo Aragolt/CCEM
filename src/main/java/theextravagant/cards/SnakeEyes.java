@@ -1,55 +1,50 @@
 package theextravagant.cards;
 
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.FetchAndModifyCardAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Strafe extends CustomCard {
+public class SnakeEyes extends AbstractEVCard {
 
 
-    public static final String ID = theextravagant.makeID("Strafe");
-    public static final String IMG = theextravagant.makeCardPath("Strafe.png");
+    public static final String ID = theextravagant.makeID("SnakeEyes");
+    public static final String IMG = theextravagant.makeCardPath("SnakeEyes.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
-    private static final CardTarget TARGET = CardTarget.SELF;
+    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 3;
+    private static final int MAGICNUMBER = 2;
+    private static final int BLOCK = 0;
 
-    public Strafe() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+    public SnakeEyes() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 3);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard c : p.hand.group) {
-            if (c.costForTurn == 0 || c.freeToPlayOnce) {
-                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
-            }
-        }
+        AbstractDungeon.actionManager.addToBottom(new FetchAndModifyCardAction(magicNumber, false, magicNumber, true));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(1);
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

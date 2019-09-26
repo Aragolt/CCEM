@@ -11,6 +11,7 @@ aramod\relics\NuclearReactor.class
 theextravagant\cards\ShowOff.class
 aramod\powers\FastPower.class
 theextravagant\characters\TheExtravagant.class
+theextravagant\cards\AuroraForm.class
 theextravagant\actions\ButtonUpAction.class
 aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
@@ -40,6 +41,7 @@ aramod\relics\AmuletOfProtection.class
 aramod\relics\MidasCore.class
 theextravagant\actions\VintageAction.class
 theextravagant\events\IdentityCrisisEvent.class
+theextravagant\powers\AuroraFormPower.class
 theextravagant\cards\Precaution.class
 theextravagant\relics\MoltenLipstick.class
 theextravagant\variables\DefaultSecondMagicNumber.class
@@ -112,6 +114,7 @@ aramod\relics\LostWallet.class
 theextravagant\actions\AntiquityAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView.class
 theextravagant\powers\TrickeryPower.class
+theextravagant\cards\SnakeEyes.class
 theextravagant\cards\Clairvoyance.class
 theextravagant\cards\WhiffOfMagic.class
 theextravagant\cards\SwiftSwitch.class
@@ -122,6 +125,7 @@ theextravagant\cards\ManifestIllusion.class
 theextravagant\cards\Impulse.class
 aramod\relics\SmashedLemon.class
 theextravagant\actions\BetterCopyAction.class
+theextravagant\cards\OminousGlare.class
 aramod\relics\RabbytsFoot.class
 aramod\relics\ShatteredShield.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph.class
@@ -144,7 +148,6 @@ theextravagant\actions\DualMirrorCutAction.class
 theextravagant\cards\ZeroHero.class
 theextravagant\cards\Overrun.class
 aramod\events\JustAWallEvent.class
-theextravagant\actions\FetchAndIncreaseBlockAction.class
 aramod\relics\FuseBox.class
 theextravagant\powers\JumpCutPower.class
 theextravagant\cards\Overpower.class
@@ -203,3 +206,4 @@ theextravagant\cards\Strafe.class
 theextravagant\cards\AbstractEVCard.class
 theextravagant\cards\Flashback.class
 aramod\powers\BetterRitualPower.class
+theextravagant\actions\FetchAndModifyCardAction.class

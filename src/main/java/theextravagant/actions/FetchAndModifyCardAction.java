@@ -1,5 +1,6 @@
 package theextravagant.actions;
 
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ModifyBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -12,7 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class FetchAndIncreaseBlockAction extends AbstractGameAction {
+public class FetchAndModifyCardAction extends AbstractGameAction {
     public static final String[] TEXT;
 
     static {
@@ -23,18 +24,20 @@ public class FetchAndIncreaseBlockAction extends AbstractGameAction {
     private int numberOfCards;
     private boolean optional;
     private int blockAmount;
+    private boolean shouldRandomizeCost;
 
-    public FetchAndIncreaseBlockAction(int numberOfCards, boolean optional, int blockAmount) {
+    public FetchAndModifyCardAction(int numberOfCards, boolean optional, int blockAmount, boolean RandomCost) {
         this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = this.startDuration = Settings.ACTION_DUR_FAST;
         this.player = AbstractDungeon.player;
         this.numberOfCards = numberOfCards;
         this.optional = optional;
         this.blockAmount = blockAmount;
+        shouldRandomizeCost = RandomCost;
     }
 
-    public FetchAndIncreaseBlockAction(int numberOfCards, int blockAmount) {
-        this(numberOfCards, false, blockAmount);
+    public FetchAndModifyCardAction(int numberOfCards, int blockAmount) {
+        this(numberOfCards, false, blockAmount, false);
     }
 
     public void update() {
@@ -49,6 +52,9 @@ public class FetchAndIncreaseBlockAction extends AbstractGameAction {
                     while (var6.hasNext()) {
                         c = (AbstractCard) var6.next();
                         AbstractDungeon.actionManager.addToBottom(new ModifyBlockAction(c.uuid, blockAmount));
+                        if (shouldRandomizeCost && c.cost >= 0) {
+                            c.cost = MathUtils.random(0, 3);
+                        }
                         cardsToMove.add(c);
                     }
 
@@ -100,6 +106,9 @@ public class FetchAndIncreaseBlockAction extends AbstractGameAction {
                 while (var1.hasNext()) {
                     AbstractCard c = (AbstractCard) var1.next();
                     AbstractDungeon.actionManager.addToBottom(new ModifyBlockAction(c.uuid, blockAmount));
+                    if (shouldRandomizeCost && c.cost >= 0) {
+                        c.cost = MathUtils.random(0, 3);
+                    }
                     if (this.player.hand.size() == 10) {
                         this.player.drawPile.moveToDiscardPile(c);
                         this.player.createHandIsFullDialog();

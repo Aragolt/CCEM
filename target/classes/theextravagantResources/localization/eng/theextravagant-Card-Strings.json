@@ -370,5 +370,17 @@
   "theextravagant:Drift": {
     "NAME": "Drift",
     "DESCRIPTION": "Deal !D! damage 2 times. Draw !M! cards, discard !M! cards."
+  },
+  "theextravagant:AuroraForm": {
+    "NAME": "Aurora Form",
+    "DESCRIPTION": "Whenever a card is Exhausted, gain Temporary_HP equal to !M! times its [E] cost."
+  },
+  "theextravagant:OminousGlare": {
+    "NAME": "Ominous Glare",
+    "DESCRIPTION": "Gain !B! Block. Add a copy of each card in your hand on top of your draw pile."
+  },
+  "theextravagant:SnakeEyes": {
+    "NAME": "Snake eyes",
+    "DESCRIPTION": "Fetch !M! cards from your draw pile and randomize their costs. NL Exhaust."
   }
 }

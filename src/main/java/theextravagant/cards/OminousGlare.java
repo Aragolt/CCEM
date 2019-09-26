@@ -1,6 +1,5 @@
 package theextravagant.cards;
 
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,25 +10,25 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Strafe extends CustomCard {
+public class OminousGlare extends AbstractEVCard {
 
 
-    public static final String ID = theextravagant.makeID("Strafe");
-    public static final String IMG = theextravagant.makeCardPath("Strafe.png");
+    public static final String ID = theextravagant.makeID("OminousGlare");
+    public static final String IMG = theextravagant.makeCardPath("OminousGlare.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 3;
+    private static final int BLOCK = 8;
 
-    public Strafe() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+    public OminousGlare() {
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -38,18 +37,20 @@ public class Strafe extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard c : p.hand.group) {
-            if (c.costForTurn == 0 || c.freeToPlayOnce) {
-                AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+        for (AbstractCard C : AbstractDungeon.player.hand.group) {
+            if (!(C == this)) {
+                AbstractCard d = C.makeStatEquivalentCopy();
+                AbstractDungeon.player.drawPile.addToTop(d);
             }
         }
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(1);
+            upgradeBlock(4);
             initializeDescription();
         }
     }

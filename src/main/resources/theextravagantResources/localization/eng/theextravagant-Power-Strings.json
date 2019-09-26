@@ -176,5 +176,12 @@
     "DESCRIPTIONS": [
       "At the start of your turn play any number of cards from your hand twice and draw 1 less card for each next turn."
     ]
+  },
+  "theextravagant:AuroraFormPower": {
+    "NAME": "Aurora Form",
+    "DESCRIPTIONS": [
+      "Whenever a card is exhausted, gain #yTemporary_HP equal to ",
+      " times it's cost."
+    ]
   }
 }

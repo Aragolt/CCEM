@@ -393,6 +393,9 @@ public class theextravagant implements
         BaseMod.addCard(new Spark());
         BaseMod.addCard(new Twitch());
         BaseMod.addCard(new Drift());
+        BaseMod.addCard(new AuroraForm());
+        BaseMod.addCard(new OminousGlare());
+        BaseMod.addCard(new SnakeEyes());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -466,6 +469,9 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Spark.ID);
         UnlockTracker.unlockCard(Twitch.ID);
         UnlockTracker.unlockCard(Drift.ID);
+        UnlockTracker.unlockCard(AuroraForm.ID);
+        UnlockTracker.unlockCard(OminousGlare.ID);
+        UnlockTracker.unlockCard(SnakeEyes.ID);
         logger.info("Done adding cards!");
     }
 

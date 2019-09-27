@@ -28,7 +28,7 @@ public class RisingPhoenix extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 5;
     private static final int DAMAGE = 4;
-    private static final int MAGICNUMBER = 5;
+    private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
 
     public RisingPhoenix() {

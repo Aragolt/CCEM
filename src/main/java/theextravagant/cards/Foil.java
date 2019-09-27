@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.StrengthPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.FoilPower;
 import theextravagant.theextravagant;
@@ -40,7 +39,6 @@ public class Foil extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new StrengthPower(p, -2)));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FoilPower(magicNumber)));
     }
 

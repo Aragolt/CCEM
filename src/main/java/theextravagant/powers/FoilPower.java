@@ -3,6 +3,8 @@ package theextravagant.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.megacrit.cardcrawl.actions.common.ModifyBlockAction;
+import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -43,6 +45,8 @@ public class FoilPower extends AbstractPower {
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         AbstractDungeon.actionManager.addToTop(new AddTemporaryHPAction(owner, owner, this.amount));
+        AbstractDungeon.actionManager.addToTop(new ModifyBlockAction(card.uuid, -2));
+        AbstractDungeon.actionManager.addToTop(new ModifyDamageAction(card.uuid, -2));
     }
 
     @Override

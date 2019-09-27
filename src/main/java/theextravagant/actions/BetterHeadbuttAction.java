@@ -2,6 +2,7 @@ package theextravagant.actions;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -57,10 +58,14 @@ public class BetterHeadbuttAction extends AbstractGameAction {
                     this.tickDuration();
                     return;
                 } else {
+                    CardGroup C = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
                     Iterator var3 = AbstractDungeon.player.discardPile.group.iterator();
 
                     while (var3.hasNext()) {
                         AbstractCard c = (AbstractCard) var3.next();
+                        C.addToTop(c);
+                    }
+                    for (AbstractCard c : C.group) {
                         this.p.discardPile.removeCard(c);
                         if (z) {
                             c.freeToPlayOnce = true;

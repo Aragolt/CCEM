@@ -19,7 +19,6 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.dungeons.TheCity;
 import com.megacrit.cardcrawl.helpers.CardHelper;
 import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.localization.*;
@@ -30,7 +29,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.cards.*;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.events.IdentityCrisisEvent;
 import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
@@ -261,10 +259,6 @@ public class theextravagant implements
         settingsPanel.addUIElement(enableNormalsButton);
 
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
-
-
-        BaseMod.addEvent(IdentityCrisisEvent.ID, IdentityCrisisEvent.class, TheCity.ID);
-
         SecondEnergyOrb = new SecondEnergyOrb();
         BaseMod.addSaveField("MaxExtravagance", new CustomSavableRaw() {
             @Override

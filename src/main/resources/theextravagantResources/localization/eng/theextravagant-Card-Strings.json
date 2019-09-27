@@ -273,7 +273,7 @@
   },
   "theextravagant:Foil": {
     "NAME": "Foil",
-    "DESCRIPTION": "Lose 2 Strength. NL Whenever you play a card this turn, gain !M! Temporary_HP. NL Exhaust."
+    "DESCRIPTION": "Whenever you play a card this turn, gain !M! Temporary_HP and reduce its damage and Block by 2. NL Exhaust."
   },
   "theextravagant:Radiance": {
     "NAME": "Radiance",
@@ -286,7 +286,7 @@
   },
   "theextravagant:CuttingEdge": {
     "NAME": "Cutting Edge",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust the top card of your draw pile."
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable. Increase the damage of a random attack in your hand by 2. NL Exhaust the top card of your draw pile."
   },
   "theextravagant:Aftermath": {
     "NAME": "Aftermath",

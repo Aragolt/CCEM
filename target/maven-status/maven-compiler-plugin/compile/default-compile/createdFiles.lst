@@ -90,6 +90,7 @@ theextravagant\powers\GlyphOfSightPower.class
 aramod\relics\TestRelic.class
 theextravagant\cards\DAMNATION.class
 theextravagant\variables\ReducedBlockVariable.class
+theextravagant\characters\TheExtravagant$1.class
 theextravagant\cards\Courage.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$SecondEnergyRenderPatch.class
 theextravagant\cards\Retreat.class

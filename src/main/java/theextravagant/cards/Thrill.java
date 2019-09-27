@@ -24,9 +24,9 @@ public class Thrill extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 1;
-    private static final int DAMAGE = 2;
-    private static final int MAGICNUMBER = 4;
+    private static final int COST = 2;
+    private static final int DAMAGE = 4;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public Thrill() {

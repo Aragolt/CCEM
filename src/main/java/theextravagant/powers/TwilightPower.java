@@ -15,7 +15,7 @@ import theextravagant.util.TextureLoader;
 import static theextravagant.theextravagant.makeID;
 
 public class TwilightPower extends AbstractPower implements InvisiblePower {
-    public static final String POWER_ID = makeID("TrickeryPower");
+    public static final String POWER_ID = makeID("TwilightPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;

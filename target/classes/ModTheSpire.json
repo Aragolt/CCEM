@@ -1,11 +1,11 @@
 {
-  "modid": "aramod",
-  "name": "AraMod",
-  "author_list": ["Aragolt", "Lobbienjonsji"],
-  "description": "A first attempt at modding the spire, with the help of Twitch chat",
-  "credits": "Thanks to Blank the Evil, lobbien, BD for modding help. Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Meditation Card Art. Kiooeht for giving permission to steal an important Patch. Art Credits: lobbien",
+  "modid": "theextravagant",
+  "name": "The Extravagant",
+  "author_list": ["Lobbienjonsji"],
+  "description": "A Character mostly centered around synergy and strong card control.",
+  "credits": "Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Meditation Card Art. Grimm for the many ideas. Kiooeht for giving permission to steal an important Patch. Other art Credits: lobbien",
   "dependencies": ["basemod","stslib"],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "sts_version": "01-23-2019",
   "mts_version": "3.10.1"
 }

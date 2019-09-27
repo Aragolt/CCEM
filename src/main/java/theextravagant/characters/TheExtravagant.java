@@ -1,10 +1,9 @@
 package theextravagant.characters;
 
 import basemod.abstracts.CustomPlayer;
-import basemod.animations.SpriterAnimation;
+import basemod.animations.AbstractAnimation;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.math.MathUtils;
 import com.esotericsoftware.spine.AnimationState;
 import com.evacipated.cardcrawl.modthespire.lib.SpireEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -70,9 +69,12 @@ public class TheExtravagant extends CustomPlayer {
     
     public TheExtravagant(String name, PlayerClass setClass) {
         super(name, setClass, orbTextures,
-                "theextravagantResources/images/char/defaultCharacter/orb/vfx.png", null,
-                new SpriterAnimation(
-                        "theextravagantResources/images/char/defaultCharacter/Spriter/theDefaultAnimation.scml"));
+                "theextravagantResources/images/char/defaultCharacter/orb/vfx.png", new AbstractAnimation() {
+                    @Override
+                    public Type type() {
+                        return Type.NONE;
+                    }
+                });
         
         
         initializeClass(null,
@@ -87,9 +89,7 @@ public class TheExtravagant extends CustomPlayer {
                 THE_DEFAULT_SKELETON_ATLAS,
                 THE_DEFAULT_SKELETON_JSON,
                 1.0f);
-        AnimationState.TrackEntry e = state.setAnimation(0, "animation", true);
-        e.setTime(e.getEndTime() * MathUtils.random());
-        
+        AnimationState.TrackEntry e = this.state.setAnimation(0, "Idle", true);
         
         dialogX = (drawX + 0.0F * Settings.scale);
         dialogY = (drawY + 220.0F * Settings.scale);
@@ -108,7 +108,7 @@ public class TheExtravagant extends CustomPlayer {
         
         logger.info("Begin loading starter Deck Strings");
 
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
             retVal.add(SlyStrike.ID);
         }

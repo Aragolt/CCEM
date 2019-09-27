@@ -26,7 +26,7 @@ public class Aftermath extends CustomCard {
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = -2;
-    private static final int DAMAGE = 30;
+    private static final int DAMAGE = 25;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
 
@@ -63,7 +63,7 @@ public class Aftermath extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(10);
+            upgradeDamage(7);
             initializeDescription();
         }
     }

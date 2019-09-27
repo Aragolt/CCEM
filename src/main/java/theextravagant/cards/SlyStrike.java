@@ -1,19 +1,19 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.localization.CardStrings;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
-import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
-import com.megacrit.cardcrawl.localization.CardStrings;
-import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class SlyStrike extends CustomCard {
 
@@ -49,6 +49,12 @@ public class SlyStrike extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p,new StrengthPower(p, magicNumber),magicNumber));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p,p, new LoseStrengthPower(p, magicNumber),magicNumber));
     }
+
+    @Override
+    public boolean isStrike() {
+        return true;
+    }
+
 
     @Override
     public void upgrade() {

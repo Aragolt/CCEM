@@ -57,5 +57,21 @@
       "preservation"
     ],
     "DESCRIPTION": "A 0 - 0 cost skill, which retains, and retains 1 card until the next turn."
+  },
+  {
+    "PROPER_NAME": "Basic Strike",
+    "NAMES": [
+      "Basic Strike",
+      "basic_strike"
+    ],
+    "DESCRIPTION": "Counts as basic Strike."
+  },
+  {
+    "PROPER_NAME": "Basic Defend",
+    "NAMES": [
+      "Basic Defend",
+      "basic_defend"
+    ],
+    "DESCRIPTION": "Counts as basic Defend."
   }
 ]

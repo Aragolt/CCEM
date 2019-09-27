@@ -52,7 +52,7 @@
   },
   "theextravagant:SlyStrike": {
     "NAME": "Sly Strike",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength. NL Lose !M! Strength at the end of your turn."
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! Strength. NL Lose !M! Strength at the end of your turn. NL theextravagant:Basic_Strike."
   },
   "theextravagant:Clairvoyance": {
     "NAME": "Clairvoyance",
@@ -67,7 +67,7 @@
 
   "theextravagant:Fence": {
     "NAME": "Fence",
-    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !theextravagant:REDUCED_BLOCK! Block."
+    "DESCRIPTION": "Gain !B! Block. NL Next turn gain !theextravagant:REDUCED_BLOCK! Block. NL theextravagant:Basic_Defend."
   },
 
   "theextravagant:Twostep": {
@@ -243,8 +243,8 @@
   },
   "theextravagant:Persistence": {
     "NAME": "Persistence",
-    "DESCRIPTION": "Deal !D! damage. NL Add a Persistence into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Add a Persistence+ into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Lose !M! Strength at the end of your turn. NL Add a Persistence into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Lose !M! Strength at the end of your turn. NL Add a Persistence+ into your hand. NL Exhaust."
   },
   "theextravagant:Strafe": {
     "NAME": "Strafe",
@@ -260,7 +260,7 @@
   },
   "theextravagant:SharpTalons": {
     "NAME": "Sharp Talons",
-    "DESCRIPTION": "Deal !D! damage. NL If the target is Vulnerable, apply !M! Weak. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL If the target is Vulnerable, increase the damage of a random attack in your hand by !M!. NL Exhaust."
   },
   "theextravagant:Brilliance": {
     "NAME": "Shine",
@@ -286,7 +286,7 @@
   },
   "theextravagant:CuttingEdge": {
     "NAME": "Cutting Edge",
-    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable. Increase the damage of a random attack in your hand by 2. NL Exhaust the top card of your draw pile."
+    "DESCRIPTION": "Deal !D! damage. Apply !M! Vulnerable. NL Exhaust the top card of your draw pile."
   },
   "theextravagant:Aftermath": {
     "NAME": "Aftermath",

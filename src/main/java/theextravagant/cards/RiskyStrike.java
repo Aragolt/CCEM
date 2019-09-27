@@ -1,19 +1,17 @@
 package theextravagant.cards;
 
-import com.badlogic.gdx.graphics.g3d.particles.influencers.DynamicsModifier;
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.cards.status.Wound;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.StrengthPower;
-import theextravagant.characters.TheExtravagant;
-import theextravagant.theextravagant;
-import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.characters.TheExtravagant;
+import theextravagant.theextravagant;
 
 public class RiskyStrike extends CustomCard {
 
@@ -49,6 +47,7 @@ public class RiskyStrike extends CustomCard {
             AbstractDungeon.player.drawPile.addToTop(new Wound());
         }
     }
+
 
     @Override
     public void upgrade() {

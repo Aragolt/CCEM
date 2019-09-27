@@ -29,7 +29,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.cards.*;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.potions.PlaceholderPotion;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TwilightPower;
 import theextravagant.relics.*;
@@ -283,10 +282,6 @@ public class theextravagant implements
 
     public void receiveEditPotions() {
         logger.info("Beginning to edit potions");
-
-
-        BaseMod.addPotion(PlaceholderPotion.class, PLACEHOLDER_POTION_LIQUID, PLACEHOLDER_POTION_HYBRID, PLACEHOLDER_POTION_SPOTS, PlaceholderPotion.POTION_ID, TheExtravagant.Enums.THE_EXTRAVAGANT);
-
         logger.info("Done editing potions");
     }
 

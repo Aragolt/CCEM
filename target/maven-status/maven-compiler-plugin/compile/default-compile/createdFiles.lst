@@ -46,6 +46,7 @@ theextravagant\cards\Precaution.class
 theextravagant\relics\MoltenLipstick.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 theextravagant\powers\RapidPulsePower.class
+theextravagant\cards\Riot.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize.class
 theextravagant\actions\PlayCardTwiceAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
@@ -183,6 +184,7 @@ theextravagant\cards\SkillfullDodge.class
 theextravagant\relics\RedPhonoblaster.class
 theextravagant\cards\Preservation.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
+theextravagant\actions\SparkAction.class
 theextravagant\cards\Ambush.class
 theextravagant\cards\GlyphOfPower.class
 theextravagant\powers\GlyphOfChoicePower.class

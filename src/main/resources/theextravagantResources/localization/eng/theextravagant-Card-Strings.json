@@ -382,5 +382,9 @@
   "theextravagant:SnakeEyes": {
     "NAME": "Snek Eyes",
     "DESCRIPTION": "Fetch !M! cards from your draw pile and randomize their costs. NL Exhaust."
+  },
+  "theextravagant:Riot": {
+    "NAME": "Riot",
+    "DESCRIPTION": "Deal !D! damage. NL Apply 2 Vulnerable. NL Discard !M! cards.  NL  Next turn gain [E]."
   }
 }

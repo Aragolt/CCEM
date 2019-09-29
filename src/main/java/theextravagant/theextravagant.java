@@ -311,7 +311,7 @@ public class theextravagant implements
         BaseMod.addDynamicVariable(new ReducedBlockVariable());
 
         logger.info("Adding cards");
-
+        BaseMod.addCard(new Riot());
         BaseMod.addCard(new SlyStrike());
         BaseMod.addCard(new Clairvoyance());
         BaseMod.addCard(new Triumph());
@@ -461,6 +461,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(AuroraForm.ID);
         UnlockTracker.unlockCard(OminousGlare.ID);
         UnlockTracker.unlockCard(SnakeEyes.ID);
+        UnlockTracker.unlockCard(Riot.ID);
         logger.info("Done adding cards!");
     }
 

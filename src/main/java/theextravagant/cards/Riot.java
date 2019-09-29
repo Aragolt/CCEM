@@ -29,7 +29,7 @@ public class Riot extends AbstractEVCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
     private static final int DAMAGE = 16;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public Riot() {
@@ -44,8 +44,12 @@ public class Riot extends AbstractEVCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HEAVY));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, 2, false)));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new EnergizedBluePower(p, 1), 1));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, this.magicNumber, false));
     }
 
     @Override

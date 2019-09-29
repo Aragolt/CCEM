@@ -53,6 +53,7 @@ theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
 theextravagant\cards\Glamour.class
 aramod\relics\Jellybeans.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches$RenderSecondCostPatch.class
+theextravagant\cards\Firework.class
 theextravagant\cards\Fence.class
 theextravagant\cards\Thrill.class
 theextravagant\powers\PrepareAmbushPower.class
@@ -135,6 +136,7 @@ theextravagant\actions\DiscardAnyFromDrawpileAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize$Locator.class
 theextravagant\powers\MagicPower.class
 theextravagant\cards\DualMirrorCut.class
+theextravagant\actions\DiscardForDamageAction.class
 theextravagant\cards\Invocation.class
 aramod\relics\Lemon.class
 aramod\powers\LoseFocusPower.class

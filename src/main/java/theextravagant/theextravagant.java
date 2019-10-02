@@ -38,6 +38,7 @@ import theextravagant.util.TextureLoader;
 import theextravagant.variables.DefaultCustomVariable;
 import theextravagant.variables.DefaultSecondMagicNumber;
 import theextravagant.variables.ReducedBlockVariable;
+import theextravagant.vfx.VfxMaster;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -57,7 +58,8 @@ public class theextravagant implements
         PostBattleSubscriber,
         PostDeathSubscriber,
         OnCardUseSubscriber,
-        PostExhaustSubscriber {
+        PostExhaustSubscriber,
+        AddAudioSubscriber {
 
     public static final Logger logger = LogManager.getLogger(theextravagant.class.getName());
     private static String modID;
@@ -233,6 +235,7 @@ public class theextravagant implements
         UIAtlas.addRegion("OtherEnergyCard", SecondEnergyOrbCard, 0, 0, SecondEnergyOrbCard.getWidth(), SecondEnergyOrbCard.getHeight());
         UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0, 0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
         UIAtlas.addRegion("SmallSecondEnergyOrb", SmallSecondEnergyOrb, 0, 0, SmallSecondEnergyOrb.getWidth(), SmallSecondEnergyOrb.getHeight());
+        VfxMaster.initialize();
         logger.info("Loading badge image and mod options");
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
         ModPanel settingsPanel = new ModPanel();
@@ -575,5 +578,10 @@ public class theextravagant implements
     @Override
     public void receivePostExhaust(AbstractCard abstractCard) {
         CardsExhaustedThisTurn++;
+    }
+
+    @Override
+    public void receiveAddAudio() {
+        BaseMod.addAudio("Damnation", "theextravagantResources/sounds/Damnation.mp3");
     }
 }

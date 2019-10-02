@@ -75,7 +75,7 @@ public class VintageAction extends AbstractGameAction {
 
                 numDiscarded = this.amount;
                 if (this.p.hand.size() > this.amount) {
-                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, true);
+                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, true, true);
                 }
 
                 AbstractDungeon.player.hand.applyPowers();

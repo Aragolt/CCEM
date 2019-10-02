@@ -385,10 +385,10 @@
   },
   "theextravagant:Riot": {
     "NAME": "Riot",
-    "DESCRIPTION": "When drawn discard !M! cards. NL Deal !D! damage. NL Apply 2 Vulnerable. NL  Next turn gain [E]."
+    "DESCRIPTION": "When drawn discard !M! cards. NL Deal !D! damage. NL Apply 2 Vulnerable. NL  Next turn, gain [E]."
   },
   "theextravagant:Firework": {
     "NAME": "Firework",
-    "DESCRIPTION": "Discard a card. Deal !D! damage for each [E] it costs."
+    "DESCRIPTION": "Discard a card. NL Deal !D! damage for each [E] it costs."
   }
 }

@@ -13,6 +13,7 @@ aramod\powers\FastPower.class
 theextravagant\characters\TheExtravagant.class
 theextravagant\cards\AuroraForm.class
 theextravagant\actions\ButtonUpAction.class
+theextravagant\vfx\Damnationeffect.class
 aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
 theextravagant\actions\PluckAction.class
@@ -74,6 +75,7 @@ theextravagant\cards\Outrun.class
 theextravagant\cards\RiskyStrike.class
 theextravagant\powers\RetreatPower.class
 theextravagant\cards\ToolsOfTrickery.class
+theextravagant\vfx\VfxMaster.class
 theextravagant\powers\SnakeOilPower.class
 theextravagant\powers\GlyphOfTimePower.class
 theextravagant\cards\Foil.class
@@ -85,6 +87,7 @@ theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatc
 theextravagant\powers\AntiquityPower.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch$RenderSecondCostPatch.class
+theextravagant\vfx\Sixteentonseffect.class
 theextravagant\cards\DefaultRareAttack.class
 theextravagant\relics\Sorbet.class
 aramod\relics\IronRibcage.class
@@ -109,6 +112,7 @@ theextravagant\cards\AbstractDefaultCard.class
 aramod\patches\EndTurnBlockPatch$Locator.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 theextravagant\relics\TranscendedFeather.class
+theextravagant\actions\DamnationEffectAction.class
 theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
@@ -164,6 +168,7 @@ aramod\powers\CleaverPower.class
 theextravagant\orbs\DefaultOrb.class
 theextravagant\cards\Redemption.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
+theextravagant\actions\SixteenTonsEffectAction.class
 theextravagant\powers\TriumphPower.class
 theextravagant\actions\PlayCardAction.class
 theextravagant\cards\Cutthroat.class

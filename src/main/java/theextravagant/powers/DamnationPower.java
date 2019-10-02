@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.utility.WaitAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -12,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.DamnationEffectAction;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -56,14 +58,16 @@ public class DamnationPower extends TwoAmountPower {
 
     @Override
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
-        if(card.costForTurn == 2)
-        {
+        if (card.costForTurn == 2 && !card.freeToPlayOnce) {
             amount2 --;
-            if(amount2 <= 0)
-            {
-                AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.FIRE));
+            if(amount2 <= 0) {
+                AbstractDungeon.actionManager.addToTop(new WaitAction(1f));
+                AbstractDungeon.actionManager.addToTop(new DamnationEffectAction());
+                AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(this.amount, true), DamageInfo.DamageType.THORNS, AbstractGameAction.AttackEffect.NONE));
                 amount2 = 3;
             }
+        } else {
+            amount2 = 3;
         }
     }
 }

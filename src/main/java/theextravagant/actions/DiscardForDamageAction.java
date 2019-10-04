@@ -70,11 +70,13 @@ public class DiscardForDamageAction extends AbstractGameAction {
                         if (d.costForTurn > 0 && !d.freeToPlayOnce) {
                             for (int j = 0; j < d.costForTurn; j++) {
                                 card.calculateCardDamage(AttackTarget);
+                                AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                                 AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                             }
                         } else if (d.costForTurn == -1) {
                             for (int j = 0; j < EnergyPanel.getCurrentEnergy(); j++) {
                                 card.calculateCardDamage(AttackTarget);
+                                AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                                 AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                             }
                         }
@@ -114,11 +116,13 @@ public class DiscardForDamageAction extends AbstractGameAction {
                     card.calculateCardDamage(AttackTarget);
                     for (int j = 0; j < c.costForTurn; j++) {
                         card.calculateCardDamage(AttackTarget);
+                        AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                         AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                     }
                 } else if (c.costForTurn == -1) {
                     for (int j = 0; j < EnergyPanel.getCurrentEnergy(); j++) {
                         card.calculateCardDamage(AttackTarget);
+                        AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                         AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                     }
                 }
@@ -137,11 +141,13 @@ public class DiscardForDamageAction extends AbstractGameAction {
                     card.calculateCardDamage(AttackTarget);
                     for (int i = 0; i < c.costForTurn; i++) {
                         card.calculateCardDamage(AttackTarget);
+                        AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                         AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                     }
                 } else if (c.costForTurn == -1) {
                     for (int j = 0; j < EnergyPanel.getCurrentEnergy(); j++) {
                         card.calculateCardDamage(AttackTarget);
+                        AbstractDungeon.actionManager.addToTop(new FireworkEffectAction(AttackTarget));
                         AbstractDungeon.actionManager.addToTop(new DamageAction(this.AttackTarget, new DamageInfo(AbstractDungeon.player, this.card.damage, this.card.damageTypeForTurn), AttackEffect.FIRE));
                     }
                 }

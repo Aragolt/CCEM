@@ -50,8 +50,10 @@ public class Sparkleeffect extends AbstractGameEffect {
     @Override
     public void update() {
         this.duration -= Gdx.graphics.getDeltaTime();
-        this.x += MathUtils.cos(MathUtils.PI2 * ((x - originx) / (y - originy))) * Settings.scale * Gdx.graphics.getDeltaTime() * 200;
-        this.y += MathUtils.sin(MathUtils.PI2 * ((x - originx) / (y - originy))) * Settings.scale * Gdx.graphics.getDeltaTime() * 200;
+        if ((y - originy) != 0) {
+            this.x += MathUtils.cos(MathUtils.PI2 * ((x - originx) / (y - originy))) * Settings.scale * Gdx.graphics.getDeltaTime() * 200;
+            this.y += MathUtils.sin(MathUtils.PI2 * ((x - originx) / (y - originy))) * Settings.scale * Gdx.graphics.getDeltaTime() * 200;
+        }
         if (this.duration < this.startingDuration / 2.0F) {
             this.color.a = this.duration / (this.startingDuration / 2.0F);
         }

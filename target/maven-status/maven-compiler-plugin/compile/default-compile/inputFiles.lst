@@ -14,6 +14,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Foc
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ZeroHeroPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TriumphPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\VintageAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\vfx\Fireworkeffect.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ToolsOfTrickery.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AuroraForm.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ShatteredShield.java
@@ -60,6 +61,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\D
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Reconsider.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\IronPlumes.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RapidPulsePower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\vfx\Sparkleeffect.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\DefaultSecondMagicNumber.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\vfx\VfxMaster.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\SecondEnergyOrbPatches\TickOrbPatch.java
@@ -82,6 +84,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Gly
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Precaution.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\ElectrifiedPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SpontaneousStrike.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\PunchEffectAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\JumpCut.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\cards\PocketKnife.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RustyBucklerRetainTriggerAction.java
@@ -122,9 +125,11 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\E
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Acceleration.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Cutthroat.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\TestRelic.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\BetterSFXAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Flashback.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\PrepareAmbushPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AbstractDynamicCard.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\FireworkEffectAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Thrill.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PlaceholderRelic2.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\BrokenPillar.java
@@ -142,6 +147,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\So
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\DigUpJunk.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Drift.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\PocketDynamo.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\vfx\PunchEffect.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\AbstractCardPatches.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\powers\FastPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ZeroHero.java

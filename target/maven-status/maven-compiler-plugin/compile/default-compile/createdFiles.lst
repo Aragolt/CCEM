@@ -18,6 +18,7 @@ aramod\actions\DamageRandomEnemyFasterAction.class
 theextravagant\ui\SecondEnergyOrb.class
 theextravagant\actions\PluckAction.class
 theextravagant\cards\GlyphOfChoice.class
+theextravagant\vfx\Sparkleeffect.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 aramod\relics\BrokenPillar.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph$Locator.class
@@ -48,6 +49,7 @@ theextravagant\relics\MoltenLipstick.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 theextravagant\powers\RapidPulsePower.class
 theextravagant\cards\Riot.class
+theextravagant\actions\FireworkEffectAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize.class
 theextravagant\actions\PlayCardTwiceAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
@@ -85,6 +87,7 @@ theextravagant\cards\Twostep.class
 theextravagant\cards\SpontaneousStrike.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatch.class
 theextravagant\powers\AntiquityPower.class
+theextravagant\actions\PunchEffectAction.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch$RenderSecondCostPatch.class
 theextravagant\vfx\Sixteentonseffect.class
@@ -121,6 +124,7 @@ aramod\relics\LostWallet.class
 theextravagant\actions\AntiquityAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView.class
 theextravagant\powers\TrickeryPower.class
+theextravagant\vfx\PunchEffect.class
 theextravagant\cards\SnakeEyes.class
 theextravagant\cards\Clairvoyance.class
 theextravagant\cards\WhiffOfMagic.class
@@ -136,6 +140,7 @@ theextravagant\cards\OminousGlare.class
 aramod\relics\RabbytsFoot.class
 aramod\relics\ShatteredShield.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph.class
+theextravagant\actions\BetterSFXAction.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$AlterNoteDescriptionSize$Locator.class
 theextravagant\powers\MagicPower.class
@@ -188,6 +193,7 @@ theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
 theextravagant\cards\GarbageCannon.class
 theextravagant\cards\SkillfullDodge.class
+theextravagant\vfx\Fireworkeffect.class
 theextravagant\relics\RedPhonoblaster.class
 theextravagant\cards\Preservation.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class

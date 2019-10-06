@@ -30,7 +30,7 @@ public class Riot extends AbstractEVCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
     private static final int DAMAGE = 16;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public Riot() {

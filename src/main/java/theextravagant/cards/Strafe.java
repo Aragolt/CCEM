@@ -15,7 +15,7 @@ public class Strafe extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Strafe");
-    public static final String IMG = theextravagant.makeCardPath("Strafe.png");
+    public static final String IMG = theextravagant.makeCardPath("strafenewartfixed.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

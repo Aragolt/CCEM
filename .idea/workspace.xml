@@ -8,19 +8,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2473dc1d-c040-4e4d-9f2f-45b73546ab6c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_attack_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_attack_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_power_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_power_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_skill_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/1024/bg_skill_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_attack_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_attack_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_power_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_power_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_skill_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/images/512/bg_skill_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_attack_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_attack_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_power_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_power_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_skill_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/1024/bg_skill_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_attack_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_attack_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_power_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_power_default_gray.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_skill_default_gray.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/images/512/bg_skill_default_gray.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ModTheSpire.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -33,15 +23,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Riot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
@@ -85,6 +66,15 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
               <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -249,7 +239,6 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/BetterHeadbuttAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Fence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/SlyStrike.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/CuttingEdge.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/SharpTalons.java" />
@@ -282,9 +271,10 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/vfx/PunchEffect.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Persistence.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Riot.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Strafe.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" />
       </list>
     </option>
   </component>
@@ -315,8 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -617,6 +605,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -998,7 +988,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570383002512</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="New card frames and skillfull dodge art">
+      <created>1570542415044</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1570542415044</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1012,11 +1009,11 @@
       <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.1796875" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5097656" side_tool="true" visible="true" weight="0.23098591" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5101563" side_tool="true" visible="true" weight="0.23098591" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.040140845" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" weight="0.30915493" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49023438" visible="true" weight="0.23098591" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.48984376" visible="true" weight="0.23098591" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -1033,7 +1030,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="I FIXED IT I FIXED IT MUAHAHAHAHAHA!!!!" />
     <MESSAGE value="New card step back" />
     <MESSAGE value="Focus stab fix" />
     <MESSAGE value="First set of Power images" />
@@ -1058,19 +1054,13 @@
     <MESSAGE value="Added some VFX for firework" />
     <MESSAGE value="added some punching vfx" />
     <MESSAGE value="New Card art for Strafe + Riot Nerf" />
-    <option name="LAST_COMMIT_MESSAGE" value="New Card art for Strafe + Riot Nerf" />
+    <MESSAGE value="New card frames and skillfull dodge art" />
+    <option name="LAST_COMMIT_MESSAGE" value="New card frames and skillfull dodge art" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/actions/VintageAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="77" column="94" selection-start-line="77" selection-start-column="94" selection-end-line="77" selection-end-column="94" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/aramod/actions/DamageRandomEnemyFasterAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -1386,6 +1376,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Persistence.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="595">
@@ -1407,13 +1404,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1445,10 +1435,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="17" column="83" selection-start-line="17" selection-start-column="83" selection-end-line="17" selection-end-column="83" />
+          <caret line="20" column="80" selection-start-line="20" selection-start-column="80" selection-end-line="20" selection-end-column="80" />
         </state>
       </provider>
     </entry>

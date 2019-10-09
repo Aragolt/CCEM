@@ -18,7 +18,7 @@ public class RiskyStrike extends CustomCard {
 
     public static final String ID = theextravagant.makeID("RiskyStrike");
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
-    public static final String IMG = theextravagant.makeCardPath("RiskyStrike.png");
+    public static final String IMG = theextravagant.makeCardPath("riskystrikenew.png");
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.RARE;

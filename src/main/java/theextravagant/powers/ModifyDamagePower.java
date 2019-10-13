@@ -9,13 +9,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import theextravagant.cards.Tension;
 import theextravagant.cards.TwilightTone;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
 
-public class TwilightPower extends AbstractPower implements InvisiblePower {
-    public static final String POWER_ID = makeID("TwilightPower");
+public class ModifyDamagePower extends AbstractPower implements InvisiblePower {
+    public static final String POWER_ID = makeID("ModifyDamagePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
@@ -23,7 +24,7 @@ public class TwilightPower extends AbstractPower implements InvisiblePower {
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/placeholder_power32.png");
     private boolean hasPlayedSkill = false;
 
-    public TwilightPower() {
+    public ModifyDamagePower() {
         name = NAME;
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
@@ -36,13 +37,21 @@ public class TwilightPower extends AbstractPower implements InvisiblePower {
 
     @Override
     public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
-        int multiplier = 1;
+        float multiplier = 1;
+        float tensionmultiplier = 0;
+        for (AbstractCard c : AbstractDungeon.player.hand.group) {
+            if (type == DamageInfo.DamageType.NORMAL && c instanceof Tension) {
+                tensionmultiplier += ((float) c.baseMagicNumber / 100.0f);
+            }
+        }
+        multiplier += tensionmultiplier;
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
             if (type == DamageInfo.DamageType.NORMAL && c instanceof TwilightTone) {
-                multiplier = 2;
+                multiplier *= 2;
                 break;
             }
         }
+
         return  damage * multiplier;
     }
 
@@ -77,5 +86,6 @@ public class TwilightPower extends AbstractPower implements InvisiblePower {
                 "Until the sun comes up in the morn'\n" +
                 "'Cause, baby, tonight\n" +
                 "The creeper's tryna steal all our stuff again (Stuff again-gain)";
+        name = "";
     }
 }

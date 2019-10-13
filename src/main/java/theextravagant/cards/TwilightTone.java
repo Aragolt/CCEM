@@ -10,7 +10,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.TwilightPower;
+import theextravagant.powers.ModifyDamagePower;
 import theextravagant.theextravagant;
 
 public class TwilightTone extends CustomCard implements StartupCard {
@@ -58,7 +58,7 @@ public class TwilightTone extends CustomCard implements StartupCard {
 
     @Override
     public boolean atBattleStartPreDraw() {
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TwilightPower()));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ModifyDamagePower()));
         return false;
     }
 }

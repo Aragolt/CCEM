@@ -390,5 +390,9 @@
   "theextravagant:Firework": {
     "NAME": "Firework",
     "DESCRIPTION": "Discard a card. NL Deal !D! damage for each [E] it costs."
+  },
+  "theextravagant:Tension": {
+    "NAME": "Tension",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. While this card is in your hand, all attacks deal !M! % more damage."
   }
 }

@@ -29,8 +29,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.cards.*;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.ModifyDamagePower;
 import theextravagant.powers.RustyBucklerRetainTriggerAction;
-import theextravagant.powers.TwilightPower;
 import theextravagant.relics.*;
 import theextravagant.ui.SecondEnergyOrb;
 import theextravagant.util.IDCheckDontTouchPls;
@@ -389,6 +389,7 @@ public class theextravagant implements
         BaseMod.addCard(new OminousGlare());
         BaseMod.addCard(new SnakeEyes());
         BaseMod.addCard(new Firework());
+        BaseMod.addCard(new Tension());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -467,6 +468,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(SnakeEyes.ID);
         UnlockTracker.unlockCard(Riot.ID);
         UnlockTracker.unlockCard(Firework.ID);
+        UnlockTracker.unlockCard(Tension.ID);
         logger.info("Done adding cards!");
     }
 
@@ -552,7 +554,7 @@ public class theextravagant implements
         CardsExhaustedLastTurn = 0;
         PowerPlayedThisTurn = false;
         Cutthroat.Hasplayedcardthisturn = false;
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new TwilightPower()));
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ModifyDamagePower()));
         AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RustyBucklerRetainTriggerAction()));
     }
 

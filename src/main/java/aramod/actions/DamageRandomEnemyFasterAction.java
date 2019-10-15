@@ -1,4 +1,4 @@
-package aramod.actions;
+/*package aramod.actions;
 
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -50,4 +50,4 @@ public class DamageRandomEnemyFasterAction extends AbstractGameAction {
             }
         }
     }
-}
+}*/

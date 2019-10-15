@@ -1,4 +1,4 @@
-package aramod.relics;
+/*package aramod.relics;
 import aramod.actions.DamageRandomEnemyFasterAction;
 import aramod.powers.LoseFocusPower;
 import aramod.powers.LoseThornsPower;
@@ -32,4 +32,4 @@ public class ReadiedClaws extends CustomRelic {
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }
-}
+}*/

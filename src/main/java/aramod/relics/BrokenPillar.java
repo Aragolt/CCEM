@@ -1,4 +1,4 @@
-package aramod.relics;
+/*package aramod.relics;
 import aramod.actions.DamageRandomEnemyFasterAction;
 import aramod.powers.LoseFocusPower;
 import aramod.utils.TextureLoader;
@@ -31,4 +31,4 @@ public class BrokenPillar extends CustomRelic {
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
     }
-}
+}*/

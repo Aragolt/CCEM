@@ -14,6 +14,7 @@ public class TranslucentFeather extends CustomRelic {
 
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("TranslucentFeather.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("TranslucentFeather.png"));
+    private boolean FirstTurn = true;
 
     public TranslucentFeather() {
         super(ID, IMG, OUTLINE, RelicTier.STARTER, LandingSound.MAGICAL);
@@ -26,7 +27,12 @@ public class TranslucentFeather extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        AbstractDungeon.actionManager.addToBottom(new SeekAction(1));
+        FirstTurn = true;
+    }
+
+    @Override
+    public void atTurnStart() {
+        AbstractDungeon.actionManager.addToTop(new SeekAction(1));
     }
 
     @Override

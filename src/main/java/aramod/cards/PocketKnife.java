@@ -1,4 +1,4 @@
-package aramod.cards;
+/*package aramod.cards;
 
 import aramod.powers.FastPower;
 import basemod.abstracts.CustomCard;
@@ -51,3 +51,4 @@ public class PocketKnife extends CustomCard {
         return new PocketKnife();
     }
 }
+*/

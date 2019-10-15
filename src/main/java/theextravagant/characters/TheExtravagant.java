@@ -207,4 +207,9 @@ public class TheExtravagant extends CustomPlayer {
     public String getVampireText() {
         return TEXT[2];
     }
+
+    /*@Override
+    public String getPortraitImageName() {
+        return "name";
+    }*/
 }

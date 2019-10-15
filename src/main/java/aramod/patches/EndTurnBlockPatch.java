@@ -1,4 +1,4 @@
-package aramod.patches;
+/*package aramod.patches;
 
 import aramod.relics.BrokenPillar;
 import com.evacipated.cardcrawl.modthespire.lib.*;
@@ -25,4 +25,4 @@ public class EndTurnBlockPatch {
             return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(), finalMatcher);
         }
     }
-}
+}*/

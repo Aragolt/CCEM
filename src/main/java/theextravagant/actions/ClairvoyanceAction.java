@@ -50,7 +50,7 @@ public class ClairvoyanceAction extends AbstractGameAction {
                     tmpGroup.addToTop(AbstractDungeon.player.drawPile.group.get(AbstractDungeon.player.drawPile.size() - i - 1));
                 }
                 tmpGroup.shuffle();
-                AbstractDungeon.gridSelectScreen.open(tmpGroup, this.amount, true, TEXT[0]);
+                AbstractDungeon.gridSelectScreen.open(tmpGroup, 3, true, TEXT[0]);
             }
         } else if (!AbstractDungeon.gridSelectScreen.selectedCards.isEmpty()) {
             Iterator var3 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();

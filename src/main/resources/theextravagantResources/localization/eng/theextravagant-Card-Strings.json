@@ -56,8 +56,8 @@
   },
   "theextravagant:Clairvoyance": {
     "NAME": "Clairvoyance",
-    "DESCRIPTION": "Draw !M! card. NL Discard any number of cards from your draw pile.",
-    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard any number of cards from your draw pile."
+    "DESCRIPTION": "Draw !M! card. NL Discard up to 3 cards from your draw pile.",
+    "UPGRADE_DESCRIPTION": "Draw !M! cards. NL Discard up to 3 cards from your draw pile."
   },
 
   "theextravagant:Triumph": {
@@ -394,5 +394,9 @@
   "theextravagant:Tension": {
     "NAME": "Tension",
     "DESCRIPTION": "Ethereal. NL Deal !D! damage. While this card is in your hand, all attacks deal !M! % more damage."
+  },
+  "theextravagant:HeavyBlows": {
+    "NAME": "Heavy Blows",
+    "DESCRIPTION": "When drawn lose !M! Strength. NL Deal !D! damage 3 times. NL Gain 4 Strength."
   }
 }

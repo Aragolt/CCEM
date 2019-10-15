@@ -16,9 +16,11 @@ public class PunchEffectAction extends AbstractGameAction {
 
     @Override
     public void update() {
-        AbstractDungeon.actionManager.addToTop(new VFXAction(new PunchEffect(creature.drawX - creature.hb.width / 2, creature.drawY + creature.hb.height / 3)));
-        AbstractDungeon.actionManager.addToTop(new WaitAction(0.2f));
-        AbstractDungeon.actionManager.addToTop(new BetterSFXAction(-0.2f, "BLUNT_HEAVY"));
+        if (creature != null && !creature.isDeadOrEscaped()) {
+            AbstractDungeon.actionManager.addToTop(new VFXAction(new PunchEffect(creature.drawX - creature.hb.width / 2, creature.drawY + creature.hb.height / 3)));
+            AbstractDungeon.actionManager.addToTop(new WaitAction(0.2f));
+            AbstractDungeon.actionManager.addToTop(new BetterSFXAction(-0.2f, "BLUNT_HEAVY"));
+        }
         isDone = true;
     }
 }

@@ -390,6 +390,7 @@ public class theextravagant implements
         BaseMod.addCard(new SnakeEyes());
         BaseMod.addCard(new Firework());
         BaseMod.addCard(new Tension());
+        BaseMod.addCard(new HeavyBlows());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -469,6 +470,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Riot.ID);
         UnlockTracker.unlockCard(Firework.ID);
         UnlockTracker.unlockCard(Tension.ID);
+        UnlockTracker.unlockCard(HeavyBlows.ID);
         logger.info("Done adding cards!");
     }
 

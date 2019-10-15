@@ -21,6 +21,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ShatteredS
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Overpower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\MoltenLipstick.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RetainTwoCostsPower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\HeavyBlows.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\AntiquityAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\PlayCardAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\util\TextureLoader.java
@@ -40,7 +41,6 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Sna
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Twostep.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GlyphOfSight.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\ChunkOfWall.java
-C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TwilightPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\PuffUp.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\TwilightTone.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\ExhaustTopCardAction.java
@@ -99,6 +99,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Cou
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Foil.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\SharpTalons.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Retreat.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Tension.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\RadiancePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\variables\DefaultCustomVariable.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\ReverseSeekAction.java
@@ -196,6 +197,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Cla
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Sixteen_Tons.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\NuclearReactor.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\GarbageCannonAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ModifyDamagePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\RustyBuckler.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\GlyphOfChoicePower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\GustOfWind.java

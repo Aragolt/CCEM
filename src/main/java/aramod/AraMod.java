@@ -1,4 +1,4 @@
-package aramod;
+/*package aramod;
 
 import aramod.cards.OrbVolley;
 import aramod.cards.PocketKnife;
@@ -108,4 +108,4 @@ public class AraMod implements EditRelicsSubscriber, EditStringsSubscriber, Edit
     public void receivePostInitialize(){
         BaseMod.addEvent(JustAWallEvent.ID, JustAWallEvent.class, TheBeyond.ID);
     }
-}
+}*/

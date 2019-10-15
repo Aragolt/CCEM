@@ -208,8 +208,7 @@ public class TheExtravagant extends CustomPlayer {
         return TEXT[2];
     }
 
-    /*@Override
     public String getPortraitImageName() {
         return "name";
-    }*/
+    }
 }

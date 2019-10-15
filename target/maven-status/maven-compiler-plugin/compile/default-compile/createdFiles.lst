@@ -121,6 +121,7 @@ theextravagant\vfx\PunchEffect.class
 theextravagant\cards\SnakeEyes.class
 theextravagant\cards\Clairvoyance.class
 theextravagant\cards\WhiffOfMagic.class
+theextravagant\powers\RepellPower.class
 theextravagant\cards\SwiftSwitch.class
 theextravagant\cards\RisingPhoenix.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
@@ -214,6 +215,7 @@ theextravagant\actions\ExhaustTopCardAction.class
 theextravagant\characters\TheExtravagant$Enums.class
 theextravagant\cards\Strafe.class
 theextravagant\cards\AbstractEVCard.class
+theextravagant\cards\Repell.class
 theextravagant\cards\Flashback.class
 aramod\powers\BetterRitualPower.class
 theextravagant\actions\FetchAndModifyCardAction.class

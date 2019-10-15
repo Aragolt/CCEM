@@ -398,5 +398,9 @@
   "theextravagant:HeavyBlows": {
     "NAME": "Heavy Blows",
     "DESCRIPTION": "When drawn lose !M! Strength. NL Deal !D! damage 3 times. NL Gain 4 Strength."
+  },
+  "theextravagant:Repell": {
+    "NAME": "Repell",
+    "DESCRIPTION": "If the next card you play is an attack, gain !B! Block."
   }
 }

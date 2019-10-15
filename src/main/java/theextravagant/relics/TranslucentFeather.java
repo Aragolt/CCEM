@@ -32,7 +32,10 @@ public class TranslucentFeather extends CustomRelic {
 
     @Override
     public void atTurnStart() {
-        AbstractDungeon.actionManager.addToTop(new SeekAction(1));
+        if (FirstTurn) {
+            FirstTurn = false;
+            AbstractDungeon.actionManager.addToTop(new SeekAction(1));
+        }
     }
 
     @Override

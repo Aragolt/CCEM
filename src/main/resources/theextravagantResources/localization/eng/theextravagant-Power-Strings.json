@@ -183,5 +183,12 @@
       "Whenever a card is exhausted, gain #yTemporary_HP equal to ",
       " times it's cost."
     ]
+  },
+  "theextravagant:RepellPower": {
+    "NAME": "Repell",
+    "DESCRIPTIONS": [
+      "If you play an attack, gain ",
+      " Block."
+    ]
   }
 }

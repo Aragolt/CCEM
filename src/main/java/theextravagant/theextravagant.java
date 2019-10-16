@@ -392,6 +392,7 @@ public class theextravagant implements
         BaseMod.addCard(new Tension());
         BaseMod.addCard(new HeavyBlows());
         BaseMod.addCard(new Repell());
+        BaseMod.addCard(new LifeCharm());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -473,6 +474,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Tension.ID);
         UnlockTracker.unlockCard(HeavyBlows.ID);
         UnlockTracker.unlockCard(Repell.ID);
+        UnlockTracker.unlockCard(LifeCharm.ID);
         logger.info("Done adding cards!");
     }
 

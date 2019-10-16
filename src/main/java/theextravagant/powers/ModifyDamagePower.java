@@ -57,35 +57,7 @@ public class ModifyDamagePower extends AbstractPower implements InvisiblePower {
 
     @Override
     public void updateDescription() {
-        description = "[Intro: TryHardNinja]\n" +
-                "Creeper\n" +
-                "Aw man\n" +
-                "\n" +
-                "[Verse 1: TryHardNinja]\n" +
-                "So we back in the mine\n" +
-                "Got our pickaxe swinging from side to side\n" +
-                "Side-side to side\n" +
-                "This task, a grueling one\n" +
-                "Hope to find some diamonds tonight, night, night\n" +
-                "Diamonds tonight\n" +
-                "\n" +
-                "[Pre-Chorus: TryHardNinja]\n" +
-                "Heads up\n" +
-                "You hear a sound, turn around and look up\n" +
-                "Total shock fills your body\n" +
-                "Oh, no, it's you again\n" +
-                "I can never forget those eyes, eyes, eyes\n" +
-                "Eyes-eye-eyes\n" +
-                "\n" +
-                "[Chorus: TryHardNinja]\n" +
-                "'Cause, baby, tonight\n" +
-                "The creeper's tryna steal all our stuff again\n" +
-                "'Cause, baby, tonight\n" +
-                "You grab your pick, shovel, and bolt again (Bolt again-gain)\n" +
-                "And run, run until it's done, done\n" +
-                "Until the sun comes up in the morn'\n" +
-                "'Cause, baby, tonight\n" +
-                "The creeper's tryna steal all our stuff again (Stuff again-gain)";
+        description = "";
         name = "";
     }
 }

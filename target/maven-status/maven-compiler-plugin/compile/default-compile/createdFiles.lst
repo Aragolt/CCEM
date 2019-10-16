@@ -12,6 +12,7 @@ theextravagant\characters\TheExtravagant.class
 theextravagant\cards\AuroraForm.class
 theextravagant\actions\ButtonUpAction.class
 theextravagant\vfx\Damnationeffect.class
+theextravagant\actions\IncreaseCostAction.class
 theextravagant\ui\SecondEnergyOrb.class
 theextravagant\actions\PluckAction.class
 theextravagant\cards\GlyphOfChoice.class
@@ -32,6 +33,7 @@ theextravagant\cards\SnakeOil.class
 aramod\powers\ElectrifiedPower.class
 theextravagant\cards\Drift.class
 theextravagant\powers\ZeroHeroPower.class
+theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 aramod\relics\MidasCore.class
@@ -68,9 +70,9 @@ theextravagant\cards\SharpTalons.class
 theextravagant\actions\PheonixEffectAction.class
 theextravagant\cards\Outrun.class
 theextravagant\cards\RiskyStrike.class
-theextravagant\powers\RetreatPower.class
 theextravagant\cards\ToolsOfTrickery.class
 theextravagant\vfx\VfxMaster.class
+theextravagant\cards\LifeCharm.class
 theextravagant\powers\SnakeOilPower.class
 theextravagant\powers\GlyphOfTimePower.class
 theextravagant\cards\Foil.class
@@ -187,6 +189,7 @@ theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
 theextravagant\cards\GarbageCannon.class
 theextravagant\cards\SkillfullDodge.class
+theextravagant\patches\CardSpecificPatches\ApplyPowerPatch.class
 theextravagant\vfx\Fireworkeffect.class
 theextravagant\relics\RedPhonoblaster.class
 theextravagant\cards\Preservation.class
@@ -208,7 +211,6 @@ theextravagant\powers\DrawReductionOncePower.class
 theextravagant\actions\CheckTopCardForDexterityAction.class
 theextravagant\theextravagant.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView$Locator.class
-theextravagant\patches\SecondEnergyOrbPatches\TickOrbPatch.class
 theextravagant\powers\FlashbackPower.class
 theextravagant\relics\DefaultClickableRelic.class
 theextravagant\actions\ExhaustTopCardAction.class

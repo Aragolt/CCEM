@@ -46,7 +46,7 @@ public class RustyBucklerRetainTriggerAction extends AbstractPower implements In
 
     @Override
     public void updateDescription() {
-        description = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+        description = "";
         name = "";
     }
 }

@@ -77,8 +77,8 @@
 
   "theextravagant:Reconsider": {
     "NAME": "Reconsider",
-    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to it's [E] cost. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to it's [E] cost. NL Exhaust."
+    "DESCRIPTION": "Discard !M! card. If you discard an attack gain Strength equal to its [E] cost. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Discard !M! cards. If you discard an attack gain Strength equal to its [E] cost. NL Exhaust."
   },
 
   "theextravagant:SkillfullDodge":
@@ -120,7 +120,7 @@
   "theextravagant:SpontaneousStrike":
   {
     "NAME": "Spontaneous Strike",
-    "DESCRIPTION": "Deal !D! damage. When drawn, this card costs 3 this turn."
+    "DESCRIPTION": "Deal !D! damage. When drawn, this card costs 3 [E] this turn."
   },
   "theextravagant:DAMNATION":
   {
@@ -140,7 +140,7 @@
   "theextravagant:Aggression":
   {
     "NAME": "Aggression",
-    "DESCRIPTION": "Deal !D! damage. Double this cards damage this turn."
+    "DESCRIPTION": "Deal !D! damage. Double this cards damage and increase its [E] cost by 1 this combat. NL Exhaustive !stslib:ex!."
   },
   "theextravagant:PuffUp":
   {
@@ -402,5 +402,10 @@
   "theextravagant:Repell": {
     "NAME": "Repell",
     "DESCRIPTION": "If the next card you play is an attack, gain !B! Block."
+  },
+  "theextravagant:LifeCharm": {
+    "NAME": "Life Charm",
+    "DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs. If this card is Exhausted, shuffle a Dazed into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs."
   }
 }

@@ -32,6 +32,7 @@ theextravagant\cards\Aftermath.class
 theextravagant\cards\SnakeOil.class
 aramod\powers\ElectrifiedPower.class
 theextravagant\cards\Drift.class
+theextravagant\actions\RavageAction.class
 theextravagant\powers\ZeroHeroPower.class
 theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
 theextravagant\actions\ReverseSeekAction.class
@@ -204,6 +205,7 @@ aramod\cards\OrbVolley.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch$Locator.class
 theextravagant\cards\Sixteen_Tons.class
 theextravagant\cards\GustOfWind.class
+theextravagant\cards\Ravage.class
 aramod\powers\LoseThornsPower.class
 theextravagant\cards\HeavyBlows.class
 theextravagant\cards\RapidPulse.class

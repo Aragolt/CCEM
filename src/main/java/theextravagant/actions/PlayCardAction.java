@@ -14,7 +14,7 @@ public class PlayCardAction extends AbstractGameAction {
 
     public PlayCardAction(AbstractCard c, UseCardAction action) {
         this.setValues(null, source, this.amount);
-        this.actionType = ActionType.BLOCK;
+        this.actionType = ActionType.CARD_MANIPULATION;
         this.duration = Settings.ACTION_DUR_FASTER;
         this.card = c;
         this.action = action;

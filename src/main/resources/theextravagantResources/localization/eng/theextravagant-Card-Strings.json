@@ -415,5 +415,9 @@
   "theextravagant:Ravage": {
     "NAME": "Ravage",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Increase this cards damage by 1 this combat. NL Repeat for each attack in your hand."
+  },
+  "theextravagant:Castle": {
+    "NAME": "Castle",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL When drawn put all skills from your hand on top of your draw pile, then draw !M! cards. "
   }
 }

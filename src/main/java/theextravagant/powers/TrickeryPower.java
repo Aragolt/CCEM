@@ -2,17 +2,17 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DiscardAction;
-import com.megacrit.cardcrawl.actions.defect.SeekAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
 
-public class TrickeryPower extends AbstractPower {
+public class TrickeryPower extends TwoAmountPower {
     public static final String POWER_ID = makeID("TrickeryPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -26,6 +26,7 @@ public class TrickeryPower extends AbstractPower {
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
         this.amount = amount;
+        amount2 = 0;
         type = PowerType.BUFF;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
@@ -33,10 +34,23 @@ public class TrickeryPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurnPostDraw() {
+    public void atStartOfTurn() {
        flash();
-       AbstractDungeon.actionManager.addToBottom(new DiscardAction(AbstractDungeon.player, AbstractDungeon.player, amount, true));
-       AbstractDungeon.actionManager.addToBottom(new SeekAction(amount));
+        amount2 = 0;
+    }
+
+    @Override
+    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+        if (card.type == AbstractCard.CardType.SKILL && amount2 < amount) {
+            AbstractCard a = AbstractDungeon.player.drawPile.getAttacks().getRandomCard(true);
+            if (a != null) {
+                if (a.costForTurn > 0) {
+                    a.setCostForTurn(a.costForTurn - 1);
+                }
+                AbstractDungeon.player.drawPile.moveToHand(a, AbstractDungeon.player.drawPile);
+            }
+            amount2 += 1;
+        }
     }
 
     @Override

@@ -115,6 +115,7 @@ theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 theextravagant\potions\PlaceholderPotion.class
+theextravagant\cards\Dazzle.class
 aramod\relics\LostWallet.class
 theextravagant\actions\AntiquityAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderSmallNoteSingleCardView.class

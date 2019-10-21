@@ -72,7 +72,7 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "Draw !M! cards. Next turn draw !M! cards."
+    "DESCRIPTION": "Draw !M! cards. Next turn gain !B! Block."
   },
 
   "theextravagant:Reconsider": {
@@ -155,7 +155,7 @@
   "theextravagant:ToolsOfTrickery":
   {
     "NAME": "Tools of Trickery",
-    "DESCRIPTION": "At the start of each turn, discard a random card and Fetch a card from your draw pile."
+    "DESCRIPTION": "The first time you play a skill each turn, Fetch 1 random attack from your draw pile and reduce its [E] cost by 1 this turn."
   },
   "theextravagant:TwilightTone":
   {
@@ -407,5 +407,9 @@
     "NAME": "Life Charm",
     "DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs. If this card is Exhausted, shuffle a Dazed into your draw pile.",
     "UPGRADE_DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs."
+  },
+  "theextravagant:Dazzle": {
+    "NAME": "Dazzle",
+    "DESCRIPTION": "Play the top card of your draw pile. NL Apply !M! Weak. NL Add a Dazed into your draw pile."
   }
 }

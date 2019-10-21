@@ -25,7 +25,7 @@ public class SkillfullDodge extends CustomCard {
     private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 2;
-    private static final int BLOCK = 2;
+    private static final int BLOCK = 3;
 
     public SkillfullDodge() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

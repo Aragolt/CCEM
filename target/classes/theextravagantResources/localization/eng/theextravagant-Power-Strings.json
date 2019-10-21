@@ -44,9 +44,9 @@
   "theextravagant:TrickeryPower": {
     "NAME": "Trickery",
     "DESCRIPTIONS": [
-      "At the start of your turn discard ",
-      " card and fetch that many cards from your draw pile.",
-      " cards and fetch that many cards from your draw pile."
+      "The first ",
+      " time you play a skill each turn Fetch 1 random attack from your draw pile and reduce it's cost by 1 this turn.",
+      " times you play a skill each turn Fetch 1 random attack from your draw pile and reduce it's cost by 1 this turn."
     ]
   },
   "theextravagant:RetreatPower": {

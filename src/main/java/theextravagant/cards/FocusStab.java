@@ -25,10 +25,10 @@ public class FocusStab extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 15;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
-    private int basebaseDamage = 12;
+    private int basebaseDamage = 15;
 
     public FocusStab() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +45,7 @@ public class FocusStab extends CustomCard {
 
     @Override
     public void applyPowers() {
-        if (costForTurn == 0 || freeToPlayOnce == true) {
+        if (costForTurn == 0 || freeToPlayOnce) {
             baseDamage = basebaseDamage * 2;
         } else {
             baseDamage = basebaseDamage;
@@ -57,8 +57,8 @@ public class FocusStab extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            basebaseDamage = 14;
-            upgradeDamage(2);
+            basebaseDamage = 18;
+            upgradeDamage(3);
             initializeDescription();
         }
     }

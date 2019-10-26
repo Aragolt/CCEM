@@ -19,6 +19,7 @@ theextravagant\cards\GlyphOfChoice.class
 theextravagant\vfx\Sparkleeffect.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch$RenderCustomGlyph$Locator.class
+theextravagant\actions\PutCardsFromHandOnTopOfDrawPileThenDrawAction.class
 theextravagant\powers\FoilPower.class
 theextravagant\cards\SlyStrike.class
 theextravagant\relics\PlaceholderRelic.class
@@ -115,6 +116,7 @@ theextravagant\actions\DamnationEffectAction.class
 theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
+theextravagant\cards\Castle.class
 theextravagant\potions\PlaceholderPotion.class
 theextravagant\cards\Dazzle.class
 aramod\relics\LostWallet.class

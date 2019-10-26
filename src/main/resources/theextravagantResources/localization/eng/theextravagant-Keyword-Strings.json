@@ -48,7 +48,7 @@
       "Acceleration",
       "acceleration"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and gives [E]."
+    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and gives 3 Strength for one turn."
   },
   {
     "PROPER_NAME": "Preservation",

@@ -37,6 +37,9 @@ public class GlyphOfSightPower extends AbstractPower {
     @Override
     public void atStartOfTurnPostDraw() {
         for (int i = 0; i < amount; i++) {
+            if (theextravagant.SecondEnergyOrb.currentEnergy > 1) {
+                SecondEnergyOrb.currentEnergy -= 1;
+            }
             if (theextravagant.SecondEnergyOrb.currentEnergy > 0) {
                 SecondEnergyOrb.currentEnergy -= 1;
             }

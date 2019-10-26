@@ -26,7 +26,7 @@ public class Tension extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
     private static final int DAMAGE = 7;
-    private static final int MAGICNUMBER = 50;
+    private static final int MAGICNUMBER = 20;
     private static final int BLOCK = 0;
 
     public Tension() {
@@ -47,7 +47,7 @@ public class Tension extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(25);
+            upgradeMagicNumber(20);
             initializeDescription();
         }
     }

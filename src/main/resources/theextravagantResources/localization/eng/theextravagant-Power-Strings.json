@@ -190,5 +190,12 @@
       "If you play an attack, gain ",
       " Block."
     ]
+  },
+  "theextravagant:ImpulsePower": {
+    "NAME": "Impulse",
+    "DESCRIPTIONS": [
+      "If the next card you play costs 2, gain ",
+      " [E]."
+    ]
   }
 }

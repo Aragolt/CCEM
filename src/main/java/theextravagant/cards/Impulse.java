@@ -1,6 +1,7 @@
 package theextravagant.cards;
 
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -23,13 +24,13 @@ public class Impulse extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 0;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
-    private static final int BLOCK = 0;
+    private static final int BLOCK = 8;
 
     public Impulse() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 1);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -38,6 +39,7 @@ public class Impulse extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ImpulsePower(magicNumber)));
     }
 
@@ -46,6 +48,7 @@ public class Impulse extends AbstractEVCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
+            upgradeBlock(2);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

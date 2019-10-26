@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +11,7 @@ import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.GlyphOfPowerPower;
 import theextravagant.theextravagant;
 
-public class GlyphOfPower extends AbstractEVCard {
+public class GlyphOfPower extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("GlyphOfPower");
@@ -23,14 +24,14 @@ public class GlyphOfPower extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
 
 
     public GlyphOfPower() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;

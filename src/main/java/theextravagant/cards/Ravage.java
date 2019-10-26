@@ -1,6 +1,7 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.utility.ShakeScreenAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -26,8 +27,8 @@ public class Ravage extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 0;
-    private static final int DAMAGE = 2;
+    private static final int COST = 1;
+    private static final int DAMAGE = 3;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
@@ -38,6 +39,8 @@ public class Ravage extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         this.isMultiDamage = true;
+        ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 2);
+        ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 2);
     }
 
     @Override

@@ -29,7 +29,7 @@ public class HeavyBlows extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
     private static final int DAMAGE = 12;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public HeavyBlows() {
@@ -46,7 +46,7 @@ public class HeavyBlows extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new PunchEffectAction(m));
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), 4));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, magicNumber), 3));
     }
 
     @Override

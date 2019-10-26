@@ -209,8 +209,8 @@
   },
   "theextravagant:GlyphOfSight": {
     "NAME": "Glyph of Sight",
-    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Invocation into your hand.."
+    "DESCRIPTION": "At the start of each turn lose [SE] [SE] and add an theextravagant:Invocation into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] [SE] and add an theextravagant:Invocation into your hand.."
   },
   "theextravagant:Accumulation": {
     "NAME": "Accumulation",
@@ -223,13 +223,12 @@
   },
   "theextravagant:Acceleration": {
     "NAME": "Acceleration",
-    "DESCRIPTION": "Retain. NL Gain [E]. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. NL Gain [E] [E]. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL Exhaust."
   },
   "theextravagant:GlyphOfPower": {
     "NAME": "Glyph of Power",
-    "DESCRIPTION": "At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [SE] and add an theextravagant:Acceleration into your hand."
+    "DESCRIPTION": "At the start of each turn lose [E] and add an theextravagant:Acceleration into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [E] and add an theextravagant:Acceleration into your hand."
   },
   "theextravagant:Preservation": {
     "NAME": "Preservation",
@@ -248,7 +247,7 @@
   },
   "theextravagant:Strafe": {
     "NAME": "Strafe",
-    "DESCRIPTION": "Gain !B! Block for each skill in your hand that costs 0 [E]."
+    "DESCRIPTION": "Gain !B! Block for each card in your hand that costs 0 [E]."
   },
   "theextravagant:IronPlumes": {
     "NAME": "Iron Plumes",
@@ -330,8 +329,8 @@
   },
   "theextravagant:Impulse": {
     "NAME": "Impulse",
-    "DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] next turn.",
-    "UPGRADE_DESCRIPTION": "Whenever you play a card that costs 2 or more [E] this turn, gain [E] [E] next turn."
+    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E], gain [E]",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E], gain [E] [E]"
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
@@ -397,7 +396,7 @@
   },
   "theextravagant:HeavyBlows": {
     "NAME": "Heavy Blows",
-    "DESCRIPTION": "When drawn lose !M! Strength. NL Deal !D! damage 3 times. NL Gain 4 Strength."
+    "DESCRIPTION": "When drawn lose !M! Strength. NL Deal !D! damage 3 times. NL Gain 3 Strength."
   },
   "theextravagant:Repell": {
     "NAME": "Repell",
@@ -414,7 +413,7 @@
   },
   "theextravagant:Ravage": {
     "NAME": "Ravage",
-    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Increase this cards damage by 1 this combat. NL Repeat for each attack in your hand."
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Increase this cards damage by 1 this combat. NL Repeat for each attack in your hand. NL Exhaustive !stslib:ex!"
   },
   "theextravagant:Castle": {
     "NAME": "Castle",

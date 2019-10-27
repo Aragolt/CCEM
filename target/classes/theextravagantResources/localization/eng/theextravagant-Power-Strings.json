@@ -190,5 +190,20 @@
       "If you play an attack, gain ",
       " Block."
     ]
+  },
+  "theextravagant:ImpulsePower": {
+    "NAME": "Impulse",
+    "DESCRIPTIONS": [
+      "If the next card you play costs 2, gain ",
+      " [E]."
+    ]
+  },
+  "theextravagant:NihilPower": {
+    "NAME": "Nihil",
+    "DESCRIPTIONS": [
+      "Prevent the next time you would lose HP and add a void on top of your draw pile instead.",
+      "Prevent the next ",
+      " times you would lose HP and add a void on top of your draw pile instead."
+    ]
   }
 }

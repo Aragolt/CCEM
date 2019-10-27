@@ -223,7 +223,7 @@
   },
   "theextravagant:Acceleration": {
     "NAME": "Acceleration",
-    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Gain !M! Strength. NL Lose !M! Strength at the end of your turn. NL Exhaust."
   },
   "theextravagant:GlyphOfPower": {
     "NAME": "Glyph of Power",
@@ -297,7 +297,7 @@
   },
   "theextravagant:Precaution": {
     "NAME": "Precaution",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !B! Block next turn. NL Put !M! cards from your discard pile on top of your draw pile."
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! card from your discard pile on top of your draw pile. It costs 0 [E] until played."
   },
   "theextravagant:Outrun": {
     "NAME": "Outrun",
@@ -329,8 +329,8 @@
   },
   "theextravagant:Impulse": {
     "NAME": "Impulse",
-    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E], gain [E]",
-    "UPGRADE_DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E], gain [E] [E]"
+    "DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E] , gain [E]",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. If the next card you play costs 2 [E] , gain [E] [E]"
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
@@ -338,7 +338,7 @@
   },
   "theextravagant:StepBack": {
     "NAME": "Step Back",
-    "DESCRIPTION": "Gain !B! Block. Put !M! card from your hand on top of your draw pile."
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! card from your hand on top of your draw pile. NL Draw 2 cards next turn."
   },
   "theextravagant:DualMirrorCut": {
     "NAME": "Dual Mirror Cut",
@@ -418,5 +418,14 @@
   "theextravagant:Castle": {
     "NAME": "Castle",
     "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL When drawn put all skills from your hand on top of your draw pile, then draw !M! cards. "
+  },
+  "theextravagant:Nihil": {
+    "NAME": "Nihil",
+    "DESCRIPTION": "Prevent the next time you would lose HP and add a Void on top of your draw pile instead. NL Exhaustive !stslib:ex!."
+  },
+  "theextravagant:Supersonic": {
+    "NAME": "Supersonic",
+    "DESCRIPTION": "Add X theextravagant:Accelerations to your hand.",
+    "UPGRADE_DESCRIPTION": "Add X upgraded theextravagant:Accelerations to your hand."
   }
 }

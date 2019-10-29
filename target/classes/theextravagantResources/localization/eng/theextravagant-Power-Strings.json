@@ -205,5 +205,11 @@
       "Prevent the next ",
       " times you would lose HP and add a void on top of your draw pile instead."
     ]
+  },
+  "theextravagant:LifeCharmPower": {
+    "NAME": "Life Charm",
+    "DESCRIPTIONS": [
+      "You can't gain any debuffs."
+    ]
   }
 }

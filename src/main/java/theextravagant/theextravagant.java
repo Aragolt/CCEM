@@ -398,6 +398,7 @@ public class theextravagant implements
         BaseMod.addCard(new Castle());
         BaseMod.addCard(new Nihil());
         BaseMod.addCard(new Supersonic());
+        BaseMod.addCard(new Shove());
         logger.info("Making sure the cards are unlocked.");
 
 
@@ -485,6 +486,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Castle.ID);
         UnlockTracker.unlockCard(Nihil.ID);
         UnlockTracker.unlockCard(Supersonic.ID);
+        UnlockTracker.unlockCard(Shove.ID);
         logger.info("Done adding cards!");
     }
 

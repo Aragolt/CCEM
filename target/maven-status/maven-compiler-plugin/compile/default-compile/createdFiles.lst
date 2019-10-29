@@ -191,6 +191,7 @@ theextravagant\actions\BetterSFXAction.class
 theextravagant\powers\MagicPower.class
 theextravagant\cards\DualMirrorCut.class
 theextravagant\cards\Invocation.class
+theextravagant\cards\Shove.class
 aramod\powers\LoseFocusPower.class
 theextravagant\variables\DefaultCustomVariable.class
 theextravagant\relics\PlaceholderRelic2.class
@@ -208,6 +209,7 @@ theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class
 theextravagant\actions\PlayCardAction.class
 theextravagant\util\IDCheckDontTouchPls.class
+theextravagant\powers\LifeCharmPower.class
 theextravagant\cards\Twitch.class
 aramod\utils\TextureLoader.class
 theextravagant\cards\Antiquity.class

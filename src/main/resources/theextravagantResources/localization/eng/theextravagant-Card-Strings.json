@@ -404,8 +404,8 @@
   },
   "theextravagant:LifeCharm": {
     "NAME": "Life Charm",
-    "DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs. If this card is Exhausted, shuffle a Dazed into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Ethereal. NL Unplayable. NL While this is in your hand, you cannot gain any debuffs."
+    "DESCRIPTION": "Prevent all debuffs until the end of this turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Prevent all debuffs until next turn. NL Exhaust."
   },
   "theextravagant:Dazzle": {
     "NAME": "Dazzle",
@@ -427,5 +427,9 @@
     "NAME": "Supersonic",
     "DESCRIPTION": "Add X theextravagant:Accelerations to your hand.",
     "UPGRADE_DESCRIPTION": "Add X upgraded theextravagant:Accelerations to your hand."
+  },
+  "theextravagant:Shove": {
+    "NAME": "Shove",
+    "DESCRIPTION": "Deal !D! damage twice. NL Shuffle an theextravagant:Acceleration into your draw pile."
   }
 }

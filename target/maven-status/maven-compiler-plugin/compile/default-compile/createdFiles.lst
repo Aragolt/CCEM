@@ -162,6 +162,7 @@ theextravagant\cards\DAMNATION.class
 theextravagant\characters\TheExtravagant$1.class
 theextravagant\cards\Supersonic.class
 theextravagant\cards\Retreat.class
+theextravagant\powers\PersistencePower.class
 theextravagant\cards\Accumulation.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
 theextravagant\cards\ReSeek.class

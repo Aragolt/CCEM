@@ -211,5 +211,14 @@
     "DESCRIPTIONS": [
       "You can't gain any debuffs."
     ]
+  },
+  "theextravagant:PersistencePower": {
+    "NAME": "Persistence",
+    "DESCRIPTIONS": [
+      "After you play  ",
+      " attacks, gain ",
+      " Energy",
+      " attack, gain "
+    ]
   }
 }

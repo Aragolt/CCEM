@@ -242,8 +242,8 @@
   },
   "theextravagant:Persistence": {
     "NAME": "Persistence",
-    "DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Lose !M! Strength at the end of your turn. NL Add a Persistence into your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage. Gain !M! Strength. Lose !M! Strength at the end of your turn. NL Add a Persistence+ into your hand. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage twice. After you play 4 attacks, gain [E].",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. After you play 4 attacks, gain [E] [E]."
   },
   "theextravagant:Strafe": {
     "NAME": "Strafe",

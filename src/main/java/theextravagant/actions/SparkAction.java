@@ -8,19 +8,23 @@ import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
 public class SparkAction extends AbstractGameAction {
-    public SparkAction(int amount) {
+    private int amount2;
+
+    public SparkAction(int amount, int amount2) {
         this.duration = Settings.ACTION_DUR_FAST;
         this.actionType = AbstractGameAction.ActionType.WAIT;
         this.source = AbstractDungeon.player;
         this.target = target;
         this.amount = amount;
+        this.amount2 = amount2;
     }
 
     @Override
     public void update() {
         for (AbstractCard C : AbstractDungeon.player.hand.group) {
+            C.flash();
             AbstractDungeon.actionManager.addToBottom(new ModifyBlockAction(C.uuid, amount));
-            AbstractDungeon.actionManager.addToBottom(new ModifyDamageAction(C.uuid, amount));
+            AbstractDungeon.actionManager.addToBottom(new ModifyDamageAction(C.uuid, amount2));
         }
         isDone = true;
     }

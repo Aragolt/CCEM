@@ -1,19 +1,24 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.badlogic.gdx.math.MathUtils;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.relics.AbstractRelic;
 import com.megacrit.cardcrawl.vfx.combat.GrandFinalEffect;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
+
+import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Redemption extends CustomCard {
 
@@ -27,10 +32,11 @@ public class Redemption extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int DAMAGE = 5;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
+    public static int redemptionbonus = 0;
 
     public Redemption() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -43,28 +49,82 @@ public class Redemption extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        CardGroup group = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-        for (AbstractCard c : p.drawPile.group) {
-            if (c.costForTurn == -2 && !c.freeToPlayOnce) {
-                group.addToTop(c);
-            }
-        }
         if (Settings.FAST_MODE) {
             this.addToBot(new VFXAction(new GrandFinalEffect(), 0.7F));
         } else {
             this.addToBot(new VFXAction(new GrandFinalEffect(), 1.0F));
         }
-        for (AbstractCard c : group.group) {
-            p.drawPile.moveToDiscardPile(c);
-            this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+        this.addToBot(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.SLASH_HEAVY));
+    }
+
+    @Override
+    public void applyPowers() {
+        this.applyPowersToBlock();
+        AbstractPlayer player = AbstractDungeon.player;
+        this.isDamageModified = false;
+        ArrayList<AbstractMonster> m = AbstractDungeon.getCurrRoom().monsters.monsters;
+        float[] tmp = new float[m.size()];
+
+        int i;
+        for (i = 0; i < tmp.length; ++i) {
+            tmp[i] = (float) this.baseDamage;
+            tmp[i] += redemptionbonus;
         }
+
+        Iterator var5;
+        AbstractPower p;
+        for (i = 0; i < tmp.length; ++i) {
+            var5 = player.relics.iterator();
+
+            while (var5.hasNext()) {
+                AbstractRelic r = (AbstractRelic) var5.next();
+                tmp[i] = r.atDamageModify(tmp[i], this);
+                if (this.baseDamage != (int) tmp[i]) {
+                    this.isDamageModified = true;
+                }
+            }
+
+            for (var5 = player.powers.iterator(); var5.hasNext(); tmp[i] = p.atDamageGive(tmp[i], this.damageTypeForTurn, this)) {
+                p = (AbstractPower) var5.next();
+            }
+
+            tmp[i] = player.stance.atDamageGive(tmp[i], this.damageTypeForTurn, this);
+            if (this.baseDamage != (int) tmp[i]) {
+                this.isDamageModified = true;
+            }
+        }
+
+        for (i = 0; i < tmp.length; ++i) {
+            for (var5 = player.powers.iterator(); var5.hasNext(); tmp[i] = p.atDamageFinalGive(tmp[i], this.damageTypeForTurn, this)) {
+                p = (AbstractPower) var5.next();
+            }
+        }
+
+        for (i = 0; i < tmp.length; ++i) {
+            if (tmp[i] < 0.0F) {
+                tmp[i] = 0.0F;
+            }
+        }
+
+        this.multiDamage = new int[tmp.length];
+
+        for (i = 0; i < tmp.length; ++i) {
+            if (this.baseDamage != (int) tmp[i]) {
+                this.isDamageModified = true;
+            }
+
+            this.multiDamage[i] = MathUtils.floor(tmp[i]);
+        }
+
+        this.damage = this.multiDamage[0];
+
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(5);
             initializeDescription();
         }
     }

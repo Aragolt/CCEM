@@ -1,34 +1,22 @@
 package theextravagant.patches.EVCardPatches;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePatch;
-import com.evacipated.cardcrawl.modthespire.lib.SpirePostfixPatch;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.helpers.FontHelper;
-import theextravagant.cards.AbstractEVCard;
-import theextravagant.theextravagant;
-
-
 public class AbstractCardPatches {
-    private static TextureAtlas.AtlasRegion SecondEnergyOrbOnCard = theextravagant.UIAtlas.findRegion("OtherEnergyCard");
+   /* private static TextureAtlas.AtlasRegion SecondEnergyOrbOnCard = theextravagant.UIAtlas.findRegion("OtherEnergyCard");
+
     @SpirePatch(clz = AbstractCard.class, method = "renderEnergy")
     public static class SecondEnergyRenderPatch {
         @SpirePostfixPatch
         public static void patch(AbstractCard __instance, SpriteBatch sb) {
-            if(__instance instanceof AbstractEVCard)
-            {
+            if (__instance instanceof AbstractEVCard) {
                 FontHelper.cardEnergyFont_L.getData().setScale(__instance.drawScale);
                 renderHelper(sb, Color.WHITE, SecondEnergyOrbOnCard, __instance.current_x, __instance.current_y, __instance);
-                FontHelper.renderRotatedText(sb, FontHelper.cardEnergyFont_L, Integer.toString(((AbstractEVCard)__instance).Secondcostforturn), __instance.current_x, __instance.current_y, 135.0F * __instance.drawScale * Settings.scale, 192.0F * __instance.drawScale * Settings.scale, __instance.angle, false, Color.WHITE);
+                FontHelper.renderRotatedText(sb, FontHelper.cardEnergyFont_L, Integer.toString(((AbstractEVCard) __instance).Secondcostforturn), __instance.current_x, __instance.current_y, 135.0F * __instance.drawScale * Settings.scale, 192.0F * __instance.drawScale * Settings.scale, __instance.angle, false, Color.WHITE);
             }
         }
+
         private static void renderHelper(SpriteBatch sb, Color color, TextureAtlas.AtlasRegion img, float drawX, float drawY, AbstractCard C) {
             sb.setColor(color);
-            sb.draw(img, drawX + img.offsetX - (float)img.originalWidth / 2.0F, drawY + img.offsetY - (float)img.originalHeight / 2.0F, (float)img.originalWidth / 2.0F - img.offsetX, (float)img.originalHeight / 2.0F - img.offsetY, (float)img.packedWidth, (float)img.packedHeight, C.drawScale * Settings.scale, C.drawScale * Settings.scale, C.angle);
+            sb.draw(img, drawX + img.offsetX - (float) img.originalWidth / 2.0F, drawY + img.offsetY - (float) img.originalHeight / 2.0F, (float) img.originalWidth / 2.0F - img.offsetX, (float) img.originalHeight / 2.0F - img.offsetY, (float) img.packedWidth, (float) img.packedHeight, C.drawScale * Settings.scale, C.drawScale * Settings.scale, C.angle);
         }
-    }
+    }*/
 }

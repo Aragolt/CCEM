@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +12,7 @@ import com.megacrit.cardcrawl.powers.LoseStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import theextravagant.theextravagant;
 
-public class Acceleration extends AbstractEVCard {
+public class Acceleration extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Acceleration");
@@ -30,7 +31,7 @@ public class Acceleration extends AbstractEVCard {
     private static final int BLOCK = 0;
 
     public Acceleration() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 0);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;

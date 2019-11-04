@@ -32,7 +32,7 @@
       "invocation",
       "invocations"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and fetches one card from your draw pile."
+    "DESCRIPTION": "A cost skill, which retains, exhausts and fetches one card from your draw pile."
   },
   {
     "PROPER_NAME": "Accumulation",
@@ -40,7 +40,7 @@
       "Accumulation",
       "accumulation"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and draws 2 cards."
+    "DESCRIPTION": "A 0 cost skill, which retains, exhausts and draws 2 cards."
   },
   {
     "PROPER_NAME": "Acceleration",
@@ -48,7 +48,7 @@
       "Acceleration",
       "acceleration"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and gives 3 Strength for one turn."
+    "DESCRIPTION": "A 0 cost skill, which retains, exhausts and gives 3 Strength for one turn."
   },
   {
     "PROPER_NAME": "Acceleration",
@@ -56,7 +56,7 @@
       "Accelerations",
       "accelerations"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, exhausts and gives 3 Strength for one turn."
+    "DESCRIPTION": "A 0 cost skill, which retains, exhausts and gives 3 Strength for one turn."
   },
   {
     "PROPER_NAME": "Preservation",
@@ -64,7 +64,7 @@
       "Preservation",
       "preservation"
     ],
-    "DESCRIPTION": "A 0 - 0 cost skill, which retains, and retains 1 card until the next turn."
+    "DESCRIPTION": "A 0 cost skill, which retains, and retains 1 card until the next turn."
   },
   {
     "PROPER_NAME": "Basic Strike",
@@ -81,5 +81,43 @@
       "basic_defend"
     ],
     "DESCRIPTION": "Counts as basic Defend."
+  },
+  {
+    "PROPER_NAME": "Heavy",
+    "NAMES": [
+      "Heavy",
+      "heavy",
+      "heavy.",
+      "Heavy."
+    ],
+    "DESCRIPTION": "When drawn, draw 1 less card next turn."
+  },
+  {
+    "PROPER_NAME": "Light",
+    "NAMES": [
+      "Light",
+      "light",
+      "light.",
+      "Light."
+    ],
+    "DESCRIPTION": "When drawn, draw 1 additional card next turn."
+  },
+  {
+    "PROPER_NAME": "Delay",
+    "NAMES": [
+      "Delay",
+      "delay"
+    ],
+    "DESCRIPTION": "Effect triggers after a certain number of cards are played."
+  },
+  {
+    "PROPER_NAME": "Spark",
+    "NAMES": [
+      "Spark",
+      "spark",
+      "Sparks",
+      "sparks"
+    ],
+    "DESCRIPTION": "An Unplayable, Ethereal card that increases the Block and damage of all cards in your hand by 1"
   }
 ]

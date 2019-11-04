@@ -44,7 +44,8 @@ public class PlayCardTwiceAction extends AbstractGameAction {
         }
 
         tmp.purgeOnUse = true;
-        AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
+        AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true, true));
+        //AbstractDungeon.actionManager.cardQueue.add(new CardQueueItem(tmp, m, card.energyOnUse, true));
         AbstractDungeon.actionManager.addToBottom(new PlayCardAction(tmp, new UseCardAction(tmp, m)));
         isDone = true;
     }

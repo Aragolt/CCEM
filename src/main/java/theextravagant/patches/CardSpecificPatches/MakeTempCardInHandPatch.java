@@ -9,15 +9,14 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import theextravagant.cards.TwilightTone;
 import theextravagant.powers.ModifyDamagePower;
 
-@SpirePatch(clz = MakeTempCardInHandAction.class, method = SpirePatch.CONSTRUCTOR,paramtypez={
+@SpirePatch(clz = MakeTempCardInHandAction.class, method = SpirePatch.CONSTRUCTOR, paramtypez = {
         AbstractCard.class,
         int.class
 })
 public class MakeTempCardInHandPatch {
     @SpirePostfixPatch
-    public static void Patch(MakeTempCardInHandAction __instance, AbstractCard c, int amount){
-        if(c instanceof TwilightTone)
-        {
+    public static void Patch(MakeTempCardInHandAction __instance, AbstractCard c, int amount) {
+        if (c instanceof TwilightTone) {
             AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ModifyDamagePower()));
         }
     }

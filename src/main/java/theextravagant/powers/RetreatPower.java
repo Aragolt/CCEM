@@ -12,7 +12,7 @@ import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
 
-public class RetreatPower extends AbstractPower{
+public class RetreatPower extends AbstractPower {
     public static final String POWER_ID = makeID("RetreatPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -34,7 +34,7 @@ public class RetreatPower extends AbstractPower{
 
     @Override
     public void updateDescription() {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
+        description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
     }
 
     @Override

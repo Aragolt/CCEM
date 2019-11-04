@@ -35,14 +35,14 @@
     "NAME": "Translucent Feather",
     "FLAVOR": "Like it's just an illusion.",
     "DESCRIPTIONS": [
-      "At the start of each combat #yFetch #b1 card from your draw pile."
+      "Draw #b2 additional cards next turn whenever you shuffle your draw pile."
     ]
   },
   "theextravagant:TranscendedFeather": {
     "NAME": "Transcended Feather",
     "FLAVOR": "Certainly not an illusion.",
     "DESCRIPTIONS": [
-      "Replaces Translucent Feather. At the start of each combat add #b2 #ytheextravagant:Invocations to your hand."
+      "Replaces Translucent Feather. Whenever you shuffle your draw pile, draw #b1 additional card each turn. You can hold #b2 additional cards in your hand"
     ]
   },
   "theextravagant:RedPhonoblaster": {
@@ -56,7 +56,7 @@
     "NAME": "Sorbet",
     "FLAVOR": "Like Ice cream, but made for fancy people.",
     "DESCRIPTIONS": [
-      "Extravagance is now conserved between turns."
+      "You are now immune to the downside of #Heavy cards."
     ]
   },
   "theextravagant:PocketDynamo": {
@@ -70,7 +70,7 @@
     "NAME": "Molten Lipstick",
     "FLAVOR": "Kissing not recommended.",
     "DESCRIPTIONS": [
-      "Whenever you play a card that  costs #b0 [E], deal #b10 damage to a random enemy and add an upgraded #yBurn on top of your draw pile."
+      "At the start of combat shuffle #b2 #yBurns into your draw pile. Whenever you draw a status or curse card deal #b5 damage to all enemies."
     ]
   }
 }

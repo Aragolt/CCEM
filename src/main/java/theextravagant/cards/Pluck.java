@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
 import com.megacrit.cardcrawl.actions.common.ShuffleAction;
 import com.megacrit.cardcrawl.actions.utility.WaitAction;
@@ -12,25 +13,25 @@ import theextravagant.actions.PluckAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Pluck extends AbstractEVCard {
+public class Pluck extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Pluck");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = theextravagant.makeCardPath("Pluck.png");
+    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public Pluck() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 1);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -41,8 +42,7 @@ public class Pluck extends AbstractEVCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         if (p.drawPile.size() >= magicNumber) {
             AbstractDungeon.actionManager.addToBottom(new PluckAction(magicNumber, p));
-        } else if (p.drawPile.size() < magicNumber && (p.drawPile.size() + p.discardPile.size()) >= magicNumber)
-        {
+        } else if (p.drawPile.size() < magicNumber && (p.drawPile.size() + p.discardPile.size()) >= magicNumber) {
             int i = p.drawPile.size();
             AbstractDungeon.actionManager.addToTop(new PluckAction(i, p));
             if (AbstractDungeon.player.discardPile.size() > 0) {
@@ -66,8 +66,7 @@ public class Pluck extends AbstractEVCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            Secondcost = 0;
-            Secondcostforturn = Secondcost;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

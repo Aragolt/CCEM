@@ -13,8 +13,14 @@ import com.megacrit.cardcrawl.localization.UIStrings;
 import java.util.Iterator;
 
 public class ReverseSeekAction extends AbstractGameAction {
-    private static final UIStrings uiStrings;
     public static final String[] TEXT;
+    private static final UIStrings uiStrings;
+
+    static {
+        uiStrings = CardCrawlGame.languagePack.getUIString("AnyCardFromDeckToHandAction");
+        TEXT = uiStrings.TEXT;
+    }
+
     private AbstractPlayer p;
 
     public ReverseSeekAction(int amount) {
@@ -31,8 +37,8 @@ public class ReverseSeekAction extends AbstractGameAction {
             Iterator var5 = this.p.discardPile.group.iterator();
 
             AbstractCard newcard;
-            while(var5.hasNext()) {
-                card = (AbstractCard)var5.next();
+            while (var5.hasNext()) {
+                card = (AbstractCard) var5.next();
                 tmp.addToRandomSpot(card);
             }
 
@@ -59,7 +65,7 @@ public class ReverseSeekAction extends AbstractGameAction {
 
                 this.isDone = true;
             } else if (tmp.size() <= this.amount) {
-                for(int i = 0; i < tmp.size(); ++i) {
+                for (int i = 0; i < tmp.size(); ++i) {
                     card = tmp.getNCardFromTop(i);
                     if (this.p.hand.size() == BaseMod.MAX_HAND_SIZE) {
                         this.p.discardPile.moveToDiscardPile(card);
@@ -93,8 +99,8 @@ public class ReverseSeekAction extends AbstractGameAction {
             if (AbstractDungeon.gridSelectScreen.selectedCards.size() != 0) {
                 Iterator var1 = AbstractDungeon.gridSelectScreen.selectedCards.iterator();
 
-                while(var1.hasNext()) {
-                    card = (AbstractCard)var1.next();
+                while (var1.hasNext()) {
+                    card = (AbstractCard) var1.next();
                     card.unhover();
                     if (this.p.hand.size() == BaseMod.MAX_HAND_SIZE) {
                         this.p.discardPile.moveToDiscardPile(card);
@@ -114,10 +120,5 @@ public class ReverseSeekAction extends AbstractGameAction {
 
             this.tickDuration();
         }
-    }
-
-    static {
-        uiStrings = CardCrawlGame.languagePack.getUIString("AnyCardFromDeckToHandAction");
-        TEXT = uiStrings.TEXT;
     }
 }

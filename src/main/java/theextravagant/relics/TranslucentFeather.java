@@ -2,8 +2,9 @@ package theextravagant.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.defect.SeekAction;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.*;
@@ -21,21 +22,8 @@ public class TranslucentFeather extends CustomRelic {
     }
 
     @Override
-    public void atBattleStartPreDraw() {
-        flash();
-    }
-
-    @Override
-    public void atBattleStart() {
-        FirstTurn = true;
-    }
-
-    @Override
-    public void atTurnStart() {
-        if (FirstTurn) {
-            FirstTurn = false;
-            AbstractDungeon.actionManager.addToTop(new SeekAction(1));
-        }
+    public void onShuffle() {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, 2)));
     }
 
     @Override

@@ -1,28 +1,8 @@
 package theextravagant.patches.GlyphPatches;
 
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.BitmapFont;
-import com.badlogic.gdx.graphics.g2d.GlyphLayout;
-import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.badlogic.gdx.graphics.glutils.ShaderProgram;
-import com.badlogic.gdx.math.Affine2;
-import com.badlogic.gdx.math.MathUtils;
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.core.Settings;
-import com.megacrit.cardcrawl.helpers.FontHelper;
-import com.megacrit.cardcrawl.screens.SingleCardViewPopup;
-import javassist.CtBehavior;
-
-import java.lang.reflect.Field;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import static theextravagant.theextravagant.UIAtlas;
-
 public class CustomGlyphPatch {
+    /*
     @SpirePatch(
             clz = AbstractCard.class,
             method = "renderDescription"
@@ -178,4 +158,5 @@ public class CustomGlyphPatch {
             }
         }
     }
+    */
 }

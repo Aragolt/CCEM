@@ -3,7 +3,7 @@ package theextravagant.cards;
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.unique.AddCardToDeckAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -43,7 +43,7 @@ public class Shove extends CustomCard {
         for (int i = 0; i < magicNumber; i++) {
             AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_HEAVY));
         }
-        AbstractDungeon.actionManager.addToBottom(new AddCardToDeckAction(new Acceleration()));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Acceleration(), 1, true, true));
     }
 
     @Override

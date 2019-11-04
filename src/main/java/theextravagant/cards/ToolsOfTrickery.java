@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,25 +11,25 @@ import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.TrickeryPower;
 import theextravagant.theextravagant;
 
-public class ToolsOfTrickery extends AbstractEVCard {
+public class ToolsOfTrickery extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("ToolsOfTrickery");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = theextravagant.makeCardPath("ToolsOfTrickery.png");
+    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final int COST = 0;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 1;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public ToolsOfTrickery() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -44,8 +45,7 @@ public class ToolsOfTrickery extends AbstractEVCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            Secondcost = 1;
-            Secondcostforturn = Secondcost;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

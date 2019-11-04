@@ -9,9 +9,9 @@ import org.apache.logging.log4j.Logger;
 import java.util.HashMap;
 
 public class TextureLoader {
-    private static HashMap<String, Texture> textures = new HashMap<String, Texture>();
     public static final Logger logger = LogManager.getLogger(TextureLoader.class.getName());
-    
+    private static HashMap<String, Texture> textures = new HashMap<String, Texture>();
+
     /**
      * @param textureString - String path to the texture you want to load relative to resources,
      *                      Example: "theextravagantResources/images/ui/missing_texture.png"
@@ -28,7 +28,7 @@ public class TextureLoader {
         }
         return textures.get(textureString);
     }
-    
+
     /**
      * Creates an instance of the texture, applies a linear filter to it, and places it in the HashMap
      *

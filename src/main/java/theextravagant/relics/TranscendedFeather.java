@@ -1,10 +1,9 @@
 package theextravagant.relics;
 
+import basemod.BaseMod;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import theextravagant.cards.Invocation;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.*;
@@ -27,7 +26,18 @@ public class TranscendedFeather extends CustomRelic {
 
     @Override
     public void atBattleStart() {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Invocation(), 2));
+        this.counter = 0;
+    }
+
+    @Override
+    public void onVictory() {
+        this.counter = -1;
+    }
+
+    @Override
+    public void onShuffle() {
+        AbstractDungeon.player.gameHandSize += 1;
+        counter += 1;
     }
 
     public boolean canSpawn() {
@@ -36,7 +46,17 @@ public class TranscendedFeather extends CustomRelic {
 
     @Override
     public void obtain() {
-        this.instantObtain(AbstractDungeon.player, AbstractDungeon.player.relics.indexOf(AbstractDungeon.player.getRelic(TranslucentFeather.ID)), false);
+        this.instantObtain(AbstractDungeon.player, AbstractDungeon.player.relics.indexOf(AbstractDungeon.player.getRelic(TranslucentFeather.ID)), true);
+    }
+
+    @Override
+    public void onEquip() {
+        BaseMod.MAX_HAND_SIZE += 2;
+    }
+
+    @Override
+    public void onUnequip() {
+        BaseMod.MAX_HAND_SIZE -= 2;
     }
 
     @Override

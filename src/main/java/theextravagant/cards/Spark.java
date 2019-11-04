@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.actions.SparkAction;
-import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
 public class Spark extends CustomCard {
@@ -15,12 +14,12 @@ public class Spark extends CustomCard {
 
     public static final String ID = theextravagant.makeID("Spark");
     public static final String IMG = theextravagant.makeCardPath("Spark.png");
-    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
+    public static final CardColor COLOR = CardColor.COLORLESS;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.SPECIAL;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = -2;
@@ -44,18 +43,13 @@ public class Spark extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        AbstractDungeon.actionManager.addToBottom(new SparkAction(magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new SparkAction(magicNumber, magicNumber));
     }
 
-
-    @Override
-    public void triggerOnManualDiscard() {
-        AbstractDungeon.actionManager.addToBottom(new SparkAction(magicNumber));
-    }
 
     @Override
     public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return false;
+        return upgraded;
     }
 
 
@@ -63,6 +57,7 @@ public class Spark extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeBaseCost(1);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

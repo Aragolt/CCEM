@@ -17,6 +17,7 @@ import java.util.Iterator;
 public class AntiquityAction extends AbstractGameAction {
     public static final String[] TEXT;
     private static final UIStrings uiStrings;
+
     static {
         uiStrings = CardCrawlGame.languagePack.getUIString("Antiquity");
         TEXT = uiStrings.TEXT;

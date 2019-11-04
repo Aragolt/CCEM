@@ -14,6 +14,7 @@ public class OneTurnRetainPower extends AbstractPower {
     public static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+
     public OneTurnRetainPower(int amount) {
         name = NAME;
         ID = POWER_ID;

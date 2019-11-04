@@ -2,13 +2,11 @@ package theextravagant.relics;
 
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
-import com.megacrit.cardcrawl.actions.utility.UseCardAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.cards.status.Burn;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.powers.FireBreathingPower;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.*;
@@ -30,12 +28,8 @@ public class MoltenLipstick extends CustomRelic {
     }
 
     @Override
-    public void onUseCard(AbstractCard targetCard, UseCardAction useCardAction) {
-        if (targetCard.freeToPlayOnce || targetCard.costForTurn == 0) {
-            AbstractDungeon.actionManager.addToBottom(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, 10, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.FIRE));
-            AbstractCard Burn = new Burn();
-            Burn.upgrade();
-            AbstractDungeon.player.drawPile.addToTop(Burn);
-        }
+    public void atBattleStart() {
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Burn(), 2, true, true));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new FireBreathingPower(AbstractDungeon.player, 5)));
     }
 }

@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +11,7 @@ import theextravagant.actions.BetterHeadbuttAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Precaution extends AbstractEVCard {
+public class Precaution extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Precaution");
@@ -25,10 +26,10 @@ public class Precaution extends AbstractEVCard {
     private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
-    private static final int BLOCK = 5;
+    private static final int BLOCK = 6;
 
     public Precaution() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -37,15 +38,16 @@ public class Precaution extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new BetterHeadbuttAction(p, magicNumber, true));
+        AbstractDungeon.actionManager.addToBottom(new BetterHeadbuttAction(p, magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
     }
+
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(2);
+            upgradeBlock(3);
             initializeDescription();
         }
     }

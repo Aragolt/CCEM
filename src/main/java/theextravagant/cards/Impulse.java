@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +12,7 @@ import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.ImpulsePower;
 import theextravagant.theextravagant;
 
-public class Impulse extends AbstractEVCard {
+public class Impulse extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Impulse");
@@ -27,14 +28,15 @@ public class Impulse extends AbstractEVCard {
     private static final int COST = 2;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
-    private static final int BLOCK = 8;
+    private static final int BLOCK = 10;
 
     public Impulse() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.cardsToPreview = new Acceleration();
     }
 
     @Override
@@ -47,9 +49,7 @@ public class Impulse extends AbstractEVCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
-            upgradeBlock(2);
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeBlock(4);
             initializeDescription();
         }
     }

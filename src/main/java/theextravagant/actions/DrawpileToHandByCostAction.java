@@ -32,8 +32,8 @@ public class DrawpileToHandByCostAction extends AbstractGameAction {
             Iterator var2 = this.p.drawPile.group.iterator();
 
             AbstractCard card;
-            while(var2.hasNext()) {
-                card = (AbstractCard)var2.next();
+            while (var2.hasNext()) {
+                card = (AbstractCard) var2.next();
                 if ((card.costForTurn == this.costToCheck) || (costToCheck == 0 && (card.costForTurn == 0 || card.freeToPlayOnce == true))) {
                     tmp.addToRandomSpot(card);
                 }
@@ -44,7 +44,7 @@ public class DrawpileToHandByCostAction extends AbstractGameAction {
                 return;
             }
 
-            for(int i = 0; i < this.amount; ++i) {
+            for (int i = 0; i < this.amount; ++i) {
                 if (!tmp.isEmpty()) {
                     tmp.shuffle();
                     card = tmp.getBottomCard();

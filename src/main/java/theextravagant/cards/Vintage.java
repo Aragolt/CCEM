@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -10,7 +11,7 @@ import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.VintagePower;
 import theextravagant.theextravagant;
 
-public class Vintage extends AbstractEVCard {
+public class Vintage extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Vintage");
@@ -22,13 +23,13 @@ public class Vintage extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
     public Vintage() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -44,8 +45,7 @@ public class Vintage extends AbstractEVCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            Secondcost = 1;
-            Secondcostforturn = Secondcost;
+            upgradeBaseCost(0);
             initializeDescription();
         }
     }

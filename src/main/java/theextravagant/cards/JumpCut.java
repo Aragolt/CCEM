@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.JumpCutPower;
 import theextravagant.theextravagant;
 
 public class JumpCut extends CustomCard {
@@ -42,7 +42,11 @@ public class JumpCut extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new JumpCutPower(magicNumber)));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, 1)));
     }
 
     @Override
@@ -50,7 +54,6 @@ public class JumpCut extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(2);
-            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

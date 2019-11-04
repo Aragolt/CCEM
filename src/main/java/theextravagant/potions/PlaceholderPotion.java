@@ -14,13 +14,13 @@ import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import static theextravagant.theextravagant.makeID;
 
 public class PlaceholderPotion extends AbstractPotion {
-    
+
     public static final String POTION_ID = makeID("PlaceholderPotion");
     private static final PotionStrings potionStrings = CardCrawlGame.languagePack.getPotionString(POTION_ID);
-    
+
     public static final String NAME = potionStrings.NAME;
     public static final String[] DESCRIPTIONS = potionStrings.DESCRIPTIONS;
-    
+
     public PlaceholderPotion() {
         super(NAME, POTION_ID, PotionRarity.COMMON, PotionSize.M, PotionColor.SMOKE);
         potency = getPotency();
@@ -28,7 +28,7 @@ public class PlaceholderPotion extends AbstractPotion {
         isThrown = false;
         tips.add(new PowerTip(name, description));
     }
-    
+
     @Override
     public void use(AbstractCreature target) {
         target = AbstractDungeon.player;
@@ -37,17 +37,17 @@ public class PlaceholderPotion extends AbstractPotion {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(target, AbstractDungeon.player, new LoseStrengthPower(target, potency), potency));
         }
     }
-    
+
     @Override
     public AbstractPotion makeCopy() {
         return new PlaceholderPotion();
     }
-    
+
     @Override
     public int getPotency(final int potency) {
         return 2;
     }
-    
+
     public void upgradePotion() {
         potency += 1;
         tips.clear();

@@ -1,13 +1,13 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.SuperSonicAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
@@ -35,21 +35,21 @@ public class Supersonic extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        this.cardsToPreview = new Acceleration();
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractCard Accelaration = new Acceleration();
-        if (upgraded) {
-            Accelaration.upgrade();
-        }
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(Accelaration, this.energyOnUse));
+        AbstractDungeon.actionManager.addToBottom(new SuperSonicAction(freeToPlayOnce, energyOnUse, upgraded));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            AbstractCard c = new Acceleration();
+            c.upgrade();
+            this.cardsToPreview = c;
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }

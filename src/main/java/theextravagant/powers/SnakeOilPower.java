@@ -31,8 +31,6 @@ public class SnakeOilPower extends TwoAmountPower {
         name = NAME;
         ID = POWER_ID;
         this.loadRegion("envenom");
-        justapplied = true;
-
     }
 
     public void updateDescription() {
@@ -50,9 +48,8 @@ public class SnakeOilPower extends TwoAmountPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        if (!justapplied) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this.ID));
         }
-        justapplied = false;
     }
 }

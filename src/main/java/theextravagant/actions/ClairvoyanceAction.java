@@ -14,12 +14,13 @@ import java.util.Iterator;
 public class ClairvoyanceAction extends AbstractGameAction {
     public static final String[] TEXT;
     private static final UIStrings uiStrings;
-    private float startingDuration;
 
     static {
         uiStrings = CardCrawlGame.languagePack.getUIString("ReprogramAction");
         TEXT = uiStrings.TEXT;
     }
+
+    private float startingDuration;
 
     public ClairvoyanceAction() {
         this.actionType = ActionType.CARD_MANIPULATION;

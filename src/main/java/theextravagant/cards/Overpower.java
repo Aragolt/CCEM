@@ -1,17 +1,16 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ModifyDamageAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.OverPowerPower;
 import theextravagant.theextravagant;
-
-import static theextravagant.theextravagant.PowerPlayedThisTurn;
 
 public class Overpower extends CustomCard {
 
@@ -25,9 +24,9 @@ public class Overpower extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 3;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 0;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public Overpower() {
@@ -41,24 +40,15 @@ public class Overpower extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard c : p.hand.group) {
-            if (c.type == CardType.ATTACK) {
-                AbstractDungeon.actionManager.addToBottom(new ModifyDamageAction(c.uuid, c.baseDamage));
-            }
-        }
-    }
-
-
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return PowerPlayedThisTurn;
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new StrengthPower(p, 5)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new OverPowerPower(magicNumber)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(2);
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

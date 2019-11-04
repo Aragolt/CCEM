@@ -9,13 +9,10 @@ import theextravagant.cards.TwilightTone;
 
 public class HasEnoughEnergyPatch {
     @SpirePatch(clz = AbstractCard.class, method = "hasEnoughEnergy")
-    public static class TwilightTonePatch
-    {
+    public static class TwilightTonePatch {
         @SpirePrefixPatch
-        public static SpireReturn Patch(AbstractCard __instance)
-        {
-            if(!(__instance.type == AbstractCard.CardType.ATTACK) && AbstractDungeon.player.discardPile.findCardById(TwilightTone.ID) != null)
-            {
+        public static SpireReturn Patch(AbstractCard __instance) {
+            if (!(__instance.type == AbstractCard.CardType.ATTACK) && AbstractDungeon.player.discardPile.findCardById(TwilightTone.ID) != null) {
                 return SpireReturn.Return(false);
             }
             return SpireReturn.Continue();

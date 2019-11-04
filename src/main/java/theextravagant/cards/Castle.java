@@ -28,8 +28,8 @@ public class Castle extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
     private static final int DAMAGE = 6;
-    private static final int MAGICNUMBER = 2;
-    private static final int BLOCK = 4;
+    private static final int MAGICNUMBER = 3;
+    private static final int BLOCK = 3;
 
     public Castle() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -43,13 +43,9 @@ public class Castle extends CustomCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, block));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
-    }
-
-    @Override
-    public void triggerWhenDrawn() {
-        this.applyPowers();
         AbstractDungeon.actionManager.addToBottom(new PutCardsFromHandOnTopOfDrawPileThenDrawAction(magicNumber));
     }
+
 
     @Override
     public void upgrade() {
@@ -57,7 +53,6 @@ public class Castle extends CustomCard {
             upgradeName();
             upgradeBlock(1);
             upgradeDamage(3);
-            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

@@ -1,7 +1,10 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
-import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -10,7 +13,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class OminousGlare extends AbstractEVCard {
+public class OminousGlare extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("OminousGlare");
@@ -19,16 +22,16 @@ public class OminousGlare extends AbstractEVCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.RARE;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 8;
+    private static final int MAGICNUMBER = 5;
+    private static final int BLOCK = 10;
 
     public OminousGlare() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -37,13 +40,12 @@ public class OminousGlare extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (AbstractCard C : AbstractDungeon.player.hand.group) {
-            if (!(C == this)) {
-                AbstractCard d = C.makeStatEquivalentCopy();
-                AbstractDungeon.player.drawPile.addToTop(d);
-            }
-        }
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, block));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(null, DamageInfo.createDamageMatrix(magicNumber, true), DamageInfo.DamageType.HP_LOSS, AbstractGameAction.AttackEffect.NONE));
     }
 
     @Override
@@ -51,6 +53,7 @@ public class OminousGlare extends AbstractEVCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(4);
+            upgradeMagicNumber(2);
             initializeDescription();
         }
     }

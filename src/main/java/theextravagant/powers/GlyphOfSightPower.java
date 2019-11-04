@@ -2,16 +2,14 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Invocation;
-import theextravagant.theextravagant;
+import theextravagant.cards.Spark;
 import theextravagant.util.TextureLoader;
 
-import static theextravagant.theextravagant.SecondEnergyOrb;
 import static theextravagant.theextravagant.makeID;
 
 public class GlyphOfSightPower extends AbstractPower {
@@ -37,13 +35,7 @@ public class GlyphOfSightPower extends AbstractPower {
     @Override
     public void atStartOfTurnPostDraw() {
         for (int i = 0; i < amount; i++) {
-            if (theextravagant.SecondEnergyOrb.currentEnergy > 1) {
-                SecondEnergyOrb.currentEnergy -= 1;
-            }
-            if (theextravagant.SecondEnergyOrb.currentEnergy > 0) {
-                SecondEnergyOrb.currentEnergy -= 1;
-            }
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Invocation(), amount));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Spark(), amount, true, true));
         }
     }
 

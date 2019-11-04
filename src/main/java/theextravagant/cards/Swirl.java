@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -9,7 +10,7 @@ import theextravagant.actions.FetchAndModifyCardAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Swirl extends AbstractEVCard {
+public class Swirl extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Swirl");
@@ -27,7 +28,7 @@ public class Swirl extends AbstractEVCard {
     private static final int BLOCK = 0;
 
     public Swirl() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 1);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;

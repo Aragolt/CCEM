@@ -1,15 +1,20 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.FetchAndModifyCardAction;
+import com.megacrit.cardcrawl.powers.StrengthPower;
+import com.megacrit.cardcrawl.powers.WeakPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class SnakeEyes extends AbstractEVCard {
+import java.util.Iterator;
+
+public class SnakeEyes extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("SnakeEyes");
@@ -19,15 +24,15 @@ public class SnakeEyes extends AbstractEVCard {
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     private static final CardRarity RARITY = CardRarity.RARE;
-    private static final CardTarget TARGET = CardTarget.NONE;
+    private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 0;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
     public SnakeEyes() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 3);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -37,7 +42,24 @@ public class SnakeEyes extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new FetchAndModifyCardAction(magicNumber, false, magicNumber, true));
+        if (m.hasPower(WeakPower.POWER_ID)) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -m.getPower(WeakPower.POWER_ID).amount)));
+        }
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        if (!AbstractDungeon.getMonsters().areMonstersBasicallyDead()) {
+            this.flash();
+            Iterator var3 = AbstractDungeon.getMonsters().monsters.iterator();
+
+            while (var3.hasNext()) {
+                AbstractMonster monster = (AbstractMonster) var3.next();
+                if (!monster.isDead && !monster.isDying) {
+                    this.addToBot(new ApplyPowerAction(monster, AbstractDungeon.player, new WeakPower(monster, magicNumber, false), magicNumber));
+                }
+            }
+        }
     }
 
     @Override

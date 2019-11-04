@@ -20,9 +20,7 @@ public class PutCardsFromHandOnTopOfDrawPileThenDrawAction extends AbstractGameA
     public void update() {
         CardGroup temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
         for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (c.type == AbstractCard.CardType.SKILL) {
-                temp.addToTop(c);
-            }
+            temp.addToTop(c);
         }
         for (AbstractCard c : temp.group) {
             AbstractDungeon.player.hand.moveToDeck(c, false);

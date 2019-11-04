@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -11,7 +12,7 @@ import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.ZeroHeroPower;
 import theextravagant.theextravagant;
 
-public class ZeroHero extends AbstractEVCard {
+public class ZeroHero extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("ZeroHero");
@@ -23,13 +24,13 @@ public class ZeroHero extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 0;
+    private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 8;
 
     public ZeroHero() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -47,6 +48,7 @@ public class ZeroHero extends AbstractEVCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(2);
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

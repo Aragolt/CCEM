@@ -1,8 +1,10 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.GraveField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,8 +13,6 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.actions.PheonixEffectAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
-
-import static theextravagant.theextravagant.CardsExhaustedLastTurn;
 
 public class RisingPhoenix extends CustomCard {
 
@@ -23,11 +23,11 @@ public class RisingPhoenix extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 5;
-    private static final int DAMAGE = 4;
+    private static final int COST = 2;
+    private static final int DAMAGE = 5;
     private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
 
@@ -38,6 +38,8 @@ public class RisingPhoenix extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         isMultiDamage = true;
+        GraveField.grave.set(this, true);
+        this.cardsToPreview = new Spark();
     }
 
     @Override
@@ -46,22 +48,14 @@ public class RisingPhoenix extends CustomCard {
             AbstractDungeon.actionManager.addToBottom(new PheonixEffectAction());
             AbstractDungeon.actionManager.addToBottom(new DamageAllEnemiesAction(p, this.multiDamage, this.damageTypeForTurn, AbstractGameAction.AttackEffect.NONE));
         }
-    }
-
-    @Override
-    public void applyPowers() {
-        super.applyPowers();
-        this.costForTurn = (Math.max(0, magicNumber - CardsExhaustedLastTurn));
-        if (this.cost != 5) {
-            isCostModifiedForTurn = true;
-        }
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDiscardAction(new Spark(), 2));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            upgradeDamage(1);
             initializeDescription();
         }
     }

@@ -8,10 +8,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import theextravagant.cards.Accumulation;
-import theextravagant.theextravagant;
 import theextravagant.util.TextureLoader;
 
-import static theextravagant.theextravagant.SecondEnergyOrb;
 import static theextravagant.theextravagant.makeID;
 
 public class GlyphOfChoicePower extends AbstractPower {
@@ -37,9 +35,6 @@ public class GlyphOfChoicePower extends AbstractPower {
     @Override
     public void atStartOfTurnPostDraw() {
         for (int i = 0; i < amount; i++) {
-            if (theextravagant.SecondEnergyOrb.currentEnergy > 0) {
-                SecondEnergyOrb.currentEnergy -= 1;
-            }
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Accumulation(), amount));
         }
     }

@@ -2,6 +2,7 @@ package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -15,7 +16,7 @@ public class GlyphOfPower extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("GlyphOfPower");
-    public static final String IMG = theextravagant.makeCardPath("GlyphOfPower.png");
+    public static final String IMG = theextravagant.makeCardPath("NewGlyphOfPower.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -36,6 +37,9 @@ public class GlyphOfPower extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        AbstractCard c = new Acceleration();
+        c.upgrade();
+        this.cardsToPreview = c;
     }
 
     @Override

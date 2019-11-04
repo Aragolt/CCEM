@@ -26,24 +26,24 @@ public class CheckTopCardForDexterityAction extends AbstractGameAction {
     }
 
     public void update() {
-            if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
-                this.isDone = true;
-                return;
-            }
-
-            if (AbstractDungeon.player.drawPile.isEmpty()) {
-                AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToBottom(new CheckTopCardForDexterityAction(p, m, draw));
-                this.isDone = true;
-                return;
-            }
-
-            if (!AbstractDungeon.player.drawPile.isEmpty()) {
-                if (p.drawPile.getTopCard().costForTurn == -2 && !p.drawPile.getTopCard().freeToPlayOnce) {
-                    AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 1)));
-                    AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, draw));
-                }
-            }
+        if (AbstractDungeon.player.drawPile.size() + AbstractDungeon.player.discardPile.size() == 0) {
             this.isDone = true;
+            return;
+        }
+
+        if (AbstractDungeon.player.drawPile.isEmpty()) {
+            AbstractDungeon.actionManager.addToTop(new EmptyDeckShuffleAction());
+            AbstractDungeon.actionManager.addToBottom(new CheckTopCardForDexterityAction(p, m, draw));
+            this.isDone = true;
+            return;
+        }
+
+        if (!AbstractDungeon.player.drawPile.isEmpty()) {
+            if (p.drawPile.getTopCard().costForTurn == -2 && !p.drawPile.getTopCard().freeToPlayOnce) {
+                AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DexterityPower(p, 1)));
+                AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, draw));
+            }
+        }
+        this.isDone = true;
     }
 }

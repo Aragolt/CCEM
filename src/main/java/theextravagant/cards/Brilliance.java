@@ -1,13 +1,14 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.CheckTopCardForDexterityAction;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.ShinePower;
 import theextravagant.theextravagant;
 
 public class Brilliance extends CustomCard {
@@ -25,7 +26,7 @@ public class Brilliance extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 0;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 1;
+    private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
 
 
@@ -40,15 +41,14 @@ public class Brilliance extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new CheckTopCardForDexterityAction(p, m, magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ShinePower(magicNumber)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(-1);
             initializeDescription();
         }
     }

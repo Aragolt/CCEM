@@ -1,9 +1,7 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
-import com.megacrit.cardcrawl.actions.common.PlayTopCardAction;
-import com.megacrit.cardcrawl.cards.status.Dazed;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -11,9 +9,10 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.DazzlePower;
 import theextravagant.theextravagant;
 
-public class Dazzle extends AbstractEVCard {
+public class Dazzle extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Dazzle");
@@ -25,13 +24,13 @@ public class Dazzle extends AbstractEVCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 5;
     private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public Dazzle() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 2);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -40,17 +39,15 @@ public class Dazzle extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new PlayTopCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), false));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false)));
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Dazed(), 1, true, true));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new DazzlePower(3)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            Secondcost = 1;
-            Secondcostforturn = Secondcost;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

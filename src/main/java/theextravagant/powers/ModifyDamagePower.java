@@ -9,7 +9,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Tension;
 import theextravagant.cards.TwilightTone;
 import theextravagant.util.TextureLoader;
 
@@ -38,13 +37,6 @@ public class ModifyDamagePower extends AbstractPower implements InvisiblePower {
     @Override
     public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
         float multiplier = 1;
-        float tensionmultiplier = 0;
-        for (AbstractCard c : AbstractDungeon.player.hand.group) {
-            if (type == DamageInfo.DamageType.NORMAL && c instanceof Tension) {
-                tensionmultiplier += ((float) c.baseMagicNumber / 100.0f);
-            }
-        }
-        multiplier += tensionmultiplier;
         for (AbstractCard c : AbstractDungeon.player.discardPile.group) {
             if (type == DamageInfo.DamageType.NORMAL && c instanceof TwilightTone) {
                 multiplier *= 2;
@@ -52,7 +44,7 @@ public class ModifyDamagePower extends AbstractPower implements InvisiblePower {
             }
         }
 
-        return  damage * multiplier;
+        return damage * multiplier;
     }
 
     @Override

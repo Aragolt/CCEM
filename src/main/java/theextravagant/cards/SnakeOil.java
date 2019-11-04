@@ -23,7 +23,7 @@ public class SnakeOil extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;

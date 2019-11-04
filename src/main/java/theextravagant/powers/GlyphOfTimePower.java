@@ -2,19 +2,18 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Preservation;
-import theextravagant.theextravagant;
+import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.SparkAction;
 import theextravagant.util.TextureLoader;
 
-import static theextravagant.theextravagant.SecondEnergyOrb;
 import static theextravagant.theextravagant.makeID;
 
-public class GlyphOfTimePower extends AbstractPower {
+public class GlyphOfTimePower extends TwoAmountPower {
     public static final String POWER_ID = makeID("GlyphOfTimePower");
     public static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -34,22 +33,23 @@ public class GlyphOfTimePower extends AbstractPower {
         updateDescription();
     }
 
+
     @Override
-    public void atStartOfTurnPostDraw() {
-        for (int i = 0; i < amount; i++) {
-            if (theextravagant.SecondEnergyOrb.currentEnergy > 0) {
-                SecondEnergyOrb.currentEnergy -= 1;
-            }
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Preservation(), amount));
+    public void onPlayCard(AbstractCard card, AbstractMonster m) {
+        amount2--;
+        if (amount2 == 0) {
+            amount2 = 8;
+            AbstractDungeon.actionManager.addToBottom(new SparkAction(0, amount));
         }
     }
 
     @Override
+    public void onInitialApplication() {
+        amount2 = 8;
+    }
+
+    @Override
     public void updateDescription() {
-        if (amount == 1) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
-        }
+        description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
     }
 }

@@ -1,5 +1,6 @@
 package theextravagant.cards;
 
+import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
@@ -12,7 +13,7 @@ import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class StepBack extends AbstractEVCard {
+public class StepBack extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("StepBack");
@@ -30,7 +31,7 @@ public class StepBack extends AbstractEVCard {
     private static final int BLOCK = 7;
 
     public StepBack() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 1);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;

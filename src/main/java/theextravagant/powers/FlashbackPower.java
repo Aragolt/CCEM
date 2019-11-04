@@ -1,5 +1,6 @@
 package theextravagant.powers;
 
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
@@ -9,13 +10,19 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
+import com.megacrit.cardcrawl.powers.NightmarePower;
 
 public class FlashbackPower extends AbstractPower {
     public static final String POWER_ID = "Rebound";
-    private static final PowerStrings powerStrings;
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
-    private boolean justEvoked = true;
+    private static final PowerStrings powerStrings;
+
+    static {
+        powerStrings = CardCrawlGame.languagePack.getPowerStrings("Rebound");
+        NAME = powerStrings.NAME;
+        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
+    }
 
     public FlashbackPower(AbstractCreature owner, int amount) {
         this.name = NAME;
@@ -38,15 +45,10 @@ public class FlashbackPower extends AbstractPower {
     }
 
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        if (this.justEvoked) {
-            this.justEvoked = false;
-        } else {
-            if (card.type != AbstractCard.CardType.POWER && !card.exhaust && !card.exhaustOnUseOnce) {
-                this.flash();
-                action.reboundCard = true;
-            }
+        if (card.type == AbstractCard.CardType.ATTACK) {
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(owner, owner, new NightmarePower(owner, 1, card)));
+            AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this, 1));
         }
-        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(this.owner, this.owner, this, 1));
     }
 
     public void atEndOfTurn(boolean isPlayer) {
@@ -54,11 +56,5 @@ public class FlashbackPower extends AbstractPower {
             AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(this.owner, this.owner, this));
         }
 
-    }
-
-    static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("Rebound");
-        NAME = powerStrings.NAME;
-        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     }
 }

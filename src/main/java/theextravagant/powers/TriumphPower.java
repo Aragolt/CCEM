@@ -46,20 +46,16 @@ public class TriumphPower extends TwoAmountPower {
                 AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(this.owner, amount)));
                 amount2 = 2;
             }
-        }
-        else
-        {
+        } else {
             amount2 = 2;
         }
     }
+
     @Override
     public void updateDescription() {
-        if (amount2 <= 1)
-        {
+        if (amount2 <= 1) {
             description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[2];
-        }
-        else
-        {
+        } else {
             description = DESCRIPTIONS[0] + amount2 + DESCRIPTIONS[3] + amount + DESCRIPTIONS[2];
         }
     }

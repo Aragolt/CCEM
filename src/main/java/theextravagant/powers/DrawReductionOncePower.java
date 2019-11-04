@@ -44,7 +44,6 @@ public class DrawReductionOncePower extends AbstractPower {
     }
 
 
-
     public void onRemove() {
         AbstractDungeon.player.gameHandSize += amount;
     }

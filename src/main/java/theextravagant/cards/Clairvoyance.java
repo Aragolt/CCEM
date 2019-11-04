@@ -1,36 +1,37 @@
 package theextravagant.cards;
 
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.ClairvoyanceAction;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
-public class Clairvoyance extends AbstractEVCard {
+public class Clairvoyance extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Clairvoyance");
-    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String IMG = theextravagant.makeCardPath("Clairvoyance.png");
+    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
+    private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
     public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.BASIC;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
-    private static final int COST = 0;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 1;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
-    private static final int SECCONDCOST = 1;
 
     public Clairvoyance() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, SECCONDCOST);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -39,8 +40,13 @@ public class Clairvoyance extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new ClairvoyanceAction());
+        this.addToBot(new ApplyPowerAction(p, p, new DrawCardNextTurnPower(p, magicNumber), magicNumber));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        super.triggerWhenDrawn();
+        AbstractDungeon.actionManager.addToBottom(new ScryAction(this.magicNumber));
     }
 
     @Override
@@ -48,7 +54,6 @@ public class Clairvoyance extends AbstractEVCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
-            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

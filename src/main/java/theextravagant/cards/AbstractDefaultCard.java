@@ -3,12 +3,12 @@ package theextravagant.cards;
 import basemod.abstracts.CustomCard;
 
 public abstract class AbstractDefaultCard extends CustomCard {
-    
+
     public int defaultSecondMagicNumber;
     public int defaultBaseSecondMagicNumber;
     public boolean upgradedDefaultSecondMagicNumber;
     public boolean isDefaultSecondMagicNumberModified;
-    
+
     public AbstractDefaultCard(final String id,
                                final String name,
                                final String img,
@@ -18,7 +18,7 @@ public abstract class AbstractDefaultCard extends CustomCard {
                                final CardColor color,
                                final CardRarity rarity,
                                final CardTarget target) {
-        
+
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
         isCostModified = false;
         isCostModifiedForTurn = false;
@@ -27,7 +27,7 @@ public abstract class AbstractDefaultCard extends CustomCard {
         isMagicNumberModified = false;
         isDefaultSecondMagicNumberModified = false;
     }
-    
+
     public void displayUpgrades() {
         super.displayUpgrades();
         if (upgradedDefaultSecondMagicNumber) {
@@ -35,7 +35,7 @@ public abstract class AbstractDefaultCard extends CustomCard {
             isDefaultSecondMagicNumberModified = true;
         }
     }
-    
+
     public void upgradeDefaultSecondMagicNumber(int amount) {
         defaultBaseSecondMagicNumber += amount;
         defaultSecondMagicNumber = defaultBaseSecondMagicNumber;

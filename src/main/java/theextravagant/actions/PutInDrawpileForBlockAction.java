@@ -24,16 +24,15 @@ public class PutInDrawpileForBlockAction extends AbstractGameAction {
 
     public void update() {
         if (this.duration == this.startingDuration) {
-            if(AbstractDungeon.player.hand.size() > 0)
-            {
+            if (AbstractDungeon.player.hand.size() > 0) {
                 CardGroup Temp = new CardGroup(CardGroup.CardGroupType.UNSPECIFIED);
-                for (AbstractCard c:AbstractDungeon.player.hand.group) {
+                for (AbstractCard c : AbstractDungeon.player.hand.group) {
                     Temp.addToTop(c);
                 }
                 AbstractCard c;
                 Iterator var1 = Temp.group.iterator();
-                while(var1.hasNext()) {
-                    c = (AbstractCard)var1.next();
+                while (var1.hasNext()) {
+                    c = (AbstractCard) var1.next();
                     AbstractDungeon.player.hand.moveToDeck(c, true);
                     AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, blockamount));
                 }

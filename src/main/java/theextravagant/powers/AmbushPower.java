@@ -2,19 +2,18 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
+import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
-import com.megacrit.cardcrawl.powers.AbstractPower;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
 
-public class AmbushPower extends AbstractPower {
+public class AmbushPower extends TwoAmountPower {
     public static final String POWER_ID = makeID("AmbushPower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
@@ -27,8 +26,8 @@ public class AmbushPower extends AbstractPower {
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
         this.amount = amount;
+        amount2 = amount;
         type = PowerType.BUFF;
-        isTurnBased = true;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         updateDescription();
@@ -43,13 +42,22 @@ public class AmbushPower extends AbstractPower {
         }
     }
 
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        return type == DamageInfo.DamageType.NORMAL ? damage * 2.0F : damage;
+    @Override
+    public void atStartOfTurnPostDraw() {
+        amount2 = amount;
     }
 
-
     @Override
-    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        AbstractDungeon.actionManager.addToBottom(new ReducePowerAction(AbstractDungeon.player, AbstractDungeon.player, this.ID, 1));
+    public float atDamageGive(float damage, DamageInfo.DamageType type) {
+        if (amount2 > 0 && type == DamageInfo.DamageType.NORMAL) {
+            damage *= 2;
+        }
+        return damage;
+    }
+
+    public void onUseCard(AbstractCard card, UseCardAction action) {
+        if (card.type == AbstractCard.CardType.ATTACK) {
+            amount2--;
+        }
     }
 }

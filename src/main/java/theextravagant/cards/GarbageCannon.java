@@ -1,17 +1,19 @@
 package theextravagant.cards;
 
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
-import com.megacrit.cardcrawl.actions.common.ShuffleAction;
+import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.actions.common.PummelDamageAction;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.GarbageCannonAction;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.GarbageCannonPower;
 import theextravagant.theextravagant;
 
-public class GarbageCannon extends AbstractEVCard {
+public class GarbageCannon extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("GarbageCannon");
@@ -24,12 +26,12 @@ public class GarbageCannon extends AbstractEVCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 4;
     private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 0;
 
     public GarbageCannon() {
-        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET, 1);
+        super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
@@ -38,32 +40,17 @@ public class GarbageCannon extends AbstractEVCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        calculateCardDamage(m);
-        if (p.drawPile.size() >= magicNumber) {
-            AbstractDungeon.actionManager.addToBottom(new GarbageCannonAction(magicNumber, p, damage, m));
-        } else if (p.drawPile.size() < magicNumber && (p.drawPile.size() + p.discardPile.size()) >= magicNumber) {
-            int i = p.drawPile.size();
-            AbstractDungeon.actionManager.addToBottom(new GarbageCannonAction(i, p, damage, m));
-            if (AbstractDungeon.player.discardPile.size() > 0) {
-                AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-            }
-            AbstractDungeon.actionManager.addToBottom(new GarbageCannonAction(magicNumber - i, p, damage, m));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new GarbageCannonAction(p.drawPile.size(), p, damage, m));
-            if (AbstractDungeon.player.discardPile.size() > 0) {
-                AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-            }
-            AbstractDungeon.actionManager.addToBottom(new GarbageCannonAction(p.discardPile.size(), p, damage, m));
+        for (int i = 0; i < this.magicNumber; ++i) {
+            this.addToBot(new PummelDamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
         }
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GarbageCannonPower(4)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(2);
+            upgradeDamage(1);
             initializeDescription();
         }
     }

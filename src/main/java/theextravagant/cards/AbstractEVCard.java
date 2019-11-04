@@ -8,11 +8,10 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.theextravagant;
 
 public abstract class AbstractEVCard extends CustomCard {
+    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("AbstractEVCard");
+    public static String[] EVCardText = uiStrings.TEXT;
     public int Secondcost;
     public int Secondcostforturn;
-    private static final UIStrings uiStrings = CardCrawlGame.languagePack.getUIString("AbstractEVCard");
-
-    public static String[] EVCardText = uiStrings.TEXT;
 
     public AbstractEVCard(String id, String name, String img, int cost, String rawDescription, CardType type, CardColor color, CardRarity rarity, CardTarget target, int SecondCost) {
         super(id, name, img, cost, rawDescription, type, color, rarity, target);
@@ -22,14 +21,12 @@ public abstract class AbstractEVCard extends CustomCard {
 
     @Override
     public boolean hasEnoughEnergy() {
-        if (theextravagant.SecondEnergyOrb.currentEnergy < this.Secondcostforturn && !this.ignoreEnergyOnUse)
-        {
+        if (theextravagant.SecondEnergyOrb.currentEnergy < this.Secondcostforturn && !this.ignoreEnergyOnUse && !this.isInAutoplay) {
             this.cantUseMessage = EVCardText[0];
             return false;
         }
         return super.hasEnoughEnergy();
     }
-
 
 
     @Override

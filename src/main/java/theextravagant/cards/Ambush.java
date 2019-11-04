@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.PrepareAmbushPower;
+import theextravagant.powers.AmbushPower;
 import theextravagant.theextravagant;
 
 public class Ambush extends CustomCard {
@@ -24,7 +24,7 @@ public class Ambush extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    private static final int COST = 2;
+    private static final int COST = 3;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
@@ -41,15 +41,14 @@ public class Ambush extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PrepareAmbushPower(), 1));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new AmbushPower(1)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            isEthereal = false;
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeBaseCost(2);
             initializeDescription();
         }
     }

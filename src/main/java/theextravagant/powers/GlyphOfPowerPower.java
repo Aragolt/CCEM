@@ -3,6 +3,7 @@ package theextravagant.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -36,7 +37,9 @@ public class GlyphOfPowerPower extends AbstractPower {
     public void atStartOfTurnPostDraw() {
         for (int i = 0; i < amount; i++) {
             AbstractDungeon.player.energy.use(1);
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Acceleration(), amount));
+            AbstractCard c = new Acceleration();
+            c.upgrade();
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), amount));
         }
     }
 

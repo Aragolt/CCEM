@@ -15,25 +15,34 @@ import com.megacrit.cardcrawl.powers.StrengthPower;
 import java.util.Iterator;
 
 public class DiscardForStrengthAction extends AbstractGameAction {
-    private static final UIStrings uiStrings;
     public static final String[] TEXT;
+    private static final UIStrings uiStrings;
+    private static final float DURATION;
+    public static int numDiscarded;
+
+    static {
+        uiStrings = CardCrawlGame.languagePack.getUIString("DiscardAction");
+        TEXT = uiStrings.TEXT;
+        DURATION = Settings.ACTION_DUR_XFAST;
+    }
+
     private AbstractPlayer p;
     private boolean isRandom;
     private boolean endTurn;
-    public static int numDiscarded;
-    private static final float DURATION;
+    private boolean isUpgraded;
 
-    public DiscardForStrengthAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom) {
-        this(target, source, amount, isRandom, false);
+    public DiscardForStrengthAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom, boolean isupgraded) {
+        this(target, source, amount, isRandom, isupgraded, false);
     }
 
-    public DiscardForStrengthAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom, boolean endTurn) {
+    public DiscardForStrengthAction(AbstractCreature target, AbstractCreature source, int amount, boolean isRandom, boolean isupgraded, boolean endTurn) {
         this.p = (AbstractPlayer) target;
         this.isRandom = isRandom;
         this.setValues(target, source, amount);
         this.actionType = AbstractGameAction.ActionType.DISCARD;
         this.endTurn = endTurn;
         this.duration = DURATION;
+        this.isUpgraded = isupgraded;
     }
 
     public void update() {
@@ -45,7 +54,7 @@ public class DiscardForStrengthAction extends AbstractGameAction {
             }
 
             int i;
-            if (this.p.hand.size() <= this.amount) {
+            if (this.p.hand.size() <= this.amount && !isUpgraded) {
                 this.amount = this.p.hand.size();
                 i = this.p.hand.size();
 
@@ -53,9 +62,8 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                     AbstractCard d = this.p.hand.getTopCard();
                     this.p.hand.moveToDiscardPile(d);
                     if (!this.endTurn) {
-                         d.triggerOnManualDiscard();
-                        if (d.type == AbstractCard.CardType.ATTACK && d.costForTurn > 0 && !d.freeToPlayOnce)
-                        {
+                        d.triggerOnManualDiscard();
+                        if (d.type == AbstractCard.CardType.ATTACK && d.costForTurn > 0 && !d.freeToPlayOnce) {
                             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, d.costForTurn), d.costForTurn));
                         }
                     }
@@ -78,7 +86,7 @@ public class DiscardForStrengthAction extends AbstractGameAction {
 
                 numDiscarded = this.amount;
                 if (this.p.hand.size() > this.amount) {
-                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, false);
+                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, isUpgraded);
                 }
 
                 AbstractDungeon.player.hand.applyPowers();
@@ -90,8 +98,7 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                 c = this.p.hand.getRandomCard(AbstractDungeon.cardRandomRng);
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce)
-                {
+                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce) {
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.costForTurn), c.costForTurn));
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
@@ -105,8 +112,7 @@ public class DiscardForStrengthAction extends AbstractGameAction {
                 c = (AbstractCard) var4.next();
                 this.p.hand.moveToDiscardPile(c);
                 c.triggerOnManualDiscard();
-                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce)
-                {
+                if (c.type == AbstractCard.CardType.ATTACK && c.costForTurn > 0 && !c.freeToPlayOnce) {
                     AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, c.costForTurn), c.costForTurn));
                 }
                 GameActionManager.incrementDiscard(this.endTurn);
@@ -116,12 +122,5 @@ public class DiscardForStrengthAction extends AbstractGameAction {
         }
 
         this.tickDuration();
-    }
-
-
-    static {
-        uiStrings = CardCrawlGame.languagePack.getUIString("DiscardAction");
-        TEXT = uiStrings.TEXT;
-        DURATION = Settings.ACTION_DUR_XFAST;
     }
 }

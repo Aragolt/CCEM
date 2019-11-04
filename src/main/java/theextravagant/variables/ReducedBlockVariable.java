@@ -2,7 +2,6 @@ package theextravagant.variables;
 
 import basemod.abstracts.DynamicVariable;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
 
 import static theextravagant.theextravagant.makeID;
 

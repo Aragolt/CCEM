@@ -214,61 +214,61 @@
       " attack, gain "
     ]
   },
-    "theextravagant:ShinePower": {
-      "NAME": "Shine",
-      "DESCRIPTIONS": [
-        "After you play  ",
-        " attacks, gain ",
-        " Dexterity.",
-        " attack, gain "
-      ]
-    },
-    "theextravagant:DazzlePower": {
-      "NAME": "Dazzle",
-      "DESCRIPTIONS": [
-        "After you play  ",
-        " cards, shuffle a",
-        " Dazed into your draw pile.",
-        " card, shuffle a "
-      ]
-    },
-    "theextravagant:GarbageCannonPower": {
-      "NAME": "GarbageCannon",
-      "DESCRIPTIONS": [
-        "After you play  ",
-        " cards, exhaust a card in your hand.",
-        " card, exhaust a card in your hand."
-      ]
-    },
-    "theextravagant:illusionPower": {
-      "NAME": "Illusion",
-      "DESCRIPTIONS": [
-        "After you play  ",
-        " cards, shuffle a 0-cost copy of the last card played into your draw pile.",
-        " cards, shuffle 2 0-cost copies of the last card played into your draw pile."
-      ]
-    },
-    "theextravagant:OutrunPower": {
-      "NAME": "Outrun",
-      "DESCRIPTIONS": [
-        "At the end of your turn gain ",
-        " Block for each skill in your hand."
-      ]
-    },
-    "theextravagant:OverPowerPower": {
-      "NAME": "Strength Down",
-      "DESCRIPTIONS": [
-        "After you play ",
-        " cards, lose 5 Strength."
-      ]
-    },
-    "theextravagant:RapidPulsePower": {
-      "NAME": "Rapid Pulse",
-      "DESCRIPTIONS": [
-        "Whenever you draw an attack, your next attack deals ",
-        " additional damage."
-      ]
-    },
+  "theextravagant:ShinePower": {
+    "NAME": "Shine",
+    "DESCRIPTIONS": [
+      "After you play  ",
+      " attacks, gain ",
+      " Dexterity.",
+      " attack, gain "
+    ]
+  },
+  "theextravagant:DazzlePower": {
+    "NAME": "Dazzle",
+    "DESCRIPTIONS": [
+      "After you play  ",
+      " cards, shuffle a",
+      " Dazed into your draw pile.",
+      " card, shuffle a "
+    ]
+  },
+  "theextravagant:GarbageCannonPower": {
+    "NAME": "GarbageCannon",
+    "DESCRIPTIONS": [
+      "After you play  ",
+      " cards, exhaust a card in your hand.",
+      " card, exhaust a card in your hand."
+    ]
+  },
+  "theextravagant:illusionPower": {
+    "NAME": "Illusion",
+    "DESCRIPTIONS": [
+      "After you play  ",
+      " cards, shuffle a 0-cost copy of the last card played into your draw pile.",
+      " cards, shuffle 2 0-cost copies of the last card played into your draw pile."
+    ]
+  },
+  "theextravagant:OutrunPower": {
+    "NAME": "Outrun",
+    "DESCRIPTIONS": [
+      "At the end of your turn gain ",
+      " Block for each skill in your hand."
+    ]
+  },
+  "theextravagant:OverPowerPower": {
+    "NAME": "Strength Down",
+    "DESCRIPTIONS": [
+      "After you play ",
+      " cards, lose 5 Strength."
+    ]
+  },
+  "theextravagant:RapidPulsePower": {
+    "NAME": "Rapid Pulse",
+    "DESCRIPTIONS": [
+      "Whenever you draw an attack, your next attack deals ",
+      " additional damage."
+    ]
+  },
   "theextravagant:RiskPower": {
     "NAME": "Risk",
     "DESCRIPTIONS": [
@@ -276,7 +276,6 @@
       " cards, discard your hand."
     ]
   },
-
   "theextravagant:DodgePower": {
     "NAME": "Dodge",
     "DESCRIPTIONS": [

@@ -6,193 +6,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2473dc1d-c040-4e4d-9f2f-45b73546ab6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/FireworkAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/SuperSonicAction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DazzlePower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DodgePower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GarbageCannonPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/IllusionPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OutrunPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OverPowerPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RiskPower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ShinePower.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TensionPower.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/AntiquityAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/AntiquityAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ButtonUpAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ButtonUpAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/CheckTopCardForDexterityAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/CheckTopCardForDexterityAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ClairvoyanceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ClairvoyanceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DiscardAnyFromDrawpileAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DiscardAnyFromDrawpileAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DiscardForStrengthAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DiscardForStrengthAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DrawpileToHandByCostAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/DrawpileToHandByCostAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PlayCardAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PlayCardAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PlayCardTwiceAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PlayCardTwiceAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PutCardsFromHandOnTopOfDrawPileThenDrawAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PutCardsFromHandOnTopOfDrawPileThenDrawAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PutInDrawpileForBlockAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/PutInDrawpileForBlockAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ReverseSeekAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/ReverseSeekAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/actions/SparkAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/actions/SparkAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractDefaultCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractDefaultCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractDynamicCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractDynamicCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractEVCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AbstractEVCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Acceleration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Acceleration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Accumulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Accumulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Agression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Agression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Ambush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Ambush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Antiquity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Antiquity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AuroraForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/AuroraForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Brilliance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Brilliance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ButtonUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ButtonUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Castle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Castle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Clairvoyance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Clairvoyance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Courage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Courage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/CuttingEdge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/CuttingEdge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/DAMNATION.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/DAMNATION.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Dazzle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Dazzle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/DefaultRareAttack.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/DigUpJunk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/DigUpJunk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Fence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Fence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Firework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Firework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Flashback.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Flashback.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/FocusStab.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/FocusStab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Foil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Foil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GarbageCannon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GarbageCannon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Glamour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Glamour.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfChoice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfChoice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfSight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfSight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GustOfWind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/GustOfWind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/HeavyBlows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/HeavyBlows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Impulse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Impulse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Invocation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Invocation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/IronPlumes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/IronPlumes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/JumpCut.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/JumpCut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/LifeCharm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/LifeCharm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ManifestIllusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ManifestIllusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Meditation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Meditation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/OminousGlare.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/OminousGlare.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Outrun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Outrun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overpower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overpower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overrun.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Overrun.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Persistence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Persistence.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Pluck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Pluck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Precaution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Precaution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Preservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Preservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/PuffUp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/PuffUp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Radiance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Radiance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Ravage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Ravage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ReSeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ReSeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Reconsider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Reconsider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Redemption.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Repell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Repell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Retreat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Retreat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Riot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Riot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RisingPhoenix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RisingPhoenix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RiskyStrike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RustyBuckler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/RustyBuckler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SharpTalons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SharpTalons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Shove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Shove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Sixteen_Tons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Sixteen_Tons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SkillfullDodge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SlyStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SlyStrike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SnakeEyes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SnakeEyes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SnakeOil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SnakeOil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Spark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Spark.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SpontaneousStrike.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SpontaneousStrike.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/StepBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/StepBack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Supersonic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Supersonic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SwiftSwitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/SwiftSwitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Swirl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Swirl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Tension.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Tension.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Thrill.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Thrill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ToolsOfTrickery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ToolsOfTrickery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Triumph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Triumph.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/TwilightTone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/TwilightTone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Twitch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Twitch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Twostep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Twostep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Vintage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/Vintage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/WhiffOfMagic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/WhiffOfMagic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ZeroHero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/cards/ZeroHero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/characters/TheExtravagant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/characters/TheExtravagant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/events/IdentityCrisisEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/events/IdentityCrisisEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/orbs/DefaultOrb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/orbs/DefaultOrb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/CardSpecificPatches/HasEnoughEnergyPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/CardSpecificPatches/HasEnoughEnergyPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/CardSpecificPatches/MakeTempCardInHandPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/CardSpecificPatches/MakeTempCardInHandPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/AbstractCardPatches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/AbstractCardPatches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/AbstractPlayerPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/AbstractPlayerPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/SingleCardViewPopupPatches.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/EVCardPatches/SingleCardViewPopupPatches.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/GlyphPatches/CustomGlyphPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/GlyphPatches/CustomGlyphPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/patches/SecondEnergyOrbPatches/RenderOrbPatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/patches/SecondEnergyOrbPatches/RenderOrbPatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/potions/PlaceholderPotion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/potions/PlaceholderPotion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AmbushPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AntiquityPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AntiquityPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AuroraFormPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/AuroraFormPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DamnationPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DrawReductionOncePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/DrawReductionOncePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FlashbackPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FlashbackPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/FoilPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfChoicePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfChoicePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfSightPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfSightPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ImpulsePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/LifeCharmPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/LifeCharmPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/MagicPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ModifyDamagePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ModifyDamagePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/OneTurnRetainPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RadiancePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RapidPulsePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/RetreatPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/SnakeOilPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/SnakeOilPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TrickeryPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/TriumphPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/VintagePower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/VintagePower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/powers/ZeroHeroPower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/DefaultClickableRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/DefaultClickableRelic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/MoltenLipstick.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/MoltenLipstick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/PlaceholderRelic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/PlaceholderRelic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/PlaceholderRelic2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/PlaceholderRelic2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/Sorbet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/Sorbet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranscendedFeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranscendedFeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranslucentFeather.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranslucentFeather.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/ui/SecondEnergyOrb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/ui/SecondEnergyOrb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/util/TextureLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/util/TextureLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/variables/DefaultSecondMagicNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/variables/DefaultSecondMagicNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/theextravagant/variables/ReducedBlockVariable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/theextravagant/variables/ReducedBlockVariable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Card-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Keyword-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Keyword-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Power-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Relic-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Relic-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ModTheSpire.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/actions/DiscardAnyFromDrawpileAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/actions/DiscardAnyFromDrawpileAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/actions/DiscardForStrengthAction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/actions/DiscardForStrengthAction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/AbstractEVCard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/cards/AbstractEVCard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/Clairvoyance.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/cards/Clairvoyance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/DefaultRareAttack.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/Reconsider.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/cards/Reconsider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/Triumph.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/cards/Triumph.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/cards/Twostep.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/cards/Twostep.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/events/IdentityCrisisEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/events/IdentityCrisisEvent.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/orbs/DefaultOrb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/orbs/DefaultOrb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractCardPatches$SecondEnergyRenderPatch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractCardPatches.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractCardPatches.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractPlayerPatch$RenderSecondCostPatch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractPlayerPatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/AbstractPlayerPatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/SingleCardViewPopupPatches$RenderSecondCostPatch.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/SingleCardViewPopupPatches.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/patches/EVCardPatches/SingleCardViewPopupPatches.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/powers/TriumphPower.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/powers/TriumphPower.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/ui/SecondEnergyOrb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/ui/SecondEnergyOrb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/util/TextureLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/util/TextureLoader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagant/variables/ReducedBlockVariable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagant/variables/ReducedBlockVariable.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Card-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Card-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Keyword-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Keyword-Strings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Power-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Power-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Relic-Strings.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/theextravagantResources/localization/eng/theextravagant-Relic-Strings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -205,19 +28,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Card-Strings.json">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="387" column="25" selection-start-line="387" selection-start-column="18" selection-end-line="387" selection-end-column="25" />
+            <state relative-caret-position="204">
+              <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/WhiffOfMagic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+            <state relative-caret-position="272">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -234,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TensionPower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="476">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -247,7 +79,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="714">
-              <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -256,7 +88,7 @@
         <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/DamageAction.class">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
-              <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -271,19 +103,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/AbstractPower.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="296" column="26" selection-start-line="296" selection-start-column="16" selection-end-line="296" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="941">
-              <caret line="613" column="16" lean-forward="true" selection-start-line="613" selection-start-column="16" selection-end-line="613" selection-end-column="16" />
+            <state relative-caret-position="9367">
+              <caret line="611" column="16" selection-start-line="611" selection-start-column="16" selection-end-line="611" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -291,7 +114,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/AbstractCreature.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
+            <state relative-caret-position="14229">
               <caret line="890" column="25" selection-start-line="890" selection-start-column="25" selection-end-line="890" selection-end-column="25" />
             </state>
           </provider>
@@ -409,7 +232,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/relics/Sorbet.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranslucentFeather.java" />
         <option value="$PROJECT_DIR$/src/main/resources/theextravagantResources/localization/eng/theextravagant-Relic-Strings.json" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/relics/TranscendedFeather.java" />
@@ -425,7 +247,6 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Spark.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfTimePower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/GlyphOfPowerPower.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/SparkAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/FireworkAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Triumph.java" />
@@ -459,6 +280,8 @@
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/powers/TensionPower.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java" />
+        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
       </list>
     </option>
@@ -510,6 +333,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -728,8 +553,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -779,13 +602,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557601957210</updated>
-    </task>
-    <task id="LOCAL-00013" summary="New cards: Meditation, Glamour, Focus Stab, Invocation, Glyph of Sight">
-      <created>1566232958882</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1566232958882</updated>
     </task>
     <task id="LOCAL-00014" summary="oops forgot to add the pictures">
       <created>1566232990018</created>
@@ -1123,25 +939,33 @@
       <option name="project" value="LOCAL" />
       <updated>1572432926085</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Did everything.">
+      <created>1572853358040</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1572853358041</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1554" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26367188" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.26367188" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.52304685" side_tool="true" visible="true" weight="0.23169014" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.040140845" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49921876" weight="0.30915493" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.47695312" visible="true" weight="0.23169014" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.47695312" weight="0.23169014" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -1149,7 +973,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.13789062" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.13789062" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -1158,7 +982,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="New relic Pocket Dynamo &amp; New card Antiquity" />
     <MESSAGE value="Dejankified Some powers and added new relic molten lipstick" />
     <MESSAGE value="New cards drift,spark and twitch" />
     <MESSAGE value="Added the final three cards" />
@@ -1183,26 +1006,13 @@
     <MESSAGE value="New Cards supersonic &amp; nihil, fixed acceleration" />
     <MESSAGE value="New Card Shove, Changes to life charm, New card art for Agression" />
     <MESSAGE value="Changes to Persistence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes to Persistence" />
+    <MESSAGE value="Did everything." />
+    <option name="LAST_COMMIT_MESSAGE" value="Did everything." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/SnakeEyes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Outrun.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="41" column="105" lean-forward="true" selection-start-line="41" selection-start-column="105" selection-end-line="41" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Vintage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
@@ -1221,13 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1497,17 +1300,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/DamageAction.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="29" column="55" lean-forward="true" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/DamageInfo.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/GlyphOfTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="17" column="69" selection-start-line="17" selection-start-column="69" selection-end-line="17" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/RapidPulse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="33" column="25" selection-start-line="33" selection-start-column="25" selection-end-line="33" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -1518,41 +1328,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="57" column="34" lean-forward="true" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/powers/TensionPower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="476">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/AbstractCreature.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="890" column="25" selection-start-line="890" selection-start-column="25" selection-end-line="890" selection-end-column="25" />
+        <state relative-caret-position="714">
+          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/actions/common/DamageAction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/DamageInfo.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="941">
-          <caret line="613" column="16" lean-forward="true" selection-start-line="613" selection-start-column="16" selection-end-line="613" selection-end-column="16" />
+        <state relative-caret-position="9367">
+          <caret line="611" column="16" selection-start-line="611" selection-start-column="16" selection-end-line="611" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/AbstractCreature.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        <state relative-caret-position="14229">
+          <caret line="890" column="25" selection-start-line="890" selection-start-column="25" selection-end-line="890" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/cards/WhiffOfMagic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="38" />
         </state>
       </provider>
     </entry>

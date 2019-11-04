@@ -27,7 +27,7 @@ public class RapidPulse extends CustomCard {
     private static final CardType TYPE = CardType.POWER;
     private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 1;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
 

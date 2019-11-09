@@ -27,9 +27,9 @@
   "theextravagant:SnakeOilPower": {
     "NAME": "Snake Oil",
     "DESCRIPTIONS": [
-      "The next card you play applies ",
-      " Poison and ",
-      " Vulnerable whenever it deals unblocked attack damage."
+      "After you play ",
+      " slimed, heal ",
+      " HP."
     ]
   },
   "theextravagant:DamnationPower": {
@@ -59,9 +59,9 @@
   "theextravagant:MagicPower": {
     "NAME": "Magic",
     "DESCRIPTIONS": [
-      "Whenever a card exhausts gain ",
-      " Temporary HP and heal ",
-      " HP."
+      "Whenever you draw a Spark, draw ",
+      " card.",
+      " cards."
     ]
   },
   "theextravagant:FlashbackPower": {

@@ -7,7 +7,7 @@
   "description": "A Character mostly centered around synergy and strong card control.",
   "credits": "Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Meditation Card Art. Grimm for the many ideas. Kiooeht for giving permission to steal an important Patch. Other art Credits: lobbien",
   "dependencies": ["basemod","stslib"],
-  "version": "2.0.5",
+  "version": "2.0.6",
   "sts_version": "10-29-2019",
   "mts_version": "3.10.1"
 }

@@ -95,7 +95,7 @@
   },
   "theextravagant:SnakeOil": {
     "NAME": "Snek Oil",
-    "DESCRIPTION": "The next attack you play applies !M! Poison and 1 Vulnerable whenever it deals unblocked attack damage. NL Exhaust."
+    "DESCRIPTION": "Shuffle 3 Slimed into your draw pile. NL theextravagant:Delay - 3 Slimed: Heal !M! Hp. NL Exhaust."
   },
   "theextravagant:Cutthroat": {
     "NAME": "Cutthroat",
@@ -170,7 +170,8 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Heal !M! Hp at the start of your turn until you play 7 cards."
+    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a Spark, draw a card.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a Spark, draw a card."
   },
   "theextravagant:Flashback":
   {
@@ -205,8 +206,8 @@
   },
   "theextravagant:GlyphOfSight": {
     "NAME": "Glyph of Light",
-    "DESCRIPTION": "At the start of each turn shuffle a theextravagant:spark into your draw pile.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn shuffle a theextravagant:spark into your draw pile."
+    "DESCRIPTION": "At the start of each turn shuffle a theextravagant:Spark into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn shuffle a theextravagant:Spark into your draw pile."
   },
   "theextravagant:Accumulation": {
     "NAME": "Accumulation",
@@ -223,8 +224,8 @@
   },
   "theextravagant:GlyphOfPower": {
     "NAME": "Glyph of Power",
-    "DESCRIPTION": "At the start of each turn lose [E] and add an upgraded theextravagant:Acceleration into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [E] and add an upgraded theextravagant:Acceleration into your hand."
+    "DESCRIPTION": "At the start of each turn lose [E] and add an Upgraded theextravagant:Acceleration into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn lose [E] and add an Upgraded theextravagant:Acceleration into your hand."
   },
   "theextravagant:Preservation": {
     "NAME": "Preservation",
@@ -420,7 +421,7 @@
   "theextravagant:Supersonic": {
     "NAME": "Supersonic",
     "DESCRIPTION": "Add X theextravagant:Accelerations to your hand.",
-    "UPGRADE_DESCRIPTION": "Add X upgraded theextravagant:Accelerations to your hand."
+    "UPGRADE_DESCRIPTION": "Add X Upgraded theextravagant:Accelerations to your hand."
   },
   "theextravagant:Shove": {
     "NAME": "Shove",

@@ -16,7 +16,7 @@ public class RapidPulse extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("RapidPulse");
-    public static final String IMG = theextravagant.makeCardPath("RapidPulse.png");
+    public static final String IMG = theextravagant.makeCardPath("Rapidpulsenew.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

@@ -34,9 +34,7 @@ public class GlyphOfSightPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        for (int i = 0; i < amount; i++) {
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Spark(), amount, true, true));
-        }
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Spark(), amount, true, true));
     }
 
     @Override

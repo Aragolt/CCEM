@@ -71,7 +71,7 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "When drawn, theextravagant:Delay - 3 skills: Gain !B! Block. Draw !M! cards."
+    "DESCRIPTION": "When drawn, NL theextravagant:Delay - 3 skills: Gain !B! Block. Draw !M! cards."
   },
 
   "theextravagant:Reconsider": {
@@ -148,13 +148,13 @@
   "theextravagant:Sixteen_Tons":
   {
     "NAME": "16 Tons",
-    "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, Deal 16 damage to a random enemy and exhaust.[]",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, Deal 16 damage to a random enemy and exhaust this card.[]"
+    "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, Deal 16 damage to a random enemy and Exhaust.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, Deal 16 damage to a random enemy and Exhaust."
   },
   "theextravagant:ToolsOfTrickery":
   {
     "NAME": "Tools of Trickery",
-    "DESCRIPTION": "At the start of your turn, driscard !M! random cards and draw !M! cards."
+    "DESCRIPTION": "At the start of your turn, discard !M! random cards and draw !M! cards."
   },
   "theextravagant:TwilightTone":
   {
@@ -170,8 +170,8 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a Spark, draw a card.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a Spark, draw a card."
+    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a theextravagant:Spark, draw a card.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a theextravagant:Spark, draw a card."
   },
   "theextravagant:Flashback":
   {
@@ -184,7 +184,7 @@
   },
   "theextravagant:ZeroHero": {
     "NAME": "Zero Hero",
-    "DESCRIPTION": "Gain !B! Block. NL theextravagant:Delay - 3 0-cost cards: Gain !M! strength."
+    "DESCRIPTION": "Gain !B! Block. NL theextravagant:Delay - 3 0-cost cards: Gain !M! Strength."
   },
   "theextravagant:Glamour": {
     "NAME": "Jewels",
@@ -279,7 +279,7 @@
   },
   "theextravagant:CuttingEdge": {
     "NAME": "Cutting Edge",
-    "DESCRIPTION": "When drawn increase the damage of all attacks in your hand by 1. NL Deal !D! damage. Apply !M! Vulnerable."
+    "DESCRIPTION": "When drawn, increase the damage of all attacks in your hand by 1. NL Deal !D! damage. NL Apply !M! Vulnerable."
   },
   "theextravagant:Aftermath": {
     "NAME": "Aftermath",
@@ -426,5 +426,10 @@
   "theextravagant:Shove": {
     "NAME": "Shove",
     "DESCRIPTION": "Deal !D! damage twice. NL Shuffle an theextravagant:Acceleration into your draw pile."
+  },
+  "theextravagant:ShootingStar": {
+    "NAME": "Shooting Stars",
+    "DESCRIPTION": "Ethereal. NL Shuffle !M! theextravagant:Sparks into your draw pile.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile."
   }
 }

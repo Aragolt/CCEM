@@ -39,7 +39,7 @@ public class GlyphOfPowerPower extends AbstractPower {
             AbstractDungeon.player.energy.use(1);
             AbstractCard c = new Acceleration();
             c.upgrade();
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), amount));
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c.makeStatEquivalentCopy(), 1));
         }
     }
 

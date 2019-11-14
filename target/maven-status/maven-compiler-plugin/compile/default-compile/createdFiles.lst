@@ -107,6 +107,7 @@ theextravagant\actions\ExhaustTopCardAction.class
 theextravagant\characters\TheExtravagant$Enums.class
 theextravagant\cards\Strafe.class
 theextravagant\cards\Repell.class
+theextravagant\cards\ShootingStar.class
 theextravagant\actions\FetchAndModifyCardAction.class
 theextravagant\powers\OverPowerPower.class
 aramod\relics\ButchersCleaver.class

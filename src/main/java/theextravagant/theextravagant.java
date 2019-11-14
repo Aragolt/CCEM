@@ -93,7 +93,7 @@ public class theextravagant implements
     private static final String POWER_EV_BLUE_PORTRAIT = "theextravagantResources/images/1024/bg_power_default_gray.png";
     private static final String ENERGY_ORB_EV_BLUE_PORTRAIT = "theextravagantResources/images/1024/card_default_gray_orb.png";
     private static final String THE_EXTRAVAGANT_BUTTON = "theextravagantResources/images/charSelect/DefaultCharacterButton.png";
-    private static final String THE_DEFAULT_PORTRAIT = "theextravagantResources/images/charSelect/DefaultCharacterPortraitBG.png";
+    private static final String THE_DEFAULT_PORTRAIT = "theextravagantResources/images/charSelect/DefaultCharacterPortraitBGnew.png";
     public static Properties theDefaultDefaultSettings = new Properties();
     public static boolean enablePlaceholder = true;
     public static int CardsExhaustedLastTurn;
@@ -356,7 +356,8 @@ public class theextravagant implements
         BaseMod.addCard(new IronPlumes());
         BaseMod.addCard(new Courage());
         BaseMod.addCard(new SharpTalons());
-        BaseMod.addCard(new Brilliance());
+        //BaseMod.addCard(new Brilliance());
+        BaseMod.addCard(new ShootingStar());
         BaseMod.addCard(new GarbageCannon());
         BaseMod.addCard(new Foil());
         BaseMod.addCard(new Radiance());
@@ -443,7 +444,8 @@ public class theextravagant implements
         UnlockTracker.unlockCard(IronPlumes.ID);
         UnlockTracker.unlockCard(Courage.ID);
         UnlockTracker.unlockCard(SharpTalons.ID);
-        UnlockTracker.unlockCard(Brilliance.ID);
+        //UnlockTracker.unlockCard(Brilliance.ID);
+        UnlockTracker.unlockCard(ShootingStar.ID);
         UnlockTracker.unlockCard(GarbageCannon.ID);
         UnlockTracker.unlockCard(Foil.ID);
         UnlockTracker.unlockCard(Radiance.ID);

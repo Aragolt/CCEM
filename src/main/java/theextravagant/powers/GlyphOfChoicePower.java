@@ -34,9 +34,7 @@ public class GlyphOfChoicePower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        for (int i = 0; i < amount; i++) {
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Accumulation(), amount));
-        }
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Accumulation(), amount));
     }
 
     @Override

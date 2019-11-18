@@ -15,7 +15,7 @@ public class Overrun extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Overrun");
-    public static final String IMG = theextravagant.makeCardPath("Overrun.png");
+    public static final String IMG = theextravagant.makeCardPath("overrunnew.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

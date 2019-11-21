@@ -71,7 +71,7 @@
 
   "theextravagant:Twostep": {
     "NAME": "Twostep",
-    "DESCRIPTION": "When drawn, NL theextravagant:Delay - 3 skills: Gain !B! Block. Draw !M! cards."
+    "DESCRIPTION": "When drawn, NL theextravagant:Delay - 3 skills: NL Gain !B! Block. NL Draw !M! cards."
   },
 
   "theextravagant:Reconsider": {
@@ -326,7 +326,7 @@
   },
   "theextravagant:Impulse": {
     "NAME": "Impulse",
-    "DESCRIPTION": "Gain !B! Block. If the next card you play costs is an attack, add an theextravagant:Acceleration to your hand."
+    "DESCRIPTION": "Gain !B! Block. If the next card you play is an attack, add an theextravagant:Acceleration to your hand."
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
@@ -360,7 +360,7 @@
   "theextravagant:Twitch": {
     "NAME": "Twitch",
     "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, NL gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, NL gain [E] [E]"
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, NL gain [E] [E]."
   },
   "theextravagant:Drift": {
     "NAME": "Drift",
@@ -431,5 +431,9 @@
     "NAME": "Shooting Stars",
     "DESCRIPTION": "Ethereal. NL Shuffle !M! theextravagant:Sparks into your draw pile.",
     "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile."
+  },
+  "theextravagant:Shake": {
+    "NAME": "Shake",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
   }
 }

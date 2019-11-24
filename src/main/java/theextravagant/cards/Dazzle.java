@@ -26,7 +26,7 @@ public class Dazzle extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 0;
     private static final int DAMAGE = 5;
-    private static final int MAGICNUMBER = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public Dazzle() {

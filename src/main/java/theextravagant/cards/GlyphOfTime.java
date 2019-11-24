@@ -24,9 +24,9 @@ public class GlyphOfTime extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.POWER;
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
 
@@ -47,7 +47,7 @@ public class GlyphOfTime extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeBaseCost(1);
             initializeDescription();
         }
     }

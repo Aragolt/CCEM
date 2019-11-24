@@ -43,7 +43,7 @@ public class Spark extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        AbstractDungeon.actionManager.addToBottom(new SparkAction(magicNumber, magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new SparkAction(CardType.ATTACK));
     }
 
 

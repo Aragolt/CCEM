@@ -113,9 +113,9 @@
   "theextravagant:GlyphOfTimePower": {
     "NAME": "Glyph of Time",
     "DESCRIPTIONS": [
-      "At the end of each turn retain ",
-      " random card.",
-      " random cards."
+      "Whenever you play ",
+      " cards, gain ",
+      " Strength."
     ]
   },
   "theextravagant:OneTurnRetainPower": {

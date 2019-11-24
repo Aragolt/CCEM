@@ -102,6 +102,9 @@ public class theextravagant implements
     public static Texture SecondEnergyOrbCard;
     public static Texture LargeSecondEnergyOrbCard;
     public static Texture SmallSecondEnergyOrb;
+    public static Texture Enchantmentglittera;
+    public static Texture Enchantmentglitterb;
+    public static Texture Enchantmentglitterc;
     public static SecondEnergyOrb SecondEnergyOrb;
     private static String modID;
 
@@ -230,9 +233,15 @@ public class theextravagant implements
         SecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/512/card_default_other_orb.png");
         LargeSecondEnergyOrbCard = TextureLoader.getTexture("theextravagantResources/images/1024/card_other_orb.png");
         SmallSecondEnergyOrb = TextureLoader.getTexture(CARD_SECOND_ENERGY_ORB);
+        Enchantmentglittera = TextureLoader.getTexture("theextravagantResources/images/512/EnchantmentGlow1.png");
+        Enchantmentglitterb = TextureLoader.getTexture("theextravagantResources/images/512/EnchantmentGlow2.png");
+        Enchantmentglitterc = TextureLoader.getTexture("theextravagantResources/images/512/EnchantmentGlow3.png");
         UIAtlas.addRegion("OtherEnergyCard", SecondEnergyOrbCard, 0, 0, SecondEnergyOrbCard.getWidth(), SecondEnergyOrbCard.getHeight());
         UIAtlas.addRegion("LargeOtherEnergyCard", LargeSecondEnergyOrbCard, 0, 0, LargeSecondEnergyOrbCard.getWidth(), LargeSecondEnergyOrbCard.getHeight());
         UIAtlas.addRegion("SmallSecondEnergyOrb", SmallSecondEnergyOrb, 0, 0, SmallSecondEnergyOrb.getWidth(), SmallSecondEnergyOrb.getHeight());
+        UIAtlas.addRegion("EnchantmentGlow1", Enchantmentglittera, 0, 0, Enchantmentglittera.getWidth(), Enchantmentglittera.getHeight());
+        UIAtlas.addRegion("EnchantmentGlow2", Enchantmentglitterb, 0, 0, Enchantmentglitterb.getWidth(), Enchantmentglitterb.getHeight());
+        UIAtlas.addRegion("EnchantmentGlow3", Enchantmentglitterc, 0, 0, Enchantmentglitterc.getWidth(), Enchantmentglitterc.getHeight());
         VfxMaster.initialize();
         logger.info("Loading badge image and mod options");
         Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);

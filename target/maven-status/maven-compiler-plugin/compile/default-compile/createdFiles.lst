@@ -5,6 +5,7 @@ theextravagant\cards\IronPlumes.class
 theextravagant\theextravagant$1.class
 theextravagant\actions\SuperSonicAction.class
 aramod\relics\NuclearReactor.class
+theextravagant\cards\Shake.class
 aramod\powers\FastPower.class
 theextravagant\actions\IncreaseCostAction.class
 theextravagant\ui\SecondEnergyOrb.class
@@ -52,6 +53,7 @@ theextravagant\powers\GlyphOfSightPower.class
 aramod\relics\TestRelic.class
 theextravagant\variables\ReducedBlockVariable.class
 theextravagant\cards\Courage.class
+theextravagant\patches\EVCardPatches\AbstractCardPatches$EnchantmentField.class
 theextravagant\cards\Spark.class
 aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
@@ -149,6 +151,7 @@ theextravagant\powers\SnakeOilPower.class
 theextravagant\cards\Twostep.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatch.class
 theextravagant\powers\AntiquityPower.class
+theextravagant\patches\EVCardPatches\AbstractCardPatches$RenderhelperPatch1.class
 theextravagant\actions\PunchEffectAction.class
 theextravagant\vfx\Sixteentonseffect.class
 aramod\relics\IronRibcage.class
@@ -183,6 +186,7 @@ theextravagant\actions\BetterCopyAction.class
 theextravagant\cards\OminousGlare.class
 aramod\relics\RabbytsFoot.class
 theextravagant\actions\BetterSFXAction.class
+theextravagant\patches\EVCardPatches\CardcrawlgameTimedelayPatch.class
 theextravagant\powers\MagicPower.class
 theextravagant\cards\DualMirrorCut.class
 theextravagant\cards\Invocation.class
@@ -190,6 +194,7 @@ theextravagant\cards\Shove.class
 aramod\powers\LoseFocusPower.class
 theextravagant\variables\DefaultCustomVariable.class
 theextravagant\relics\PlaceholderRelic2.class
+theextravagant\patches\EVCardPatches\PlayCardActionPatch.class
 theextravagant\powers\TensionPower.class
 theextravagant\powers\RadiancePower.class
 theextravagant\cards\Persistence.class

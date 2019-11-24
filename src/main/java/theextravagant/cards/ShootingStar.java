@@ -1,7 +1,7 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.MakeTempCardInDrawPileAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -40,7 +40,7 @@ public class ShootingStar extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Spark(), 2));
+        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Spark(), 2, true, true));
     }
 
     @Override

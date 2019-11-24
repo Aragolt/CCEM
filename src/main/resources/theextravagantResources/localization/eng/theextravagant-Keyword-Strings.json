@@ -118,6 +118,16 @@
       "Sparks",
       "sparks"
     ],
-    "DESCRIPTION": "An Unplayable, Ethereal card that increases the Block and damage of all cards in your hand by 1"
+    "DESCRIPTION": "When drawn, Enchants a random attack in your hand. Enchanted cards are played twice."
+  },
+  {
+    "PROPER_NAME": "Enchantment",
+    "NAMES": [
+      "Enchant",
+      "enchant",
+      "Enchanted",
+      "enchanted"
+    ],
+    "DESCRIPTION": "When you play this card, play it twice."
   }
 ]

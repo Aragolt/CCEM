@@ -3,12 +3,13 @@ package theextravagant.powers;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.SparkAction;
+import com.megacrit.cardcrawl.powers.StrengthPower;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -39,7 +40,7 @@ public class GlyphOfTimePower extends TwoAmountPower {
         amount2--;
         if (amount2 == 0) {
             amount2 = 8;
-            AbstractDungeon.actionManager.addToBottom(new SparkAction(0, amount));
+            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, amount)));
         }
     }
 

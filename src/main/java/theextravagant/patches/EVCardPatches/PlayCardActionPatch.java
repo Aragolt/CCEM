@@ -14,7 +14,7 @@ import theextravagant.actions.PlayCardAction;
 public class PlayCardActionPatch {
     @SpirePostfixPatch
     public static void Patch(CardQueueItem __instance, AbstractCard abstractCard, AbstractMonster target, int setEnergyOnUse, boolean ignoreEnergyTotal, boolean autoplayCard) {
-        if (!abstractCard.isInAutoplay && AbstractCardPatches.EnchantmentField.EnchantmentField.get(abstractCard)) {
+        if (/*!abstractCard.isInAutoplay && */ AbstractCardPatches.EnchantmentField.EnchantmentField.get(abstractCard)) {
             AbstractDungeon.actionManager.addToBottom(new PlayCardAction(abstractCard, new UseCardAction(abstractCard, target)));
         }
     }

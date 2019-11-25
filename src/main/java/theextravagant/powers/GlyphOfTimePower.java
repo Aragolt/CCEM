@@ -39,14 +39,14 @@ public class GlyphOfTimePower extends TwoAmountPower {
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         amount2--;
         if (amount2 == 0) {
-            amount2 = 8;
+            amount2 = 10;
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new StrengthPower(AbstractDungeon.player, amount)));
         }
     }
 
     @Override
     public void onInitialApplication() {
-        amount2 = 8;
+        amount2 = 10;
     }
 
     @Override

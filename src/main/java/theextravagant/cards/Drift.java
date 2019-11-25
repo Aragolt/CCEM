@@ -48,7 +48,7 @@ public class Drift extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.1F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(p, this.magicNumber));
-        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, false));
+        AbstractDungeon.actionManager.addToBottom(new DiscardAction(p, p, this.magicNumber, true));
     }
 
     @Override

@@ -199,7 +199,7 @@
   },
   "theextravagant:GlyphOfTime": {
     "NAME": "Glyph of Time",
-    "DESCRIPTION": "Whenever you play 8 cards, Gain 1 Strength."
+    "DESCRIPTION": "Whenever you play 10 cards, Gain 1 Strength."
   },
   "theextravagant:Persistence": {
     "NAME": "Persistence",
@@ -311,7 +311,8 @@
   },
   "theextravagant:Swirl": {
     "NAME": "Swirl",
-    "DESCRIPTION": "Fetch a card from your draw pile and increase its Block by !M! this combat. NL Exhaust."
+    "DESCRIPTION": "theextravagant:Enchant a Skill in your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "theextravagant:Enchant a Skill in your hand."
   },
   "theextravagant:Antiquity": {
     "NAME": "Antiquity",
@@ -329,7 +330,7 @@
   },
   "theextravagant:Drift": {
     "NAME": "Drift",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, discard !M! cards."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, discard !M! random cards."
   },
   "theextravagant:AuroraForm": {
     "NAME": "Aurora Form",

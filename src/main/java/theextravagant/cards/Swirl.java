@@ -35,6 +35,7 @@ public class Swirl extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         this.exhaust = true;
+
     }
 
     @Override
@@ -46,8 +47,8 @@ public class Swirl extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            this.exhaust = false;
+            this.selfRetain = true;
+            this.rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

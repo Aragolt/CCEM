@@ -33,7 +33,7 @@ public class TrickeryPower extends AbstractPower {
     }
 
     @Override
-    public void atStartOfTurn() {
+    public void atStartOfTurnPostDraw() {
         this.addToBot(new DiscardAction(owner, owner, amount, true));
         AbstractDungeon.actionManager.addToBottom(new DrawCardAction(amount));
     }

@@ -41,7 +41,7 @@ public class WhiffOfMagic extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new MagicPower(1)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new MagicPower(2)));
         AbstractDungeon.actionManager.addToBottom(new MakeTempCardInDrawPileAction(new Spark(), magicNumber, true, true));
     }
 

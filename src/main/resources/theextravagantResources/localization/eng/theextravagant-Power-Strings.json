@@ -44,9 +44,9 @@
   "theextravagant:TrickeryPower": {
     "NAME": "Trickery",
     "DESCRIPTIONS": [
-      "At the start of your turn draw 1 card, then discard a random card.",
-      "At the start of your turn draw ",
-      " cards, then discard that many."
+      "At the start of your turn discard a random card, then draw a card.",
+      "At the start of your turn discard ",
+      " random cards, then draw that many."
     ]
   },
   "theextravagant:RetreatPower": {
@@ -285,10 +285,17 @@
     ]
   },
   "theextravagant:TensionPower": {
-    "NAME": "Dodge",
+    "NAME": "Tension",
     "DESCRIPTIONS": [
       "Whenever yo draw a skill, this enemy takes ",
       " damage."
+    ]
+  },
+  "theextravagant:Razor": {
+    "NAME": "Razor",
+    "DESCRIPTIONS": [
+      "At the end of your turn deal ",
+      " damage to ALL enemies."
     ]
   }
 }

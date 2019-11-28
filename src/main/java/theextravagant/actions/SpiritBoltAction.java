@@ -13,7 +13,7 @@ import theextravagant.patches.EVCardPatches.AbstractCardPatches;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class SwirlAction extends AbstractGameAction {
+public class SpiritBoltAction extends AbstractGameAction {
     public static final String[] TEXT;
     private static final UIStrings uiStrings;
     private static final float DURATION_PER_CARD = 0.25F;
@@ -27,7 +27,7 @@ public class SwirlAction extends AbstractGameAction {
     private int dupeAmount = 1;
     private ArrayList<AbstractCard> cannotDuplicate = new ArrayList();
 
-    public SwirlAction(AbstractCreature source, int amount) {
+    public SpiritBoltAction(AbstractCreature source, int amount) {
         this.setValues(AbstractDungeon.player, source, amount);
         this.actionType = ActionType.DRAW;
         this.duration = 0.25F;
@@ -116,6 +116,6 @@ public class SwirlAction extends AbstractGameAction {
     }
 
     private boolean isDualWieldable(AbstractCard card) {
-        return card.type.equals(AbstractCard.CardType.SKILL) && !AbstractCardPatches.EnchantmentField.EnchantmentField.get(card);
+        return card.costForTurn == 0 || card.freeToPlayOnce;
     }
 }

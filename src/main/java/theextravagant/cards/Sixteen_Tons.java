@@ -1,10 +1,10 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AutoplayField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
-import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -40,22 +40,19 @@ public class Sixteen_Tons extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.isEthereal = true;
+        AutoplayField.autoplay.set(this, true);
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractMonster mo = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(mo, new DamageInfo(AbstractDungeon.player, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new SixteenTonsEffectAction(mo));
+
     }
 
     @Override
     public void triggerWhenDrawn() {
-        AbstractDungeon.actionManager.addToBottom(new ExhaustSpecificCardAction(this, AbstractDungeon.player.discardPile));
-        AbstractMonster m = AbstractDungeon.getMonsters().getRandomMonster(null, true, AbstractDungeon.cardRandomRng);
-        if (m != null) {
-            this.calculateCardDamage(m);
-            AbstractDungeon.actionManager.addToTop(new DamageAction(m, new DamageInfo(AbstractDungeon.player, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        }
-        AbstractDungeon.actionManager.addToTop(new SixteenTonsEffectAction(m));
         if (!upgraded) {
             AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawReductionOncePower(AbstractDungeon.player, 1)));
         }

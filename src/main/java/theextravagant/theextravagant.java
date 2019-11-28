@@ -304,6 +304,7 @@ public class theextravagant implements
         BaseMod.addRelicToCustomPool(new Sorbet(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new PocketDynamo(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new MoltenLipstick(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new TopHat(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 
@@ -320,6 +321,7 @@ public class theextravagant implements
         BaseMod.addDynamicVariable(new ReducedBlockVariable());
 
         logger.info("Adding cards");
+        BaseMod.addCard(new Shatter());
         BaseMod.addCard(new Riot());
         BaseMod.addCard(new SlyStrike());
         BaseMod.addCard(new Clairvoyance());
@@ -332,13 +334,13 @@ public class theextravagant implements
         BaseMod.addCard(new GustOfWind());
         BaseMod.addCard(new SnakeOil());
         BaseMod.addCard(new Cutthroat());
-        BaseMod.addCard(new SwiftSwitch());
-        BaseMod.addCard(new ButtonUp());
+        //BaseMod.addCard(new SwiftSwitch());
+        //BaseMod.addCard(new ButtonUp());
         BaseMod.addCard(new Pluck());
         BaseMod.addCard(new SpontaneousStrike());
         BaseMod.addCard(new DAMNATION());
         BaseMod.addCard(new RiskyStrike());
-        BaseMod.addCard(new ReSeek());
+        //BaseMod.addCard(new ReSeek());
         BaseMod.addCard(new Agression());
         BaseMod.addCard(new PuffUp());
         BaseMod.addCard(new Sixteen_Tons());
@@ -361,7 +363,7 @@ public class theextravagant implements
         BaseMod.addCard(new GlyphOfTime());
         BaseMod.addCard(new Preservation());
         BaseMod.addCard(new Persistence());
-        BaseMod.addCard(new Strafe());
+        //BaseMod.addCard(new Strafe());
         BaseMod.addCard(new IronPlumes());
         BaseMod.addCard(new Courage());
         BaseMod.addCard(new SharpTalons());
@@ -387,7 +389,7 @@ public class theextravagant implements
         BaseMod.addCard(new StepBack());
         //BaseMod.addCard(new DualMirrorCut());
         BaseMod.addCard(new Vintage());
-        BaseMod.addCard(new Swirl());
+        //BaseMod.addCard(new Swirl());
         BaseMod.addCard(new Antiquity());
         BaseMod.addCard(new Spark());
         BaseMod.addCard(new Twitch());
@@ -407,9 +409,13 @@ public class theextravagant implements
         BaseMod.addCard(new Supersonic());
         BaseMod.addCard(new Shove());
         BaseMod.addCard(new Shake());
+        BaseMod.addCard(new SpiritBolt());
+        BaseMod.addCard(new PerfectTheBasics());
+        BaseMod.addCard(new Shatter());
+        BaseMod.addCard(new Razor());
         logger.info("Making sure the cards are unlocked.");
 
-
+        UnlockTracker.unlockCard(Shatter.ID);
         UnlockTracker.unlockCard(SlyStrike.ID);
         UnlockTracker.unlockCard(Clairvoyance.ID);
         UnlockTracker.unlockCard(Triumph.ID);
@@ -421,13 +427,13 @@ public class theextravagant implements
         UnlockTracker.unlockCard(GustOfWind.ID);
         UnlockTracker.unlockCard(SnakeOil.ID);
         UnlockTracker.unlockCard(Cutthroat.ID);
-        UnlockTracker.unlockCard(SwiftSwitch.ID);
-        UnlockTracker.unlockCard(ButtonUp.ID);
+        //UnlockTracker.unlockCard(SwiftSwitch.ID);
+        //UnlockTracker.unlockCard(ButtonUp.ID);
         UnlockTracker.unlockCard(Pluck.ID);
         UnlockTracker.unlockCard(SpontaneousStrike.ID);
         UnlockTracker.unlockCard(DAMNATION.ID);
         UnlockTracker.unlockCard(RiskyStrike.ID);
-        UnlockTracker.unlockCard(ReSeek.ID);
+        //UnlockTracker.unlockCard(ReSeek.ID);
         UnlockTracker.unlockCard(Agression.ID);
         UnlockTracker.unlockCard(PuffUp.ID);
         UnlockTracker.unlockCard(Sixteen_Tons.ID);
@@ -450,7 +456,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(GlyphOfTime.ID);
         UnlockTracker.unlockCard(Preservation.ID);
         UnlockTracker.unlockCard(Persistence.ID);
-        UnlockTracker.unlockCard(Strafe.ID);
+        //UnlockTracker.unlockCard(Strafe.ID);
         UnlockTracker.unlockCard(IronPlumes.ID);
         UnlockTracker.unlockCard(Courage.ID);
         UnlockTracker.unlockCard(SharpTalons.ID);
@@ -477,7 +483,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(StepBack.ID);
         //UnlockTracker.unlockCard(DualMirrorCut.ID);
         UnlockTracker.unlockCard(Vintage.ID);
-        UnlockTracker.unlockCard(Swirl.ID);
+        //UnlockTracker.unlockCard(Swirl.ID);
         UnlockTracker.unlockCard(Antiquity.ID);
         UnlockTracker.unlockCard(Spark.ID);
         UnlockTracker.unlockCard(Twitch.ID);
@@ -497,6 +503,10 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Nihil.ID);
         UnlockTracker.unlockCard(Supersonic.ID);
         UnlockTracker.unlockCard(Shove.ID);
+        UnlockTracker.unlockCard(SpiritBolt.ID);
+        UnlockTracker.unlockCard(PerfectTheBasics.ID);
+        UnlockTracker.unlockCard(Shatter.ID);
+        UnlockTracker.unlockCard(Razor.ID);
         logger.info("Done adding cards!");
     }
 

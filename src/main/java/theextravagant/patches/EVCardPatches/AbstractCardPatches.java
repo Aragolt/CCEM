@@ -98,4 +98,24 @@ public class AbstractCardPatches {
             }
         }
     }
+
+    @SpirePatch(clz = AbstractCard.class, method = "makeStatEquivalentCopy")
+    public static class CopyPatch1 {
+        @SpirePostfixPatch
+        public static AbstractCard RenderhelperPatch1(AbstractCard card, AbstractCard __instance) {
+            if (EnchantmentField.EnchantmentField.get(__instance)) {
+                EnchantmentField.EnchantmentField.set(card, true);
+            }
+            return card;
+        }
+    }
+
+    @SpirePatch(clz = AbstractCard.class, method = "makeSameInstanceOf")
+    public static class CopyPatch2 {
+        @SpirePostfixPatch
+        public static AbstractCard RenderhelperPatch1(AbstractCard card, AbstractCard __instance) {
+            EnchantmentField.EnchantmentField.set(card, false);
+            return card;
+        }
+    }
 }

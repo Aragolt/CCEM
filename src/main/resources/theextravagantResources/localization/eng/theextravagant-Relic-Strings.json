@@ -70,7 +70,14 @@
     "NAME": "Molten Lipstick",
     "FLAVOR": "Kissing not recommended.",
     "DESCRIPTIONS": [
-      "At the start of combat shuffle #b2 #yBurns into your draw pile. Whenever you draw a status or curse card deal #b5 damage to all enemies."
+      "At the start of combat shuffle #b2 #yBurns into your draw pile. Whenever you draw a #yStatus or #yCurse card deal #b5 damage to all enemies."
+    ]
+  },
+  "theextravagant:TopHat": {
+    "NAME": "Top hat",
+    "FLAVOR": "Home to all the magic.",
+    "DESCRIPTIONS": [
+      "Whenever you play #b3 Attacks in one turn, enchant a random Skill in your hand."
     ]
   }
 }

@@ -8,5 +8,10 @@
     "TEXT": [
       "Choose any number of cards to play twice."
     ]
+  },
+  "Enchantment": {
+    "TEXT": [
+      "Choose a card to enchant."
+    ]
   }
 }

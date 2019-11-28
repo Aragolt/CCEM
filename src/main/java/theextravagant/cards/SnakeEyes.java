@@ -7,6 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import com.megacrit.cardcrawl.powers.GainStrengthPower;
 import com.megacrit.cardcrawl.powers.StrengthPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 import theextravagant.characters.TheExtravagant;
@@ -26,7 +27,7 @@ public class SnakeEyes extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 2;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
@@ -37,13 +38,13 @@ public class SnakeEyes extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (m.hasPower(WeakPower.POWER_ID)) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new StrengthPower(m, -m.getPower(WeakPower.POWER_ID).amount)));
+        this.addToBot(new ApplyPowerAction(m, p, new StrengthPower(m, -3), -3));
+        if (m != null && !m.hasPower("Artifact")) {
+            this.addToBot(new ApplyPowerAction(m, p, new GainStrengthPower(m, 3), 3));
         }
     }
 

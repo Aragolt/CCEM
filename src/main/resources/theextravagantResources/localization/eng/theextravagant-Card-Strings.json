@@ -113,8 +113,8 @@
   "theextravagant:Sixteen_Tons":
   {
     "NAME": "16 Tons",
-    "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, Deal 16 damage to a random enemy and Exhaust.",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, Deal 16 damage to a random enemy and Exhaust."
+    "DESCRIPTION": "Autoplay. NL theextravagant:Heavy. NL Deal 16 damage to a random enemy.",
+    "UPGRADE_DESCRIPTION": "Autoplay. NL Deal 16 damage to a random enemy."
   },
   "theextravagant:ToolsOfTrickery":
   {
@@ -135,8 +135,8 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a theextravagant:Spark, draw a card.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a theextravagant:Spark, draw a card."
+    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a theextravagant:Spark, draw 2 cards.",
+    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a theextravagant:Spark, draw 2 cards."
   },
   "theextravagant:Flashback":
   {
@@ -252,7 +252,7 @@
   },
   "theextravagant:RustyBuckler": {
     "NAME": "Rusty Buckler",
-    "DESCRIPTION": "When drawn, gain !M! Thorns.[] NL Gain !B! Block."
+    "DESCRIPTION": "When drawn, gain !M! Thorns. NL Gain !B! Block."
   },
   "theextravagant:Precaution": {
     "NAME": "Precaution",
@@ -312,7 +312,7 @@
   "theextravagant:Swirl": {
     "NAME": "Swirl",
     "DESCRIPTION": "theextravagant:Enchant a Skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "theextravagant:Enchant a Skill in your hand."
+    "UPGRADE_DESCRIPTION": "Retain. theextravagant:Enchant a Skill in your hand."
   },
   "theextravagant:Antiquity": {
     "NAME": "Antiquity",
@@ -342,7 +342,7 @@
   },
   "theextravagant:SnakeEyes": {
     "NAME": "Snek Eyes",
-    "DESCRIPTION": "When drawn, apply !M! Weak to all enemies. NL Enemy loses Strength equal to their Weak. NL Exhaust."
+    "DESCRIPTION": "When drawn, apply !M! Weak to all enemies. Enemy loses 3 Strength this turn."
   },
   "theextravagant:Riot": {
     "NAME": "Riot",
@@ -401,5 +401,21 @@
   "theextravagant:Shake": {
     "NAME": "Shake",
     "DESCRIPTION": "Deal !D! damage. NL Apply !M! Weak."
+  },
+  "theextravagant:SpiritBolt": {
+    "NAME": "Spirit Bolt",
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant a 0-cost card in your hand."
+  },
+  "theextravagant:Shatter": {
+    "NAME": "Shatter",
+    "DESCRIPTION": "Deal !D! damage for each card in your hand that costs 0."
+  },
+  "theextravagant:PerfectTheBasics": {
+    "NAME": "Perfect the Basics",
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL theextravagant:Enchant a starter card in your hand."
+  },
+  "theextravagant:Razor": {
+    "NAME": "Razor",
+    "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, All enemies take !M! damage."
   }
 }

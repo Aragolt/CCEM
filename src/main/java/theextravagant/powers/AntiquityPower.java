@@ -2,7 +2,7 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
+import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -41,6 +41,6 @@ public class AntiquityPower extends AbstractPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        AbstractDungeon.actionManager.addToBottom(new DiscardSpecificCardAction(AbstractDungeon.player.hand.getRandomCard(true)));
+        this.addToBot(new DiscardAction(owner, owner, amount, true));
     }
 }

@@ -11,12 +11,14 @@ theextravagant\actions\IncreaseCostAction.class
 theextravagant\ui\SecondEnergyOrb.class
 theextravagant\cards\GlyphOfChoice.class
 theextravagant\vfx\Sparkleeffect.class
+theextravagant\cards\Shatter.class
 theextravagant\actions\PutCardsFromHandOnTopOfDrawPileThenDrawAction.class
 theextravagant\powers\FoilPower.class
 aramod\relics\StatueOfPride.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
+theextravagant\cards\SpiritBolt.class
 aramod\relics\MidasCore.class
 theextravagant\events\IdentityCrisisEvent.class
 theextravagant\powers\AuroraFormPower.class
@@ -24,6 +26,7 @@ theextravagant\cards\Precaution.class
 theextravagant\relics\MoltenLipstick.class
 theextravagant\variables\DefaultSecondMagicNumber.class
 theextravagant\powers\RapidPulsePower.class
+theextravagant\cards\PerfectTheBasics.class
 theextravagant\powers\RiskPower.class
 theextravagant\actions\PlayCardTwiceAction.class
 theextravagant\powers\DazzlePower.class
@@ -39,6 +42,7 @@ aramod\relics\DefectiveTurbocharger.class
 theextravagant\cards\SharpTalons.class
 theextravagant\actions\PheonixEffectAction.class
 theextravagant\cards\Outrun.class
+theextravagant\actions\SwirlAction.class
 theextravagant\cards\RiskyStrike.class
 theextravagant\cards\ToolsOfTrickery.class
 theextravagant\cards\LifeCharm.class
@@ -63,6 +67,7 @@ theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 theextravagant\relics\TranscendedFeather.class
+theextravagant\powers\SpiritBoltPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 theextravagant\powers\DodgePower.class
@@ -71,6 +76,7 @@ theextravagant\cards\ManifestIllusion.class
 aramod\relics\ShatteredShield.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
 theextravagant\actions\DiscardForDamageAction.class
+theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch1.class
 aramod\relics\Lemon.class
 theextravagant\cards\FocusStab.class
 theextravagant\cards\PuffUp.class
@@ -99,6 +105,7 @@ theextravagant\cards\Ambush.class
 theextravagant\cards\GlyphOfPower.class
 theextravagant\cards\Vintage.class
 theextravagant\patches\SecondEnergyOrbPatches\UpdateOrbPositionPatch$Locator.class
+theextravagant\actions\SpiritBoltAction.class
 theextravagant\cards\GustOfWind.class
 aramod\powers\LoseThornsPower.class
 theextravagant\powers\DrawReductionOncePower.class
@@ -108,6 +115,7 @@ theextravagant\powers\FlashbackPower.class
 theextravagant\actions\ExhaustTopCardAction.class
 theextravagant\characters\TheExtravagant$Enums.class
 theextravagant\cards\Strafe.class
+theextravagant\relics\TopHat.class
 theextravagant\cards\Repell.class
 theextravagant\cards\ShootingStar.class
 theextravagant\actions\FetchAndModifyCardAction.class
@@ -124,6 +132,7 @@ theextravagant\powers\GarbageCannonPower.class
 theextravagant\cards\SlyStrike.class
 theextravagant\relics\PlaceholderRelic.class
 theextravagant\powers\ImpulsePower.class
+theextravagant\powers\RazorPower.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch.class
 theextravagant\cards\Aftermath.class
 theextravagant\cards\SnakeOil.class
@@ -135,6 +144,7 @@ theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.clas
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 theextravagant\actions\VintageAction.class
+theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch2.class
 theextravagant\actions\FireworkEffectAction.class
 theextravagant\cards\Thrill.class
 theextravagant\powers\PrepareAmbushPower.class
@@ -154,6 +164,7 @@ theextravagant\powers\AntiquityPower.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$RenderhelperPatch1.class
 theextravagant\actions\PunchEffectAction.class
 theextravagant\vfx\Sixteentonseffect.class
+theextravagant\actions\PerfectBasicsAction.class
 aramod\relics\IronRibcage.class
 theextravagant\cards\DAMNATION.class
 theextravagant\characters\TheExtravagant$1.class
@@ -164,6 +175,7 @@ theextravagant\cards\Accumulation.class
 theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
 theextravagant\cards\ReSeek.class
 theextravagant\powers\ModifyDamagePower.class
+theextravagant\cards\Razor.class
 theextravagant\actions\DamnationEffectAction.class
 theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Castle.class

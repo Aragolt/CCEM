@@ -285,10 +285,17 @@
     ]
   },
   "theextravagant:TensionPower": {
-    "NAME": "Dodge",
+    "NAME": "Tension",
     "DESCRIPTIONS": [
       "Whenever yo draw a skill, this enemy takes ",
       " damage."
+    ]
+  },
+  "theextravagant:Razor": {
+    "NAME": "Razor",
+    "DESCRIPTIONS": [
+      "At the end of your turn deal ",
+      " damage to ALL enemies."
     ]
   }
 }

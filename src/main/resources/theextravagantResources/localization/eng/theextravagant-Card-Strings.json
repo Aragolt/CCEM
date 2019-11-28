@@ -334,7 +334,8 @@
   },
   "theextravagant:AuroraForm": {
     "NAME": "Aurora Form",
-    "DESCRIPTION": "theextravagant:Heavy. NL At the start of your turn, Scry !M! and play the top card on your draw pile."
+    "DESCRIPTION": "Ethereal. NL Enchanted cards are played !M! additional time.",
+    "UPGRADE_DESCRIPTION": "Enchanted cards are played !M! additional time."
   },
   "theextravagant:OminousGlare": {
     "NAME": "Ominous Glare",
@@ -417,5 +418,9 @@
   "theextravagant:Razor": {
     "NAME": "Razor",
     "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, All enemies take !M! damage."
+  },
+  "theextravagant:Stella": {
+    "NAME": "Stella",
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant this card and reduce its cost to 0 this combat."
   }
 }

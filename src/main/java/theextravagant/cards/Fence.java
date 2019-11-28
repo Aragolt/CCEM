@@ -33,6 +33,7 @@ public class Fence extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        tags.add(CardTags.STARTER_DEFEND);
     }
 
     @Override

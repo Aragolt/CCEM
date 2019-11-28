@@ -36,6 +36,7 @@ theextravagant\cards\Glamour.class
 aramod\relics\Jellybeans.class
 theextravagant\cards\Firework.class
 theextravagant\cards\Fence.class
+theextravagant\cards\Stella.class
 theextravagant\relics\TranslucentFeather.class
 theextravagant\actions\PutInDrawpileForBlockAction.class
 aramod\relics\DefectiveTurbocharger.class
@@ -217,6 +218,7 @@ theextravagant\actions\FireworkAction.class
 aramod\relics\ChunkOfWall.class
 theextravagant\powers\OverrunPower.class
 theextravagant\cards\GlyphOfTime.class
+theextravagant\actions\BetterReduceCostAction.class
 theextravagant\orbs\DefaultOrb.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class

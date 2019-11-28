@@ -311,7 +311,7 @@
   },
   "theextravagant:Swirl": {
     "NAME": "Swirl",
-    "DESCRIPTION": "Retain. NL theextravagant:Enchant a Skill in your hand. NL Exhaust.",
+    "DESCRIPTION": "theextravagant:Enchant a Skill in your hand. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "Retain. theextravagant:Enchant a Skill in your hand."
   },
   "theextravagant:Antiquity": {
@@ -417,5 +417,9 @@
   "theextravagant:Razor": {
     "NAME": "Razor",
     "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, All enemies take !M! damage."
+  },
+  "theextravagant:Stella": {
+    "NAME": "Stella",
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant this card and reduce its cost to 0 this combat."
   }
 }

@@ -374,7 +374,7 @@ public class theextravagant implements
         BaseMod.addCard(new Radiance());
         BaseMod.addCard(new RisingPhoenix());
         BaseMod.addCard(new CuttingEdge());
-        BaseMod.addCard(new Aftermath());
+        //BaseMod.addCard(new Aftermath());
         BaseMod.addCard(new RustyBuckler());
         BaseMod.addCard(new Precaution());
         BaseMod.addCard(new Outrun());
@@ -413,6 +413,7 @@ public class theextravagant implements
         BaseMod.addCard(new PerfectTheBasics());
         BaseMod.addCard(new Shatter());
         BaseMod.addCard(new Razor());
+        BaseMod.addCard(new Stella());
         logger.info("Making sure the cards are unlocked.");
 
         UnlockTracker.unlockCard(Shatter.ID);
@@ -468,7 +469,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Radiance.ID);
         UnlockTracker.unlockCard(RisingPhoenix.ID);
         UnlockTracker.unlockCard(CuttingEdge.ID);
-        UnlockTracker.unlockCard(Aftermath.ID);
+        //UnlockTracker.unlockCard(Aftermath.ID);
         UnlockTracker.unlockCard(RustyBuckler.ID);
         UnlockTracker.unlockCard(Precaution.ID);
         UnlockTracker.unlockCard(Outrun.ID);
@@ -507,6 +508,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(PerfectTheBasics.ID);
         UnlockTracker.unlockCard(Shatter.ID);
         UnlockTracker.unlockCard(Razor.ID);
+        UnlockTracker.unlockCard(Stella.ID);
         logger.info("Done adding cards!");
     }
 

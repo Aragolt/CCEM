@@ -171,10 +171,9 @@
   "theextravagant:AuroraFormPower": {
     "NAME": "Aurora Form",
     "DESCRIPTIONS": [
-      "At the start of your turn, Scry ",
-      " and play the top card on your draw pile.",
-      " and play the top ",
-      " cards on your draw pile."
+      "Enchanted cards are played ",
+      " additional time.",
+      " additional times."
     ]
   },
   "theextravagant:RepellPower": {

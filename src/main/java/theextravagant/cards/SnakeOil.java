@@ -38,6 +38,7 @@ public class SnakeOil extends CustomCard {
         magicNumber = baseMagicNumber;
         exhaust = true;
         this.cardsToPreview = new Slimed();
+        tags.add(CardTags.HEALING);
     }
 
     @Override

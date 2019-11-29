@@ -86,7 +86,7 @@ public class DiscardForStrengthAction extends AbstractGameAction {
 
                 numDiscarded = this.amount;
                 if (this.p.hand.size() > this.amount) {
-                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, isUpgraded);
+                    AbstractDungeon.handCardSelectScreen.open(TEXT[0], this.amount, isUpgraded, true);
                 }
 
                 AbstractDungeon.player.hand.applyPowers();

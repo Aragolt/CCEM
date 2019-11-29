@@ -29,7 +29,7 @@ public class Sixteen_Tons extends CustomCard {
     private static final CardRarity RARITY = CardRarity.RARE;
     private static final CardTarget TARGET = CardTarget.ALL_ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = -2;
+    private static final int COST = 0;
     private static final int DAMAGE = 16;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
@@ -58,10 +58,6 @@ public class Sixteen_Tons extends CustomCard {
         }
     }
 
-    @Override
-    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
-        return false;
-    }
 
     @Override
     public void upgrade() {

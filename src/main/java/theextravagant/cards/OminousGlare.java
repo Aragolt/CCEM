@@ -27,8 +27,8 @@ public class OminousGlare extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 5;
-    private static final int BLOCK = 10;
+    private static final int MAGICNUMBER = 4;
+    private static final int BLOCK = 8;
 
     public OminousGlare() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

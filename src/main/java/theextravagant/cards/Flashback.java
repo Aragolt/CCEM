@@ -1,15 +1,14 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.PutDiscardOnTopOfDrawPileAction;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.FlashbackPower;
 import theextravagant.theextravagant;
 
 public class Flashback extends CustomCard {
@@ -40,7 +39,7 @@ public class Flashback extends CustomCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(p, p, new FlashbackPower(p, magicNumber)));
+        AbstractDungeon.actionManager.addToTop(new PutDiscardOnTopOfDrawPileAction());
     }
 
     @Override

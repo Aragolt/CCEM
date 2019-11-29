@@ -2,8 +2,7 @@ package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
-import com.megacrit.cardcrawl.actions.common.PummelDamageAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
+import com.megacrit.cardcrawl.actions.common.ExhaustAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -26,8 +25,8 @@ public class GarbageCannon extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 4;
-    private static final int MAGICNUMBER = 3;
+    private static final int DAMAGE = 12;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
     public GarbageCannon() {
@@ -40,17 +39,15 @@ public class GarbageCannon extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        for (int i = 0; i < this.magicNumber; ++i) {
-            this.addToBot(new PummelDamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn)));
-        }
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new GarbageCannonPower(4)));
+        this.addToBot(new ExhaustAction(1, false));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new GarbageCannonPower(4, damage, m)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(1);
+            upgradeDamage(4);
             initializeDescription();
         }
     }

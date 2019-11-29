@@ -16,7 +16,7 @@ public class Acceleration extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Acceleration");
-    public static final String IMG = theextravagant.makeCardPath("Acceleration.png");
+    public static final String IMG = theextravagant.makeCardPath("Accelerationnew.png");
     public static final CardColor COLOR = CardColor.COLORLESS;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

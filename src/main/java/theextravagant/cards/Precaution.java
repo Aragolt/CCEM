@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.BetterHeadbuttAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
@@ -38,8 +37,13 @@ public class Precaution extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new BetterHeadbuttAction(p, magicNumber, false));
         AbstractDungeon.actionManager.addToBottom(new GainBlockAction(p, p, this.block));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        this.applyPowers();
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3));
     }
 
 

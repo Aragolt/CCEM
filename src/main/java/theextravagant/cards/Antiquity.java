@@ -47,7 +47,7 @@ public class Antiquity extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(1);
+            upgradeBaseCost(2);
             initializeDescription();
         }
     }

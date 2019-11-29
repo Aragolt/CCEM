@@ -4,9 +4,10 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.powers.abstracts.TwoAmountPower;
 import com.evacipated.cardcrawl.mod.stslib.powers.interfaces.NonStackablePower;
-import com.megacrit.cardcrawl.actions.common.ExhaustAction;
+import com.megacrit.cardcrawl.actions.common.PummelDamageAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -25,26 +26,26 @@ public class GarbageCannonPower extends TwoAmountPower implements NonStackablePo
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/garbage_power32.png");
     public boolean upgraded;
 
-    public GarbageCannonPower(int amount2) {
+    public GarbageCannonPower(int amount2, int damage, AbstractMonster target) {
         name = NAME;
         ID = POWER_ID;
-        this.owner = AbstractDungeon.player;
+        this.owner = target;
         type = AbstractPower.PowerType.DEBUFF;
         isTurnBased = false;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
         this.upgraded = upgraded;
         this.amount2 = amount2;
-        amount = 1;
+        amount = damage;
         updateDescription();
     }
 
     @Override
     public void updateDescription() {
         if (amount2 > 1) {
-            description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[1];
+            description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[1] + amount + DESCRIPTIONS[3];
         } else {
-            description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[2];
+            description = DESCRIPTIONS[0] + this.amount2 + DESCRIPTIONS[2] + amount + DESCRIPTIONS[3];
         }
     }
 
@@ -53,8 +54,8 @@ public class GarbageCannonPower extends TwoAmountPower implements NonStackablePo
     public void onPlayCard(AbstractCard card, AbstractMonster m) {
         amount2--;
         if (amount2 == 0) {
-            this.addToBot(new ExhaustAction(1, false));
-            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this));
+            this.addToBot(new PummelDamageAction(owner, new DamageInfo(AbstractDungeon.player, this.amount, DamageInfo.DamageType.NORMAL)));
+            AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(owner, owner, this));
         }
     }
 }

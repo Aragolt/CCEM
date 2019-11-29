@@ -41,6 +41,6 @@ public class AntiquityPower extends AbstractPower {
 
     @Override
     public void onAfterUseCard(AbstractCard card, UseCardAction action) {
-        this.addToBot(new DiscardAction(owner, owner, amount, true));
+        this.addToBot(new DiscardAction(owner, owner, 1, true));
     }
 }

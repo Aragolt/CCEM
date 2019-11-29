@@ -56,7 +56,7 @@
   },
   "theextravagant:GustOfWind": {
     "NAME": "Gust of Wind",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Exhaust."
+    "DESCRIPTION": "Retain. NL Deal !D! damage !M! times. NL Exhaust."
   },
   "theextravagant:SnakeOil": {
     "NAME": "Snek Oil",
@@ -141,7 +141,7 @@
   "theextravagant:Flashback":
   {
     "NAME": "Flashback",
-    "DESCRIPTION": "Gain !B! Block. Put a copy of the next !M! Attacks you play this turn to your hand next turn."
+    "DESCRIPTION": "Gain !B! Block. NL Put your discard pile on top of your draw pile."
   },
   "theextravagant:DigUpJunk": {
     "NAME": "Dig up Junk",
@@ -228,7 +228,7 @@
   },
   "theextravagant:GarbageCannon": {
     "NAME": "Garbage Cannon",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL theextravagant:Delay - 4 cards: Exhaust a card in your hand."
+    "DESCRIPTION": "Exhaust a card in your hand. NL theextravagant:Delay - 4 cards: Deal !D! damage."
   },
   "theextravagant:Foil": {
     "NAME": "Foil",
@@ -256,7 +256,7 @@
   },
   "theextravagant:Precaution": {
     "NAME": "Precaution",
-    "DESCRIPTION": "Gain !B! Block. NL Put !M! card from your discard pile on top of your draw pile."
+    "DESCRIPTION": "When drawn, Gain 3 Block. Gain !B! Block."
   },
   "theextravagant:Outrun": {
     "NAME": "Outrun",
@@ -417,7 +417,7 @@
   },
   "theextravagant:Razor": {
     "NAME": "Razor",
-    "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, All enemies take !M! damage."
+    "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, deal !M! damage to all enemies."
   },
   "theextravagant:Stella": {
     "NAME": "Stella",

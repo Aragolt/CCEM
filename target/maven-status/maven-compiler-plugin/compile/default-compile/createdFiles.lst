@@ -237,6 +237,7 @@ theextravagant\relics\RedPhonoblaster.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\powers\GlyphOfChoicePower.class
 aramod\cards\OrbVolley.class
+theextravagant\actions\PutDiscardOnTopOfDrawPileAction.class
 theextravagant\cards\Sixteen_Tons.class
 theextravagant\cards\Ravage.class
 theextravagant\cards\HeavyBlows.class

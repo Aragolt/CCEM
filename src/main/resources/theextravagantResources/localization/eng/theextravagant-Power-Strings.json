@@ -235,8 +235,9 @@
     "NAME": "GarbageCannon",
     "DESCRIPTIONS": [
       "After you play  ",
-      " cards, exhaust a card in your hand.",
-      " card, exhaust a card in your hand."
+      " cards, deal.",
+      " card, deal.",
+      "damage"
     ]
   },
   "theextravagant:illusionPower": {

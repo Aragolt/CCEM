@@ -18,7 +18,7 @@ public class Sorbet extends CustomRelic implements OnReceivePowerRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Sorbet.png"));
 
     public Sorbet() {
-        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.FLAT);
     }
 
     @Override

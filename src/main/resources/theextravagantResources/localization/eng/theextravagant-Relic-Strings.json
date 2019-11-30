@@ -77,7 +77,14 @@
     "NAME": "Top hat",
     "FLAVOR": "Home to all the magic.",
     "DESCRIPTIONS": [
-      "Whenever you play #b3 Attacks in one turn, enchant a random Skill in your hand."
+      "Whenever you play #b3 Attacks in one turn, #ytheextravagant:Enchant a random Skill in your hand."
+    ]
+  },
+  "theextravagant:CuffLinks": {
+    "NAME": "Cufflinks",
+    "FLAVOR": "A Pair of metal objects that once had a proper use, but now they are just weird.",
+    "DESCRIPTIONS": [
+      "At the start of combat play #b1 random Power from your draw pile."
     ]
   }
 }

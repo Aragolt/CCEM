@@ -47,7 +47,9 @@ public class Stella extends CustomCard {
         }
         this.addToBot(new DamageAction(m, new DamageInfo(p, this.damage, this.damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractCardPatches.EnchantmentField.EnchantmentField.set(this, true);
-        this.addToBot(new BetterReduceCostAction(this.uuid, this.cost));
+        if (cost >= 1) {
+            this.addToBot(new BetterReduceCostAction(this.uuid, this.cost - 1));
+        }
     }
 
     @Override

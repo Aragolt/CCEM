@@ -68,6 +68,7 @@ theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 theextravagant\relics\TranscendedFeather.class
+theextravagant\relics\GlitterTub.class
 theextravagant\powers\SpiritBoltPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
@@ -218,6 +219,7 @@ theextravagant\actions\FireworkAction.class
 aramod\relics\ChunkOfWall.class
 theextravagant\powers\OverrunPower.class
 theextravagant\cards\GlyphOfTime.class
+theextravagant\relics\CuffLinks.class
 theextravagant\actions\BetterReduceCostAction.class
 theextravagant\orbs\DefaultOrb.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class

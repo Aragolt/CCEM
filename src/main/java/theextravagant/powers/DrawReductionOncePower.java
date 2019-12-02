@@ -7,8 +7,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
+import static theextravagant.theextravagant.makeID;
+
 public class DrawReductionOncePower extends AbstractPower {
-    public static final String POWER_ID = "DrawReductionOncePower";
+    public static final String POWER_ID = makeID("DrawReductionOncePower");
     public static final String NAME;
     public static final String[] DESCRIPTIONS;
     private static final PowerStrings powerStrings;

@@ -14,8 +14,8 @@ public class CuffLinks extends CustomRelic {
 
     public static final String ID = makeID("CuffLinks");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("CuffLinks.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("CuffLinks.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("Cufflinks.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Cufflinks.png"));
 
     public CuffLinks() {
         super(ID, IMG, OUTLINE, RelicTier.BOSS, LandingSound.CLINK);

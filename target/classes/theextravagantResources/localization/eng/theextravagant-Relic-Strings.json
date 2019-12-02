@@ -74,10 +74,24 @@
     ]
   },
   "theextravagant:TopHat": {
-    "NAME": "Top hat",
+    "NAME": "Top Hat",
     "FLAVOR": "Home to all the magic.",
     "DESCRIPTIONS": [
-      "Whenever you play #b3 Attacks in one turn, enchant a random Skill in your hand."
+      "Whenever you play #b3 Attacks in one turn, #ytheextravagant:Enchant a random Skill in your hand."
+    ]
+  },
+  "theextravagant:CuffLinks": {
+    "NAME": "Cufflinks",
+    "FLAVOR": "A Pair of metal objects that once had a proper use, but now they are just weird.",
+    "DESCRIPTIONS": [
+      "At the start of combat play #b1 random Power from your draw pile."
+    ]
+  },
+  "theextravagant:GlitterTub": {
+    "NAME": "Tub of Glitter",
+    "FLAVOR": "If something is terrible, just put some glitter on it and it will get better.",
+    "DESCRIPTIONS": [
+      "At the end of combat heal #b8 HP, if you have at least #b5 #ytheextravagant:Sparks in your #yExhaust pile."
     ]
   }
 }

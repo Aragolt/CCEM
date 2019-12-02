@@ -421,6 +421,6 @@
   },
   "theextravagant:Stella": {
     "NAME": "Stella",
-    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant this card and reduce its cost to 0 this combat."
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant this card and reduce its cost to 1 this combat."
   }
 }

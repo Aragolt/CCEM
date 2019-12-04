@@ -124,8 +124,7 @@
   "theextravagant:TwilightTone":
   {
     "NAME": "Twilight Tone",
-    "DESCRIPTION": "While this card is in your discard pile, deal double Attack damage but you can only play Attacks. NL Ethereal.",
-    "UPGRADE_DESCRIPTION": "Retain. NL While this card is in your discard pile, deal double damage, but you can only play Attacks."
+    "DESCRIPTION": "Lose !M! max. HP. NL Permanently Upgrade a card in your deck. NL Exhaust."
   },
   "theextravagant:Retreat":
   {

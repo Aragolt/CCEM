@@ -64,6 +64,7 @@ aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
 theextravagant\powers\OneTurnRetainPower.class
+theextravagant\actions\UpgradeRandomCardInDeckAction.class
 theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 theextravagant\actions\DrawpileToHandByCostAction.class

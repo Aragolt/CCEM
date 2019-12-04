@@ -1,11 +1,12 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.AlwaysRetainField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
+import theextravagant.actions.UpgradeRandomCardInDeckAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
@@ -24,7 +25,7 @@ public class TwilightTone extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 0;
+    private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
 
 
@@ -34,20 +35,20 @@ public class TwilightTone extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.isEthereal = true;
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
+        AbstractDungeon.player.increaseMaxHp(-magicNumber, false);
+        AbstractDungeon.actionManager.addToBottom(new UpgradeRandomCardInDeckAction());
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
-            isEthereal = false;
-            AlwaysRetainField.alwaysRetain.set(this, true);
+            upgradeBaseCost(1);
             initializeDescription();
         }
     }

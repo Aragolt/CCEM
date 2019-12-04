@@ -15,7 +15,6 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.AbstractCreature;
@@ -31,8 +30,6 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.cards.*;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.ModifyDamagePower;
-import theextravagant.powers.RustyBucklerRetainTriggerAction;
 import theextravagant.powers.TensionPower;
 import theextravagant.relics.*;
 import theextravagant.ui.SecondEnergyOrb;
@@ -593,8 +590,6 @@ public class theextravagant implements
         PowerPlayedThisTurn = false;
         Redemption.redemptionbonus = 0;
         Cutthroat.Hasplayedcardthisturn = false;
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new ModifyDamagePower()));
-        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new RustyBucklerRetainTriggerAction()));
     }
 
     @Override

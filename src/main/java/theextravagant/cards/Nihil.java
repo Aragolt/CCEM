@@ -3,6 +3,7 @@ package theextravagant.cards;
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.cards.status.VoidCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -35,6 +36,7 @@ public class Nihil extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        cardsToPreview = new VoidCard();
         ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 2);
         ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 2);
     }

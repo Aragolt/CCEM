@@ -119,12 +119,12 @@
   "theextravagant:ToolsOfTrickery":
   {
     "NAME": "Tools of Trickery",
-    "DESCRIPTION": "At the start of your turn, discard !M! random cards and draw !M! cards."
+    "DESCRIPTION": "At the start of your turn, theextravagant:Toss !M! cards."
   },
   "theextravagant:TwilightTone":
   {
     "NAME": "Twilight Tone",
-    "DESCRIPTION": "Lose !M! max. HP. NL Permanently Upgrade a card in your deck. NL Exhaust."
+    "DESCRIPTION": "Lose !M! Max. HP. NL Permanently Upgrade a card in your deck. NL Exhaust."
   },
   "theextravagant:Retreat":
   {
@@ -329,7 +329,7 @@
   },
   "theextravagant:Drift": {
     "NAME": "Drift",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards, discard !M! random cards."
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Toss !M! cards."
   },
   "theextravagant:AuroraForm": {
     "NAME": "Aurora Form",
@@ -412,7 +412,7 @@
   },
   "theextravagant:PerfectTheBasics": {
     "NAME": "Perfect the Basics",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL theextravagant:Enchant a starter card in your hand."
+    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL theextravagant:Enchant a theextravagant:Starter card in your hand."
   },
   "theextravagant:Razor": {
     "NAME": "Razor",
@@ -421,5 +421,9 @@
   "theextravagant:Stella": {
     "NAME": "Stella",
     "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant this card and reduce its cost to 1 this combat."
+  },
+  "theextravagant:Masquerade": {
+    "NAME": "Masquerade",
+    "DESCRIPTION": "theextravagant:Toss !M! cards, and theextravagant:Enchant each Skill theextravagant:Tossed."
   }
 }

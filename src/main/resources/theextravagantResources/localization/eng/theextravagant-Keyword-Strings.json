@@ -129,5 +129,23 @@
       "enchanted"
     ],
     "DESCRIPTION": "When you play an Enchanted card, play it twice."
+  },
+  {
+    "PROPER_NAME": "Starter",
+    "NAMES": [
+      "Starter",
+      "starter"
+    ],
+    "DESCRIPTION": "Starter cards are the cards you start your run with."
+  },
+  {
+    "PROPER_NAME": "Toss",
+    "NAMES": [
+      "Toss",
+      "toss",
+      "Tossed",
+      "tossed"
+    ],
+    "DESCRIPTION": "Draw and immediately discard a card."
   }
 ]

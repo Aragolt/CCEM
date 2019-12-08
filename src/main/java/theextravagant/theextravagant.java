@@ -345,7 +345,7 @@ public class theextravagant implements
         BaseMod.addCard(new Sixteen_Tons());
         BaseMod.addCard(new ToolsOfTrickery());
         BaseMod.addCard(new TwilightTone());
-        BaseMod.addCard(new Retreat());
+        //BaseMod.addCard(new Retreat());
         BaseMod.addCard(new WhiffOfMagic());
         BaseMod.addCard(new Flashback());
         BaseMod.addCard(new ZeroHero());
@@ -413,6 +413,7 @@ public class theextravagant implements
         BaseMod.addCard(new Shatter());
         BaseMod.addCard(new Razor());
         BaseMod.addCard(new Stella());
+        BaseMod.addCard(new Masquerade());
         logger.info("Making sure the cards are unlocked.");
 
         UnlockTracker.unlockCard(Shatter.ID);
@@ -439,7 +440,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Sixteen_Tons.ID);
         UnlockTracker.unlockCard(ToolsOfTrickery.ID);
         UnlockTracker.unlockCard(TwilightTone.ID);
-        UnlockTracker.unlockCard(Retreat.ID);
+        //UnlockTracker.unlockCard(Retreat.ID);
         UnlockTracker.unlockCard(WhiffOfMagic.ID);
         UnlockTracker.unlockCard(Flashback.ID);
         UnlockTracker.unlockCard(ZeroHero.ID);
@@ -508,6 +509,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Shatter.ID);
         UnlockTracker.unlockCard(Razor.ID);
         UnlockTracker.unlockCard(Stella.ID);
+        UnlockTracker.unlockCard(Masquerade.ID);
         logger.info("Done adding cards!");
     }
 

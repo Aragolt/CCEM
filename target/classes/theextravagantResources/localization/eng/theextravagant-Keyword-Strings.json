@@ -137,5 +137,15 @@
       "starter"
     ],
     "DESCRIPTION": "Starter cards are the cards you start your run with."
+  },
+  {
+    "PROPER_NAME": "Toss",
+    "NAMES": [
+      "Toss",
+      "toss",
+      "Tossed",
+      "tossed"
+    ],
+    "DESCRIPTION": "Draw a card and immediately discard it."
   }
 ]

@@ -144,6 +144,7 @@ theextravagant\cards\Drift.class
 theextravagant\actions\RavageAction.class
 theextravagant\powers\ZeroHeroPower.class
 theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
+theextravagant\actions\EnchantIfSkillThenDiscardAction.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 theextravagant\actions\VintageAction.class
@@ -195,6 +196,7 @@ theextravagant\cards\SwiftSwitch.class
 theextravagant\cards\RisingPhoenix.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
 aramod\relics\PocketApothecary.class
+theextravagant\actions\TossAction.class
 theextravagant\cards\Impulse.class
 aramod\relics\SmashedLemon.class
 theextravagant\actions\BetterCopyAction.class
@@ -246,6 +248,7 @@ theextravagant\cards\Ravage.class
 theextravagant\cards\HeavyBlows.class
 theextravagant\cards\RapidPulse.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
+theextravagant\cards\Masquerade.class
 theextravagant\relics\DefaultClickableRelic.class
 theextravagant\cards\AbstractEVCard.class
 theextravagant\cards\Flashback.class

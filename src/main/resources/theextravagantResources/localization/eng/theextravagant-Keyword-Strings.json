@@ -146,6 +146,6 @@
       "Tossed",
       "tossed"
     ],
-    "DESCRIPTION": "Draw and immediately discard a card."
+    "DESCRIPTION": "Draw a card and immediately discard it."
   }
 ]

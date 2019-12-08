@@ -1,9 +1,7 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
-import com.megacrit.cardcrawl.actions.common.EmptyDeckShuffleAction;
-import com.megacrit.cardcrawl.actions.common.ShuffleAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -40,26 +38,7 @@ public class Pluck extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        if (p.drawPile.size() >= magicNumber) {
-            AbstractDungeon.actionManager.addToBottom(new PluckAction(magicNumber, p));
-        } else if (p.drawPile.size() < magicNumber && (p.drawPile.size() + p.discardPile.size()) >= magicNumber) {
-            int i = p.drawPile.size();
-            AbstractDungeon.actionManager.addToTop(new PluckAction(i, p));
-            if (AbstractDungeon.player.discardPile.size() > 0) {
-                AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-                AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25f));
-            }
-            AbstractDungeon.actionManager.addToBottom(new PluckAction(magicNumber - i, p));
-        } else {
-            AbstractDungeon.actionManager.addToBottom(new PluckAction(p.drawPile.size(), p));
-            if (AbstractDungeon.player.discardPile.size() > 0) {
-                AbstractDungeon.actionManager.addToBottom(new EmptyDeckShuffleAction());
-                AbstractDungeon.actionManager.addToBottom(new ShuffleAction(AbstractDungeon.player.drawPile, false));
-                AbstractDungeon.actionManager.addToBottom(new WaitAction(0.25f));
-            }
-            AbstractDungeon.actionManager.addToBottom(new PluckAction(p.discardPile.size(), p));
-        }
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(magicNumber, new PluckAction()));
     }
 
     @Override

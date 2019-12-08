@@ -424,6 +424,10 @@
   },
   "theextravagant:Masquerade": {
     "NAME": "Masquerade",
-    "DESCRIPTION": "theextravagant:Toss !M! cards, and theextravagant:Enchant each Skill theextravagant:Tossed."
+    "DESCRIPTION": "theextravagant:Toss !M! cards and theextravagant:Enchant each Skill theextravagant:Tossed."
+  },
+  "theextravagant:ExhaustingCard": {
+    "NAME": "",
+    "DESCRIPTION": "NL Exhaust."
   }
 }

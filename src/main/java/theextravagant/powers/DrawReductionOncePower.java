@@ -11,21 +11,13 @@ import static theextravagant.theextravagant.makeID;
 
 public class DrawReductionOncePower extends AbstractPower {
     public static final String POWER_ID = makeID("DrawReductionOncePower");
-    public static final String NAME;
-    public static final String[] DESCRIPTIONS;
-    private static final PowerStrings powerStrings;
-
-    static {
-        powerStrings = CardCrawlGame.languagePack.getPowerStrings("DrawReductionOncePower");
-        NAME = powerStrings.NAME;
-        DESCRIPTIONS = powerStrings.DESCRIPTIONS;
-    }
-
-    private boolean justApplied = true;
+    private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+    public static final String NAME = powerStrings.NAME;
+    public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
     public DrawReductionOncePower(AbstractCreature owner, int amount) {
         this.name = NAME;
-        this.ID = "DrawReductionOncePower";
+        this.ID = POWER_ID;
         this.owner = owner;
         this.amount = amount;
         this.updateDescription();

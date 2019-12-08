@@ -2,8 +2,8 @@ package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.AttackDamageRandomEnemyAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.actions.common.DamageRandomEnemyAction;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -27,7 +27,7 @@ public class SpontaneousStrike extends CustomCard {
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
     private static final int DAMAGE = 6;
-    private static final int MAGICNUMBER = 0;
+    private static final int MAGICNUMBER = 6;
     private static final int BLOCK = 0;
 
     public SpontaneousStrike() {
@@ -46,7 +46,7 @@ public class SpontaneousStrike extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        this.addToBot(new AttackDamageRandomEnemyAction(this, AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+        this.addToBot(new DamageRandomEnemyAction(new DamageInfo(AbstractDungeon.player, magicNumber, DamageInfo.DamageType.THORNS), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
     }
 
     @Override

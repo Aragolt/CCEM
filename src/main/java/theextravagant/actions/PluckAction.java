@@ -27,6 +27,7 @@ public class PluckAction extends AbstractGameAction {
             c.freeToPlayOnce = true;
             c.exhaust = true;
             c.rawDescription += cardStrings.DESCRIPTION;
+            c.initializeDescription();
         }
         this.isDone = true;
     }

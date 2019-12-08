@@ -83,7 +83,7 @@
   "theextravagant:SpontaneousStrike":
   {
     "NAME": "Spontaneous Strike",
-    "DESCRIPTION": "When drawn, deal !D! damage to a random enemy. NL Deal !D! damage."
+    "DESCRIPTION": "When drawn, deal !M! damage to a random enemy. NL Deal !D! damage."
   },
   "theextravagant:DAMNATION":
   {
@@ -148,7 +148,7 @@
   },
   "theextravagant:ZeroHero": {
     "NAME": "Zero Hero",
-    "DESCRIPTION": "Gain !B! Block. NL theextravagant:Delay - 3 0-cost cards: Gain !M! Strength."
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Delay - 3 0-cost cards: Gain !M! Strength."
   },
   "theextravagant:Glamour": {
     "NAME": "Jewels",
@@ -255,7 +255,7 @@
   },
   "theextravagant:Precaution": {
     "NAME": "Precaution",
-    "DESCRIPTION": "When drawn, Gain 3 Block. Gain !B! Block."
+    "DESCRIPTION": "When drawn, Gain 3 Block. NL Gain !B! Block."
   },
   "theextravagant:Outrun": {
     "NAME": "Outrun",
@@ -277,7 +277,7 @@
   },
   "theextravagant:Thrill": {
     "NAME": "Thrill",
-    "DESCRIPTION": "Deal !D! damage to a random enemy !M! times. NL Duplicate ALL Attacks in your hand."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Duplicate ALL Attacks in your hand. NL Discard a random card."
   },
   "theextravagant:RapidPulse": {
     "NAME": "Rapid Pulse",
@@ -290,7 +290,7 @@
   },
   "theextravagant:Impulse": {
     "NAME": "Impulse",
-    "DESCRIPTION": "Gain !B! Block. If the next card you play is an Attack, add an theextravagant:Acceleration to your hand."
+    "DESCRIPTION": "If the next card you play is an Attack, add an theextravagant:Acceleration to your hand."
   },
   "theextravagant:JumpCut": {
     "NAME": "Jump Cut",
@@ -378,7 +378,7 @@
   },
   "theextravagant:Castle": {
     "NAME": "Castle",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !B! Block. NL Put your hand on top of your draw pile, then draw !M! cards. "
+    "DESCRIPTION": "Deal !D! damage. NL Put your hand on top of your draw pile, then draw !M! cards. "
   },
   "theextravagant:Nihil": {
     "NAME": "Nihil",
@@ -428,6 +428,6 @@
   },
   "theextravagant:ExhaustingCard": {
     "NAME": "",
-    "DESCRIPTION": "NL Exhaust."
+    "DESCRIPTION": " NL Exhaust."
   }
 }

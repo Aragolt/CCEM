@@ -133,7 +133,6 @@ theextravagant\powers\OutrunPower.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 theextravagant\powers\GarbageCannonPower.class
 theextravagant\cards\SlyStrike.class
-theextravagant\relics\PlaceholderRelic.class
 theextravagant\powers\ImpulsePower.class
 theextravagant\powers\RazorPower.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch.class
@@ -203,6 +202,7 @@ theextravagant\actions\BetterCopyAction.class
 theextravagant\cards\OminousGlare.class
 aramod\relics\RabbytsFoot.class
 theextravagant\actions\BetterSFXAction.class
+theextravagant\relics\EmbroidedHandkerchief.class
 theextravagant\patches\EVCardPatches\CardcrawlgameTimedelayPatch.class
 theextravagant\powers\MagicPower.class
 theextravagant\cards\DualMirrorCut.class
@@ -210,7 +210,6 @@ theextravagant\cards\Invocation.class
 theextravagant\cards\Shove.class
 aramod\powers\LoseFocusPower.class
 theextravagant\variables\DefaultCustomVariable.class
-theextravagant\relics\PlaceholderRelic2.class
 theextravagant\patches\EVCardPatches\PlayCardActionPatch.class
 theextravagant\powers\TensionPower.class
 theextravagant\powers\RadiancePower.class
@@ -240,6 +239,7 @@ theextravagant\patches\CardSpecificPatches\ApplyPowerPatch.class
 theextravagant\vfx\Fireworkeffect.class
 theextravagant\relics\RedPhonoblaster.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
+theextravagant\relics\TrustyOvercoat.class
 theextravagant\powers\GlyphOfChoicePower.class
 aramod\cards\OrbVolley.class
 theextravagant\actions\PutDiscardOnTopOfDrawPileAction.class

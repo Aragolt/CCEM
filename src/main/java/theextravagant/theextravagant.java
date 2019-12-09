@@ -304,6 +304,8 @@ public class theextravagant implements
         BaseMod.addRelicToCustomPool(new TopHat(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new CuffLinks(), TheExtravagant.Enums.EV_BLUE);
         BaseMod.addRelicToCustomPool(new GlitterTub(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new TrustyOvercoat(), TheExtravagant.Enums.EV_BLUE);
+        BaseMod.addRelicToCustomPool(new EmbroidedHandkerchief(), TheExtravagant.Enums.EV_BLUE);
         logger.info("Done adding relics!");
     }
 

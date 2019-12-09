@@ -52,7 +52,7 @@ public class VintagePower extends TwoAmountPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         for (AbstractCard c : cardsthatshouldnotreturn) {
-            card.returnToHand = false;
+            c.returnToHand = false;
         }
         cardsthatshouldnotreturn.clear();
         if (!justapplied) {

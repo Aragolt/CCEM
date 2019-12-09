@@ -93,5 +93,19 @@
     "DESCRIPTIONS": [
       "At the end of combat heal #b8 HP, if you have at least #b5 #ytheextravagant:Sparks in your #yExhaust pile."
     ]
+  },
+  "theextravagant:TrustyOvercoat": {
+    "NAME": "Trusty Overcoat",
+    "FLAVOR": "A dog may be mans best friend but this overcoat is my best friend.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn. Whenever you draw 15 cards, lose [E]"
+    ]
+  },
+  "theextravagant:EmbroidedHandkerchief": {
+    "NAME": "Embroided Handkerchief",
+    "FLAVOR": "It has the intitials J. L. on it. I wonder who it once belonged to.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of each turn. Whenever you draw 15 cards, lose [E]"
+    ]
   }
 }

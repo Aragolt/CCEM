@@ -45,7 +45,9 @@ public class SuperSonicAction extends AbstractGameAction {
             }
             AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(Accelaration, this.energyOnUse));
         }
-
+        if (!this.freeToPlayOnce) {
+            AbstractDungeon.player.energy.use(EnergyPanel.totalCount);
+        }
         this.isDone = true;
     }
 }

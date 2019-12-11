@@ -27,7 +27,7 @@ public class Triumph extends CustomCard {
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 2;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 10;
 
     public Triumph() {
@@ -54,7 +54,7 @@ public class Triumph extends CustomCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(3);
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
             initializeDescription();
         }
     }

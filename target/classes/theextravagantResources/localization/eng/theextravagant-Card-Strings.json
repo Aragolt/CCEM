@@ -211,7 +211,7 @@
   },
   "theextravagant:IronPlumes": {
     "NAME": "Iron Plumes",
-    "DESCRIPTION": "Gain !M! Temporary_HP. NL When drawn, increase the amount by 3 this combat.[] NL Exhaust."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL When drawn, increase the amount by 2 this combat."
   },
   "theextravagant:Courage": {
     "NAME": "Courage",
@@ -298,7 +298,7 @@
   },
   "theextravagant:StepBack": {
     "NAME": "Step Back",
-    "DESCRIPTION": "Gain !B! Block. NL Put !M! card from your hand on top of your draw pile. NL Draw 2 cards next turn."
+    "DESCRIPTION": "Gain !B! Block. NL Put !M! card from your hand on top of your draw pile."
   },
   "theextravagant:DualMirrorCut": {
     "NAME": "Dual Mirror Cut",
@@ -416,7 +416,7 @@
   },
   "theextravagant:Razor": {
     "NAME": "Memento Mori",
-    "DESCRIPTION": "Deal !D! damage. NL At the start of each turn, deal !M! damage to all enemies."
+    "DESCRIPTION": "Deal !D! damage. NL At the end of each turn, deal !M! damage to all enemies."
   },
   "theextravagant:Stella": {
     "NAME": "Stella",
@@ -424,7 +424,7 @@
   },
   "theextravagant:Masquerade": {
     "NAME": "Masquerade",
-    "DESCRIPTION": "theextravagant:Toss !M! cards and theextravagant:Enchant each Skill theextravagant:Tossed."
+    "DESCRIPTION": "Scry !M!. NL theextravagant:Toss !M! cards and theextravagant:Enchant each Skill theextravagant:Tossed."
   },
   "theextravagant:ExhaustingCard": {
     "NAME": "",

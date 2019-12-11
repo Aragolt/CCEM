@@ -13,7 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.vfx.combat.SweepingBeamEffect;
-import theextravagant.actions.TossAction;
+import theextravagant.actions.RecursiveTossAction;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.theextravagant;
 
@@ -47,7 +47,7 @@ public class Drift extends CustomCard {
         AbstractDungeon.actionManager.addToBottom(new SFXAction("ATTACK_DEFECT_BEAM"));
         AbstractDungeon.actionManager.addToBottom(new VFXAction(p, new SweepingBeamEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, AbstractDungeon.player.flipHorizontal), 0.1F));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(this.magicNumber, new TossAction()));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new RecursiveTossAction(magicNumber)));
     }
 
     @Override

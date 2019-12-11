@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.actions.TossAction;
+import theextravagant.actions.RecursiveTossAction;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -34,7 +34,7 @@ public class TrickeryPower extends AbstractPower {
 
     @Override
     public void atStartOfTurnPostDraw() {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(amount, new TossAction()));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new RecursiveTossAction(amount)));
     }
 
 

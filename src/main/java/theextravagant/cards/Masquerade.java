@@ -2,6 +2,7 @@ package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.utility.ScryAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -38,7 +39,8 @@ public class Masquerade extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(magicNumber, new EnchantIfSkillThenDiscardAction()));
+        AbstractDungeon.actionManager.addToBottom(new ScryAction(magicNumber));
+        AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new EnchantIfSkillThenDiscardAction(magicNumber)));
     }
 
     @Override

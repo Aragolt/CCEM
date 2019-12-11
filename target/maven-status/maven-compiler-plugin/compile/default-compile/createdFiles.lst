@@ -18,6 +18,7 @@ aramod\relics\StatueOfPride.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
+theextravagant\actions\DrawAndTossAction.class
 theextravagant\cards\SpiritBolt.class
 aramod\relics\MidasCore.class
 theextravagant\events\IdentityCrisisEvent.class
@@ -60,6 +61,7 @@ theextravagant\variables\ReducedBlockVariable.class
 theextravagant\cards\Courage.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$EnchantmentField.class
 theextravagant\cards\Spark.class
+theextravagant\relics\OldMusket.class
 aramod\relics\IronRibcage$1.class
 aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
@@ -238,6 +240,7 @@ theextravagant\cards\GarbageCannon.class
 theextravagant\patches\CardSpecificPatches\ApplyPowerPatch.class
 theextravagant\vfx\Fireworkeffect.class
 theextravagant\relics\RedPhonoblaster.class
+theextravagant\actions\RecursiveTossAction.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\relics\TrustyOvercoat.class
 theextravagant\powers\GlyphOfChoicePower.class

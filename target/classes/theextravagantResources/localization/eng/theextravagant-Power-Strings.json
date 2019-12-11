@@ -235,8 +235,8 @@
     "NAME": "GarbageCannon",
     "DESCRIPTIONS": [
       "After you play  ",
-      " cards, deal.",
-      " card, deal.",
+      " cards, deal ",
+      " card, deal ",
       "damage"
     ]
   },
@@ -291,7 +291,7 @@
       " damage."
     ]
   },
-  "theextravagant:Razor": {
+  "theextravagant:RazorPower": {
     "NAME": "Razor",
     "DESCRIPTIONS": [
       "At the end of your turn deal ",

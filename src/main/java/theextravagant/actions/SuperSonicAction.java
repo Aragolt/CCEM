@@ -19,7 +19,7 @@ public class SuperSonicAction extends AbstractGameAction {
     private boolean isupgraded;
 
     public SuperSonicAction(boolean freeToPlayOnce, int energyOnUse, boolean upgraded) {
-        this.p = p;
+        this.p = AbstractDungeon.player;
         this.freeToPlayOnce = freeToPlayOnce;
         this.duration = Settings.ACTION_DUR_XFAST;
         this.actionType = ActionType.SPECIAL;

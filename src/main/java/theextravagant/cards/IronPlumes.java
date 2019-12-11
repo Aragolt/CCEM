@@ -33,7 +33,6 @@ public class IronPlumes extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.exhaust = true;
     }
 
     @Override

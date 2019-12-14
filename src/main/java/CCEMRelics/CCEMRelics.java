@@ -1,7 +1,9 @@
 package CCEMRelics;
 
+import CCEMRelics.relics.*;
 import basemod.BaseMod;
 import basemod.ModPanel;
+import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.files.FileHandle;
@@ -172,6 +174,11 @@ public class CCEMRelics implements
     @Override
     public void receiveEditRelics() {
         logger.info("Adding relics");
+        BaseMod.addRelic(new Barrel(), RelicType.SHARED);
+        BaseMod.addRelic(new GrapeVine(), RelicType.SHARED);
+        BaseMod.addRelic(new Coconut(), RelicType.SHARED);
+        BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
+        BaseMod.addRelic(new WarHorn(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

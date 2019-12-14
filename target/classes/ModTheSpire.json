@@ -1,13 +1,13 @@
 {
-  "modid": "theextravagant",
-  "name": "The Extravagant",
+  "modid": "CCEM",
+  "name": "CCEM",
   "author_list": [
     "Lobbienjonsji"
   ],
-  "description": "A Character mostly centered around synergy and strong card control.",
-  "credits": "Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Channel Card Art. Grimm for the many ideas. Other art Credits: lobbien",
+  "description": "A mod by the Church of Raptor Jesus Community. Currently contains one new Character, the Extravagant and some rebalanced and polished relics from the Stuff the Spire and Trackpad mod, as well as several new relics.",
+  "credits": "Smonko for Extravagant Beta Art. Mrs. Dingsda for Dig up Junk and Channel Card Art. Grimm for the many ideas. Left Click for giving access to Trackpad code.",
   "dependencies": ["basemod","stslib"],
-  "version": "2.0.40",
+  "version": "2.1.4",
   "sts_version": "10-29-2019",
   "mts_version": "3.10.1"
 }

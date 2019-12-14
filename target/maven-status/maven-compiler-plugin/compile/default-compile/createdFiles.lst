@@ -7,13 +7,17 @@ theextravagant\actions\SuperSonicAction.class
 aramod\relics\NuclearReactor.class
 theextravagant\cards\Shake.class
 aramod\powers\FastPower.class
+CCEMRelics\relics\Coconut.class
 theextravagant\actions\IncreaseCostAction.class
+CCEMRelics\relics\GrapeVine.class
 theextravagant\ui\SecondEnergyOrb.class
 theextravagant\cards\GlyphOfChoice.class
+CCEMRelics\CCEMRelics.class
 theextravagant\vfx\Sparkleeffect.class
 theextravagant\cards\Shatter.class
 theextravagant\actions\PutCardsFromHandOnTopOfDrawPileThenDrawAction.class
 theextravagant\powers\FoilPower.class
+CCEMRelics\actions\SortDrawPileAction$1.class
 aramod\relics\StatueOfPride.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
@@ -48,6 +52,7 @@ theextravagant\actions\SwirlAction.class
 theextravagant\cards\RiskyStrike.class
 theextravagant\cards\ToolsOfTrickery.class
 theextravagant\cards\LifeCharm.class
+CCEMRelics\relics\WarHorn.class
 theextravagant\powers\GlyphOfTimePower.class
 theextravagant\cards\Foil.class
 theextravagant\cards\Triumph.class
@@ -77,6 +82,8 @@ theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 theextravagant\powers\DodgePower.class
 theextravagant\cards\Clairvoyance.class
+CCEMRelics\relics\HistoryBook.class
+CCEMRelics\actions\SortDrawPileAction$CardAgeComparator.class
 theextravagant\cards\ManifestIllusion.class
 aramod\relics\ShatteredShield.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
@@ -168,6 +175,7 @@ theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatc
 theextravagant\powers\AntiquityPower.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$RenderhelperPatch1.class
 theextravagant\actions\PunchEffectAction.class
+CCEMRelics\relics\Barrel.class
 theextravagant\vfx\Sixteentonseffect.class
 theextravagant\actions\PerfectBasicsAction.class
 aramod\relics\IronRibcage.class
@@ -181,6 +189,7 @@ theextravagant\patches\EVCardPatches\AbstractPlayerPatch.class
 theextravagant\cards\ReSeek.class
 theextravagant\powers\ModifyDamagePower.class
 theextravagant\cards\Razor.class
+CCEMRelics\actions\SortDrawPileAction.class
 theextravagant\actions\DamnationEffectAction.class
 theextravagant\powers\RetainTwoCostsPower.class
 theextravagant\cards\Castle.class

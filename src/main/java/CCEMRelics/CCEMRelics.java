@@ -103,10 +103,6 @@ public class CCEMRelics implements
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
 
-    public static String makeOrbPath(String resourcePath) {
-        return getModID() + "Resources/orbs/" + resourcePath;
-    }
-
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
@@ -172,10 +168,6 @@ public class CCEMRelics implements
         logger.info("Done loading badge Image and mod options");
     }
 
-    public void receiveEditPotions() {
-        logger.info("Beginning to edit potions");
-        logger.info("Done editing potions");
-    }
 
     @Override
     public void receiveEditRelics() {

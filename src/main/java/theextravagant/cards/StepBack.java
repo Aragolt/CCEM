@@ -26,7 +26,7 @@ public class StepBack extends CustomCard {
     private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
-    private static final int BLOCK = 8;
+    private static final int BLOCK = 9;
 
     public StepBack() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);

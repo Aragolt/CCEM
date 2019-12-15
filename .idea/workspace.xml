@@ -7,9 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2473dc1d-c040-4e4d-9f2f-45b73546ab6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/patches/EvokeFrostPatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -25,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="153">
-              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+              <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -45,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="697">
+              <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +58,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/EvokeFrostPatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="663">
+              <caret line="39" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -66,13 +67,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+            <state relative-caret-position="510">
+              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#747#748#0" expanded="true" />
                 <element signature="e#824#825#0" expanded="true" />
               </folding>
             </state>
@@ -99,11 +101,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+            <state relative-caret-position="850">
+              <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -111,8 +113,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2346">
-              <caret line="169" column="64" selection-start-line="169" selection-start-column="64" selection-end-line="169" selection-end-column="64" />
+            <state relative-caret-position="932">
+              <caret line="182" column="43" lean-forward="true" selection-start-line="182" selection-start-column="43" selection-end-line="182" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -286,14 +288,14 @@
         <option value="$PROJECT_DIR$/src/main/resources/CCEMRelics/localization/eng/CCEMRelics-Relic-Strings.json" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Coconut.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/actions/SortDrawPileAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/GrapeVine.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WarHorn.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/patches/EvokeFrostPatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" />
         <option value="$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
       </list>
     </option>
   </component>
@@ -388,15 +390,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="CCEMRelics" type="462c0819:PsiDirectoryNode" />
-              <item name="patches" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CCEM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="CCEMRelics" type="462c0819:PsiDirectoryNode" />
               <item name="relics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -475,7 +468,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576410691973" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576412750147" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -521,13 +514,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557601957210</updated>
-    </task>
-    <task id="LOCAL-00037" summary="New relic Pocket Dynamo &amp; New card Antiquity">
-      <created>1569156177176</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1569156177176</updated>
     </task>
     <task id="LOCAL-00038" summary="Dejankified Some powers and added new relic molten lipstick">
       <created>1569257225782</created>
@@ -865,7 +851,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576350867269</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="new relic icicle">
+      <created>1576410740082</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1576410740082</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -884,7 +877,7 @@
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.040140845" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49921876" weight="0.3090007" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.47578126" weight="0.2302817" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.47578126" visible="true" weight="0.2302817" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -901,7 +894,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Changes to Persistence" />
     <MESSAGE value="Did everything." />
     <MESSAGE value="new Image for glyph of time, buffed rapid pulse" />
     <MESSAGE value="Several small fixes + Card art improvements" />
@@ -926,7 +918,8 @@
     <MESSAGE value="Added new CCEMRelics main file" />
     <MESSAGE value="Added Json Files" />
     <MESSAGE value="Added 5 new relics" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added 5 new relics" />
+    <MESSAGE value="new relic icicle" />
+    <option name="LAST_COMMIT_MESSAGE" value="new relic icicle" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -1231,16 +1224,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="169" column="64" selection-start-line="169" selection-start-column="64" selection-end-line="169" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/theextravagant/relics/TopHat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -1248,14 +1231,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/EvokeFrostPatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state relative-caret-position="663">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="45" column="5" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="182" column="43" lean-forward="true" selection-start-line="182" selection-start-column="43" selection-end-line="182" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="1" lean-forward="true" selection-start-line="50" selection-start-column="1" selection-end-line="50" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -1269,37 +1278,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/EvokeFrostPatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
-          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/HistoryBook.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="59" selection-start-line="47" selection-start-column="59" selection-end-line="47" selection-end-column="59" />
+        <state relative-caret-position="510">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#747#748#0" expanded="true" />
+            <element signature="e#824#825#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

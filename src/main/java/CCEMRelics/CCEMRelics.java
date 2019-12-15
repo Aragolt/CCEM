@@ -14,6 +14,7 @@ import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
@@ -179,6 +180,7 @@ public class CCEMRelics implements
         BaseMod.addRelic(new Coconut(), RelicType.SHARED);
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
         BaseMod.addRelic(new WarHorn(), RelicType.SHARED);
+        RelicLibrary.addBlue(new Icicle());
         logger.info("Done adding relics!");
     }
 

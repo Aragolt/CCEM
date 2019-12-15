@@ -12,8 +12,8 @@ import static CCEMRelics.CCEMRelics.makeRelicPath;
 
 public class HistoryBook extends CustomRelic {
     public static final String ID = CCEMRelics.makeID("HistoryBook");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("history_book.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("history_book.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("HistoryBook.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("HistoryBook.png"));
 
     public HistoryBook() {
         super(ID, IMG, OUTLINE, RelicTier.SHOP, LandingSound.MAGICAL);

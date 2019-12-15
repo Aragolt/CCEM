@@ -15,6 +15,7 @@ theextravagant\cards\GlyphOfChoice.class
 CCEMRelics\CCEMRelics.class
 theextravagant\vfx\Sparkleeffect.class
 theextravagant\cards\Shatter.class
+CCEMRelics\patches\EvokeFrostPatch$AbstractPlayerRemoveNextOrbHook.class
 theextravagant\actions\PutCardsFromHandOnTopOfDrawPileThenDrawAction.class
 theextravagant\powers\FoilPower.class
 CCEMRelics\actions\SortDrawPileAction$1.class
@@ -125,6 +126,7 @@ theextravagant\actions\CheckTopCardForDexterityAction.class
 theextravagant\theextravagant.class
 theextravagant\powers\FlashbackPower.class
 theextravagant\actions\ExhaustTopCardAction.class
+CCEMRelics\patches\EvokeFrostPatch.class
 theextravagant\characters\TheExtravagant$Enums.class
 theextravagant\cards\Strafe.class
 theextravagant\relics\TopHat.class
@@ -230,6 +232,7 @@ theextravagant\cards\Overrun.class
 aramod\events\JustAWallEvent.class
 theextravagant\actions\FireworkAction.class
 aramod\relics\ChunkOfWall.class
+CCEMRelics\relics\Icicle.class
 theextravagant\powers\OverrunPower.class
 theextravagant\cards\GlyphOfTime.class
 theextravagant\relics\CuffLinks.class
@@ -238,6 +241,7 @@ theextravagant\orbs\DefaultOrb.class
 theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.class
 theextravagant\powers\TriumphPower.class
 theextravagant\actions\PlayCardAction.class
+CCEMRelics\patches\EvokeFrostPatch$doStuff.class
 theextravagant\util\IDCheckDontTouchPls.class
 theextravagant\powers\LifeCharmPower.class
 theextravagant\cards\Twitch.class

@@ -48,6 +48,7 @@ theextravagant\cards\ToolsOfTrickery.class
 theextravagant\cards\LifeCharm.class
 CCEMRelics\relics\WarHorn.class
 theextravagant\cards\Foil.class
+CCEMRelics\relics\GreenEgg.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\cards\Tension.class
 theextravagant\relics\Sorbet.class
@@ -125,6 +126,7 @@ theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.clas
 aramod\relics\AmuletOfProtection.class
 theextravagant\actions\VintageAction.class
 theextravagant\actions\FireworkEffectAction.class
+CCEMRelics\relics\Moonstone.class
 theextravagant\powers\PrepareAmbushPower.class
 theextravagant\cards\CuttingEdge.class
 theextravagant\actions\BetterHeadbuttAction.class

@@ -181,6 +181,8 @@ public class CCEMRelics implements
         BaseMod.addRelic(new HistoryBook(), RelicType.SHARED);
         BaseMod.addRelic(new WarHorn(), RelicType.SHARED);
         RelicLibrary.addBlue(new Icicle());
+        RelicLibrary.addRed(new StainlessSteel());
+        RelicLibrary.addGreen(new PaperClip());
         logger.info("Done adding relics!");
     }
 

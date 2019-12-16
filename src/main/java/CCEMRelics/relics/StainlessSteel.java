@@ -16,7 +16,7 @@ public class StainlessSteel extends CustomRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("StainlessSteel.png"));
 
     public StainlessSteel() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.HEAVY);
     }
 
     @Override
@@ -26,6 +26,11 @@ public class StainlessSteel extends CustomRelic {
 
     @Override
     public void atTurnStart() {
+        this.counter = 0;
+    }
+
+    @Override
+    public void atBattleStart() {
         this.counter = 0;
     }
 

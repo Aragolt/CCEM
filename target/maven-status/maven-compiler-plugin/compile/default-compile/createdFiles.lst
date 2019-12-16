@@ -46,6 +46,7 @@ theextravagant\cards\Stella.class
 theextravagant\relics\TranslucentFeather.class
 theextravagant\actions\PutInDrawpileForBlockAction.class
 aramod\relics\DefectiveTurbocharger.class
+CCEMRelics\relics\StainlessSteel.class
 theextravagant\cards\SharpTalons.class
 theextravagant\actions\PheonixEffectAction.class
 theextravagant\cards\Outrun.class
@@ -110,6 +111,7 @@ theextravagant\cards\ButtonUp.class
 theextravagant\cards\StepBack.class
 theextravagant\powers\RustyBucklerRetainTriggerAction.class
 theextravagant\cards\Meditation.class
+CCEMRelics\patches\ApplyPowerPatch.class
 theextravagant\cards\RustyBuckler.class
 theextravagant\cards\SkillfullDodge.class
 theextravagant\cards\Preservation.class
@@ -258,6 +260,8 @@ theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch$Locator.class
 theextravagant\relics\TrustyOvercoat.class
 theextravagant\powers\GlyphOfChoicePower.class
 aramod\cards\OrbVolley.class
+CCEMRelics\patches\ApplyPowerPatch$ConstructorPatch.class
+CCEMRelics\relics\PaperClip.class
 theextravagant\actions\PutDiscardOnTopOfDrawPileAction.class
 theextravagant\cards\Sixteen_Tons.class
 theextravagant\cards\Ravage.class

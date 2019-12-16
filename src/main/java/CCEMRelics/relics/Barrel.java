@@ -16,7 +16,7 @@ public class Barrel extends CustomRelic {
     private static final RelicTier TIER = RelicTier.COMMON;
 
     public Barrel() {
-        super(ID, IMG, OUTLINE, TIER, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, TIER, LandingSound.FLAT);
     }
 
     @Override

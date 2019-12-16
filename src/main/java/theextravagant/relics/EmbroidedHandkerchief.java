@@ -19,6 +19,11 @@ public class EmbroidedHandkerchief extends CustomRelic {
     }
 
     @Override
+    public String getUpdatedDescription() {
+        return DESCRIPTIONS[0];
+    }
+
+    @Override
     public void onCardDraw(AbstractCard drawnCard) {
         drawnCard.triggerWhenDrawn();
     }

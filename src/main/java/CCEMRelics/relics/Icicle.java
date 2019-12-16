@@ -20,7 +20,7 @@ public class Icicle extends CustomRelic implements OnChannelRelic {
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("Icicle.png"));
 
     public Icicle() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.CLINK);
     }
 
     @Override

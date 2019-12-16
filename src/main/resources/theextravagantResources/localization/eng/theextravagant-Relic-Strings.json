@@ -105,7 +105,7 @@
     "NAME": "Embroided Handkerchief",
     "FLAVOR": "It has the intitials J. L. on it. I wonder who it once belonged to.",
     "DESCRIPTIONS": [
-      "Gain [E] at the start of each turn. Whenever you draw #b15 cards, lose [E]."
+      "On-Draw effects trigger twice."
     ]
   },
   "theextravagant:OldMusket": {

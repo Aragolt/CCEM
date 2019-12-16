@@ -24,7 +24,7 @@ public class GrapeVine extends CustomRelic {
     private boolean trigger = false;
 
     public GrapeVine() {
-        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.SOLID);
+        super(ID, IMG, OUTLINE, RelicTier.UNCOMMON, LandingSound.MAGICAL);
     }
 
     @Override

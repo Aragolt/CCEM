@@ -3,6 +3,7 @@ package CCEMRelics.relics;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.evacipated.cardcrawl.mod.stslib.actions.common.StunMonsterAction;
+import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -43,6 +44,7 @@ public class WarHorn extends CustomRelic {
                 this.counter = -1;
                 grayscale = true;
                 flash();
+                this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
                 Iterator var3 = AbstractDungeon.getMonsters().monsters.iterator();
                 while (var3.hasNext()) {
                     AbstractMonster monster = (AbstractMonster) var3.next();

@@ -1,14 +1,6 @@
 package theextravagant.patches.SecondEnergyOrbPatches;
 
-import com.evacipated.cardcrawl.modthespire.lib.*;
-import com.evacipated.cardcrawl.modthespire.patcher.PatchingException;
-import com.megacrit.cardcrawl.core.OverlayMenu;
-import javassist.CannotCompileException;
-import javassist.CtBehavior;
-import theextravagant.theextravagant;
-
-import java.util.ArrayList;
-
+/*
 @SpirePatch(clz = OverlayMenu.class, method = "update")
 public class UpdateOrbPositionPatch {
     @SpireInsertPatch(locator = Locator.class)
@@ -23,4 +15,4 @@ public class UpdateOrbPositionPatch {
             return LineFinder.findInOrder(ctMethodToPatch, new ArrayList<Matcher>(), finalMatcher);
         }
     }
-}
+}*/

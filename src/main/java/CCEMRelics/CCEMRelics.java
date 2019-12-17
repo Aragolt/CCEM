@@ -186,6 +186,8 @@ public class CCEMRelics implements
         RelicLibrary.addGreen(new PaperClip());
         RelicLibrary.addPurple(new Moonstone());
         BaseMod.addRelic(new GreenEgg(), RelicType.SHARED);
+        BaseMod.addRelic(new FryingPan(), RelicType.SHARED);
+        BaseMod.addRelic(new JestersCrown(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

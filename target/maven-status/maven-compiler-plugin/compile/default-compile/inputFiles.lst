@@ -23,6 +23,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\CCEMRelics\relics\PaperC
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ZeroHeroPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\TriumphPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\actions\VintageAction.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\CCEMRelics\relics\GreenEgg.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\vfx\Fireworkeffect.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\ToolsOfTrickery.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\AuroraForm.java
@@ -46,6 +47,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\Gl
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Glamour.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\CCEMRelics\actions\PurgeSpecificCardAction.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\RabbytsFoot.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\CCEMRelics\relics\Moonstone.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\aramod\relics\Lemon.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\CardcrawlgameTimedelayPatch.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\relics\TranscendedFeather.java
@@ -163,6 +165,7 @@ C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Man
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Accumulation.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\IllusionPower.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\powers\ImpulsePower.java
+C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\CCEMRelics\relics\FryingPan.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\patches\EVCardPatches\SingleCardViewPopupPatches.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Nihil.java
 C:\Users\robin\Documents\sts_modding\CCEM\src\main\java\theextravagant\cards\Acceleration.java

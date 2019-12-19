@@ -49,6 +49,7 @@ theextravagant\cards\Fence.class
 theextravagant\cards\Stella.class
 theextravagant\relics\TranslucentFeather.class
 theextravagant\actions\PutInDrawpileForBlockAction.class
+CCEMRelics\patches\RerollRewardTypePatch.class
 aramod\relics\DefectiveTurbocharger.class
 CCEMRelics\relics\StainlessSteel.class
 theextravagant\cards\SharpTalons.class
@@ -67,6 +68,7 @@ CCEMRelics\relics\GreenEgg.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
 theextravagant\cards\Tension.class
 theextravagant\relics\Sorbet.class
+CCEMRelics\rewards\RerollRewards.class
 theextravagant\powers\GlyphOfSightPower.class
 aramod\relics\TestRelic.class
 theextravagant\variables\ReducedBlockVariable.class
@@ -152,6 +154,7 @@ theextravagant\characters\TheExtravagant.class
 theextravagant\cards\AuroraForm.class
 theextravagant\actions\ButtonUpAction.class
 theextravagant\vfx\Damnationeffect.class
+CCEMRelics\relics\GrindingGear.class
 theextravagant\powers\OutrunPower.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 theextravagant\powers\GarbageCannonPower.class
@@ -188,6 +191,7 @@ CCEMRelics\relics\JestersCrown.class
 theextravagant\powers\RetreatPower.class
 theextravagant\vfx\VfxMaster.class
 theextravagant\powers\SnakeOilPower.class
+CCEMRelics\relics\RunicDSix.class
 theextravagant\cards\Twostep.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch$TwilightTonePatch.class
 theextravagant\powers\AntiquityPower.class

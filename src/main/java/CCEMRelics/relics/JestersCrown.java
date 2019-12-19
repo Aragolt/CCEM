@@ -25,6 +25,6 @@ public class JestersCrown extends CustomRelic {
 
     @Override
     public float atDamageModify(float damage, AbstractCard c) {
-        return c.rarity == AbstractCard.CardRarity.COMMON ? damage + 1.0F : damage;
+        return c.rarity == AbstractCard.CardRarity.COMMON ? damage + 2.0F : damage;
     }
 }

@@ -1,6 +1,8 @@
 package CCEMRelics;
 
+import CCEMRelics.patches.RerollRewardTypePatch;
 import CCEMRelics.relics.*;
+import CCEMRelics.rewards.RerollRewards;
 import basemod.BaseMod;
 import basemod.ModPanel;
 import basemod.helpers.RelicType;
@@ -19,6 +21,7 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.localization.RelicStrings;
 import com.megacrit.cardcrawl.localization.UIStrings;
+import com.megacrit.cardcrawl.rewards.RewardSave;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.ui.SecondEnergyOrb;
@@ -106,6 +109,10 @@ public class CCEMRelics implements
         return getModID() + "Resources/images/relics/outline/" + resourcePath;
     }
 
+    public static String makeRewardPath(String resourcePath) {
+        return getModID() + "Resources/images/reward/" + resourcePath;
+    }
+
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
@@ -169,6 +176,14 @@ public class CCEMRelics implements
         ModPanel settingsPanel = new ModPanel();
         BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("Done loading badge Image and mod options");
+        BaseMod.registerCustomReward(
+                RerollRewardTypePatch.CCEM_REROLLREWARD,
+                (rewardSave) -> { // this handles what to do when this quest type is loaded.
+                    return new RerollRewards(rewardSave.amount);
+                },
+                (customReward) -> { // this handles what to do when this quest type is saved.
+                    return new RewardSave(customReward.type.toString(), null, ((RerollRewards) customReward).amount, 0);
+                });
     }
 
 
@@ -188,6 +203,8 @@ public class CCEMRelics implements
         BaseMod.addRelic(new GreenEgg(), RelicType.SHARED);
         BaseMod.addRelic(new FryingPan(), RelicType.SHARED);
         BaseMod.addRelic(new JestersCrown(), RelicType.SHARED);
+        BaseMod.addRelic(new GrindingGear(), RelicType.SHARED);
+        BaseMod.addRelic(new RunicDSix(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

@@ -205,6 +205,7 @@ public class CCEMRelics implements
         BaseMod.addRelic(new JestersCrown(), RelicType.SHARED);
         BaseMod.addRelic(new GrindingGear(), RelicType.SHARED);
         BaseMod.addRelic(new RunicDSix(), RelicType.SHARED);
+        BaseMod.addRelic(new PorcelainBowl(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

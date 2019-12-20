@@ -20,16 +20,12 @@ public class GrindingGear extends CustomRelic {
 
     public GrindingGear() {
         super(ID, IMG, OUTLINE, RelicTier.COMMON, LandingSound.FLAT);
+        counter = 0;
     }
 
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
-    }
-
-    @Override
-    public void atBattleStartPreDraw() {
-        this.counter = 0;
     }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
@@ -40,10 +36,5 @@ public class GrindingGear extends CustomRelic {
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
             this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, 2), 2));
         }
-    }
-
-
-    public void onVictory() {
-        this.counter = -1;
     }
 }

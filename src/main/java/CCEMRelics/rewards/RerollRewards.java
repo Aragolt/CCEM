@@ -120,27 +120,34 @@ public class RerollRewards extends CustomReward {
 
     @Override
     public boolean claimReward() {
-        for (RewardItem Item : AbstractDungeon.getCurrRoom().rewards) {
-            if (Item.type == RewardType.CARD) {
-                Item.cards = getRewardCards();
+        ArrayList<RewardItem> CardRewardlist = new ArrayList();
+        for (RewardItem Item : combatRewardScreen.rewards) {
+            if (Item.cards != null && !Item.cards.isEmpty()) {
+                Item.cards = AbstractDungeon.getRewardCards();
+                Item.update();
             }
             if (Item.type == RewardType.RELIC) {
                 AbstractRelic.RelicTier tier = returnRandomRelicTier();
                 Item.relic = AbstractDungeon.returnRandomRelic(tier);
+                Item.text = Item.relic.name;
+                Item.update();
             }
             if (Item.type == RewardType.POTION) {
                 Item.potion = AbstractDungeon.returnRandomPotion();
+                Item.text = Item.potion.name;
+                Item.update();
             }
             Item.update();
         }
         this.amount -= 1;
         if (AbstractDungeon.player.hasRelic(RunicDSix.ID)) {
-            AbstractDungeon.player.getRelic(RunicDSix.ID).counter -= 3;
+            AbstractDungeon.player.getRelic(RunicDSix.ID).counter -= 1;
         }
         if (amount <= 0) {
             return true;
         }
-        this.text = UI_STRINGS.TEXT[0] + amount;
+        this.text = UI_STRINGS.TEXT[0] + amount + UI_STRINGS.TEXT[0];
+
         return false;
     }
 

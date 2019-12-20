@@ -4,7 +4,6 @@ import CCEMRelics.rewards.RerollRewards;
 import basemod.abstracts.CustomRelic;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.math.MathUtils;
-import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import theextravagant.util.TextureLoader;
@@ -19,6 +18,7 @@ public class RunicDSix extends CustomRelic {
 
     public RunicDSix() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.HEAVY);
+        counter = 8;
     }
 
     @Override
@@ -27,19 +27,9 @@ public class RunicDSix extends CustomRelic {
     }
 
     @Override
-    public void onObtainCard(AbstractCard c) {
-        this.counter = 0;
-    }
-
-    @Override
-    public void onEnterRoom(AbstractRoom room) {
-        this.counter++;
-    }
-
-    @Override
     public void justEnteredRoom(AbstractRoom room) {
-        if (counter >= 3) {
-            AbstractDungeon.getCurrRoom().rewards.add(new RerollRewards(MathUtils.floor(counter / 3)));
+        if (counter > 0) {
+            AbstractDungeon.getCurrRoom().rewards.add(new RerollRewards(MathUtils.floor(counter)));
         }
     }
 }

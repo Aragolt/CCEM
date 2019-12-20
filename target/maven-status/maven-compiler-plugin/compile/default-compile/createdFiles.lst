@@ -294,5 +294,6 @@ theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch$ConstructorPatch.cla
 theextravagant\cards\Masquerade.class
 theextravagant\relics\DefaultClickableRelic.class
 theextravagant\cards\AbstractEVCard.class
+CCEMRelics\rewards\RerollRewards$1.class
 theextravagant\cards\Flashback.class
 aramod\powers\BetterRitualPower.class

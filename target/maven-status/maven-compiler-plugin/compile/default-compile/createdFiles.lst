@@ -97,6 +97,7 @@ CCEMRelics\actions\SortDrawPileAction$CardAgeComparator.class
 theextravagant\cards\ManifestIllusion.class
 aramod\relics\ShatteredShield.class
 theextravagant\actions\DiscardAnyFromDrawpileAction.class
+CCEMRelics\relics\DissonantTune.class
 theextravagant\actions\DiscardForDamageAction.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch1.class
 aramod\relics\Lemon.class
@@ -276,6 +277,7 @@ theextravagant\cards\Antiquity.class
 theextravagant\cards\Pluck.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches.class
 theextravagant\cards\GarbageCannon.class
+CCEMRelics\relics\Francisca.class
 theextravagant\patches\CardSpecificPatches\ApplyPowerPatch.class
 theextravagant\vfx\Fireworkeffect.class
 theextravagant\relics\RedPhonoblaster.class

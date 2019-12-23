@@ -178,10 +178,10 @@ public class CCEMRelics implements
         logger.info("Done loading badge Image and mod options");
         BaseMod.registerCustomReward(
                 RerollRewardTypePatch.CCEM_REROLLREWARD,
-                (rewardSave) -> { // this handles what to do when this quest type is loaded.
+                (rewardSave) -> {
                     return new RerollRewards(rewardSave.amount);
                 },
-                (customReward) -> { // this handles what to do when this quest type is saved.
+                (customReward) -> {
                     return new RewardSave(customReward.type.toString(), null, ((RerollRewards) customReward).amount, 0);
                 });
     }
@@ -208,6 +208,8 @@ public class CCEMRelics implements
         BaseMod.addRelic(new PorcelainBowl(), RelicType.SHARED);
         BaseMod.addRelic(new DissonantTune(), RelicType.SHARED);
         BaseMod.addRelic(new Francisca(), RelicType.SHARED);
+        BaseMod.addRelic(new FranticForklift(), RelicType.SHARED);
+        BaseMod.addRelic(new WrappedPresent(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

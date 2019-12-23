@@ -7,8 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2473dc1d-c040-4e4d-9f2f-45b73546ab6c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/DissonantTune.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Francisca.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/actions/ForkliftAction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/FranticForklift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WrappedPresent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" afterDir="false" />
@@ -26,10 +27,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/DissonantTune.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="209" column="58" selection-start-line="209" selection-start-column="58" selection-end-line="209" selection-end-column="58" />
+            <state relative-caret-position="289">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/FranticForklift.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,80 +51,43 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="943">
+              <caret line="148" column="3" lean-forward="true" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="796">
+              <caret line="211" column="63" selection-start-line="211" selection-start-column="63" selection-end-line="211" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
-              <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+              <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/DissonantTune.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WrappedPresent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#886#887#0" expanded="true" />
-                <element signature="e#950#951#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WarHorn.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="796">
-              <caret line="53" column="17" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="53" selection-end-column="17" />
+            <state>
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="824">
-              <caret line="127" column="27" lean-forward="true" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/SingingBowl.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="37" column="43" selection-start-line="36" selection-end-line="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Francisca.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#514#515#0" expanded="true" />
-                <element signature="e#1740#1741#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/Sling.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -126,10 +102,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/JuggernautPower.class">
+        <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/CallingBell.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="33" column="146" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="146" />
+            <state relative-caret-position="136">
+              <caret line="22" column="31" selection-start-line="22" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Moonstone.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="37" column="5" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="37" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -250,9 +244,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Drift.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/actions/EnchantIfSkillThenDiscardAction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/theextravagant/theextravagant.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/relics/OldMusket.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/Masquerade.java" />
         <option value="$PROJECT_DIR$/src/main/java/theextravagant/cards/IronPlumes.java" />
@@ -297,10 +288,13 @@
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/RunicDSix.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/PorcelainBowl.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/DissonantTune.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json" />
-        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" />
         <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Francisca.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/actions/ForkliftAction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ModTheSpire.json" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/FranticForklift.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WrappedPresent.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json" />
       </list>
     </option>
   </component>
@@ -395,6 +389,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="CCEMRelics" type="462c0819:PsiDirectoryNode" />
+              <item name="actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCEM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CCEMRelics" type="462c0819:PsiDirectoryNode" />
+              <item name="patches" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CCEM" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="CCEMRelics" type="462c0819:PsiDirectoryNode" />
               <item name="relics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -473,19 +485,7 @@
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Maven: com.megacrit.cardcrawl:slaythespire:10-29-2019" type="70bed36:NamedLibraryElementNode" />
               <item name="desktop-1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cardcrawl" type="462c0819:PsiDirectoryNode" />
-              <item name="relics" type="462c0819:PsiDirectoryNode" />
-              <item name="deprecated" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: com.megacrit.cardcrawl:slaythespire:10-29-2019" type="70bed36:NamedLibraryElementNode" />
-              <item name="desktop-1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="cardcrawl" type="462c0819:PsiDirectoryNode" />
-              <item name="rooms" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
@@ -493,6 +493,7 @@
               <item name="Maven: com.megacrit.cardcrawl:slaythespire:10-29-2019" type="70bed36:NamedLibraryElementNode" />
               <item name="desktop-1.0.jar" type="462c0819:PsiDirectoryNode" />
               <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="relics" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AraMod" type="b2602c69:ProjectViewProjectNode" />
@@ -524,7 +525,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576958227967" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1577093350767" />
     <property name="last_opened_file_path" value="C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -570,13 +571,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1557601957210</updated>
-    </task>
-    <task id="LOCAL-00048" summary="New Card art for Strafe + Riot Nerf">
-      <created>1570383002512</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1570383002512</updated>
     </task>
     <task id="LOCAL-00049" summary="New card frames and skillfull dodge art">
       <created>1570542415044</created>
@@ -914,25 +908,33 @@
       <option name="project" value="LOCAL" />
       <updated>1576863570586</updated>
     </task>
-    <option name="localTasksCounter" value="97" />
+    <task id="LOCAL-00097" summary="Added relics Dissonant Tune and Francisca">
+      <created>1577016991554</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1577016991554</updated>
+    </task>
+    <option name="localTasksCounter" value="98" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1554" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="UI Designer" order="1" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.14765625" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.14765625" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5253906" side_tool="true" visible="true" weight="0.2302817" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5265625" side_tool="true" visible="true" weight="0.2302817" />
       <window_info anchor="bottom" id="Version Control" order="2" weight="0.040140845" />
       <window_info anchor="bottom" id="Message" order="3" />
       <window_info anchor="bottom" id="Find" order="4" sideWeight="0.49921876" weight="0.3090007" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.47460938" weight="0.2302817" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.4734375" visible="true" weight="0.2302817" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
@@ -940,7 +942,7 @@
       <window_info anchor="right" id="Theme Preview" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Palette&#9;" order="2" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.22578125" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.22578125" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
@@ -949,7 +951,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
-    <MESSAGE value="Fixed several bugs. Changed Garbage Cannon, nerfed Heavy Blows, Buffed Gust of Wind." />
     <MESSAGE value="Added Cufflinks relic and added sounds to existing relics" />
     <MESSAGE value="Rebalanced Spontaneous Strike and Stella, new Card art for Firework, Ravage and Shake." />
     <MESSAGE value="Reworked Twilight Tone, nerfed and added proper art for cutting edge, nerfed razor and rising pheonix, added preview card to Nihil." />
@@ -974,94 +975,13 @@
     <MESSAGE value="New relics Grinding Gear and Philosophers D6" />
     <MESSAGE value="Finished Philosophers D6" />
     <MESSAGE value="Added relic Porcelain Bowl" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added relic Porcelain Bowl" />
+    <MESSAGE value="Added relics Dissonant Tune and Francisca" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added relics Dissonant Tune and Francisca" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/images/ui/reward/takeAll.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/images/ui/reward/takeAllUsed.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/PrayerWheel.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/workshop/content/646570/1605833019/BaseMod.jar!/basemod/ReflectionHacks.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/workshop/content/646570/1605833019/BaseMod.jar!/basemod/abstracts/CustomReward.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="48" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/RerollRewardTypePatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/saveAndContinue/SaveFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="270" column="74" selection-start-line="270" selection-start-column="74" selection-end-line="270" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/images/events/sensoryStone.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/rooms/EmptyRoom.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/rooms/EventRoom.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/CardGroup.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="667" column="24" selection-start-line="667" selection-start-column="24" selection-end-line="667" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/screens/CardRewardScreen.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9758">
-          <caret line="622" column="25" selection-start-line="622" selection-start-column="25" selection-end-line="622" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/core/CardCrawlGame.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11441">
-          <caret line="781" column="22" selection-start-line="781" selection-start-column="19" selection-end-line="781" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/rooms/MonsterRoom.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1083,16 +1003,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/StainlessSteel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_172/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -1101,20 +1011,6 @@
             <element signature="e#6283#6284#0" expanded="true" />
             <element signature="e#6351#6352#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/actions/PurgeSpecificCardAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/actions/SortDrawPileAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1192,9 +1088,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Card-Strings.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/Pantograph.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1278,32 +1171,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WarHorn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="53" column="17" lean-forward="true" selection-start-line="47" selection-start-column="16" selection-end-line="53" selection-end-column="17" />
+        <state relative-caret-position="629">
+          <caret line="53" column="17" selection-start-line="47" selection-start-column="16" selection-end-line="53" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Coconut.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="129" selection-start-line="38" selection-start-column="129" selection-end-line="38" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/JuggernautPower.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="33" column="146" lean-forward="true" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/Sling.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="57" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="57" />
         </state>
       </provider>
     </entry>
@@ -1314,46 +1186,182 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Francisca.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="824">
-          <caret line="127" column="27" lean-forward="true" selection-start-line="127" selection-start-column="27" selection-end-line="127" selection-end-column="27" />
+        <state relative-caret-position="510">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1702#1703#0" expanded="true" />
+            <element signature="e#1740#1741#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/Sling.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="796">
-          <caret line="209" column="58" selection-start-line="209" selection-start-column="58" selection-end-line="209" selection-end-column="58" />
+        <state relative-caret-position="255">
+          <caret line="27" column="57" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/powers/JuggernautPower.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="33" column="146" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/StainlessSteel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="53" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Francisca.java">
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/workshop/content/646570/1605833019/BaseMod.jar!/basemod/BaseMod.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="48" column="31" lean-forward="true" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+        <state relative-caret-position="833">
+          <caret line="2947" column="19" selection-start-line="2947" selection-start-column="19" selection-end-line="2947" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/AbstractCard.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39882">
+          <caret line="2404" column="16" selection-start-line="2404" selection-start-column="16" selection-end-line="2404" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Card-Strings.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/actions/ForkliftAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="31" column="39" selection-start-line="31" selection-start-column="39" selection-end-line="31" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#1740#1741#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/cards/blue/Hologram.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="31" column="39" selection-start-line="31" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/actions/SortDrawPileAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/actions/PurgeSpecificCardAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="35" column="1" selection-start-line="9" selection-start-column="36" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/ApplyPowerPatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/patches/SpectralField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/Abacus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/GreenEgg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Icicle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Moonstone.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="37" column="5" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="37" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/Coconut.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="38" column="129" selection-start-line="38" selection-start-column="129" selection-end-line="38" selection-end-column="129" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/WrappedPresent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Steam/steamapps/common/SlayTheSpire/desktop-1.0.jar!/com/megacrit/cardcrawl/relics/CallingBell.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="22" column="31" selection-start-line="22" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/FranticForklift.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/relics/DissonantTune.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="289">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#886#887#0" expanded="true" />
-            <element signature="e#950#951#0" expanded="true" />
-            <element signature="e#1009#1010#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CCEMRelics/CCEMRelics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="796">
+          <caret line="211" column="63" selection-start-line="211" selection-start-column="63" selection-end-line="211" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1361,7 +1369,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/ModTheSpire.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
-          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/CCEMRelicsResources/localization/eng/CCEMRelics-Relic-Strings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="943">
+          <caret line="148" column="3" lean-forward="true" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
         </state>
       </provider>
     </entry>

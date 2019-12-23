@@ -22,6 +22,7 @@ theextravagant\actions\PutCardsFromHandOnTopOfDrawPileThenDrawAction.class
 theextravagant\powers\FoilPower.class
 CCEMRelics\actions\SortDrawPileAction$1.class
 aramod\relics\StatueOfPride.class
+CCEMRelics\actions\ForkliftAction.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
@@ -159,6 +160,7 @@ theextravagant\vfx\Damnationeffect.class
 CCEMRelics\relics\GrindingGear.class
 theextravagant\powers\OutrunPower.class
 theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
+CCEMRelics\relics\WrappedPresent.class
 theextravagant\powers\GarbageCannonPower.class
 theextravagant\cards\SlyStrike.class
 theextravagant\powers\ImpulsePower.class
@@ -192,6 +194,7 @@ theextravagant\cards\AbstractDynamicCard.class
 CCEMRelics\relics\JestersCrown.class
 theextravagant\powers\RetreatPower.class
 theextravagant\vfx\VfxMaster.class
+CCEMRelics\relics\FranticForklift.class
 theextravagant\powers\SnakeOilPower.class
 CCEMRelics\relics\RunicDSix.class
 theextravagant\cards\Twostep.class

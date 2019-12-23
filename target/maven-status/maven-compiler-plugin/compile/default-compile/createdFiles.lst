@@ -104,6 +104,7 @@ theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch1.class
 aramod\relics\Lemon.class
 theextravagant\cards\FocusStab.class
 CCEMRelics\patches\SpectralField$MakeStatEquivalentCopy.class
+CCEMRelics\relics\MirrorShard.class
 theextravagant\cards\PuffUp.class
 aramod\relics\BlanksHoodie.class
 theextravagant\relics\PocketDynamo.class
@@ -233,6 +234,7 @@ theextravagant\cards\SnakeEyes.class
 theextravagant\cards\WhiffOfMagic.class
 theextravagant\powers\RepellPower.class
 theextravagant\cards\SwiftSwitch.class
+CCEMRelics\relics\ShadowVeil.class
 theextravagant\cards\RisingPhoenix.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
 aramod\relics\PocketApothecary.class

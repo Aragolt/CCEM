@@ -210,6 +210,8 @@ public class CCEMRelics implements
         BaseMod.addRelic(new Francisca(), RelicType.SHARED);
         BaseMod.addRelic(new FranticForklift(), RelicType.SHARED);
         BaseMod.addRelic(new WrappedPresent(), RelicType.SHARED);
+        RelicLibrary.addGreen(new ShadowVeil());
+        RelicLibrary.addRed(new MirrorShard());
         logger.info("Done adding relics!");
     }
 

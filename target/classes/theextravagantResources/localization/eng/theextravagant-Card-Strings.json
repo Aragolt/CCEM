@@ -211,7 +211,7 @@
   },
   "theextravagant:IronPlumes": {
     "NAME": "Iron Plumes",
-    "DESCRIPTION": "Gain !M! Temporary_HP. NL When drawn, increase the amount by 2 this combat."
+    "DESCRIPTION": "Gain !M! Temporary_HP. NL When drawn, increase the amount by 2 this combat. NL Exhaustive !stslib:ex!."
   },
   "theextravagant:Courage": {
     "NAME": "Courage",
@@ -277,7 +277,7 @@
   },
   "theextravagant:Thrill": {
     "NAME": "Thrill",
-    "DESCRIPTION": "Deal !D! damage !M! times. NL Duplicate ALL Attacks in your hand. NL Discard a random card."
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Copy ALL Attacks in your hand. NL Discard a random card."
   },
   "theextravagant:RapidPulse": {
     "NAME": "Rapid Pulse",

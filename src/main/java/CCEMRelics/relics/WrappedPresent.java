@@ -14,7 +14,7 @@ public class WrappedPresent extends CustomRelic {
     public static final String ID = CCEMRelics.makeID("WrappedPresent");
     private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("WrappedPresent.png"));
     private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("WrappedPresent.png"));
-    private boolean cardsReceived = false;
+    private boolean cardsReceived = true;
 
 
     public WrappedPresent() {
@@ -24,6 +24,11 @@ public class WrappedPresent extends CustomRelic {
     @Override
     public String getUpdatedDescription() {
         return DESCRIPTIONS[0];
+    }
+
+    @Override
+    public void onEquip() {
+        cardsReceived = false;
     }
 
     public void update() {
@@ -44,5 +49,10 @@ public class WrappedPresent extends CustomRelic {
             this.cardsReceived = true;
             AbstractDungeon.getCurrRoom().rewardPopOutTimer = 0.25F;
         }
+    }
+
+    @Override
+    public int getPrice() {
+        return 250;
     }
 }

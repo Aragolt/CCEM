@@ -2,6 +2,7 @@ package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
 import com.evacipated.cardcrawl.mod.stslib.actions.tempHp.AddTemporaryHPAction;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -22,7 +23,7 @@ public class IronPlumes extends CustomCard {
     private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 4;
     private static final int BLOCK = 0;
@@ -33,6 +34,8 @@ public class IronPlumes extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
+        ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 2);
+        ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 2);
     }
 
     @Override
@@ -50,7 +53,9 @@ public class IronPlumes extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
+            ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 3);
+            ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 3);
+            ExhaustiveField.ExhaustiveFields.isExhaustiveUpgraded.set(this, true);
             initializeDescription();
         }
     }

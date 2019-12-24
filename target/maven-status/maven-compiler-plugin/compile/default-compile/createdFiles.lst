@@ -239,6 +239,7 @@ theextravagant\cards\RisingPhoenix.class
 theextravagant\patches\CardSpecificPatches\HasEnoughEnergyPatch.class
 aramod\relics\PocketApothecary.class
 theextravagant\actions\TossAction.class
+CCEMRelics\relics\SpiritSanctuary.class
 theextravagant\cards\Impulse.class
 aramod\relics\SmashedLemon.class
 theextravagant\actions\BetterCopyAction.class

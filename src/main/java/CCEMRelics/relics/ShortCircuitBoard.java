@@ -8,7 +8,7 @@ import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.orbs.AbstractOrb;
 import com.megacrit.cardcrawl.orbs.Lightning;
-import com.megacrit.cardcrawl.powers.LoseStrengthPower;
+import com.megacrit.cardcrawl.powers.FocusPower;
 import theextravagant.util.TextureLoader;
 
 import static CCEMRelics.CCEMRelics.*;
@@ -32,7 +32,11 @@ public class ShortCircuitBoard extends CustomRelic implements OnChannelRelic {
     public void onChannel(AbstractOrb orb) {
         if (orb instanceof Lightning) {
             AbstractDungeon.actionManager.addToBottom(new EvokeSpecificOrbTwiceAction(orb));
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, null, new LoseStrengthPower(AbstractDungeon.player, 1)));
         }
+    }
+
+    @Override
+    public void atPreBattle() {
+        AbstractDungeon.actionManager.addToTop(new ApplyPowerAction(AbstractDungeon.player, null, new FocusPower(AbstractDungeon.player, -2)));
     }
 }

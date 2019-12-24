@@ -213,6 +213,7 @@ public class CCEMRelics implements
         RelicLibrary.addGreen(new ShadowVeil());
         RelicLibrary.addRed(new MirrorShard());
         RelicLibrary.addPurple(new SpiritSanctuary());
+        RelicLibrary.addBlue(new ShortCircuitBoard());
         logger.info("Done adding relics!");
     }
 

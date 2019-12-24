@@ -212,6 +212,7 @@ public class CCEMRelics implements
         BaseMod.addRelic(new WrappedPresent(), RelicType.SHARED);
         RelicLibrary.addGreen(new ShadowVeil());
         RelicLibrary.addRed(new MirrorShard());
+        RelicLibrary.addPurple(new SpiritSanctuary());
         logger.info("Done adding relics!");
     }
 

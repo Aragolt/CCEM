@@ -17,8 +17,8 @@ import static CCEMRelics.CCEMRelics.makeRelicPath;
 
 public class DissonantTune extends CustomRelic {
     public static final String ID = CCEMRelics.makeID("DissonantTune");
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("DissonantTune.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("DissonantTune.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("DissonantTuneNew.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("DissonantTuneNew.png"));
     private static final RelicTier TIER = RelicTier.UNCOMMON;
 
     public DissonantTune() {

@@ -28,6 +28,7 @@ theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
 theextravagant\actions\DrawAndTossAction.class
 theextravagant\powers\IllusionPower.class
+CCEMRelics\relics\FestiveHat.class
 theextravagant\cards\SpiritBolt.class
 aramod\relics\MidasCore.class
 theextravagant\events\IdentityCrisisEvent.class
@@ -39,9 +40,11 @@ theextravagant\powers\RapidPulsePower.class
 theextravagant\cards\PerfectTheBasics.class
 theextravagant\cards\Riot.class
 theextravagant\powers\RiskPower.class
+CCEMRelics\relics\TransientCore.class
 theextravagant\actions\PlayCardTwiceAction.class
 theextravagant\powers\DazzlePower.class
 theextravagant\powers\NihilPower.class
+CCEMRelics\actions\EvokeSpecificOrbTwiceAction.class
 theextravagant\patches\GlyphPatches\CustomGlyphPatch.class
 theextravagant\cards\Glamour.class
 aramod\relics\Jellybeans.class
@@ -174,6 +177,7 @@ theextravagant\cards\Drift.class
 theextravagant\actions\RavageAction.class
 theextravagant\powers\ZeroHeroPower.class
 theextravagant\patches\CardSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
+CCEMRelics\relics\ShortCircuitBoard.class
 theextravagant\actions\EnchantIfSkillThenDiscardAction.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class

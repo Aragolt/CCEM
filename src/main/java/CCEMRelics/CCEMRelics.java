@@ -214,6 +214,8 @@ public class CCEMRelics implements
         RelicLibrary.addRed(new MirrorShard());
         RelicLibrary.addPurple(new SpiritSanctuary());
         RelicLibrary.addBlue(new ShortCircuitBoard());
+        BaseMod.addRelic(new TransientCore(), RelicType.SHARED);
+        BaseMod.addRelic(new FestiveHat(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

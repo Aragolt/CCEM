@@ -18,8 +18,8 @@ import static CCEMRelics.CCEMRelics.*;
 public class WarHorn extends CustomRelic {
     public static final String ID = makeID("WarHorn");
 
-    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("WarHorn.png"));
-    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("WarHorn.png"));
+    private static final Texture IMG = TextureLoader.getTexture(makeRelicPath("WarHornNew.png"));
+    private static final Texture OUTLINE = TextureLoader.getTexture(makeRelicOutlinePath("WarHornNew.png"));
 
     public WarHorn() {
         super(ID, IMG, OUTLINE, RelicTier.RARE, LandingSound.FLAT);

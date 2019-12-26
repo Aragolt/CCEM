@@ -113,6 +113,10 @@ public class CCEMRelics implements
         return getModID() + "Resources/images/reward/" + resourcePath;
     }
 
+    public static String makeCampfirePath(String resourcePath) {
+        return getModID() + "Resources/images/campfire/" + resourcePath;
+    }
+
     public static String makePowerPath(String resourcePath) {
         return getModID() + "Resources/images/powers/" + resourcePath;
     }
@@ -216,6 +220,7 @@ public class CCEMRelics implements
         RelicLibrary.addBlue(new ShortCircuitBoard());
         BaseMod.addRelic(new TransientCore(), RelicType.SHARED);
         BaseMod.addRelic(new FestiveHat(), RelicType.SHARED);
+        BaseMod.addRelic(new WhiteRose(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
+import theextravagant.actions.UnreturnCardsToHandAction;
 import theextravagant.util.TextureLoader;
 
 import java.util.ArrayList;
@@ -22,7 +23,7 @@ public class VintagePower extends TwoAmountPower {
     private static final Texture tex84 = TextureLoader.getTexture("theextravagantResources/images/powers/vintage_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/vintage_power32.png");
     boolean justapplied = true;
-    private ArrayList<AbstractCard> cardsthatshouldnotreturn = new ArrayList<>();
+    public static ArrayList<AbstractCard> cardsthatshouldnotreturn = new ArrayList<>();
 
     public VintagePower(int amount) {
         this.name = NAME;
@@ -51,10 +52,6 @@ public class VintagePower extends TwoAmountPower {
 
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
-        for (AbstractCard c : cardsthatshouldnotreturn) {
-            c.returnToHand = false;
-        }
-        cardsthatshouldnotreturn.clear();
         if (!justapplied) {
             if (amount2 < amount) {
                 if (card.type != AbstractCard.CardType.POWER && !card.exhaust && !card.exhaustOnUseOnce) {
@@ -68,6 +65,11 @@ public class VintagePower extends TwoAmountPower {
             }
             AbstractDungeon.player.hand.refreshHandLayout();
         }
+    }
+
+    @Override
+    public void onAfterUseCard(AbstractCard card, UseCardAction action) {
+        this.addToBot(new UnreturnCardsToHandAction());
     }
 }
 

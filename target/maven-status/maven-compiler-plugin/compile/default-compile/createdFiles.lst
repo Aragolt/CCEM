@@ -26,6 +26,7 @@ CCEMRelics\actions\ForkliftAction.class
 theextravagant\powers\GlyphOfPowerPower.class
 theextravagant\cards\Acceleration.class
 theextravagant\cards\GlyphOfSight.class
+CCEMRelics\VFX\PruneEffect.class
 theextravagant\actions\DrawAndTossAction.class
 theextravagant\powers\IllusionPower.class
 CCEMRelics\relics\FestiveHat.class
@@ -94,6 +95,7 @@ theextravagant\powers\SpiritBoltPower.class
 theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 CCEMRelics\relics\PorcelainBowl.class
+theextravagant\actions\UnreturnCardsToHandAction.class
 theextravagant\powers\DodgePower.class
 theextravagant\cards\Clairvoyance.class
 CCEMRelics\relics\HistoryBook.class
@@ -133,6 +135,7 @@ theextravagant\cards\RustyBuckler.class
 theextravagant\cards\SkillfullDodge.class
 theextravagant\cards\Preservation.class
 CCEMRelics\relics\BiPhaseBiPlane.class
+CCEMRelics\relics\WhiteRose.class
 theextravagant\actions\SparkAction.class
 theextravagant\cards\Ambush.class
 theextravagant\cards\GlyphOfPower.class
@@ -309,4 +312,5 @@ theextravagant\relics\DefaultClickableRelic.class
 theextravagant\cards\AbstractEVCard.class
 CCEMRelics\rewards\RerollRewards$1.class
 theextravagant\cards\Flashback.class
+CCEMRelics\campfireoptions\Prune.class
 aramod\powers\BetterRitualPower.class

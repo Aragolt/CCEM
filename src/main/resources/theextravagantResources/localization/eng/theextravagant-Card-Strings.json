@@ -333,8 +333,8 @@
   },
   "theextravagant:AuroraForm": {
     "NAME": "Aurora Form",
-    "DESCRIPTION": "Ethereal. NL Enchanted cards are played !M! additional time.",
-    "UPGRADE_DESCRIPTION": "Enchanted cards are played !M! additional time."
+    "DESCRIPTION": "Ethereal. NL theextravagant:Enchanted cards are played !M! additional time.",
+    "UPGRADE_DESCRIPTION": "theextravagant:Enchanted cards are played !M! additional time."
   },
   "theextravagant:OminousGlare": {
     "NAME": "Ominous Glare",
@@ -386,8 +386,8 @@
   },
   "theextravagant:Supersonic": {
     "NAME": "Supersonic",
-    "DESCRIPTION": "Add X theextravagant:Accelerations to your hand.",
-    "UPGRADE_DESCRIPTION": "Add X Upgraded theextravagant:Accelerations to your hand."
+    "DESCRIPTION": "Add X theextravagant:Accelerations to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Add X Upgraded theextravagant:Accelerations to your hand. NL Exhaust."
   },
   "theextravagant:Shove": {
     "NAME": "Shove",

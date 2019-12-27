@@ -149,9 +149,9 @@
   "theextravagant:VintagePower": {
     "NAME": "Vintage",
     "DESCRIPTIONS": [
-      "At the start of your turn discard 1 random card and draw 1 card ",
-      "At the start of your turn discard ",
-      " random cards and draw that many cards."
+      "Each turn put ",
+      " card you play back into your hand.",
+      " cards you play back into your hand."
     ]
   },
   "theextravagant:DrawReductionOncePower": {

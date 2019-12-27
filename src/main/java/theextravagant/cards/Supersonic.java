@@ -36,6 +36,7 @@ public class Supersonic extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         this.cardsToPreview = new Acceleration();
+        this.exhaust = true;
     }
 
     @Override

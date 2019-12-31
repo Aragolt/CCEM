@@ -47,17 +47,18 @@ public class AmbushPower extends TwoAmountPower {
         amount2 = amount;
     }
 
-    @Override
-    public float atDamageGive(float damage, DamageInfo.DamageType type) {
-        if (amount2 > 0 && type == DamageInfo.DamageType.NORMAL) {
-            damage *= 2;
-        }
-        return damage;
-    }
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
             amount2--;
         }
+    }
+
+    @Override
+    public float atDamageFinalGive(float damage, DamageInfo.DamageType type) {
+        if (amount2 > 0 && type == DamageInfo.DamageType.NORMAL) {
+            damage *= 2;
+        }
+        return damage;
     }
 }

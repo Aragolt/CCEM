@@ -68,6 +68,7 @@ CCEMRelics\relics\WarHorn.class
 theextravagant\powers\GlyphOfTimePower.class
 theextravagant\cards\Foil.class
 theextravagant\cards\Triumph.class
+CCEMRelics\relics\OverlyComfyChair.class
 theextravagant\cards\SpontaneousStrike.class
 CCEMRelics\relics\GreenEgg.class
 theextravagant\patches\CardSpecificPatches\MakeTempCardInHandPatch.class
@@ -185,6 +186,7 @@ theextravagant\actions\EnchantIfSkillThenDiscardAction.class
 theextravagant\actions\ReverseSeekAction.class
 aramod\relics\AmuletOfProtection.class
 theextravagant\actions\VintageAction.class
+CCEMRelics\relics\DerglesHeadphones.class
 theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch2.class
 theextravagant\actions\FireworkEffectAction.class
 CCEMRelics\relics\Moonstone.class
@@ -200,6 +202,7 @@ theextravagant\powers\AmbushPower.class
 theextravagant\cards\JumpCut.class
 theextravagant\cards\AbstractDynamicCard.class
 CCEMRelics\relics\JestersCrown.class
+CCEMRelics\relics\TinyMinotavrHorn.class
 theextravagant\powers\RetreatPower.class
 theextravagant\vfx\VfxMaster.class
 CCEMRelics\relics\FranticForklift.class

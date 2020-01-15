@@ -10,8 +10,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.BetterVigorPower;
 import theextravagant.theextravagant;
 
 public class SharpTalons extends CustomCard {
@@ -46,7 +46,7 @@ public class SharpTalons extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, magicNumber), magicNumber));
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BetterVigorPower(AbstractDungeon.player, magicNumber), magicNumber));
     }
 
     @Override

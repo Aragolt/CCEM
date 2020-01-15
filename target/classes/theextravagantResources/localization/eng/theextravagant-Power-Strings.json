@@ -97,9 +97,9 @@
   "theextravagant:GlyphOfChoicePower": {
     "NAME": "Glyph of Choice",
     "DESCRIPTIONS": [
-      "At the start of each turn add ",
-      " Accumulation to your hand.",
-      " Accumulations to your hand."
+      "At the start of each turn draw ",
+      " card and put 1 card from your hand on top of your draw pile.",
+      " cards and put that many cards from your hand on top of your draw pile."
     ]
   },
   "theextravagant:GlyphOfPowerPower": {
@@ -295,6 +295,13 @@
     "NAME": "Razor",
     "DESCRIPTIONS": [
       "At the end of your turn deal ",
+      " damage to ALL enemies."
+    ]
+  },
+  "theextravagant:OverrunPower": {
+    "NAME": "Overrun",
+    "DESCRIPTIONS": [
+      "Whenever you gain Block this turn, deal ",
       " damage to ALL enemies."
     ]
   }

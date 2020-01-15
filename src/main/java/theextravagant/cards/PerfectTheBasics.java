@@ -25,7 +25,7 @@ public class PerfectTheBasics extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 2;
-    private static final int DAMAGE = 12;
+    private static final int DAMAGE = 14;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
 
@@ -35,7 +35,6 @@ public class PerfectTheBasics extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.isEthereal = true;
     }
 
     @Override

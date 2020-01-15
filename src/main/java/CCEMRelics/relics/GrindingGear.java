@@ -7,7 +7,7 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
+import theextravagant.powers.BetterVigorPower;
 import theextravagant.util.TextureLoader;
 
 import static CCEMRelics.CCEMRelics.*;
@@ -34,7 +34,7 @@ public class GrindingGear extends CustomRelic {
             this.counter = 0;
             flash();
             this.addToBot(new RelicAboveCreatureAction(AbstractDungeon.player, this));
-            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, 2), 2));
+            this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BetterVigorPower(AbstractDungeon.player, 2), 2));
         }
     }
 }

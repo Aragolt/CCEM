@@ -24,7 +24,7 @@ public class GlyphOfChoice extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.POWER;
-    private static final int COST = 2;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
@@ -36,7 +36,6 @@ public class GlyphOfChoice extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.cardsToPreview = new Accumulation();
     }
 
     @Override

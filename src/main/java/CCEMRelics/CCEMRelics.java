@@ -224,6 +224,7 @@ public class CCEMRelics implements
         BaseMod.addRelic(new OverlyComfyChair(), RelicType.SHARED);
         BaseMod.addRelic(new DerglesHeadphones(), RelicType.SHARED);
         BaseMod.addRelic(new TinyMinotavrHorn(), RelicType.SHARED);
+        BaseMod.addRelic(new TechnogenicHelmet(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 

@@ -11,8 +11,8 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.BetterVigorPower;
 import theextravagant.theextravagant;
 
 public class CuttingEdge extends CustomCard {
@@ -48,7 +48,7 @@ public class CuttingEdge extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, 3), 3));
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BetterVigorPower(AbstractDungeon.player, 3), 3));
     }
 
     @Override

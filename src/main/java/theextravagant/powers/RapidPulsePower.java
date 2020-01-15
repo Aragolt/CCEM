@@ -8,7 +8,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -35,7 +34,7 @@ public class RapidPulsePower extends AbstractPower {
     @Override
     public void onCardDraw(AbstractCard card) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            this.addToBot(new ApplyPowerAction(owner, owner, new VigorPower(owner, amount), amount));
+            this.addToBot(new ApplyPowerAction(owner, owner, new BetterVigorPower(owner, amount), amount));
         }
     }
 

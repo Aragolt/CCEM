@@ -2,12 +2,11 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
+import com.megacrit.cardcrawl.actions.common.PutOnDeckAction;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Accumulation;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -29,12 +28,15 @@ public class GlyphOfChoicePower extends AbstractPower {
         isTurnBased = true;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(tex32, 0, 0, 32, 32);
+        this.priority = 10000;
         updateDescription();
+        AbstractDungeon.player.gameHandSize += amount;
     }
+
 
     @Override
     public void atStartOfTurnPostDraw() {
-        AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Accumulation(), amount));
+        AbstractDungeon.actionManager.addToBottom(new PutOnDeckAction(owner, owner, amount, false));
     }
 
     @Override

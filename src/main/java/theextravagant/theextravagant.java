@@ -391,7 +391,7 @@ public class theextravagant implements
         BaseMod.addCard(new StepBack());
         //BaseMod.addCard(new DualMirrorCut());
         BaseMod.addCard(new Vintage());
-        //BaseMod.addCard(new Swirl());
+        BaseMod.addCard(new Swirl());
         BaseMod.addCard(new Antiquity());
         BaseMod.addCard(new Spark());
         BaseMod.addCard(new Twitch());
@@ -417,6 +417,7 @@ public class theextravagant implements
         BaseMod.addCard(new Razor());
         BaseMod.addCard(new Stella());
         BaseMod.addCard(new Masquerade());
+        BaseMod.addCard(new Comeback());
         logger.info("Making sure the cards are unlocked.");
 
         UnlockTracker.unlockCard(Shatter.ID);
@@ -513,6 +514,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Razor.ID);
         UnlockTracker.unlockCard(Stella.ID);
         UnlockTracker.unlockCard(Masquerade.ID);
+        UnlockTracker.unlockCard(Comeback.ID);
         logger.info("Done adding cards!");
     }
 

@@ -90,6 +90,7 @@ theextravagant\actions\UpgradeRandomCardInDeckAction.class
 theextravagant\actions\GarbageCannonAction.class
 theextravagant\cards\AbstractDefaultCard.class
 theextravagant\actions\DrawpileToHandByCostAction.class
+theextravagant\actions\GlyphOfChoiceAction.class
 theextravagant\relics\TranscendedFeather.class
 theextravagant\relics\GlitterTub.class
 theextravagant\powers\SpiritBoltPower.class
@@ -110,6 +111,7 @@ theextravagant\patches\EVCardPatches\AbstractCardPatches$CopyPatch1.class
 aramod\relics\Lemon.class
 theextravagant\cards\FocusStab.class
 CCEMRelics\patches\SpectralField$MakeStatEquivalentCopy.class
+theextravagant\cards\Comeback.class
 CCEMRelics\relics\MirrorShard.class
 theextravagant\cards\PuffUp.class
 aramod\relics\BlanksHoodie.class
@@ -163,6 +165,7 @@ aramod\relics\ButchersCleaver.class
 theextravagant\cards\ShowOff.class
 theextravagant\characters\TheExtravagant.class
 theextravagant\cards\AuroraForm.class
+CCEMRelics\relics\TechnogenicHelmet.class
 theextravagant\actions\ButtonUpAction.class
 theextravagant\vfx\Damnationeffect.class
 CCEMRelics\relics\GrindingGear.class
@@ -171,12 +174,14 @@ theextravagant\patches\SecondEnergyOrbPatches\RenderOrbPatch.class
 CCEMRelics\relics\WrappedPresent.class
 theextravagant\powers\GarbageCannonPower.class
 theextravagant\cards\SlyStrike.class
+theextravagant\powers\BetterVigorPower.class
 theextravagant\powers\ImpulsePower.class
 theextravagant\powers\RazorPower.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch.class
 theextravagant\cards\Aftermath.class
 theextravagant\cards\SnakeOil.class
 aramod\powers\ElectrifiedPower.class
+theextravagant\actions\SkillFromDiscardToHandAction.class
 theextravagant\cards\Drift.class
 theextravagant\actions\RavageAction.class
 theextravagant\powers\ZeroHeroPower.class

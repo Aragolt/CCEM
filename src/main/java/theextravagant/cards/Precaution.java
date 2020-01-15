@@ -19,12 +19,12 @@ public class Precaution extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.UNCOMMON;
+    private static final CardRarity RARITY = CardRarity.COMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 1;
+    private static final int MAGICNUMBER = 3;
     private static final int BLOCK = 6;
 
     public Precaution() {
@@ -43,7 +43,7 @@ public class Precaution extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         this.applyPowers();
-        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, 3));
+        AbstractDungeon.actionManager.addToBottom(new GainBlockAction(AbstractDungeon.player, AbstractDungeon.player, magicNumber));
     }
 
 
@@ -51,7 +51,8 @@ public class Precaution extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(2);
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

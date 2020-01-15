@@ -102,8 +102,8 @@
   },
   "theextravagant:Aggression":
   {
-    "NAME": "Aggression",
-    "DESCRIPTION": "Deal !D! damage. NL Double this cards damage and increase its cost by 1 this combat. NL Exhaustive !stslib:ex!."
+    "NAME": "Impale",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain [E] next turn."
   },
   "theextravagant:PuffUp":
   {
@@ -179,8 +179,8 @@
   },
   "theextravagant:GlyphOfChoice": {
     "NAME": "Glyph of Choice",
-    "DESCRIPTION": "At the start of each turn add an theextravagant:Accumulation into your hand.",
-    "UPGRADE_DESCRIPTION": "Innate. NL t the start of each turn add an theextravagant:Accumulation into your hand."
+    "DESCRIPTION": "At the start of each turn draw 1 card and put 1 card from your hand on top of your draw pile.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of each turn draw 1 card and put 1 card from your hand on top of your draw pile."
   },
   "theextravagant:Acceleration": {
     "NAME": "Acceleration",
@@ -255,7 +255,7 @@
   },
   "theextravagant:Precaution": {
     "NAME": "Precaution",
-    "DESCRIPTION": "When drawn, Gain 3 Block. NL Gain !B! Block."
+    "DESCRIPTION": "When drawn, Gain !M! Block. NL Gain !B! Block."
   },
   "theextravagant:Outrun": {
     "NAME": "Outrun",
@@ -311,7 +311,7 @@
   "theextravagant:Swirl": {
     "NAME": "Swirl",
     "DESCRIPTION": "theextravagant:Enchant a Skill in your hand. NL Exhaust.",
-    "UPGRADE_DESCRIPTION": "Retain. theextravagant:Enchant a Skill in your hand."
+    "UPGRADE_DESCRIPTION": "Retain. NL theextravagant:Enchant a Skill in your hand. NL Exhaust."
   },
   "theextravagant:Antiquity": {
     "NAME": "Antiquity",
@@ -324,8 +324,8 @@
   },
   "theextravagant:Twitch": {
     "NAME": "Twitch",
-    "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, NL gain [E] [E].",
-    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, NL gain [E] [E]."
+    "DESCRIPTION": "Unplayable. NL theextravagant:Heavy. NL When drawn, NL gain [E].",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, NL gain [E]."
   },
   "theextravagant:Drift": {
     "NAME": "Drift",
@@ -412,7 +412,7 @@
   },
   "theextravagant:PerfectTheBasics": {
     "NAME": "Perfect the Basics",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL theextravagant:Enchant a theextravagant:Starter card in your hand."
+    "DESCRIPTION": "Deal !D! damage. NL theextravagant:Enchant a theextravagant:Starter card in your hand."
   },
   "theextravagant:Razor": {
     "NAME": "Memento Mori",
@@ -425,6 +425,11 @@
   "theextravagant:Masquerade": {
     "NAME": "Masquerade",
     "DESCRIPTION": "Scry !M!. NL theextravagant:Toss !M! cards and theextravagant:Enchant each Skill theextravagant:Tossed."
+  },
+  "theextravagant:Comeback": {
+    "NAME": "Comeback",
+    "DESCRIPTION": "Unplayable. NL Ethereal. NL When drawn, Fetch a Skill from your discard pile.",
+    "UPGRADE_DESCRIPTION": "Unplayable. NL When drawn, Fetch a Skill from your discard pile."
   },
   "theextravagant:ExhaustingCard": {
     "NAME": "",

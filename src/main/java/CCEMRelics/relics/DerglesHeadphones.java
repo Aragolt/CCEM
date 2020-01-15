@@ -27,6 +27,6 @@ public class DerglesHeadphones extends CustomRelic implements BetterOnSmithRelic
 
     @Override
     public void betterOnSmith(AbstractCard abstractCard) {
-        AbstractDungeon.player.heal(15);
+        AbstractDungeon.player.heal(12);
     }
 }

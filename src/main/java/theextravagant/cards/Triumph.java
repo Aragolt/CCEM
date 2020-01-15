@@ -8,8 +8,8 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.watcher.VigorPower;
 import theextravagant.characters.TheExtravagant;
+import theextravagant.powers.BetterVigorPower;
 import theextravagant.powers.DrawReductionOncePower;
 import theextravagant.theextravagant;
 
@@ -28,7 +28,7 @@ public class Triumph extends CustomCard {
     private static final int COST = 2;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 4;
-    private static final int BLOCK = 10;
+    private static final int BLOCK = 12;
 
     public Triumph() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -46,7 +46,7 @@ public class Triumph extends CustomCard {
     @Override
     public void triggerWhenDrawn() {
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawReductionOncePower(AbstractDungeon.player, 1)));
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new VigorPower(AbstractDungeon.player, magicNumber), magicNumber));
+        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BetterVigorPower(AbstractDungeon.player, magicNumber), magicNumber));
     }
 
     @Override

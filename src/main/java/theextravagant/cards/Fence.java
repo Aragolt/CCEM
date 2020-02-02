@@ -14,7 +14,7 @@ public class Fence extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Fence");
-    public static final String IMG = theextravagant.makeCardPath("Fence.png");
+    public static final String IMG = theextravagant.makeCardPath("Defendnew.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

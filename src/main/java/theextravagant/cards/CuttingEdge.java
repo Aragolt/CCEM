@@ -12,8 +12,9 @@ import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.BetterVigorPower;
 import theextravagant.theextravagant;
+
+import java.util.Iterator;
 
 public class CuttingEdge extends CustomCard {
 
@@ -28,7 +29,7 @@ public class CuttingEdge extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 5;
+    private static final int DAMAGE = 6;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
@@ -42,20 +43,24 @@ public class CuttingEdge extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new VulnerablePower(m, magicNumber, false)));
         AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_DIAGONAL));
     }
 
     @Override
     public void triggerWhenDrawn() {
-        this.addToBot(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new BetterVigorPower(AbstractDungeon.player, 3), 3));
+        Iterator var3 = AbstractDungeon.getCurrRoom().monsters.monsters.iterator();
+
+        while (var3.hasNext()) {
+            AbstractMonster mo = (AbstractMonster) var3.next();
+            this.addToBot(new ApplyPowerAction(mo, AbstractDungeon.player, new VulnerablePower(mo, this.magicNumber, false), this.magicNumber, true, AbstractGameAction.AttackEffect.NONE));
+        }
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(1);
+            upgradeMagicNumber(2);
             upgradeDamage(1);
             initializeDescription();
         }

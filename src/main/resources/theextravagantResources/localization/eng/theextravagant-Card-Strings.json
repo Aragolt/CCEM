@@ -64,7 +64,7 @@
   },
   "theextravagant:Cutthroat": {
     "NAME": "Cutthroat",
-    "DESCRIPTION": "Deal !D! damage. NL Deals triple damage if you played no cards this turn. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Deals triple damage if you played no cards this turn."
   },
   "theextravagant:SwiftSwitch": {
     "NAME": "Swift Switch",
@@ -142,9 +142,10 @@
     "NAME": "Flashback",
     "DESCRIPTION": "Gain !B! Block. NL Put your discard pile on top of your draw pile."
   },
-  "theextravagant:DigUpJunk": {
-    "NAME": "Dig up Junk",
-    "DESCRIPTION": "Put !M! random 0 cost cards from your draw pile into your hand. NL Exhaust."
+  "theextravagant:TreasureHunt": {
+    "NAME": "Treasure Hunt",
+    "DESCRIPTION": "Choose 1 out of 3 random rare cards of any color to add to your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 out of 3 random upgraded rare cards of any color to add to your hand. NL Exhaust."
   },
   "theextravagant:ZeroHero": {
     "NAME": "Zero Hero",
@@ -200,10 +201,10 @@
     "NAME": "Glyph of Time",
     "DESCRIPTION": "Whenever you play 10 cards, Gain 1 Strength."
   },
-  "theextravagant:Persistence": {
-    "NAME": "Persistence",
-    "DESCRIPTION": "Deal !D! damage twice. NL theextravagant:Delay - 4 Attacks: NL Gain [E].",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage twice. NL theextravagant:Delay - 4 Attacks: NL Gain [E] [E]."
+  "theextravagant:Pushthrough": {
+    "NAME": "Push Through",
+    "DESCRIPTION": "Gain !B! Block. NL theextravagant:Delay - 4 Attacks: NL Gain [E].",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL theextravagant:Delay - 4 Attacks: NL Gain [E] [E]."
   },
   "theextravagant:Strafe": {
     "NAME": "Strafe",
@@ -243,7 +244,7 @@
   },
   "theextravagant:CuttingEdge": {
     "NAME": "Cutting Edge",
-    "DESCRIPTION": "When drawn, your next Attack deals 3 additional damage. NL Deal !D! damage. NL Apply !M! Vulnerable."
+    "DESCRIPTION": "When drawn, apply !M! Vulnerable to all enemies. NL Deal !D! damage."
   },
   "theextravagant:Aftermath": {
     "NAME": "Aftermath",
@@ -292,8 +293,8 @@
     "NAME": "Impulse",
     "DESCRIPTION": "If the next card you play is an Attack, add an theextravagant:Acceleration to your hand."
   },
-  "theextravagant:JumpCut": {
-    "NAME": "Jump Cut",
+  "theextravagant:QuickAttack": {
+    "NAME": "Quick Attack",
     "DESCRIPTION": "theextravagant:Light. NL Deal !D! damage."
   },
   "theextravagant:StepBack": {
@@ -434,5 +435,14 @@
   "theextravagant:ExhaustingCard": {
     "NAME": "",
     "DESCRIPTION": " NL Exhaust."
+  },
+  "theextravagant:Defy": {
+    "NAME": "Defy",
+    "DESCRIPTION": "Retain. NL When drawn, add a copy of this card to your hand. NL Gain !B! Block. NL Exhaust."
+  },
+  "theextravagant:ArtisticDisplay": {
+    "NAME": "Artistic Display",
+    "DESCRIPTION": "Gain !B! Block. Next turn draw 1 additional card.",
+    "UPGRADE_DESCRIPTION": "theextravagant:Light. NL Gain !B! Block. Next turn draw 1 additional card."
   }
 }

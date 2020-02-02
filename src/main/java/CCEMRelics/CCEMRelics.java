@@ -4,7 +4,6 @@ import CCEMRelics.patches.RerollRewardTypePatch;
 import CCEMRelics.relics.*;
 import CCEMRelics.rewards.RerollRewards;
 import basemod.BaseMod;
-import basemod.ModPanel;
 import basemod.helpers.RelicType;
 import basemod.interfaces.*;
 import com.badlogic.gdx.Gdx;
@@ -13,7 +12,6 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
-import com.evacipated.cardcrawl.modthespire.lib.SpireConfig;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
@@ -26,12 +24,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.ui.SecondEnergyOrb;
 import theextravagant.util.IDCheckDontTouchPls;
-import theextravagant.util.TextureLoader;
 
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
-import java.util.Properties;
 
 @SpireInitializer
 public class CCEMRelics implements
@@ -42,7 +38,7 @@ public class CCEMRelics implements
         PostInitializeSubscriber {
 
     public static final Logger logger = LogManager.getLogger(CCEMRelics.class.getName());
-    public static final String ENABLE_PLACEHOLDER_SETTINGS = "enablePlaceholder";
+
     public static final Color EVBLUE = Color.BLUE;
     public static final String THE_DEFAULT_SHOULDER_1 = "theextravagantResources/images/char/defaultCharacter/shoulder.png";
     public static final String THE_DEFAULT_SHOULDER_2 = "theextravagantResources/images/char/defaultCharacter/shoulder2.png";
@@ -52,8 +48,6 @@ public class CCEMRelics implements
     public static final String THE_DEFAULT_SKELETON_JSON = "theextravagantResources/images/char/defaultCharacter/skeleton.json";
     public static final TextureAtlas UIAtlas = new TextureAtlas();
     private static final String MODNAME = "theextravagant";
-    private static final String AUTHOR = "Lobbienjonsji";
-    private static final String DESCRIPTION = "Im not your ordinary byrd. I am a peacock.";
     private static final String ATTACK_EV_BLUE = "theextravagantResources/images/512/bg_attack_default_gray.png";
     private static final String SKILL_EV_BLUE = "theextravagantResources/images/512/bg_skill_default_gray.png";
     private static final String POWER_EV_BLUE = "theextravagantResources/images/512/bg_power_default_gray.png";
@@ -66,8 +60,6 @@ public class CCEMRelics implements
     private static final String ENERGY_ORB_EV_BLUE_PORTRAIT = "theextravagantResources/images/1024/card_default_gray_orb.png";
     private static final String THE_EXTRAVAGANT_BUTTON = "theextravagantResources/images/charSelect/DefaultCharacterButton.png";
     private static final String THE_DEFAULT_PORTRAIT = "theextravagantResources/images/charSelect/DefaultCharacterPortraitBGnew.png";
-    public static Properties theDefaultDefaultSettings = new Properties();
-    public static boolean enablePlaceholder = true;
     public static int CardsExhaustedLastTurn;
     public static int CardsExhaustedThisTurn;
     public static boolean PowerPlayedThisTurn;
@@ -84,17 +76,6 @@ public class CCEMRelics implements
         logger.info("Subscribe to BaseMod hooks");
         BaseMod.subscribe(this);
         setModID("CCEMRelics");
-        logger.info("Adding mod settings");
-        theDefaultDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE");
-        try {
-            SpireConfig config = new SpireConfig("CCEMRelics", "CCEMRelics", theDefaultDefaultSettings);
-
-            config.load();
-            enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        logger.info("Done adding mod settings");
     }
 
     public static String makeCardPath(String resourcePath) {
@@ -176,9 +157,6 @@ public class CCEMRelics implements
     @Override
     public void receivePostInitialize() {
         logger.info("Loading badge image and mod options");
-        Texture badgeTexture = TextureLoader.getTexture(BADGE_IMAGE);
-        ModPanel settingsPanel = new ModPanel();
-        BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         logger.info("Done loading badge Image and mod options");
         BaseMod.registerCustomReward(
                 RerollRewardTypePatch.CCEM_REROLLREWARD,

@@ -146,7 +146,7 @@ public class RerollRewards extends CustomReward {
         if (amount <= 0) {
             return true;
         }
-        this.text = UI_STRINGS.TEXT[0] + amount + UI_STRINGS.TEXT[0];
+        this.text = UI_STRINGS.TEXT[0] + amount + UI_STRINGS.TEXT[1];
 
         return false;
     }

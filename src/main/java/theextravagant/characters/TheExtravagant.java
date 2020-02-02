@@ -21,7 +21,7 @@ import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import theextravagant.cards.Fence;
-import theextravagant.cards.JumpCut;
+import theextravagant.cards.QuickAttack;
 import theextravagant.cards.SlyStrike;
 import theextravagant.cards.Triumph;
 import theextravagant.relics.TranslucentFeather;
@@ -104,7 +104,7 @@ public class TheExtravagant extends CustomPlayer {
         for (int i = 0; i < 4; i++) {
             retVal.add(Fence.ID);
         }
-        retVal.add(JumpCut.ID);
+        retVal.add(QuickAttack.ID);
         retVal.add(Triumph.ID);
         return retVal;
     }

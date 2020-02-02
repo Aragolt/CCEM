@@ -26,7 +26,7 @@ public class Repell extends CustomCard {
     private static final int COST = 1;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 0;
-    private static final int BLOCK = 10;
+    private static final int BLOCK = 11;
 
     public Repell() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
@@ -45,7 +45,7 @@ public class Repell extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBlock(3);
+            upgradeBlock(4);
             initializeDescription();
         }
     }

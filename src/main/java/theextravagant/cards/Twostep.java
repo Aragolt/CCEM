@@ -47,6 +47,7 @@ public class Twostep extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
+        this.applyPowers();
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DodgePower(block, 3)));
     }
 

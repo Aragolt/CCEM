@@ -25,10 +25,12 @@ public class FestiveHat extends CustomRelic {
 
     @Override
     public void justEnteredRoom(AbstractRoom room) {
-        if (room instanceof MonsterRoom || room instanceof MonsterRoomElite && counter > 0) {
+        if ((room instanceof MonsterRoom || room instanceof MonsterRoomElite) && counter > 0) {
             RewardItem R = new RewardItem(AbstractCard.CardColor.COLORLESS);
             for (AbstractCard c : R.cards) {
-                c.upgrade();
+                if (!c.cardID.equals("ReplayTheSpireMod:Necrogeddon")) {
+                    c.upgrade();
+                }
             }
             AbstractDungeon.getCurrRoom().rewards.add(R);
             counter -= 1;

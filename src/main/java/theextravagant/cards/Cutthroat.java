@@ -16,7 +16,7 @@ public class Cutthroat extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("Cutthroat");
-    public static final String IMG = theextravagant.makeCardPath("Cutthroat.png");
+    public static final String IMG = theextravagant.makeCardPath("Cutthroatnew.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
@@ -25,10 +25,10 @@ public class Cutthroat extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
+    private static final int DAMAGE = 5;
     private static final int MAGICNUMBER = 0;
     private static final int BLOCK = 0;
-    public static int basebaseDamage = 6;
+    public static int basebaseDamage = 5;
     public static boolean Hasplayedcardthisturn = false;
 
     public Cutthroat() {
@@ -37,7 +37,6 @@ public class Cutthroat extends CustomCard {
         baseBlock = BLOCK;
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
-        this.exhaust = true;
     }
 
     @Override
@@ -56,11 +55,21 @@ public class Cutthroat extends CustomCard {
     }
 
     @Override
+    public void calculateCardDamage(AbstractMonster mo) {
+        if (!Hasplayedcardthisturn) {
+            baseDamage = basebaseDamage * 3;
+        } else {
+            baseDamage = basebaseDamage;
+        }
+        super.calculateCardDamage(mo);
+    }
+
+    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(1);
-            basebaseDamage = 7;
+            basebaseDamage = 6;
             initializeDescription();
         }
     }

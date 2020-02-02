@@ -10,31 +10,28 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.PunchEffectAction;
+import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.characters.TheExtravagant;
-import theextravagant.powers.PersistencePower;
 import theextravagant.theextravagant;
 
-public class Persistence extends CustomCard {
+public class QuickAttack extends CustomCard {
 
 
-    public static final String ID = theextravagant.makeID("Persistence");
-    public static final String IMG = theextravagant.makeCardPath("Persistence.png");
+    public static final String ID = theextravagant.makeID("QuickAttack");
+    public static final String IMG = theextravagant.makeCardPath("QuickAttack.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    public static final String UPGRADE_DESCRIPTION = cardStrings.UPGRADE_DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.BASIC;
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
-    private static final int COST = 1;
-    private static final int DAMAGE = 4;
-    private static final int MAGICNUMBER = 3;
+    private static final int COST = 0;
+    private static final int DAMAGE = 3;
+    private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 
-
-    public Persistence() {
+    public QuickAttack() {
         super(ID, NAME, IMG, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         baseDamage = DAMAGE;
         baseBlock = BLOCK;
@@ -44,17 +41,19 @@ public class Persistence extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new PunchEffectAction(m));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new PersistencePower(upgraded)));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.SLASH_HORIZONTAL));
+    }
+
+    @Override
+    public void triggerWhenDrawn() {
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, 1)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeDamage(2);
             initializeDescription();
         }
     }

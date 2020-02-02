@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import com.megacrit.cardcrawl.powers.DrawCardNextTurnPower;
 import theextravagant.characters.TheExtravagant;
 import theextravagant.powers.RapidPulsePower;
 import theextravagant.theextravagant;
@@ -27,7 +26,7 @@ public class RapidPulse extends CustomCard {
     private static final CardType TYPE = CardType.POWER;
     private static final int COST = 1;
     private static final int DAMAGE = 0;
-    private static final int MAGICNUMBER = 2;
+    private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
 
@@ -45,17 +44,10 @@ public class RapidPulse extends CustomCard {
     }
 
     @Override
-    public void triggerWhenDrawn() {
-        if (upgraded) {
-            AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new DrawCardNextTurnPower(AbstractDungeon.player, 1)));
-        }
-    }
-
-    @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            rawDescription = UPGRADE_DESCRIPTION;
+            upgradeMagicNumber(1);
             initializeDescription();
         }
     }

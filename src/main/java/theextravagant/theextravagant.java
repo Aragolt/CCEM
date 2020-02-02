@@ -45,6 +45,9 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.Properties;
 
+import static ACCEMCore.ACCEMCore.CCEMDefaultSettings;
+import static ACCEMCore.ACCEMCore.ENABLE_EXTRAVAGANT;
+
 @SpireInitializer
 public class theextravagant implements
         EditCardsSubscriber,
@@ -106,40 +109,34 @@ public class theextravagant implements
     private static String modID;
 
     public theextravagant() {
-        logger.info("Subscribe to BaseMod hooks");
-
-        BaseMod.subscribe(this);
-
-
-        setModID("theextravagant");
-
-
-        logger.info("Done subscribing");
-
-        logger.info("Creating the color " + TheExtravagant.Enums.EV_BLUE.toString());
-
-        BaseMod.addColor(TheExtravagant.Enums.EV_BLUE, EVBLUE, EVBLUE, EVBLUE,
-                EVBLUE, EVBLUE, EVBLUE, EVBLUE,
-                ATTACK_EV_BLUE, SKILL_EV_BLUE, POWER_EV_BLUE, ENERGY_ORB_EV_BLUE,
-                ATTACK_EV_BLUE_PORTRAIT, SKILL_EV_BLUE_PORTRAIT, POWER_EV_BLUE_PORTRAIT,
-                ENERGY_ORB_EV_BLUE_PORTRAIT, CARD_ENERGY_ORB);
-
-        logger.info("Done creating the color");
-
-
-        logger.info("Adding mod settings");
-
-
-        theDefaultDefaultSettings.setProperty(ENABLE_PLACEHOLDER_SETTINGS, "FALSE");
         try {
-            SpireConfig config = new SpireConfig("theextravagant", "theDefaultConfig", theDefaultDefaultSettings);
+            SpireConfig config = new SpireConfig("CCEM", "CCEM", CCEMDefaultSettings);
+            logger.info("Subscribe to BaseMod hooks");
 
+            if (config.getBool(ENABLE_EXTRAVAGANT)) {
+                BaseMod.subscribe(this);
+            }
+
+
+            setModID("theextravagant");
+
+
+            logger.info("Done subscribing");
+
+            logger.info("Creating the color " + TheExtravagant.Enums.EV_BLUE.toString());
+
+            BaseMod.addColor(TheExtravagant.Enums.EV_BLUE, EVBLUE, EVBLUE, EVBLUE,
+                    EVBLUE, EVBLUE, EVBLUE, EVBLUE,
+                    ATTACK_EV_BLUE, SKILL_EV_BLUE, POWER_EV_BLUE, ENERGY_ORB_EV_BLUE,
+                    ATTACK_EV_BLUE_PORTRAIT, SKILL_EV_BLUE_PORTRAIT, POWER_EV_BLUE_PORTRAIT,
+                    ENERGY_ORB_EV_BLUE_PORTRAIT, CARD_ENERGY_ORB);
+
+            logger.info("Done creating the color");
             config.load();
-            enablePlaceholder = config.getBool(ENABLE_PLACEHOLDER_SETTINGS);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        logger.info("Done adding mod settings");
+
     }
 
     public static String makeCardPath(String resourcePath) {
@@ -263,8 +260,6 @@ public class theextravagant implements
                 });
 
         settingsPanel.addUIElement(enableNormalsButton);
-
-        BaseMod.registerModBadge(badgeTexture, MODNAME, AUTHOR, DESCRIPTION, settingsPanel);
         SecondEnergyOrb = new SecondEnergyOrb();
         BaseMod.addSaveField("MaxExtravagance", new CustomSavableRaw() {
             @Override
@@ -352,7 +347,7 @@ public class theextravagant implements
         BaseMod.addCard(new WhiffOfMagic());
         BaseMod.addCard(new Flashback());
         BaseMod.addCard(new ZeroHero());
-        BaseMod.addCard(new DigUpJunk());
+        BaseMod.addCard(new TreasureHunt());
         BaseMod.addCard(new Glamour());
         BaseMod.addCard(new Meditation());
         BaseMod.addCard(new GlyphOfSight());
@@ -364,7 +359,7 @@ public class theextravagant implements
         BaseMod.addCard(new Acceleration());
         BaseMod.addCard(new GlyphOfTime());
         BaseMod.addCard(new Preservation());
-        BaseMod.addCard(new Persistence());
+        BaseMod.addCard(new PushThrough());
         //BaseMod.addCard(new Strafe());
         BaseMod.addCard(new IronPlumes());
         BaseMod.addCard(new Courage());
@@ -387,7 +382,7 @@ public class theextravagant implements
         BaseMod.addCard(new RapidPulse());
         BaseMod.addCard(new Overpower());
         BaseMod.addCard(new Impulse());
-        BaseMod.addCard(new JumpCut());
+        BaseMod.addCard(new QuickAttack());
         BaseMod.addCard(new StepBack());
         //BaseMod.addCard(new DualMirrorCut());
         BaseMod.addCard(new Vintage());
@@ -418,6 +413,8 @@ public class theextravagant implements
         BaseMod.addCard(new Stella());
         BaseMod.addCard(new Masquerade());
         BaseMod.addCard(new Comeback());
+        BaseMod.addCard(new Defy());
+        BaseMod.addCard(new ArtisticDisplay());
         logger.info("Making sure the cards are unlocked.");
 
         UnlockTracker.unlockCard(Shatter.ID);
@@ -448,7 +445,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(WhiffOfMagic.ID);
         UnlockTracker.unlockCard(Flashback.ID);
         UnlockTracker.unlockCard(ZeroHero.ID);
-        UnlockTracker.unlockCard(DigUpJunk.ID);
+        UnlockTracker.unlockCard(TreasureHunt.ID);
         UnlockTracker.unlockCard(Glamour.ID);
         UnlockTracker.unlockCard(Meditation.ID);
         UnlockTracker.unlockCard(GlyphOfSight.ID);
@@ -460,7 +457,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Acceleration.ID);
         UnlockTracker.unlockCard(GlyphOfTime.ID);
         UnlockTracker.unlockCard(Preservation.ID);
-        UnlockTracker.unlockCard(Persistence.ID);
+        UnlockTracker.unlockCard(PushThrough.ID);
         //UnlockTracker.unlockCard(Strafe.ID);
         UnlockTracker.unlockCard(IronPlumes.ID);
         UnlockTracker.unlockCard(Courage.ID);
@@ -484,7 +481,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(RapidPulse.ID);
         UnlockTracker.unlockCard(Overpower.ID);
         UnlockTracker.unlockCard(Impulse.ID);
-        UnlockTracker.unlockCard(JumpCut.ID);
+        UnlockTracker.unlockCard(QuickAttack.ID);
         UnlockTracker.unlockCard(StepBack.ID);
         //UnlockTracker.unlockCard(DualMirrorCut.ID);
         UnlockTracker.unlockCard(Vintage.ID);
@@ -515,6 +512,8 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Stella.ID);
         UnlockTracker.unlockCard(Masquerade.ID);
         UnlockTracker.unlockCard(Comeback.ID);
+        UnlockTracker.unlockCard(Defy.ID);
+        UnlockTracker.unlockCard(ArtisticDisplay.ID);
         logger.info("Done adding cards!");
     }
 

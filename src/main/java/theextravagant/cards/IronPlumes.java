@@ -20,7 +20,7 @@ public class IronPlumes extends CustomCard {
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;
     public static final String DESCRIPTION = cardStrings.DESCRIPTION;
-    private static final CardRarity RARITY = CardRarity.COMMON;
+    private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.SELF;
     private static final CardType TYPE = CardType.SKILL;
     private static final int COST = 1;
@@ -53,6 +53,7 @@ public class IronPlumes extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            upgradeMagicNumber(2);
             ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 3);
             ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 3);
             ExhaustiveField.ExhaustiveFields.isExhaustiveUpgraded.set(this, true);

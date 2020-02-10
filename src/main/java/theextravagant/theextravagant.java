@@ -325,7 +325,7 @@ public class theextravagant implements
         BaseMod.addCard(new Triumph());
         BaseMod.addCard(new Fence());
         BaseMod.addCard(new Twostep());
-        BaseMod.addCard(new Reconsider());
+        //BaseMod.addCard(new Reconsider());
         BaseMod.addCard(new SkillfullDodge());
         BaseMod.addCard(new Ambush());
         BaseMod.addCard(new GustOfWind());
@@ -376,7 +376,7 @@ public class theextravagant implements
         BaseMod.addCard(new Precaution());
         BaseMod.addCard(new Outrun());
         BaseMod.addCard(new Redemption());
-        BaseMod.addCard(new Overrun());
+        //BaseMod.addCard(new Overrun());
         BaseMod.addCard(new ManifestIllusion());
         BaseMod.addCard(new Thrill());
         BaseMod.addCard(new RapidPulse());
@@ -392,7 +392,7 @@ public class theextravagant implements
         BaseMod.addCard(new Twitch());
         BaseMod.addCard(new Drift());
         BaseMod.addCard(new AuroraForm());
-        BaseMod.addCard(new OminousGlare());
+        //BaseMod.addCard(new OminousGlare());
         BaseMod.addCard(new SnakeEyes());
         BaseMod.addCard(new Firework());
         BaseMod.addCard(new Tension());
@@ -475,7 +475,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Precaution.ID);
         UnlockTracker.unlockCard(Outrun.ID);
         UnlockTracker.unlockCard(Redemption.ID);
-        UnlockTracker.unlockCard(Overrun.ID);
+        //UnlockTracker.unlockCard(Overrun.ID);
         UnlockTracker.unlockCard(ManifestIllusion.ID);
         UnlockTracker.unlockCard(Thrill.ID);
         UnlockTracker.unlockCard(RapidPulse.ID);

@@ -19,15 +19,16 @@ public class ImpulsePower extends AbstractPower {
     public static final String POWER_ID = makeID("ImpulsePower");
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
+    private boolean upgraded;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final Texture tex84 = TextureLoader.getTexture("theextravagantResources/images/powers/impulse_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/impulse_power32.png");
 
-    public ImpulsePower(int amount) {
+    public ImpulsePower(boolean upgraded) {
         name = NAME;
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
-        this.amount = amount;
+        amount = -1;
         type = PowerType.BUFF;
         isTurnBased = true;
         this.region128 = new TextureAtlas.AtlasRegion(tex84, 0, 0, 84, 84);
@@ -47,7 +48,11 @@ public class ImpulsePower extends AbstractPower {
     @Override
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(new Acceleration()));
+            AbstractCard c = new Acceleration();
+            if (upgraded) {
+                c.upgrade();
+            }
+            AbstractDungeon.actionManager.addToBottom(new MakeTempCardInHandAction(c));
         }
         AbstractDungeon.actionManager.addToBottom(new RemoveSpecificPowerAction(AbstractDungeon.player, AbstractDungeon.player, this));
     }

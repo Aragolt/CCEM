@@ -35,14 +35,14 @@
     "NAME": "Translucent Feather",
     "FLAVOR": "Like it's just an illusion.",
     "DESCRIPTIONS": [
-      "Draw #b2 additional cards next turn whenever you shuffle your draw pile."
+      "Draw #b2 additional cards next turn whenever you shuffle discard pile into your draw pile."
     ]
   },
   "theextravagant:TranscendedFeather": {
     "NAME": "Transcended Feather",
     "FLAVOR": "Certainly not an illusion.",
     "DESCRIPTIONS": [
-      "Replaces Translucent Feather. Whenever you shuffle your draw pile, draw #b1 additional card each turn. You can hold #b2 additional cards in your hand"
+      "Replaces Translucent Feather. Whenever you shuffle your discard pile into your draw pile, draw #b1 additional card each turn. You can hold #b2 additional cards in your hand"
     ]
   },
   "theextravagant:RedPhonoblaster": {

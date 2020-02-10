@@ -27,7 +27,7 @@ public class Shake extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 8;
+    private static final int DAMAGE = 4;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 0;
 
@@ -41,7 +41,8 @@ public class Shake extends CustomCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
+        AbstractDungeon.actionManager.addToBottom(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.BLUNT_LIGHT));
         AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(m, p, new WeakPower(m, magicNumber, false)));
     }
 
@@ -49,7 +50,7 @@ public class Shake extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(3);
+            upgradeDamage(2);
             initializeDescription();
         }
     }

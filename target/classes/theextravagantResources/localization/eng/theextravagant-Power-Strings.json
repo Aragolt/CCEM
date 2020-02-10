@@ -44,9 +44,9 @@
   "theextravagant:TrickeryPower": {
     "NAME": "Trickery",
     "DESCRIPTIONS": [
-      "At the start of your turn discard a random card, then draw a card.",
-      "At the start of your turn discard ",
-      " random cards, then draw that many."
+      "At the start of your turn draw a card, then shuffle it back into your draw pile.",
+      "At the start of your turn draw ",
+      " cards, then shuffle them back into your draw pile."
     ]
   },
   "theextravagant:RetreatPower": {
@@ -303,6 +303,12 @@
     "DESCRIPTIONS": [
       "Whenever you gain Block this turn, deal ",
       " damage to ALL enemies."
+    ]
+  },
+  "theextravagant:SparkPower": {
+    "NAME": "Spark",
+    "DESCRIPTIONS": [
+      "Enchant the next attack you draw."
     ]
   }
 }

@@ -130,8 +130,10 @@ theextravagant\cards\StepBack.class
 theextravagant\powers\RustyBucklerRetainTriggerAction.class
 theextravagant\cards\Meditation.class
 CCEMRelics\patches\ApplyPowerPatch.class
+theextravagant\powers\SparkPower.class
 theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
+theextravagant\actions\RecursiveTrickeryAction.class
 theextravagant\cards\SkillfullDodge.class
 theextravagant\cards\Preservation.class
 CCEMRelics\relics\BiPhaseBiPlane.class
@@ -140,6 +142,7 @@ theextravagant\actions\SparkAction.class
 theextravagant\cards\Ambush.class
 theextravagant\cards\GlyphOfPower.class
 theextravagant\actions\SpiritBoltAction.class
+theextravagant\actions\NewFlashbackAction.class
 theextravagant\cards\GustOfWind.class
 aramod\powers\LoseThornsPower.class
 theextravagant\powers\DrawReductionOncePower.class
@@ -236,6 +239,7 @@ theextravagant\cards\Dazzle.class
 aramod\relics\LostWallet.class
 theextravagant\actions\AntiquityAction.class
 theextravagant\powers\TrickeryPower.class
+theextravagant\actions\EnchantSpecificCardAction.class
 theextravagant\vfx\PunchEffect.class
 theextravagant\cards\SnakeEyes.class
 theextravagant\cards\WhiffOfMagic.class
@@ -272,6 +276,7 @@ aramod\relics\ChunkOfWall.class
 CCEMRelics\relics\Icicle.class
 theextravagant\powers\OverrunPower.class
 theextravagant\cards\GlyphOfTime.class
+theextravagant\cards\ShieldCharm.class
 theextravagant\relics\CuffLinks.class
 theextravagant\actions\BetterReduceCostAction.class
 theextravagant\orbs\DefaultOrb.class

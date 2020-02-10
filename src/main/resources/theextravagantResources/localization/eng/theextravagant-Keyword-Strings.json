@@ -118,7 +118,7 @@
       "Sparks",
       "sparks"
     ],
-    "DESCRIPTION": "When drawn, Enchants a random attack in your hand. Enchanted cards are played twice."
+    "DESCRIPTION": "When drawn, Enchants the next Attack you draw. Enchanted cards are played twice for the rest of combat."
   },
   {
     "PROPER_NAME": "Enchantment",
@@ -128,7 +128,7 @@
       "Enchanted",
       "enchanted"
     ],
-    "DESCRIPTION": "When you play an Enchanted card, play it twice."
+    "DESCRIPTION": "Enchanted cards are played twice until the end of combat."
   },
   {
     "PROPER_NAME": "Starter",

@@ -16,7 +16,7 @@ public class GarbageCannon extends CustomCard {
 
 
     public static final String ID = theextravagant.makeID("GarbageCannon");
-    public static final String IMG = theextravagant.makeCardPath("garbagecannonnew.png");
+    public static final String IMG = theextravagant.makeCardPath("GarbageCannonnewest.png");
     public static final CardColor COLOR = TheExtravagant.Enums.EV_BLUE;
     private static final CardStrings cardStrings = CardCrawlGame.languagePack.getCardStrings(ID);
     public static final String NAME = cardStrings.NAME;

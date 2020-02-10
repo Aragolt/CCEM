@@ -1,12 +1,13 @@
 package theextravagant.cards;
 
 import basemod.abstracts.CustomCard;
+import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
-import theextravagant.actions.SparkAction;
+import theextravagant.powers.SparkPower;
 import theextravagant.theextravagant;
 
 public class Spark extends CustomCard {
@@ -43,7 +44,7 @@ public class Spark extends CustomCard {
 
     @Override
     public void triggerWhenDrawn() {
-        AbstractDungeon.actionManager.addToBottom(new SparkAction(CardType.ATTACK));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(AbstractDungeon.player, AbstractDungeon.player, new SparkPower(AbstractDungeon.player, 1)));
     }
 
 

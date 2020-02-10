@@ -24,7 +24,7 @@ public class Impulse extends CustomCard {
     private static final CardRarity RARITY = CardRarity.UNCOMMON;
     private static final CardTarget TARGET = CardTarget.NONE;
     private static final CardType TYPE = CardType.SKILL;
-    private static final int COST = 1;
+    private static final int COST = 0;
     private static final int DAMAGE = 0;
     private static final int MAGICNUMBER = 1;
     private static final int BLOCK = 10;
@@ -36,18 +36,20 @@ public class Impulse extends CustomCard {
         baseMagicNumber = MAGICNUMBER;
         magicNumber = baseMagicNumber;
         this.cardsToPreview = new Acceleration();
+        this.exhaust = true;
     }
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ImpulsePower(magicNumber)));
+        AbstractDungeon.actionManager.addToBottom(new ApplyPowerAction(p, p, new ImpulsePower(upgraded)));
     }
 
     @Override
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(0);
+            cardsToPreview.upgrade();
+            rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

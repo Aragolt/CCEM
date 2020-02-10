@@ -29,7 +29,7 @@ public class Riot extends CustomCard {
     private static final CardTarget TARGET = CardTarget.ENEMY;
     private static final CardType TYPE = CardType.ATTACK;
     private static final int COST = 1;
-    private static final int DAMAGE = 10;
+    private static final int DAMAGE = 11;
     private static final int MAGICNUMBER = 2;
     private static final int BLOCK = 0;
 

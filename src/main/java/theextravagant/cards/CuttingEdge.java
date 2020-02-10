@@ -60,8 +60,7 @@ public class CuttingEdge extends CustomCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(2);
-            upgradeDamage(1);
+            upgradeDamage(2);
             initializeDescription();
         }
     }

@@ -3,6 +3,7 @@ package theextravagant.actions;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect;
 
@@ -22,9 +23,8 @@ public class RecursiveTrickeryAction extends AbstractGameAction {
 
         while (var1.hasNext()) {
             AbstractCard c = (AbstractCard) var1.next();
-            AbstractDungeon.effectsQueue.add(new ShowCardBrieflyEffect(c));
+            AbstractDungeon.effectsQueue.add(new ShowCardBrieflyEffect(c.makeStatEquivalentCopy(), Settings.WIDTH / 2, Settings.HEIGHT / 2));
             AbstractDungeon.player.hand.moveToDeck(c, true);
-            AbstractDungeon.player.hand.removeCard(c);
             amount--;
             if (amount > 0) {
                 AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new RecursiveTrickeryAction(amount)));

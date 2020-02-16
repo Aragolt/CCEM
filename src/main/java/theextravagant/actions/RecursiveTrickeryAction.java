@@ -24,7 +24,7 @@ public class RecursiveTrickeryAction extends AbstractGameAction {
         while (var1.hasNext()) {
             AbstractCard c = (AbstractCard) var1.next();
             AbstractDungeon.effectsQueue.add(new ShowCardBrieflyEffect(c.makeStatEquivalentCopy(), Settings.WIDTH / 2, Settings.HEIGHT / 2));
-            AbstractDungeon.player.hand.moveToDeck(c, true);
+            AbstractDungeon.player.hand.moveToBottomOfDeck(c);
             amount--;
             if (amount > 0) {
                 AbstractDungeon.actionManager.addToBottom(new DrawCardAction(1, new RecursiveTrickeryAction(amount)));

@@ -46,7 +46,7 @@
     "DESCRIPTIONS": [
       "At the start of your turn draw a card, then shuffle it back into your draw pile.",
       "At the start of your turn draw ",
-      " cards, then shuffle them back into your draw pile."
+      " cards, then put them at the bottom of your draw pile."
     ]
   },
   "theextravagant:RetreatPower": {
@@ -59,9 +59,7 @@
   "theextravagant:MagicPower": {
     "NAME": "Magic",
     "DESCRIPTIONS": [
-      "Whenever you draw a Spark, draw ",
-      " card.",
-      " cards."
+      "At the end of your turn, Enchant all powers in your hand."
     ]
   },
   "theextravagant:FlashbackPower": {
@@ -262,8 +260,8 @@
       " cards, lose 5 Strength."
     ]
   },
-  "theextravagant:RapidPulsePower": {
-    "NAME": "Rapid Pulse",
+  "theextravagant:UrgencyPower": {
+    "NAME": "Urgency",
     "DESCRIPTIONS": [
       "Whenever you draw an attack, your next attack deals ",
       " additional damage."

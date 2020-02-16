@@ -340,8 +340,8 @@ public class theextravagant implements
         //BaseMod.addCard(new ReSeek());
         BaseMod.addCard(new Agression());
         BaseMod.addCard(new PuffUp());
-        BaseMod.addCard(new Sixteen_Tons());
-        BaseMod.addCard(new ToolsOfTrickery());
+        //BaseMod.addCard(new Sixteen_Tons());
+        BaseMod.addCard(new CutTheDeck());
         BaseMod.addCard(new TwilightTone());
         //BaseMod.addCard(new Retreat());
         BaseMod.addCard(new WhiffOfMagic());
@@ -379,7 +379,7 @@ public class theextravagant implements
         //BaseMod.addCard(new Overrun());
         BaseMod.addCard(new ManifestIllusion());
         BaseMod.addCard(new Thrill());
-        BaseMod.addCard(new RapidPulse());
+        BaseMod.addCard(new Urgency());
         BaseMod.addCard(new Overpower());
         BaseMod.addCard(new Impulse());
         BaseMod.addCard(new QuickAttack());
@@ -398,7 +398,7 @@ public class theextravagant implements
         BaseMod.addCard(new Tension());
         BaseMod.addCard(new HeavyBlows());
         BaseMod.addCard(new Repell());
-        BaseMod.addCard(new LifeCharm());
+        //BaseMod.addCard(new LifeCharm());
         BaseMod.addCard(new Dazzle());
         BaseMod.addCard(new Ravage());
         BaseMod.addCard(new Castle());
@@ -415,8 +415,11 @@ public class theextravagant implements
         BaseMod.addCard(new Comeback());
         BaseMod.addCard(new Defy());
         BaseMod.addCard(new ArtisticDisplay());
+        BaseMod.addCard(new ShieldCharm());
+        BaseMod.addCard(new Erase());
         logger.info("Making sure the cards are unlocked.");
 
+        UnlockTracker.unlockCard(Erase.ID);
         UnlockTracker.unlockCard(Shatter.ID);
         UnlockTracker.unlockCard(SlyStrike.ID);
         UnlockTracker.unlockCard(Clairvoyance.ID);
@@ -438,8 +441,8 @@ public class theextravagant implements
         //UnlockTracker.unlockCard(ReSeek.ID);
         UnlockTracker.unlockCard(Agression.ID);
         UnlockTracker.unlockCard(PuffUp.ID);
-        UnlockTracker.unlockCard(Sixteen_Tons.ID);
-        UnlockTracker.unlockCard(ToolsOfTrickery.ID);
+        //UnlockTracker.unlockCard(Sixteen_Tons.ID);
+        UnlockTracker.unlockCard(CutTheDeck.ID);
         UnlockTracker.unlockCard(TwilightTone.ID);
         //UnlockTracker.unlockCard(Retreat.ID);
         UnlockTracker.unlockCard(WhiffOfMagic.ID);
@@ -478,7 +481,7 @@ public class theextravagant implements
         //UnlockTracker.unlockCard(Overrun.ID);
         UnlockTracker.unlockCard(ManifestIllusion.ID);
         UnlockTracker.unlockCard(Thrill.ID);
-        UnlockTracker.unlockCard(RapidPulse.ID);
+        UnlockTracker.unlockCard(Urgency.ID);
         UnlockTracker.unlockCard(Overpower.ID);
         UnlockTracker.unlockCard(Impulse.ID);
         UnlockTracker.unlockCard(QuickAttack.ID);
@@ -514,6 +517,7 @@ public class theextravagant implements
         UnlockTracker.unlockCard(Comeback.ID);
         UnlockTracker.unlockCard(Defy.ID);
         UnlockTracker.unlockCard(ArtisticDisplay.ID);
+        UnlockTracker.unlockCard(ShieldCharm.ID);
         logger.info("Done adding cards!");
     }
 

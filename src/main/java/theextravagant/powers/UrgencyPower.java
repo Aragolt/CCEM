@@ -12,15 +12,15 @@ import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
 
-public class RapidPulsePower extends AbstractPower {
-    public static final String POWER_ID = makeID("RapidPulsePower");
+public class UrgencyPower extends AbstractPower {
+    public static final String POWER_ID = makeID("UrgencyPower");
     public static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
     private static final Texture tex84 = TextureLoader.getTexture("theextravagantResources/images/powers/pulse_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/pulse_power32.png");
 
-    public RapidPulsePower(int amount) {
+    public UrgencyPower(int amount) {
         name = NAME;
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
@@ -33,7 +33,7 @@ public class RapidPulsePower extends AbstractPower {
 
     @Override
     public void onCardDraw(AbstractCard card) {
-        if (card.type == AbstractCard.CardType.ATTACK) {
+        if (card.type == AbstractCard.CardType.ATTACK && !this.owner.hasPower("No Draw")) {
             this.addToBot(new ApplyPowerAction(owner, owner, new BetterVigorPower(owner, amount), amount));
         }
     }

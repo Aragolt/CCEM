@@ -116,10 +116,9 @@
     "DESCRIPTION": "Autoplay. NL theextravagant:Heavy. NL Deal 16 damage to a random enemy.",
     "UPGRADE_DESCRIPTION": "Autoplay. NL Deal 16 damage to a random enemy."
   },
-  "theextravagant:ToolsOfTrickery":
-  {
-    "NAME": "Tools of Trickery",
-    "DESCRIPTION": "At the start of your turn, draw !M! cards and shuffle them back into your draw pile."
+  "theextravagant:CutTheDeck": {
+    "NAME": "Cut the Deck",
+    "DESCRIPTION": "At the start of your turn, draw a card and put it at the bottom of your draw pile !M! times."
   },
   "theextravagant:TwilightTone":
   {
@@ -134,8 +133,7 @@
   "theextravagant:WhiffOfMagic":
   {
     "NAME": "Whiff of Magic",
-    "DESCRIPTION": "Shuffle !M! theextravagant:Spark into your draw pile. NL Whenever you draw a theextravagant:Spark, draw 2 cards.",
-    "UPGRADE_DESCRIPTION": "Shuffle !M! theextravagant:Sparks into your draw pile. NL Whenever you draw a theextravagant:Spark, draw 2 cards."
+    "DESCRIPTION": "At the end of your turn, theextravagant:Enchant all Powers in your hand and discard them."
   },
   "theextravagant:Flashback":
   {
@@ -280,8 +278,8 @@
     "NAME": "Thrill",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Copy ALL Attacks in your hand. NL Discard a random card."
   },
-  "theextravagant:RapidPulse": {
-    "NAME": "Rapid Pulse",
+  "theextravagant:Urgency": {
+    "NAME": "Urgency",
     "DESCRIPTION": "Whenever you draw an Attack, your next Attack deals !M! additional damage.",
     "UPGRADE_DESCRIPTION": "theextravagant:Light. NL Whenever you draw an Attack, your next Attack deals !M! additional damage."
   },
@@ -445,5 +443,13 @@
     "NAME": "Artistic Display",
     "DESCRIPTION": "Gain !B! Block. NL Next turn draw 1 additional card.",
     "UPGRADE_DESCRIPTION": "theextravagant:Light. NL Gain !B! Block. NL Next turn draw 1 additional card."
+  },
+  "theextravagant:ShieldCharm": {
+    "NAME": "Shielding Charm",
+    "DESCRIPTION": "Gain !M! Temporary_HP X times. NL Exhaust."
+  },
+  "theextravagant:Erase": {
+    "NAME": "Erase",
+    "DESCRIPTION": "Deal !D! damage. Discard your hand. NL Draw !M! cards."
   }
 }

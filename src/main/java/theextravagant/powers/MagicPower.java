@@ -2,13 +2,13 @@ package theextravagant.powers;
 
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.megacrit.cardcrawl.actions.common.DrawCardAction;
+import com.megacrit.cardcrawl.actions.common.DiscardSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
-import theextravagant.cards.Spark;
+import theextravagant.patches.EVCardPatches.AbstractCardPatches;
 import theextravagant.util.TextureLoader;
 
 import static theextravagant.theextravagant.makeID;
@@ -21,7 +21,7 @@ public class MagicPower extends AbstractPower {
     private static final Texture tex84 = TextureLoader.getTexture("theextravagantResources/images/powers/magic_power84.png");
     private static final Texture tex32 = TextureLoader.getTexture("theextravagantResources/images/powers/magic_power32.png");
 
-    public MagicPower(int amount) {
+    public MagicPower() {
         name = NAME;
         ID = POWER_ID;
         this.owner = AbstractDungeon.player;
@@ -35,19 +35,18 @@ public class MagicPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        if (amount == 1) {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1];
-        } else {
-            description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[2];
-        }
+        description = DESCRIPTIONS[0];
     }
 
-    public void onCardDraw(AbstractCard card) {
-        if (card instanceof Spark && !this.owner.hasPower("No Draw")) {
-            this.flash();
-            this.addToBot(new DrawCardAction(this.owner, this.amount));
+    @Override
+    public void atEndOfTurnPreEndTurnCards(boolean isPlayer) {
+        if (isPlayer) {
+            for (AbstractCard c : AbstractDungeon.player.hand.group) {
+                if (c.type == AbstractCard.CardType.POWER) {
+                    AbstractDungeon.actionManager.addToBottom(new DiscardSpecificCardAction(c));
+                    AbstractCardPatches.EnchantmentField.EnchantmentField.set(c, true);
+                }
+            }
         }
-
     }
-
 }

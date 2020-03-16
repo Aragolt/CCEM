@@ -116,8 +116,7 @@
     "DESCRIPTION": "Autoplay. NL theextravagant:Heavy. NL Deal 16 damage to a random enemy.",
     "UPGRADE_DESCRIPTION": "Autoplay. NL Deal 16 damage to a random enemy."
   },
-  "theextravagant:CutTheDeck":
-  {
+  "theextravagant:CutTheDeck": {
     "NAME": "Cut the Deck",
     "DESCRIPTION": "At the start of your turn, draw a card and put it at the bottom of your draw pile !M! times."
   },

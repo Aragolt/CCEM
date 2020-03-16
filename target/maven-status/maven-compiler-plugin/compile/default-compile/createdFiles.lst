@@ -5,6 +5,7 @@ theextravagant\theextravagant$1.class
 theextravagant\actions\SuperSonicAction.class
 CCEMRelics\patches\JestersCrownPatch.class
 aramod\relics\NuclearReactor.class
+CCEMRelics\actions\PutAtBottomOfDrawPileAndApplyChainAction.class
 theextravagant\cards\Shake.class
 aramod\powers\FastPower.class
 CCEMRelics\relics\Coconut.class
@@ -76,9 +77,11 @@ aramod\relics\BeltOfGluttony.class
 aramod\relics\MidasKnob.class
 theextravagant\actions\ShieldCharmAction.class
 theextravagant\powers\OneTurnRetainPower.class
+CCEMRelics\relics\Sandal.class
 theextravagant\cards\PushThrough.class
 theextravagant\actions\UpgradeRandomCardInDeckAction.class
 theextravagant\actions\GarbageCannonAction.class
+CCEMRelics\actions\PlayCardFromDrawPileAction.class
 theextravagant\actions\DrawpileToHandByCostAction.class
 theextravagant\actions\GlyphOfChoiceAction.class
 theextravagant\powers\UrgencyPower.class
@@ -89,8 +92,10 @@ theextravagant\cards\Swirl.class
 theextravagant\util\TextureLoader.class
 CCEMRelics\relics\PorcelainBowl.class
 theextravagant\actions\UnreturnCardsToHandAction.class
+CCEMRelics\relics\SpiritsEdge.class
 theextravagant\powers\DodgePower.class
 theextravagant\cards\Clairvoyance.class
+CCEMRelics\relics\OldTooth.class
 CCEMRelics\actions\SortDrawPileAction$CardAgeComparator.class
 theextravagant\cards\ManifestIllusion.class
 aramod\relics\ShatteredShield.class
@@ -111,6 +116,7 @@ theextravagant\cards\TreasureHunt.class
 theextravagant\powers\ShinePower.class
 theextravagant\cards\Overpower.class
 theextravagant\cards\Agression.class
+CCEMRelics\patches\ChainField.class
 theextravagant\cards\Reconsider.class
 aramod\powers\CleaverPower.class
 theextravagant\cards\Redemption.class
@@ -122,6 +128,7 @@ theextravagant\cards\StepBack.class
 theextravagant\powers\RustyBucklerRetainTriggerAction.class
 theextravagant\cards\Meditation.class
 CCEMRelics\patches\ApplyPowerPatch.class
+CCEMRelics\patches\ChainField$CopyPatch2.class
 theextravagant\powers\SparkPower.class
 theextravagant\actions\ClairvoyanceAction.class
 theextravagant\cards\RustyBuckler.class
@@ -256,6 +263,7 @@ theextravagant\cards\Invocation.class
 theextravagant\cards\Shove.class
 CCEMRelics\actions\PurgeSpecificCardAction.class
 aramod\powers\LoseFocusPower.class
+CCEMRelics\relics\Pendulum.class
 theextravagant\variables\DefaultCustomVariable.class
 theextravagant\patches\EVCardPatches\PlayCardActionPatch.class
 theextravagant\powers\TensionPower.class
@@ -299,6 +307,7 @@ theextravagant\cards\HeavyBlows.class
 theextravagant\patches\RelicSpecificPatches\ApplyPowerPatch$ConstructorPatch.class
 theextravagant\cards\Masquerade.class
 theextravagant\relics\DefaultClickableRelic.class
+CCEMRelics\patches\ChainField$MakeStatEquivalentCopy.class
 theextravagant\cards\AbstractEVCard.class
 CCEMRelics\rewards\RerollRewards$1.class
 theextravagant\cards\Flashback.class

@@ -1,5 +1,7 @@
 package CCEMRelics;
 
+import CCEMRelics.actions.PlayCardFromDrawPileAction;
+import CCEMRelics.patches.ChainField;
 import CCEMRelics.patches.RerollRewardTypePatch;
 import CCEMRelics.relics.*;
 import CCEMRelics.rewards.RerollRewards;
@@ -14,6 +16,8 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.evacipated.cardcrawl.mod.stslib.Keyword;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.RelicLibrary;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.localization.PowerStrings;
@@ -35,7 +39,8 @@ public class CCEMRelics implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        OnCardUseSubscriber {
 
     public static final Logger logger = LogManager.getLogger(CCEMRelics.class.getName());
 
@@ -203,6 +208,10 @@ public class CCEMRelics implements
         BaseMod.addRelic(new DerglesHeadphones(), RelicType.SHARED);
         BaseMod.addRelic(new TinyMinotavrHorn(), RelicType.SHARED);
         BaseMod.addRelic(new TechnogenicHelmet(), RelicType.SHARED);
+        BaseMod.addRelic(new Pendulum(), RelicType.SHARED);
+        BaseMod.addRelic(new Sandal(), RelicType.SHARED);
+        BaseMod.addRelic(new SpiritsEdge(), RelicType.SHARED);
+        BaseMod.addRelic(new OldTooth(), RelicType.SHARED);
         logger.info("Done adding relics!");
     }
 
@@ -250,4 +259,14 @@ public class CCEMRelics implements
         }
     }
 
+    @Override
+    public void receiveCardUsed(AbstractCard abstractCard) {
+        if (ChainField.chain.get(abstractCard)) {
+            for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
+                if (c.cardID.equals(abstractCard.cardID)) {
+                    AbstractDungeon.actionManager.addToBottom(new PlayCardFromDrawPileAction(c));
+                }
+            }
+        }
+    }
 }
